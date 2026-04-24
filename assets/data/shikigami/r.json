@@ -1,0 +1,242 @@
+[
+  {
+    "id": "vu_nu",
+    "name_vi": "Vũ Nữ",
+    "name_jp": "Ame Onna",
+    "name_en": "",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [
+      "support"
+    ],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 0,
+        "tier": ""
+      },
+      "attack": {
+        "value": 0,
+        "tier": ""
+      },
+      "defense": {
+        "value": 0,
+        "tier": ""
+      },
+      "speed": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "LỆ CHÂU",
+        "description": "Tấn công mục tiêu gây 100% sát thương theo atk (chỉ số tấn công)",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Tấn công mục tiêu gây 100% sát thương theo atk (chỉ số tấn công)"
+          },
+          {
+            "level": 2,
+            "description": "Sát thương = 105%"
+          },
+          {
+            "level": 3,
+            "description": "Sát thương = 110%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương = 115%"
+          },
+          {
+            "level": 5,
+            "description": "Sát thương = 125%."
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "TỊNH HÓA CHI VŨ",
+        "description": "Bắt đầu lượt thì hóa giải toàn bộ hiệu ứng khống chế, và xua tan tất cả các debuff trạng thái xấu cho bản thân. Dính hiệu ứng xấu hoặc khống chế thì +40 điểm tốc độ trong 1 lượt (trước lượt tối đa kích hoạt 1 lần). Kỹ năng không thể nâng cấp!",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Bắt đầu lượt thì hóa giải toàn bộ hiệu ứng khống chế, và xua tan tất cả các debuff trạng thái xấu cho bản thân. Dính hiệu ứng xấu hoặc khống chế thì +40 điểm tốc độ trong 1 lượt (trước lượt tối đa kích hoạt 1 lần). Kỹ năng không thể nâng cấp!"
+          }
+        ],
+        "image": "",
+        "cost": 0
+      },
+      {
+        "name": "THIÊN CHI LỆ",
+        "description": "Chọn 1 đồng minh để hóa giải tất cả hiệu ứng khống chế cho người đó, và xua tan tất cả các hiệu ứng xấu hoặc khống chế cho cả đội (tối đa xua tan 4 cái debuff cho mỗi đồng đội). Đồng thời, xóa 1 hiệu ứng buff của phe đối thủ, và có 100% tỷ lệ cơ bản gắn Thiên Chi Bán lên mục tiêu địch trong 2 lượt.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Chọn 1 đồng minh để hóa giải tất cả hiệu ứng khống chế cho người đó, và xua tan tất cả các hiệu ứng xấu hoặc khống chế cho cả đội (tối đa xua tan 4 cái debuff cho mỗi đồng đội). Đồng thời, xóa 1 hiệu ứng buff của phe đối thủ, và có 100% tỷ lệ cơ bản gắn Thiên Chi Bán lên mục tiêu địch trong 2 lượt."
+          },
+          {
+            "level": 2,
+            "description": "Buff cho đồng đội được chọn 80% kháng trong 1 lượt"
+          },
+          {
+            "level": 3,
+            "description": "Xóa 2 buff của đối thủ"
+          },
+          {
+            "level": 4,
+            "description": "Debuff Thiên Chi Bán giảm 20 điểm tốc độ"
+          }
+        ],
+        "image": "",
+        "cost": 2
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/vu_nu.png",
+    "source_url": "https://onmyojicltl.wordpress.com/2025/12/10/ky-nang-vu-nu/"
+  },
+  {
+    "id": "tieu_do",
+    "name_vi": "Tiêu Đồ",
+    "name_jp": "Shouzu",
+    "name_en": "",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [
+      "support"
+    ],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 0,
+        "tier": ""
+      },
+      "attack": {
+        "value": 0,
+        "tier": ""
+      },
+      "defense": {
+        "value": 0,
+        "tier": ""
+      },
+      "speed": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "THỦY HOA ĐẠN",
+        "description": "Tấn công mục tiêu gây 100% sát thương theo atk (chỉ số tấn công), có 30% tỷ lệ cơ bản gắn debuff Nước Chảy Cuồn Cuộn lên mục tiêu trong 2 lượt. * Nước Chảy Cuồn Cuộn (debuff, trạng thái): -10 điểm tốc độ",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Tấn công mục tiêu gây 100% sát thương theo atk (chỉ số tấn công), có 30% tỷ lệ cơ bản gắn debuff Nước Chảy Cuồn Cuộn lên mục tiêu trong 2 lượt. * Nước Chảy Cuồn Cuộn (debuff, trạng thái): -10 điểm tốc độ"
+          },
+          {
+            "level": 2,
+            "description": "Sát thương = 105%"
+          },
+          {
+            "level": 3,
+            "description": "Sát thương = 110%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương = 115%"
+          },
+          {
+            "level": 5,
+            "description": "Sát thương = 125%."
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "NHUẬN VẬT VÔ THANH",
+        "description": "Hứng chịu sát thương thì cả đội có 50% cơ hội nhận được buff Tư Dưỡng trong 2 lượt. Gây sát thương thì, Tiêu Đồ nhận được buff Mưa Ngâu trong 2 lượt.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Hứng chịu sát thương thì cả đội có 50% cơ hội nhận được buff Tư Dưỡng trong 2 lượt. Gây sát thương thì, Tiêu Đồ nhận được buff Mưa Ngâu trong 2 lượt."
+          },
+          {
+            "level": 2,
+            "description": "Tư Dưỡng + 10% crit-dmg"
+          },
+          {
+            "level": 3,
+            "description": "Tư Dưỡng + 15% crit-dmg"
+          },
+          {
+            "level": 4,
+            "description": "Tư Dưỡng + 20% crit-dmg."
+          }
+        ],
+        "image": "",
+        "cost": 0
+      },
+      {
+        "name": "QUYÊN LƯU",
+        "description": "Ngoại trừ Tiêu Đồ, bất kỳ đồng minh nào (không phải vật triệu hồi) lần đầu máu tụt xuống dưới ngưỡng 70%, và trên sân không có ai có dây Liên Kết Sinh Mệnh thì người đó lập tức được nối dây sinh mệnh với Tiêu Đồ trong 1 lượt. Mỗi trận đấu chỉ kích hoạt 1 lần. [Kích hoạt]: Nối dây Liên Kết Sinh Mệnh cả đội với nhau trong 1 lượt. Người được nối dây sau khi hành động, sẽ được hồi máu = 5% máu tối đa của Tiêu Đồ. Sát thương san sẻ được coi là sát thương dẫn truyền .",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Ngoại trừ Tiêu Đồ, bất kỳ đồng minh nào (không phải vật triệu hồi) lần đầu máu tụt xuống dưới ngưỡng 70%, và trên sân không có ai có dây Liên Kết Sinh Mệnh thì người đó lập tức được nối dây sinh mệnh với Tiêu Đồ trong 1 lượt. Mỗi trận đấu chỉ kích hoạt 1 lần. [Kích hoạt]: Nối dây Liên Kết Sinh Mệnh cả đội với nhau trong 1 lượt. Người được nối dây sau khi hành động, sẽ được hồi máu = 5% máu tối đa của Tiêu Đồ. Sát thương san sẻ được coi là sát thương dẫn truyền ."
+          },
+          {
+            "level": 2,
+            "description": "Thời gian hiệu lực của Liên Kết Sinh Mệnh = 2 lượt"
+          },
+          {
+            "level": 3,
+            "description": "Liên Kết Sinh Mệnh giảm 5% sát thương nhận vào"
+          }
+        ],
+        "image": "",
+        "cost": 3
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/tieu_do.png",
+    "source_url": "https://onmyojicltl.wordpress.com/2025/12/10/ky-nang-tieu-do/"
+  }
+]

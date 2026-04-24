@@ -1,0 +1,666 @@
+[
+  {
+    "id": "mau_xam",
+    "name": "Máu Xám",
+    "en_name": "",
+    "description": "Được coi là máu, có thể triệt tiêu hiệu ứng tăng cường máu tương đương. Bị tấn công thì sát thương hứng chịu được coi là Sát Thương Hủy Hình.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "status",
+    "name": "",
+    "en_name": "Status",
+    "description": "Hiệu ứng có thể gỡ bỏ hoặc xoá, không thể cộng dồn.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "mark",
+    "name": "",
+    "en_name": "Mark",
+    "description": "Hiệu ứng không thể gỡ bỏ hoặc xoá, có thể cộng dồn.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "general",
+    "name": "",
+    "en_name": "General",
+    "description": "Khác với buff và debuff, thường chỉ là hiệu ứng hình ảnh.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "upper_hand",
+    "name": "",
+    "en_name": "Upper Hand",
+    "description": "Tự động di chuyển hoặc kích hoạt khi bắt đầu trận hoặc đầu hiệp.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "exclusive_effect",
+    "name": "",
+    "en_name": "Exclusive effect",
+    "description": "Nếu có nhiều bản sao của cùng một Thức Thần, chỉ kỹ năng của một Thức Thần trong đó có hiệu lực — cụ thể là Thức Thần đứng ngoài cùng bên trái.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "realm",
+    "name": "",
+    "en_name": "Realm",
+    "description": "Tạo kết giới cấp buff và/hoặc hiệu ứng bị động có lợi cho đồng đội, có thể cộng dồn với các kết giới khác.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "field",
+    "name": "",
+    "en_name": "Field",
+    "description": "Tương tự kết giới nhưng thay đổi hình ảnh chiến trường, cấp buff và/hoặc hiệu ứng bị động có lợi cho đồng đội, có thể cộng dồn với các field khác.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "co_op_assist",
+    "name": "",
+    "en_name": "Co-op / Assist",
+    "description": "Khi đồng đội dùng đánh thường lên 1 kẻ địch, người có hiệu ứng này cũng đánh thường lên cùng mục tiêu.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "call_to_arms",
+    "name": "",
+    "en_name": "Call to Arms",
+    "description": "Khi tấn công 1 kẻ địch, gọi 1 đồng đội đánh thường lên cùng mục tiêu.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "counter_attack",
+    "name": "",
+    "en_name": "Counter-attack",
+    "description": "Khi nhận sát thương, dùng đánh thường phản đòn lại nguồn gây.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "direct_damage",
+    "name": "",
+    "en_name": "Direct damage",
+    "description": "Một trong các loại sát thương; chịu ảnh hưởng bởi hiệu ứng ngự hồn, có thể bị chia/chuyển qua kỹ năng như liên kết của Shouzu. Tất cả sát thương không ghi rõ đều là Sát Thương Trực Tiếp.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "indirect_damage",
+    "name": "",
+    "en_name": "Indirect damage",
+    "description": "Một trong các loại sát thương; không kích hoạt hiệu ứng ngự hồn, không thể bị chia bởi kỹ năng như liên kết của Shouzu, chắc chắn chí mạng khi đánh địch có 0 thủ.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "true_damage",
+    "name": "",
+    "en_name": "True Damage",
+    "description": "Một trong các loại sát thương; không thể chí mạng và bỏ qua thủ. Sát thương phản được coi là True Damage.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "ruin_damage",
+    "name": "",
+    "en_name": "Ruin Damage",
+    "description": "Một trong các loại sát thương; bỏ qua thủ và mọi hiệu ứng giảm sát thương.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "transferred_damage",
+    "name": "",
+    "en_name": "Transferred damage",
+    "description": "Một trong các loại sát thương; không thể chí mạng, do các kỹ năng Thức Thần có khả năng chia sát thương như liên kết của Shouzu hoặc búp bê của Ushi no Toki.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "base_stat",
+    "name": "",
+    "en_name": "Base (stat)",
+    "description": "Lượng chỉ số khởi điểm của Thức Thần (không bao gồm chỉ số từ ngự hồn).",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "initial_starting_stat",
+    "name": "",
+    "en_name": "Initial / Starting (stat)",
+    "description": "Lượng chỉ số khởi điểm (bao gồm cả base + chỉ số từ ngự hồn) khi vào trận, trước khi áp bất kỳ buff, debuff, passive hay kỹ năng chủ động nào.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "total_overall_stat",
+    "name": "",
+    "en_name": "Total / Overall (stat)",
+    "description": "Tổng chỉ số hiện tại (gồm base + ngự hồn + buff/debuff) của Thức Thần trong trận.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "crit_res",
+    "name": "",
+    "en_name": "Crit RES",
+    "description": "Tỉ lệ chí mạng của nguồn gây sát thương bị giảm.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "dodge",
+    "name": "",
+    "en_name": "Dodge",
+    "description": "Miễn nhiễm mọi sát thương từ đánh thường (kể cả từ Assist / Call to Arms), đồng thời miễn nhiễm mọi debuff/hiệu ứng khống chế đi kèm đánh thường.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "healing_restore_hp",
+    "name": "",
+    "en_name": "Healing / Restore (HP)",
+    "description": "Có thể chí mạng, chịu ảnh hưởng bởi hiệu ứng giảm hồi máu và kích hoạt các hiệu ứng liên quan đến hồi máu.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "recover_hp",
+    "name": "",
+    "en_name": "Recover (HP)",
+    "description": "Khác với Heal/Restore: không chí mạng, không chịu ảnh hưởng bởi hiệu ứng giảm hồi máu và không kích hoạt các hiệu ứng liên quan đến hồi máu.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "hp_steal",
+    "name": "",
+    "en_name": "HP Steal",
+    "description": "Hút máu: không chí mạng, không chịu ảnh hưởng bởi hiệu ứng giảm hồi máu và không kích hoạt các hiệu ứng liên quan đến hồi máu.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "lose_hp",
+    "name": "",
+    "en_name": "Lose (HP)",
+    "description": "Khác với nhận sát thương — máu mất không thể chí mạng, không bị khiên hấp thụ và không kích hoạt các hiệu ứng liên quan đến sát thương. Khi mất phần lớn hoặc liên tục mất máu, máu còn lại không thể xuống dưới 1 HP. Thuật ngữ tương đương: sacrifice, burn, deduct.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "sustain",
+    "name": "",
+    "en_name": "Sustain",
+    "description": "Trạng thái/ấn ký tồn tại theo số lượt của người tạo ra, không phải theo mục tiêu.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "base_chance",
+    "name": "",
+    "en_name": "Base Chance",
+    "description": "Tỉ lệ cơ bản — có thể bị ảnh hưởng bởi Chính Xác (HIT).",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "control_effect_controlling_effect",
+    "name": "",
+    "en_name": "Control Effect / Controlling Effect",
+    "description": "Các hiệu ứng được tính là hiệu ứng khống chế: Đóng Băng, Ngủ, Rối Loạn, Khiêu Khích, Câm Lặng, Trói, Biến Hình, Choáng, Kích Động, Đóng Băng Sâu, Sương Giá, Bóng Đêm, Trói Hồn, Tàn Phá, Yên Nghỉ Trong Băng. 9 hiệu ứng cuối không thể gỡ bỏ. Sương Giá không thể gỡ bỏ hoặc xoá. Trục Xuất và các hiệu ứng tương tự chưa được phân loại chính thức nhưng được đối xử như hiệu ứng khống chế.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "immobile",
+    "name": "",
+    "en_name": "Immobile",
+    "description": "Không thể hành động do bị Trục Xuất hoặc các hiệu ứng khống chế như Đóng Băng, Đóng Băng Sâu, Ngủ, Choáng hoặc Biến Hình.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "dispel",
+    "name": "",
+    "en_name": "Dispel",
+    "description": "Gỡ bỏ các hiệu ứng khống chế — trừ Restrain, Bóng Đêm, Đóng Băng Sâu, Biến Hình, Choáng và Kích Động.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "remove_debuff",
+    "name": "",
+    "en_name": "Remove (debuff)",
+    "description": "Xoá các hiệu ứng khống chế không thể gỡ bỏ như Biến Hình, Choáng, Kích Động, Đóng Băng Sâu, Bóng Đêm, Trói Hồn, Tàn Phá và Yên Nghỉ Trong Băng.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "dispel_remove_buff",
+    "name": "",
+    "en_name": "Dispel / Remove (buff)",
+    "description": "Gỡ/xoá các trạng thái buff.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "disappear_lift",
+    "name": "",
+    "en_name": "Disappear / Lift",
+    "description": "Khi hiệu ứng hết hạn tự nhiên (đầu/cuối lượt của mục tiêu, hoặc đầu lượt của người tạo ra, v.v.).",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "reflect_debuff",
+    "name": "",
+    "en_name": "Reflect (debuff)",
+    "description": "Khiến debuff hoặc hiệu ứng khống chế bị áp lên chính người gây ra.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "monsters",
+    "name": "",
+    "en_name": "Monsters",
+    "description": "Quái — các Thức Thần không thuộc sở hữu người chơi, như mọi địch trong nội dung PVE (Soul Zones, Explore Zones, v.v.).",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "summoned_entity",
+    "name": "",
+    "en_name": "Summoned Entity",
+    "description": "Vật triệu hồi — thực thể do Thức Thần tạo ra, thường kế thừa một phần chỉ số từ người triệu. Ví dụ Cá Vàng của Kingyo Hime. Không tồn tại qua nhiều hiệp.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "special_summoned_entity",
+    "name": "",
+    "en_name": "Special Summoned Entity",
+    "description": "Vật triệu hồi đặc biệt — tương tự vật triệu hồi thường nhưng miễn nhiễm nhiều thứ như sát thương, debuff. Ví dụ Snake Spirit của SP Kiyohime hay Painted Scene của SP Hana. Không tồn tại qua nhiều hiệp.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "rift_in_time",
+    "name": "",
+    "en_name": "Rift in Time",
+    "description": "Khe Nứt Thời Gian — hành động không tính vào lượt mà được xem là hành động ngoài lượt.",
+    "image": "",
+    "kind": "other"
+  },
+  {
+    "id": "shield",
+    "name": "",
+    "en_name": "Shield",
+    "description": "Khiên — hấp thụ một lượng sát thương nhất định, có thể chí mạng, cộng dồn với các khiên từ nguồn khác. Nếu không ghi rõ, khiên có thể gỡ bỏ hoặc xoá. Không phải khiên nào cũng có icon — một số chỉ hiện hiệu ứng hình ảnh và thanh máu khiên.",
+    "image": "assets/images/effects/shield.png",
+    "kind": "buff"
+  },
+  {
+    "id": "shelter",
+    "name": "",
+    "en_name": "Shelter",
+    "description": "Bảo Hộ — chặn mọi hiệu ứng khống chế hoặc Trục Xuất từ 1 kỹ năng. Bao gồm cả hiệu ứng khống chế tự gây.",
+    "image": "assets/images/effects/shelter.png",
+    "kind": "buff"
+  },
+  {
+    "id": "damage_up",
+    "name": "",
+    "en_name": "Damage Up",
+    "description": "Tăng sát thương gây ra.",
+    "image": "assets/images/effects/damage_up.png",
+    "kind": "buff"
+  },
+  {
+    "id": "atk_up",
+    "name": "",
+    "en_name": "ATK UP",
+    "description": "Tăng công (ATK).",
+    "image": "assets/images/effects/atk_up.png",
+    "kind": "buff"
+  },
+  {
+    "id": "def_up",
+    "name": "",
+    "en_name": "DEF Up",
+    "description": "Tăng thủ (DEF).",
+    "image": "assets/images/effects/def_up.png",
+    "kind": "buff"
+  },
+  {
+    "id": "received_damage_down",
+    "name": "",
+    "en_name": "Received Damage Down",
+    "description": "Giảm sát thương nhận vào.",
+    "image": "assets/images/effects/received_damage_down.png",
+    "kind": "buff"
+  },
+  {
+    "id": "spd_up",
+    "name": "",
+    "en_name": "SPD Up",
+    "description": "Tăng tốc độ (SPD).",
+    "image": "assets/images/effects/spd_up.png",
+    "kind": "buff"
+  },
+  {
+    "id": "crit_up",
+    "name": "",
+    "en_name": "Crit Up",
+    "description": "Tăng tỉ lệ chí mạng (Crit).",
+    "image": "assets/images/effects/crit_up.png",
+    "kind": "buff"
+  },
+  {
+    "id": "crit_dmg_up",
+    "name": "",
+    "en_name": "Crit DMG Up",
+    "description": "Tăng sát thương chí mạng (Crit DMG).",
+    "image": "assets/images/effects/crit_dmg_up.png",
+    "kind": "buff"
+  },
+  {
+    "id": "double_crit",
+    "name": "",
+    "en_name": "Double Crit",
+    "description": "Sát thương chí mạng nhân đôi.",
+    "image": "assets/images/effects/double_crit.png",
+    "kind": "buff"
+  },
+  {
+    "id": "hit_up",
+    "name": "",
+    "en_name": "HIT Up",
+    "description": "Tăng chính xác (HIT).",
+    "image": "assets/images/effects/hit_up.png",
+    "kind": "buff"
+  },
+  {
+    "id": "res_up",
+    "name": "",
+    "en_name": "RES Up",
+    "description": "Tăng kháng (RES).",
+    "image": "assets/images/effects/res_up.png",
+    "kind": "buff"
+  },
+  {
+    "id": "seal",
+    "name": "",
+    "en_name": "Seal",
+    "description": "Phong Ấn Ngự Hồn — hiệu ứng ngự hồn của Thức Thần mất tác dụng.",
+    "image": "assets/images/effects/seal.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "suppress",
+    "name": "",
+    "en_name": "Suppress",
+    "description": "Áp Chế — kỹ năng bị động của Thức Thần mất tác dụng.",
+    "image": "assets/images/effects/suppress.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "suppressive_seal",
+    "name": "",
+    "en_name": "(Suppressive) Seal",
+    "description": "Áp Phong Ấn — cả hiệu ứng ngự hồn và kỹ năng bị động của Thức Thần đều mất tác dụng.",
+    "image": "assets/images/effects/suppressive_seal.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "isolated_isolation",
+    "name": "",
+    "en_name": "Isolated / Isolation",
+    "description": "Cô Lập — sát thương nhận vào không thể bị chia hoặc chuyển hướng bởi hiệu ứng ngự hồn hay kỹ năng / passive của Thức Thần.",
+    "image": "assets/images/effects/isolated_isolation.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "poison_poisoned",
+    "name": "",
+    "en_name": "Poison / Poisoned",
+    "description": "Độc — tốc độ giảm 10%. Khi nhận sát thương gián tiếp, thủ giảm 10 × cấp Độc. Có thể cộng dồn.",
+    "image": "assets/images/effects/poison_poisoned.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "continuous_damage",
+    "name": "",
+    "en_name": "Continuous Damage",
+    "description": "Sát thương liên tục — gây sát thương đầu lượt của mục tiêu.",
+    "image": "assets/images/effects/continuous_damage.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "grounded",
+    "name": "",
+    "en_name": "Grounded",
+    "description": "Trói Chân — mọi hiệu ứng thay đổi thanh hành động bị vô hiệu.",
+    "image": "assets/images/effects/grounded.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "reduced_healing_heal_down",
+    "name": "",
+    "en_name": "Reduced Healing / Heal Down",
+    "description": "Giảm Hồi Máu — hiệu ứng hồi máu bị giảm.",
+    "image": "assets/images/effects/reduced_healing_heal_down.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "atk_down",
+    "name": "",
+    "en_name": "ATK Down",
+    "description": "Giảm công (ATK) — sát thương gây ra giảm.",
+    "image": "assets/images/effects/atk_down.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "def_down",
+    "name": "",
+    "en_name": "DEF Down",
+    "description": "Giảm thủ (DEF).",
+    "image": "assets/images/effects/def_down.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "vulnerability",
+    "name": "",
+    "en_name": "Vulnerability",
+    "description": "Tổn Thương — sát thương nhận vào tăng, hiệu ứng giảm sát thương bị giảm.",
+    "image": "assets/images/effects/vulnerability.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "max_hp_down",
+    "name": "",
+    "en_name": "Max HP Down",
+    "description": "Giảm Máu Tối Đa (Max HP).",
+    "image": "assets/images/effects/max_hp_down.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "spd_down_slow",
+    "name": "",
+    "en_name": "SPD Down / Slow",
+    "description": "Làm Chậm — giảm tốc độ (SPD).",
+    "image": "assets/images/effects/spd_down_slow.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "crit_down",
+    "name": "",
+    "en_name": "Crit Down",
+    "description": "Giảm tỉ lệ chí mạng (Crit).",
+    "image": "assets/images/effects/crit_down.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "crit_dmg_down",
+    "name": "",
+    "en_name": "Crit DMG Down",
+    "description": "Giảm sát thương chí mạng (Crit DMG).",
+    "image": "assets/images/effects/crit_dmg_down.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "hit_down",
+    "name": "",
+    "en_name": "HIT Down",
+    "description": "Giảm chính xác (HIT).",
+    "image": "assets/images/effects/hit_down.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "res_down",
+    "name": "",
+    "en_name": "RES Down",
+    "description": "Giảm kháng (RES).",
+    "image": "assets/images/effects/res_down.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "taunt",
+    "name": "",
+    "en_name": "Taunt",
+    "description": "Khiêu Khích — mục tiêu bị buộc đánh thường lên nguồn gây Khiêu Khích khi đến lượt.",
+    "image": "assets/images/effects/taunt.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "provoke_provocation",
+    "name": "",
+    "en_name": "Provoke / Provocation",
+    "description": "Kích Động — tính như Khiêu Khích, mục tiêu bị buộc đánh thường lên nguồn gây Kích Động khi đến lượt. Không thể gỡ bỏ.",
+    "image": "assets/images/effects/provoke_provocation.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "confuse",
+    "name": "",
+    "en_name": "Confuse",
+    "description": "Rối Loạn — mục tiêu sẽ đánh thường lên 1 địch hoặc đồng đội ngẫu nhiên khi đến lượt.",
+    "image": "assets/images/effects/confuse.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "silence",
+    "name": "",
+    "en_name": "Silence",
+    "description": "Câm Lặng — không thể dùng kỹ năng đặc biệt.",
+    "image": "assets/images/effects/silence.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "daze",
+    "name": "",
+    "en_name": "Daze",
+    "description": "Choáng — không thể hành động, không thể gỡ bỏ.",
+    "image": "assets/images/effects/daze.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "morph",
+    "name": "",
+    "en_name": "Morph",
+    "description": "Biến Hình — không thể hành động, kỹ năng bị động của Thức Thần mất tác dụng, không thể gỡ bỏ.",
+    "image": "assets/images/effects/morph.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "sleep",
+    "name": "",
+    "en_name": "Sleep",
+    "description": "Ngủ — không thể hành động, hiệu ứng tự biến mất khi nhận sát thương.",
+    "image": "assets/images/effects/sleep.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "freeze",
+    "name": "",
+    "en_name": "Freeze",
+    "description": "Đóng Băng — không thể hành động.",
+    "image": "assets/images/effects/freeze.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "deep_freeze",
+    "name": "",
+    "en_name": "Deep Freeze",
+    "description": "Đóng Băng Sâu — không thể hành động, tốc độ giảm 20.",
+    "image": "assets/images/effects/deep_freeze.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "frostbound",
+    "name": "",
+    "en_name": "Frostbound",
+    "description": "Sương Giá — không thể hành động, không thể bị phản, không thể gỡ bỏ hoặc xoá. Độc quyền của SP Yuki Onna. Khi Special 2 của cô được nâng cấp, hiệu ứng \"vị trí thanh hành động không thể thay đổi\" được thêm vào.",
+    "image": "assets/images/effects/frostbound.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "shadowbound",
+    "name": "",
+    "en_name": "Shadowbound",
+    "description": "Bóng Đêm — không thể hành động, không thể gỡ bỏ. Độc quyền của Kagewani.",
+    "image": "assets/images/effects/shadowbound.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "ruined",
+    "name": "",
+    "en_name": "Ruined",
+    "description": "Tàn Phá — không thể hành động, không thể gỡ bỏ. Khi nhận đòn từ Izanami và trên mình có Destroyed trong lượt đó, sát thương của kẻ tấn công tăng 5% trong 1 lượt. Độc quyền của Izanami.",
+    "image": "assets/images/effects/ruined.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "rest_in_ice",
+    "name": "",
+    "en_name": "Rest in Ice",
+    "description": "Yên Nghỉ Trong Băng — không thể hành động, tự gỡ vào đầu lượt, không thể gỡ bỏ. Độc quyền của SP Senhime.",
+    "image": "assets/images/effects/rest_in_ice.png",
+    "kind": "debuff"
+  },
+  {
+    "id": "fettered",
+    "name": "",
+    "en_name": "Fettered",
+    "description": "Trói Hồn — không thể hành động, không thể gỡ bỏ. Độc quyền của Miakashi.",
+    "image": "",
+    "kind": "debuff"
+  },
+  {
+    "id": "bind_confine_prison",
+    "name": "",
+    "en_name": "Bind / Confine / Prison",
+    "description": "Trói / Cầm Giữ / Nhốt — mục tiêu bị trói chỉ có thể đánh thường khi đến lượt; gây đủ sát thương sẽ giải thoát khỏi hiệu ứng.",
+    "image": "",
+    "kind": "debuff"
+  },
+  {
+    "id": "banish",
+    "name": "",
+    "en_name": "Banish",
+    "description": "Trục Xuất — không thể hành động, không thể bị chọn làm mục tiêu, vị trí thanh hành động không thể thay đổi, passive và ngự hồn của Thức Thần mất tác dụng, miễn nhiễm sát thương, không thể nhận hiệu ứng hồi máu, không thể nhận buff hoặc debuff. Độc quyền của Ootakemaru.",
+    "image": "",
+    "kind": "debuff"
+  }
+]

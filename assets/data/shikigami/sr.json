@@ -1,0 +1,849 @@
+[
+  {
+    "id": "thoan_tan_co",
+    "name_vi": "Thoan Tân Cơ",
+    "name_jp": "Tagitsu-hime",
+    "name_en": "",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [
+      "attacker"
+    ],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 0,
+        "tier": ""
+      },
+      "attack": {
+        "value": 0,
+        "tier": ""
+      },
+      "defense": {
+        "value": 0,
+        "tier": ""
+      },
+      "speed": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "PHÀM LƯU",
+        "description": "Tấn công mục tiêu gây 100% sát thương theo atk (chỉ số tấn công)",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Tấn công mục tiêu gây 100% sát thương theo atk (chỉ số tấn công)"
+          },
+          {
+            "level": 2,
+            "description": "Sát thương = 105%"
+          },
+          {
+            "level": 3,
+            "description": "Sát thương = 110%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương = 115%"
+          },
+          {
+            "level": 5,
+            "description": "Sát thương = 125%."
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "ÁM SA",
+        "description": "Sau khi kết thúc lượt, nhận 1 tầng Ám Sa . Khi phe ta bị đẩy lùi hành động và có ai đó máu <50% thì hồi máu cho người có tỷ lệ máu thấp nhất = 12% máu tối đa của Thoan Tân Cơ (trước lượt của Thoan Tân Cơ tối đa kích hoạt 5 lần) .",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Sau khi kết thúc lượt, nhận 1 tầng Ám Sa . Khi phe ta bị đẩy lùi hành động và có ai đó máu <50% thì hồi máu cho người có tỷ lệ máu thấp nhất = 12% máu tối đa của Thoan Tân Cơ (trước lượt của Thoan Tân Cơ tối đa kích hoạt 5 lần) ."
+          },
+          {
+            "level": 2,
+            "description": "Phe ta bị đẩy lùi hành động thì +1 tầng Ám Sa (trong 1 lần hành động tối đa kích hoạt 1 lần)"
+          },
+          {
+            "level": 3,
+            "description": "Ám Sa đạt 5 tầng thì giải khống chế trên người Thoan Tân Cơ"
+          },
+          {
+            "level": 4,
+            "description": "Ám Sa đạt 5 tầng thì nhận được lượt hành động"
+          },
+          {
+            "level": 5,
+            "description": "Bắt đầu chiến đấu nhận 2 tầng Ám Sa"
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "MÃNH SA KHỞI LÃNG",
+        "description": "Buff 20% hành động cho 1 đồng minh được chọn, và tấn công cả team đối thủ 2 lần mỗi lần gây 70% sát thương theo atk, có 12% tỷ lệ cơ bản (chịu ảnh hưởng bởi kháng/chính xác) đóng băng mục tiêu 1 lượt.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Buff 20% hành động cho 1 đồng minh được chọn, và tấn công cả team đối thủ 2 lần mỗi lần gây 70% sát thương theo atk, có 12% tỷ lệ cơ bản (chịu ảnh hưởng bởi kháng/chính xác) đóng băng mục tiêu 1 lượt."
+          },
+          {
+            "level": 2,
+            "description": "Sát thương = 80%"
+          },
+          {
+            "level": 3,
+            "description": "Buff hành động = 30%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương = 90%"
+          },
+          {
+            "level": 5,
+            "description": "Ám Sa đạt 5 tầng thì, kích hoạt chiêu sẽ xả hết số tầng, và buff thêm cho người được chọn 70% hành động."
+          }
+        ],
+        "image": "",
+        "cost": 3
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sr/thoan_tan_co.png",
+    "source_url": "https://onmyojicltl.wordpress.com/2025/07/23/ky-nang-thoan-tan-co/"
+  },
+  {
+    "id": "dao_nhan_than",
+    "name_vi": "Đạo Nhân Thần",
+    "name_jp": "Nusubitogami",
+    "name_en": "",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [
+      "attacker"
+    ],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 0,
+        "tier": ""
+      },
+      "attack": {
+        "value": 0,
+        "tier": ""
+      },
+      "defense": {
+        "value": 0,
+        "tier": ""
+      },
+      "speed": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sr/dao_nhan_than.png",
+    "source_url": "https://onmyojicltl.wordpress.com/2024/08/31/ky-nang-dao-nhan-than/"
+  },
+  {
+    "id": "tue_minh_dang",
+    "name_vi": "Tuệ Minh Đăng",
+    "name_jp": "Miakashi",
+    "name_en": "",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [
+      "support"
+    ],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 0,
+        "tier": ""
+      },
+      "attack": {
+        "value": 0,
+        "tier": ""
+      },
+      "defense": {
+        "value": 0,
+        "tier": ""
+      },
+      "speed": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "TẨY UẾ",
+        "description": "Tấn công mục tiêu gây 100% sát thương theo chỉ số tấn công.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Tấn công mục tiêu gây 100% sát thương theo chỉ số tấn công."
+          },
+          {
+            "level": 2,
+            "description": "Sát thương = 105%"
+          },
+          {
+            "level": 3,
+            "description": "Sát thương = 110%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương = 115%"
+          },
+          {
+            "level": 5,
+            "description": "Sát thương = 125%."
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "NGHIỆP HỒI",
+        "description": "Chịu sát thương từ kẻ địch thì gắn trả kẻ đó 1 tầng Nghiệp Chướng . Trừ bản thân và vật triệu hồi, khi đồng minh nhận sát thương đơn thể, nếu chưa bị vô hiệu hóa động tác thì có 50% tỷ lệ (cố định) san sẻ 50% sát thương giùm người đó, đồng thời hồi máu cho bản thân và đồng đội có tỷ lệ máu thấp nhất (không tính vật triệu hồi) 6% máu tối đa của Tuệ Minh Đăng. Kỹ năng không thể nâng cấp!",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Chịu sát thương từ kẻ địch thì gắn trả kẻ đó 1 tầng Nghiệp Chướng . Trừ bản thân và vật triệu hồi, khi đồng minh nhận sát thương đơn thể, nếu chưa bị vô hiệu hóa động tác thì có 50% tỷ lệ (cố định) san sẻ 50% sát thương giùm người đó, đồng thời hồi máu cho bản thân và đồng đội có tỷ lệ máu thấp nhất (không tính vật triệu hồi) 6% máu tối đa của Tuệ Minh Đăng. Kỹ năng không thể nâng cấp!"
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "CHÍNH NIỆM",
+        "description": "Triệu hồi Đèn Minh Thức , khi đèn có trên sân, buff phe ta 20% phòng ngự (trừ vật triệu hồi), và khiến kẻ địch dính 3 tầng Nghiệp Chướng rơi vào trạng thái Câu Hồn . Khi bắt đầu đến lượt, thu hồi Đèn Minh Thức và xóa bỏ Nghiệp Chướng .",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Triệu hồi Đèn Minh Thức , khi đèn có trên sân, buff phe ta 20% phòng ngự (trừ vật triệu hồi), và khiến kẻ địch dính 3 tầng Nghiệp Chướng rơi vào trạng thái Câu Hồn . Khi bắt đầu đến lượt, thu hồi Đèn Minh Thức và xóa bỏ Nghiệp Chướng ."
+          },
+          {
+            "level": 2,
+            "description": "Tăng 30% phòng ngự"
+          },
+          {
+            "level": 3,
+            "description": "Tăng 40% phòng ngự"
+          },
+          {
+            "level": 4,
+            "description": "Triệu hồi Đèn Minh Thức thì xua tan 1 hiệu ứng xấu hoặc khống chế cho cả team mình."
+          },
+          {
+            "level": 5,
+            "description": "Triệu hồi Đèn Minh Thức thì xua tan 2 hiệu ứng xấu hoặc khống chế cho cả team mình."
+          }
+        ],
+        "image": ""
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sr/tue_minh_dang.png",
+    "source_url": "https://onmyojicltl.wordpress.com/2025/05/17/ky-nang-tue-minh-dang/"
+  },
+  {
+    "id": "nhap_noi_tuoc",
+    "name_vi": "Nhập Nội Tước",
+    "name_jp": "Nyuunai-Suzume",
+    "name_en": "",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [
+      "defender"
+    ],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 0,
+        "tier": ""
+      },
+      "attack": {
+        "value": 0,
+        "tier": ""
+      },
+      "defense": {
+        "value": 0,
+        "tier": ""
+      },
+      "speed": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "TƯỚC TRÁC",
+        "description": "Hiệu triệu đàn chim ma tấn công mục tiêu gây 50% sát thương theo chỉ số tấn công, và gây thêm 50% sát thương chuẩn theo chỉ số phòng ngự. Có 40% tỷ lệ hiệp chiến (đánh thường ăn theo đồng đội).",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Hiệu triệu đàn chim ma tấn công mục tiêu gây 50% sát thương theo chỉ số tấn công, và gây thêm 50% sát thương chuẩn theo chỉ số phòng ngự. Có 40% tỷ lệ hiệp chiến (đánh thường ăn theo đồng đội)."
+          },
+          {
+            "level": 2,
+            "description": "Sát thương chuẩn = 60%"
+          },
+          {
+            "level": 3,
+            "description": "Sát thương chuẩn = 70%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương chuẩn = 80%"
+          },
+          {
+            "level": 5,
+            "description": "Sát thương chuẩn = 90%."
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "PHỤ THÂN",
+        "description": "Tiên Cơ: Bắt đầu trận, hiệu ứng này sẽ bám vào đồng đội có chỉ số công cao nhất. Mục tiêu đang có hiệu ứng này nếu nhận phải sát thương chí mạng (gây chết), sẽ miễn dịch sát thương đó đồng thời tiêu hao buff này, khấu trừ số máu tối đa hiện có về 1 điểm, rồi nhận buff Hủ Huyết = số máu tối đa đã khấu trừ (không vượt quá 40 lần chỉ số phòng ngự ban đầu của Nhập Nội Tước). Sau đấy thì không thể nhận được buff Hủ Huyết nữa. Kích hoạt chiêu chủ động: Chọn mục tiêu khác để buff ấn Phụ Thân .",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Tiên Cơ: Bắt đầu trận, hiệu ứng này sẽ bám vào đồng đội có chỉ số công cao nhất. Mục tiêu đang có hiệu ứng này nếu nhận phải sát thương chí mạng (gây chết), sẽ miễn dịch sát thương đó đồng thời tiêu hao buff này, khấu trừ số máu tối đa hiện có về 1 điểm, rồi nhận buff Hủ Huyết = số máu tối đa đã khấu trừ (không vượt quá 40 lần chỉ số phòng ngự ban đầu của Nhập Nội Tước). Sau đấy thì không thể nhận được buff Hủ Huyết nữa. Kích hoạt chiêu chủ động: Chọn mục tiêu khác để buff ấn Phụ Thân ."
+          },
+          {
+            "level": 2,
+            "description": "Người nhận buff Phụ Thân sẽ nhận luôn chỉ số thủ ban đầu của Tước, miễn là không vượt quá chỉ số thủ ban đầu của bản thân."
+          },
+          {
+            "level": 3,
+            "description": "Nhập Nội tước sẽ nhận chỉ số tấn công ban đầu của người có buff Phụ Thân , miễn là không vượt quá chỉ số công ban đầu của Tước."
+          },
+          {
+            "level": 4,
+            "description": "Khi buff Phụ Thân biến mất, tỷ lệ hiệp chiến của Tước = 100%"
+          },
+          {
+            "level": 5,
+            "description": "Khi buff Phụ Thân biến mất, người bị mất buff sẽ được giải phóng toàn bộ khống chế nếu có và +100% hành động."
+          }
+        ],
+        "image": "",
+        "cost": 0
+      },
+      {
+        "name": "HỦ HÓA",
+        "description": "Khấu trừ máu tối đa của đồng đội = 10 lần chỉ số thủ ban đầu của Tước để chuyển hóa nó thành Hủ Huyết (không vượt quá 50% máu tối đa của người đó). Không thể thi triển kỹ năng lên mục tiêu đang có Hủ Huyết .",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Khấu trừ máu tối đa của đồng đội = 10 lần chỉ số thủ ban đầu của Tước để chuyển hóa nó thành Hủ Huyết (không vượt quá 50% máu tối đa của người đó). Không thể thi triển kỹ năng lên mục tiêu đang có Hủ Huyết ."
+          },
+          {
+            "level": 2,
+            "description": "Phe ta cứ có 1 đứa có Hủ Huyết thì Tước +10 điểm tốc độ"
+          },
+          {
+            "level": 3,
+            "description": "Phe ta cứ có 1 đứa có Hủ Huyết thì Tước +20% kháng"
+          },
+          {
+            "level": 4,
+            "description": "Lượng máu chuyển đổi thành Hủ Huyết = 20 lần chỉ số phòng ngự của Tước"
+          },
+          {
+            "level": 5,
+            "description": "Phe ta cứ có 1 đứa có Hủ Huyết thì Tước được giảm 10% sát thương nhận vào."
+          }
+        ],
+        "image": ""
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sr/nhap_noi_tuoc.png",
+    "source_url": "https://onmyojicltl.wordpress.com/2025/05/17/ky-nang-nhap-noi-tuoc/"
+  },
+  {
+    "id": "yet_nu",
+    "name_vi": "Yết Nữ",
+    "name_jp": "Sasori Onna",
+    "name_en": "",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [
+      "attacker"
+    ],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 0,
+        "tier": ""
+      },
+      "attack": {
+        "value": 0,
+        "tier": ""
+      },
+      "defense": {
+        "value": 0,
+        "tier": ""
+      },
+      "speed": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "YẾT THÍCH",
+        "description": "Tấn công 2 lần mỗi lần gây 50% sát thương theo atk.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Tấn công 2 lần mỗi lần gây 50% sát thương theo atk."
+          },
+          {
+            "level": 2,
+            "description": "Sát thương = 52%"
+          },
+          {
+            "level": 3,
+            "description": "Sát thương = 54%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương = 56%"
+          },
+          {
+            "level": 5,
+            "description": "Sát thương = 60%."
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "DĨ ĐỘC CÔNG ĐỘC",
+        "description": "Kích nổ Nọc Độc thì khôi phục 20% sát thương thành máu cho bản thân. Kẻ địch cứ có 1 tầng Nọc Độc thì +20% atk. Nếu kích nổ Nọc Độc khôi phục máu mà dư thừa, sẽ lấy số (hồi máu) dư đó chia đều ra khôi phục cho các đồng minh còn lại.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Kích nổ Nọc Độc thì khôi phục 20% sát thương thành máu cho bản thân. Kẻ địch cứ có 1 tầng Nọc Độc thì +20% atk. Nếu kích nổ Nọc Độc khôi phục máu mà dư thừa, sẽ lấy số (hồi máu) dư đó chia đều ra khôi phục cho các đồng minh còn lại."
+          },
+          {
+            "level": 2,
+            "description": "Nọc Độc khiến mục tiêu bị -40% hồi máu"
+          },
+          {
+            "level": 3,
+            "description": "Kích nổ Nọc Độc thì khôi phục 30% sát thương thành máu"
+          },
+          {
+            "level": 4,
+            "description": "Cứ có nhiều hơn 1 tầng Nọc Độc thì mỗi tầng khiến mục tiêu bị giảm hồi máu thêm 10%"
+          },
+          {
+            "level": 5,
+            "description": "Kẻ địch dính 5 tầng Nọc Độc nhận sát thương gián tiếp sẽ lan tỏa 60% sát thương ra các mục tiêu xung quanh (sát thương lan tối đa không vượt quá 800% atk của Yết Nữ)."
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "BÁCH YẾT CHI ĐỘC",
+        "description": "Tấn công 1 mục tiêu gây 50% sát thương theo atk và khiến mục tiêu bị dính Nọc Độc . Nếu đã có Nọc Độc , thì sẽ kích nổ gây 75% sát thương gián tiếp. Tối đa chỉ có thể gắn Nọc Độc lên 1 mục tiêu địch.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Tấn công 1 mục tiêu gây 50% sát thương theo atk và khiến mục tiêu bị dính Nọc Độc . Nếu đã có Nọc Độc , thì sẽ kích nổ gây 75% sát thương gián tiếp. Tối đa chỉ có thể gắn Nọc Độc lên 1 mục tiêu địch."
+          },
+          {
+            "level": 2,
+            "description": "Sát thương gián tiếp khi kích nổ = 80%"
+          },
+          {
+            "level": 3,
+            "description": "Sát thương gián tiếp khi kích nổ = 85%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương gián tiếp khi kích nổ = 90%"
+          },
+          {
+            "level": 5,
+            "description": "Mục tiêu dính Nọc Độc hết lượt sẽ bị nổ ấn nhận sát thương gián tiếp = 90% atk."
+          }
+        ],
+        "image": "",
+        "cost": 2
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sr/yet_nu.png",
+    "source_url": "https://onmyojicltl.wordpress.com/2024/03/16/ky-nang-yet-nu/"
+  },
+  {
+    "id": "huan",
+    "name_vi": "Huân",
+    "name_jp": "Kaoru",
+    "name_en": "",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [
+      "support"
+    ],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 0,
+        "tier": ""
+      },
+      "attack": {
+        "value": 0,
+        "tier": ""
+      },
+      "defense": {
+        "value": 0,
+        "tier": ""
+      },
+      "speed": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "CÚ NÉM GIẢI TỎA",
+        "description": "Tấn công mục tiêu gây 100% sát thương theo chỉ số tấn công.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Tấn công mục tiêu gây 100% sát thương theo chỉ số tấn công."
+          },
+          {
+            "level": 2,
+            "description": "Sát thương = 105%"
+          },
+          {
+            "level": 3,
+            "description": "Sát thương = 110%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương = 115%"
+          },
+          {
+            "level": 5,
+            "description": "Với mục tiêu có từ 4 hiệu ứng buff trở lên, sẽ đẩy lùi 15% hành động của kẻ đó."
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "CÚ MÈO CẢNH GIỚI",
+        "description": "Mỗi lượt (bất kể địch hay ta) bắt đầu, sẽ tiến hành luân chuyển giữa 2 trạng thái Chơi Đùa và Cảnh Giới dựa trên điều kiện: Thông thường Huân sẽ ở trạng thái Chơi Đùa , nếu đồng đội bị dính từ 2 hiệu ứng khống chế trở lên, Huân sẽ đổi sang trạng thái Cảnh Giới .",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Mỗi lượt (bất kể địch hay ta) bắt đầu, sẽ tiến hành luân chuyển giữa 2 trạng thái Chơi Đùa và Cảnh Giới dựa trên điều kiện: Thông thường Huân sẽ ở trạng thái Chơi Đùa , nếu đồng đội bị dính từ 2 hiệu ứng khống chế trở lên, Huân sẽ đổi sang trạng thái Cảnh Giới ."
+          },
+          {
+            "level": 2,
+            "description": "Ở trạng thái Cảnh Giới , +50% kháng"
+          },
+          {
+            "level": 3,
+            "description": "Ở trạng thái Cảnh Giới , +60% kháng"
+          },
+          {
+            "level": 4,
+            "description": "Ở trạng thái Cảnh Giới , +15 điểm tốc độ"
+          },
+          {
+            "level": 5,
+            "description": "Ở trạng thái Chơi Đùa , hết lượt bản thân thì Huân buff cả đội 10% sát thương cho đến khi thay đổi trạng thái."
+          }
+        ],
+        "image": "",
+        "cost": 0
+      },
+      {
+        "name": "CHỞ CHE ẤM ÁP",
+        "description": "Hi sinh 25% máu bản thân để buff 1 đồng đội hiệu ứng Cú Mèo Chở Che trong 1 lượt (tính theo lượt của Huân, đầu lượt tiếp theo của Huân mới hết hiệu lực và rút máu), đồng thời xua tan 1 hiệu ứng xấu hoặc khống chế cho toàn đội. Nếu Huân đang ở trạng thái Cảnh Giới , thì buff Vũ Điệu Cú Mèo kéo dài 2 lượt cho đồng đội đang bị khống chế; Còn không thì nhận được 4 điểm mana.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Hi sinh 25% máu bản thân để buff 1 đồng đội hiệu ứng Cú Mèo Chở Che trong 1 lượt (tính theo lượt của Huân, đầu lượt tiếp theo của Huân mới hết hiệu lực và rút máu), đồng thời xua tan 1 hiệu ứng xấu hoặc khống chế cho toàn đội. Nếu Huân đang ở trạng thái Cảnh Giới , thì buff Vũ Điệu Cú Mèo kéo dài 2 lượt cho đồng đội đang bị khống chế; Còn không thì nhận được 4 điểm mana."
+          },
+          {
+            "level": 2,
+            "description": "Cú Mèo Chở Che biến mất thì rút máu = 70% lượng sát thương đã ghi lại"
+          },
+          {
+            "level": 3,
+            "description": "Giảm 1 mana thi triển kỹ năng"
+          },
+          {
+            "level": 4,
+            "description": "Cú Mèo Chở Che biến mất thì rút máu = 60% lượng sát thương đã ghi lại"
+          },
+          {
+            "level": 5,
+            "description": "Tiên cơ: Vào trận lập tức buff Cú Mèo Chở Che cho đồng đội có máu ít nhất trong 1 lượt."
+          }
+        ],
+        "image": "",
+        "cost": 2
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sr/huan.png",
+    "source_url": "https://onmyojicltl.wordpress.com/2025/05/17/ky-nang-huan/"
+  },
+  {
+    "id": "hac_dong_tu",
+    "name_vi": "Hắc Đồng Tử",
+    "name_jp": "Kuro Douji",
+    "name_en": "",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [
+      "attacker"
+    ],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 0,
+        "tier": ""
+      },
+      "attack": {
+        "value": 0,
+        "tier": ""
+      },
+      "defense": {
+        "value": 0,
+        "tier": ""
+      },
+      "speed": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "TỘI PHẠT-HẮC",
+        "description": "Tấn công mục tiêu gây 100% sát thương theo chỉ số tấn công.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Tấn công mục tiêu gây 100% sát thương theo chỉ số tấn công."
+          },
+          {
+            "level": 2,
+            "description": "Sát thương = 105%"
+          },
+          {
+            "level": 3,
+            "description": "Sát thương = 110%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương = 115%"
+          },
+          {
+            "level": 5,
+            "description": "Sát thương = 125%."
+          }
+        ],
+        "image": ""
+      },
+      {
+        "name": "HỒN CHI NỘ HỎA",
+        "description": "Dính sát thương phi dẫn truyền thì có 12% tỷ lệ cố định (hên xui) xả kỹ năng LIÊN TRẢM miễn phí 1 lần. [Kích hoạt]: Nhận Hồi Hồn trong 2 lượt.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Dính sát thương phi dẫn truyền thì có 12% tỷ lệ cố định (hên xui) xả kỹ năng LIÊN TRẢM miễn phí 1 lần. [Kích hoạt]: Nhận Hồi Hồn trong 2 lượt."
+          },
+          {
+            "level": 2,
+            "description": "Tỷ lệ kích hoạt = 16%"
+          },
+          {
+            "level": 3,
+            "description": "Tỷ lệ kích hoạt = 20%"
+          },
+          {
+            "level": 4,
+            "description": "Mỗi khi máu giảm đi 30%, tỷ lệ kích hoạt +3% nữa"
+          },
+          {
+            "level": 5,
+            "description": "Tiên cơ: Giải phóng kỹ năng này ngay khi vào trận."
+          }
+        ],
+        "image": "",
+        "cost": 0
+      },
+      {
+        "name": "LIÊN TRẢM",
+        "description": "Tấn công AOE 1 lần gây 83% sát thương theo atk. Máu của Hắc cứ giảm đi 30%, thì AOE thêm 1 lần nữa. Nếu hạ gục mục tiêu địch, thì sẽ xả kỹ năng này thêm lần nữa không tốn năng lượng, tuy nhiên sát thương bị giảm đi 40%.",
+        "levels": [
+          {
+            "level": 1,
+            "description": "Tấn công AOE 1 lần gây 83% sát thương theo atk. Máu của Hắc cứ giảm đi 30%, thì AOE thêm 1 lần nữa. Nếu hạ gục mục tiêu địch, thì sẽ xả kỹ năng này thêm lần nữa không tốn năng lượng, tuy nhiên sát thương bị giảm đi 40%."
+          },
+          {
+            "level": 2,
+            "description": "Sát thương = 87%"
+          },
+          {
+            "level": 3,
+            "description": "Sát thương = 91%"
+          },
+          {
+            "level": 4,
+            "description": "Sát thương = 95%"
+          },
+          {
+            "level": 5,
+            "description": "Sát thương = 99%"
+          }
+        ],
+        "image": "",
+        "cost": 3
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sr/hac_dong_tu.png",
+    "source_url": "https://onmyojicltl.wordpress.com/2025/09/06/ky-nang-hac-dong-tu/"
+  }
+]

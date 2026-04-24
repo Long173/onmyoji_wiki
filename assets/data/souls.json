@@ -1,0 +1,1090 @@
+[
+  {
+    "id": "tsuchigumo",
+    "name_vi": "",
+    "name_en": "Tsuchigumo",
+    "kind": "boss",
+    "effects": [
+      {
+        "pieces": 1,
+        "description": "Tăng ngẫu nhiên 1 chỉ số cơ bản: +8% Công, +8% Máu, +16% Thủ, +8% Chính xác, +8% Kháng, hoặc +8% Chí mạng."
+      },
+      {
+        "pieces": 2,
+        "description": "Hiệu quả duy nhất. Khi tấn công quái, gây lên mục tiêu ấn ký Tsuchigumo (tối đa 3 tầng), giảm 10% tốc độ và gây 10% sát thương gián tiếp vào cuối lượt."
+      }
+    ],
+    "image": "assets/images/souls/tsuchigumo.png"
+  },
+  {
+    "id": "oboroguruma",
+    "name_vi": "Lung Xa",
+    "name_en": "Oboroguruma",
+    "kind": "boss",
+    "effects": [
+      {
+        "pieces": 1,
+        "description": "Tăng ngẫu nhiên 1 chỉ số cơ bản: +8% Công, +8% Máu, +16% Thủ, +8% Chính xác, +8% Kháng, hoặc +8% Chí mạng."
+      },
+      {
+        "pieces": 2,
+        "description": "Khi bị quái tấn công, người trang bị có 50% tỉ lệ tăng 30% thanh hành động (chỉ kích hoạt 1 lần cho mỗi đòn đánh)."
+      }
+    ],
+    "image": "assets/images/souls/oboroguruma.png"
+  },
+  {
+    "id": "odokuro",
+    "name_vi": "Hoang Cốt Lâu",
+    "name_en": "Odokuro",
+    "kind": "boss",
+    "effects": [
+      {
+        "pieces": 1,
+        "description": "Tăng ngẫu nhiên 1 chỉ số cơ bản: +8% Công, +8% Máu, +16% Thủ, +8% Chính xác, +8% Kháng, hoặc +8% Chí mạng."
+      },
+      {
+        "pieces": 2,
+        "description": "Hiệu quả duy nhất. Người trang bị nhận +10% sát thương gây lên quái. Nếu bị tấn công trước lượt của mình, hiệu ứng tăng thêm 25%."
+      }
+    ],
+    "image": "assets/images/souls/odokuro.png"
+  },
+  {
+    "id": "namazu",
+    "name_vi": "",
+    "name_en": "Namazu",
+    "kind": "boss",
+    "effects": [
+      {
+        "pieces": 1,
+        "description": "Tăng ngẫu nhiên 1 chỉ số cơ bản: +8% Công, +8% Máu, +16% Thủ, +8% Chính xác, +8% Kháng, hoặc +8% Chí mạng."
+      },
+      {
+        "pieces": 2,
+        "description": "Khi bắt đầu trận, người trang bị nhận 60% giảm sát thương. Mỗi lần bị tấn công, chuyển 6% giảm sát thương thành +1.5% tăng sát thương (chỉ kích hoạt 1 lần cho chuỗi nhiều đòn cùng nguồn)."
+      }
+    ],
+    "image": "assets/images/souls/namazu.png"
+  },
+  {
+    "id": "shinkiro",
+    "name_vi": "Thận Khí Lâu",
+    "name_en": "Shinkiro",
+    "kind": "boss",
+    "effects": [
+      {
+        "pieces": 1,
+        "description": "Tăng ngẫu nhiên 1 chỉ số cơ bản: +8% Công, +8% Máu, +16% Thủ, +8% Chính xác, +8% Kháng, hoặc +8% Chí mạng."
+      },
+      {
+        "pieces": 2,
+        "description": "Khi bắt đầu trận, tạo một lớp bảo hộ cho người trang bị, có thể chặn 1 hiệu ứng khống chế từ 1 đòn tấn công. Lớp bảo hộ tái tạo sau 5 lượt."
+      }
+    ],
+    "image": "assets/images/souls/shinkiro.png"
+  },
+  {
+    "id": "ghostly_songstress",
+    "name_vi": "Geisha",
+    "name_en": "Ghostly Songstress",
+    "kind": "boss",
+    "effects": [
+      {
+        "pieces": 1,
+        "description": "Tăng ngẫu nhiên 1 chỉ số cơ bản: +8% Công, +8% Máu, +16% Thủ, +8% Chính xác, +8% Kháng, hoặc +8% Chí mạng."
+      },
+      {
+        "pieces": 2,
+        "description": "Hiệu quả duy nhất. Cứ 5 lần gây sát thương, đòn tấn công tiếp theo gây thêm 20% máu tối đa của kẻ địch và bỏ qua phòng thủ. Không vượt quá 255% công của người trang bị."
+      }
+    ],
+    "image": "assets/images/souls/ghostly_songstress.png"
+  },
+  {
+    "id": "nightly_aramitama",
+    "name_vi": "",
+    "name_en": "Nightly Aramitama",
+    "kind": "boss",
+    "effects": [
+      {
+        "pieces": 1,
+        "description": "Tăng ngẫu nhiên 1 chỉ số cơ bản: +8% Công, +8% Máu, +16% Thủ, +8% Chính xác, +8% Kháng, hoặc +8% Chí mạng."
+      },
+      {
+        "pieces": 2,
+        "description": "Hiệu quả duy nhất. Khi người trang bị gây hiệu ứng khống chế hoặc Trục Xuất lên quái trong lượt của mình, tất cả đồng đội (không tính vật triệu hồi) nhận +15 tốc độ cho mỗi mục tiêu (chỉ tính 1 lần nếu nhiều hiệu ứng cùng lên 1 địch), tối đa +90 tốc độ, kéo dài 1 lượt."
+      }
+    ],
+    "image": "assets/images/souls/nightly_aramitama.png"
+  },
+  {
+    "id": "snow_spirit",
+    "name_vi": "Tuyết Hồn",
+    "name_en": "Snow Spirit",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 30% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây sát thương, có 15% tỉ lệ cơ bản (tăng lên 30% nếu mục tiêu đang bị Làm Chậm) gây Đóng Băng trong 1 lượt. Khi bị tấn công, giảm 30 tốc độ của kẻ tấn công, kéo dài 1 lượt."
+      }
+    ],
+    "image": "assets/images/souls/snow_spirit.png"
+  },
+  {
+    "id": "jizo_statue",
+    "name_vi": "Địa Tạng",
+    "name_en": "Jizo Statue",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi nhận đòn chí mạng, nhận khiên hấp thụ 10% sát thương nhận vào và có 30% tỉ lệ trao khiên cho đồng đội ngẫu nhiên. Tỉ lệ giảm 60% với mục tiêu đang bị khiêu khích."
+      }
+    ],
+    "image": "assets/images/souls/jizo_statue.png"
+  },
+  {
+    "id": "nightwing",
+    "name_vi": "Dơi Yêu",
+    "name_en": "Nightwing",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây sát thương, nhận 20% hút máu."
+      }
+    ],
+    "image": "assets/images/souls/nightwing.png"
+  },
+  {
+    "id": "holy_flame",
+    "name_vi": "Niết Bàn",
+    "name_en": "Holy Flame",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Cuối lượt, nếu máu dưới 30%, hồi 15% máu tối đa."
+      }
+    ],
+    "image": "assets/images/souls/holy_flame.png"
+  },
+  {
+    "id": "samisen",
+    "name_vi": "Tam Vị",
+    "name_en": "Samisen",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% tỉ lệ chí mạng (Crit)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi đồng đội bị gây hiệu ứng khống chế, tốc độ của người trang bị tăng 30, kéo dài 2 lượt. Không thể gỡ bỏ, tối đa 2 tầng."
+      }
+    ],
+    "image": "assets/images/souls/samisen.png"
+  },
+  {
+    "id": "mimic",
+    "name_vi": "Ma Hạp",
+    "name_en": "Mimic",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% kháng hiệu ứng (RES)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây sát thương, có 25% tỉ lệ cơ bản gây Choáng, Câm Lặng, giảm 40% hồi máu, hoặc Rối Loạn."
+      }
+    ],
+    "image": "assets/images/souls/mimic.png"
+  },
+  {
+    "id": "boroboroton",
+    "name_vi": "Miêu Phục",
+    "name_en": "Boroboroton",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Giảm 30% sát thương nhận vào."
+      }
+    ],
+    "image": "assets/images/souls/boroboroton.png"
+  },
+  {
+    "id": "fortune_cat",
+    "name_vi": "Chiêu Tài",
+    "name_en": "Fortune Cat",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 30% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Đầu lượt có 50% tỉ lệ nhận 2 Hoả."
+      }
+    ],
+    "image": "assets/images/souls/fortune_cat.png"
+  },
+  {
+    "id": "shy_soul",
+    "name_vi": "Phản Chẩm",
+    "name_en": "Shy Soul",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 30% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây sát thương, có 23% tỉ lệ cơ bản khiến mục tiêu Ngủ trong 1 lượt."
+      }
+    ],
+    "image": "assets/images/souls/shy_soul.png"
+  },
+  {
+    "id": "soultaker",
+    "name_vi": "Luân Đạo",
+    "name_en": "Soultaker",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Cuối lượt có 20% tỉ lệ nhận thêm 1 lượt."
+      }
+    ],
+    "image": "assets/images/souls/soultaker.png"
+  },
+  {
+    "id": "dawn_fairy",
+    "name_vi": "Nhật Nữ",
+    "name_en": "Dawn Fairy",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 30% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây sát thương, có 20% tỉ lệ giảm 30% thanh hành động của mục tiêu. Tỉ lệ tăng lên 30% với mục tiêu đang có buff."
+      }
+    ],
+    "image": "assets/images/souls/dawn_fairy.png"
+  },
+  {
+    "id": "mirror_lady",
+    "name_vi": "Kính Cơ",
+    "name_en": "Mirror Lady",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Có 30% tỉ lệ phản 100% sát thương nhận vào. Tỉ lệ giảm 60% với mục tiêu đang bị khiêu khích."
+      }
+    ],
+    "image": "assets/images/souls/mirror_lady.png"
+  },
+  {
+    "id": "priestess",
+    "name_vi": "Chung Linh",
+    "name_en": "Priestess",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây sát thương, có 10% tỉ lệ gây Choáng mục tiêu trong 1 lượt. Nếu không có kẻ địch nào đang bị Choáng, tỉ lệ tăng lên 20%."
+      }
+    ],
+    "image": "assets/images/souls/priestess.png"
+  },
+  {
+    "id": "scarlet",
+    "name_vi": "Tranh",
+    "name_en": "Scarlet",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Có 35% tỉ lệ phản đòn thường sau khi nhận sát thương. Tỉ lệ giảm 60% với mục tiêu đang bị khiêu khích."
+      }
+    ],
+    "image": "assets/images/souls/scarlet.png"
+  },
+  {
+    "id": "azure_basan",
+    "name_vi": "Hoả Linh",
+    "name_en": "Azure Basan",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% chính xác (HIT)."
+      },
+      {
+        "pieces": 4,
+        "description": "Nhận 3 Hoả khi bắt đầu mỗi hiệp."
+      }
+    ],
+    "image": "assets/images/souls/azure_basan.png"
+  },
+  {
+    "id": "house_imp",
+    "name_vi": "Minh Ốc",
+    "name_en": "House Imp",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Tăng 45% sát thương khi tấn công mục tiêu đang chịu hiệu ứng khống chế."
+      }
+    ],
+    "image": "assets/images/souls/house_imp.png"
+  },
+  {
+    "id": "soul_edge",
+    "name_vi": "Thế Hồn",
+    "name_en": "Soul Edge",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi đồng đội bị tấn công đơn mục tiêu, người trang bị có 50% tỉ lệ giảm 20% sát thương cho đồng đội và chịu thay 40% phần sát thương còn lại."
+      }
+    ],
+    "image": "assets/images/souls/soul_edge.png"
+  },
+  {
+    "id": "watcher",
+    "name_vi": "Tâm Nhãn",
+    "name_en": "Watcher",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Mỗi 15% máu mục tiêu đã mất, sát thương gây ra tăng thêm 10%."
+      }
+    ],
+    "image": "assets/images/souls/watcher.png"
+  },
+  {
+    "id": "tree_nymph",
+    "name_vi": "Mộc Mị",
+    "name_en": "Tree Nymph",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 30% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi đồng đội nhận sát thương, có 25% tỉ lệ giảm 1 Hoả của mục tiêu. Tỉ lệ giảm 60% với mục tiêu đang bị khiêu khích. Hiệu ứng không cộng dồn qua nhiều đòn."
+      }
+    ],
+    "image": "assets/images/souls/tree_nymph.png"
+  },
+  {
+    "id": "tree_spirit",
+    "name_vi": "Thụ Yêu",
+    "name_en": "Tree Spirit",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Toàn bộ hiệu ứng hồi máu tăng 20% (tăng 50% thay vào đó nếu máu người trang bị dưới 20%)."
+      }
+    ],
+    "image": "assets/images/souls/tree_spirit.png"
+  },
+  {
+    "id": "claws",
+    "name_vi": "Võng Thiết",
+    "name_en": "Claws",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% tỉ lệ chí mạng (Crit)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây sát thương, có 50% tỉ lệ bỏ qua 45% thủ của mục tiêu."
+      }
+    ],
+    "image": "assets/images/souls/claws.png"
+  },
+  {
+    "id": "harpy",
+    "name_vi": "Âm Ma",
+    "name_en": "Harpy",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Nhận 3 Hoả khi hạ gục 1 mục tiêu."
+      }
+    ],
+    "image": "assets/images/souls/harpy.png"
+  },
+  {
+    "id": "fenikkusu",
+    "name_vi": "Hoả Kê",
+    "name_en": "Himeidori",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% tỉ lệ chí mạng (Crit)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi một mục tiêu \"không phải quái\" bị hạ gục, hồi 20% máu tối đa cho người trang bị và tăng 20% sát thương (tối đa 120%) cho tới cuối trận."
+      }
+    ],
+    "image": "assets/images/souls/himeidori.png"
+  },
+  {
+    "id": "shadow",
+    "name_vi": "Phá Thế",
+    "name_en": "Shadow",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% tỉ lệ chí mạng (Crit)."
+      },
+      {
+        "pieces": 4,
+        "description": "Tăng 40% sát thương lên mục tiêu còn trên 70% máu."
+      }
+    ],
+    "image": "assets/images/souls/shadow.png"
+  },
+  {
+    "id": "tomb_guard",
+    "name_vi": "Trấn Mộ",
+    "name_en": "Tomb Guard",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% tỉ lệ chí mạng (Crit)."
+      },
+      {
+        "pieces": 4,
+        "description": "Cứ 1% máu đã mất, sát thương chí mạng tăng 0.5%."
+      }
+    ],
+    "image": "assets/images/souls/tomb_guard.png"
+  },
+  {
+    "id": "pearl",
+    "name_vi": "Ngọc Trai",
+    "name_en": "Pearl",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 30% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi hồi máu, tạo khiên không thể gỡ hấp thụ lượng sát thương bằng 30% lượng hồi, kéo dài 2 lượt."
+      }
+    ],
+    "image": "assets/images/souls/pearl.png"
+  },
+  {
+    "id": "dice_sprite",
+    "name_vi": "Xúc Xắc",
+    "name_en": "Dice Sprite",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% kháng hiệu ứng (RES)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi kháng được hiệu ứng, phản đòn nguồn gây. Sát thương phản đòn tăng 50%. Tăng 25% thanh hành động khi bị gây hiệu ứng khống chế."
+      }
+    ],
+    "image": "assets/images/souls/dice_sprite.png"
+  },
+  {
+    "id": "sea_sprite",
+    "name_vi": "Bạng Tinh",
+    "name_en": "Sea Sprite",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% chính xác (HIT)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi bắt đầu trận, cấp cho toàn đội khiên hấp thụ lượng sát thương bằng 10% máu tối đa của người trang bị."
+      }
+    ],
+    "image": "assets/images/souls/sea_sprite.png"
+  },
+  {
+    "id": "temptress",
+    "name_vi": "Mị Yêu",
+    "name_en": "Temptress",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 30% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây sát thương, có 25% tỉ lệ cơ bản gây Rối Loạn mục tiêu trong 1 lượt."
+      }
+    ],
+    "image": "assets/images/souls/temptress.png"
+  },
+  {
+    "id": "seductress",
+    "name_vi": "Châm Nữ",
+    "name_en": "Seductress",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% tỉ lệ chí mạng (Crit)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây đòn chí mạng, có 40% tỉ lệ gây thêm sát thương bằng 10% máu tối đa của mục tiêu. Không vượt quá 120% công của người trang bị."
+      }
+    ],
+    "image": "assets/images/souls/seductress.png"
+  },
+  {
+    "id": "senecio",
+    "name_vi": "Quỷ Hồn",
+    "name_en": "Senecio",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% kháng hiệu ứng (RES)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi nhận sát thương, có 25% tỉ lệ cơ bản gây Choáng kẻ tấn công trong 1 lượt. Tỉ lệ giảm 60% với mục tiêu đang bị khiêu khích. Nếu người trang bị bị đánh nhiều đòn, chỉ kích hoạt 1 lần."
+      }
+    ],
+    "image": "assets/images/souls/senecio.png"
+  },
+  {
+    "id": "kyoukotsu",
+    "name_vi": "Cuồng Cốt",
+    "name_en": "Kyoukotsu",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây sát thương bằng kỹ năng, sát thương tăng thêm 8% cho mỗi Hoả đang có."
+      }
+    ],
+    "image": "assets/images/souls/kyoukotsu.png"
+  },
+  {
+    "id": "yamabiko",
+    "name_vi": "",
+    "name_en": "Yamabiko",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% kháng hiệu ứng (RES)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi kháng thành công hiệu ứng khống chế, có 50% tỉ lệ phản hiệu ứng đó lên nguồn gây và chắc chắn gây lại hiệu ứng đã kháng."
+      }
+    ],
+    "image": "assets/images/souls/yamabiko.png"
+  },
+  {
+    "id": "kataha_no_ashi",
+    "name_vi": "Phiến Diệp Chi Vĩ",
+    "name_en": "Kataha no Ashi",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% tỉ lệ chí mạng (Crit)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi máu đầy, sát thương gây ra tăng 45%."
+      }
+    ],
+    "image": "assets/images/souls/kataha_no_ashi.png"
+  },
+  {
+    "id": "chirizuka",
+    "name_vi": "Trần Trùng",
+    "name_en": "Chirizuka",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi hành động, sát thương gây ra tăng 25%. Cứ 1 đồng đội (không tính vật triệu hồi) nhiều hơn địch, sát thương tăng thêm 4% (tối đa 45%)."
+      }
+    ],
+    "image": "assets/images/souls/chirizuka.png"
+  },
+  {
+    "id": "abura_akago",
+    "name_vi": "Du Xích Tử",
+    "name_en": "Abura Akago",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% chính xác (HIT)."
+      },
+      {
+        "pieces": 4,
+        "description": "Hiệu quả duy nhất. Khi bắt đầu trận, nhận 2 tầng Linh Khí. Mỗi tầng Linh Khí tăng 8% thủ cho toàn đội. Nếu đồng đội không đủ Hoả để dùng kỹ năng đặc biệt, có thể tiêu hao số tầng Linh Khí tương ứng thay thế."
+      }
+    ],
+    "image": "assets/images/souls/abura_akago.png"
+  },
+  {
+    "id": "yonaki_ishi",
+    "name_vi": "Dạ Đề Thạch",
+    "name_en": "Yonaki Ishi",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi 1 đồng đội (không tính vật triệu hồi) bị hạ gục, nhận 30% công và thủ khởi điểm của họ (tối đa 5 tầng và không vượt quá 150% chỉ số khởi điểm của người trang bị)."
+      }
+    ],
+    "image": "assets/images/souls/yonaki_ishi.png"
+  },
+  {
+    "id": "yookuri_no_inu",
+    "name_vi": "Dạ Tống Khuyển",
+    "name_en": "Yookuri no Inu",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% kháng hiệu ứng (RES)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi người trang bị bị gây hiệu ứng khống chế lần đầu, nhận 1 tầng Bách Quỷ. Bách Quỷ tăng 80% kháng, tối đa 3 tầng. Đầu lượt, nếu người trang bị có thể hành động, gỡ bỏ Bách Quỷ."
+      }
+    ],
+    "image": "assets/images/souls/yookuri_no_inu.png"
+  },
+  {
+    "id": "amefuri_kozou",
+    "name_vi": "Vũ Giáng",
+    "name_en": "Amefuri Kozou",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 30% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi máu người trang bị xuống dưới 30% lần đầu, máu tối đa giảm còn 1 và nhận 3 tầng Lộ (sương). Khi nhận sát thương, tiêu hao 1 tầng Lộ và hấp thụ toàn bộ sát thương đó."
+      }
+    ],
+    "image": "assets/images/souls/amefuri_kozou.png"
+  },
+  {
+    "id": "enshyoujo",
+    "name_vi": "",
+    "name_en": "Enshyoujo",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% chính xác (HIT)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi gây debuff, bỏ qua 30% kháng của mục tiêu."
+      }
+    ],
+    "image": "assets/images/souls/hinoenma.png"
+  },
+  {
+    "id": "hyosube",
+    "name_vi": "Binh Bộ",
+    "name_en": "Hyosube",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Cuối lượt nhận 1 tầng Mũi Tên Xuyên Phá; mỗi tầng bỏ qua 75 thủ của mục tiêu khi tấn công. Tối đa 3 tầng."
+      }
+    ],
+    "image": "assets/images/souls/hyosube.png"
+  },
+  {
+    "id": "aonyobo",
+    "name_vi": "Thanh Nữ Phòng",
+    "name_en": "Aonyobo",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% tỉ lệ chí mạng (Crit)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi người trang bị nhận đòn chí tử lần đầu, mọi buff và debuff bị gỡ bỏ, máu hồi về 100% và bị Đóng Băng 1 lượt. Trong trạng thái Đóng Băng, thủ tăng 100% và miễn nhiễm debuff. Nếu sống sót qua trạng thái Đóng Băng, máu lại được hồi về 100% lần nữa. Chỉ kích hoạt 1 lần mỗi trận."
+      }
+    ],
+    "image": "assets/images/souls/aonyobo.png"
+  },
+  {
+    "id": "nuribotoke",
+    "name_vi": "Đồ Phật",
+    "name_en": "Nuribotoke",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Hiệu quả duy nhất. Cuối lượt của người trang bị, sau khi đánh thường hoặc không thể hành động, kháng và sát thương của toàn đội tăng 15%. Hiệu quả nhân đôi cho người trang bị. Kéo dài 2 lượt."
+      }
+    ],
+    "image": "assets/images/souls/nuribotoke.png"
+  },
+  {
+    "id": "wisp",
+    "name_vi": "",
+    "name_en": "Wisp",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% chính xác (HIT)."
+      },
+      {
+        "pieces": 4,
+        "description": "Đầu lượt nhận 1 tầng Tư Tưởng (tăng 15% kháng), tối đa 3 tầng. Khi dùng kỹ năng tiêu Hoả, tiêu hao tầng Tư Tưởng trước (cùng số lượng), trước khi tiêu Hoả."
+      }
+    ],
+    "image": "assets/images/souls/wisp.png"
+  },
+  {
+    "id": "merrow",
+    "name_vi": "Cộng Tiềm",
+    "name_en": "Merrow",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% kháng hiệu ứng (RES)."
+      },
+      {
+        "pieces": 4,
+        "description": "Cuối lượt, gỡ 1 debuff ngẫu nhiên trên người trang bị hoặc đồng đội. Nếu lượt đó không gây sát thương, gỡ thêm 2 debuff ngẫu nhiên nữa."
+      }
+    ],
+    "image": "assets/images/souls/merrow.png"
+  },
+  {
+    "id": "leviathan",
+    "name_vi": "Ác Lâu",
+    "name_en": "Leviathan",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi bắt đầu trận, nhận Leviathan Force (tăng 80% sát thương gây ra và 80% giảm sát thương). Trong 8 lượt hành động đầu của người trang bị, Leviathan Force tạm thời bị phong ấn."
+      }
+    ],
+    "image": "assets/images/souls/leviathan.png"
+  },
+  {
+    "id": "conch_blower",
+    "name_vi": "",
+    "name_en": "Conch Blower",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Đầu lượt tạo Khiên Ốc chặn được 1 đòn sát thương. Khi Khiên Ốc còn hiệu lực, sát thương người trang bị gây ra tăng 25%."
+      }
+    ],
+    "image": "assets/images/souls/conch_blower.png"
+  },
+  {
+    "id": "wispzoa",
+    "name_vi": "Hải Nguyệt",
+    "name_en": "Wispzoa",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% tỉ lệ chí mạng (Crit)."
+      },
+      {
+        "pieces": 4,
+        "description": "Khi đủ Hoả vào lượt của người trang bị, các kỹ năng tiêu Hoả sẽ tốn thêm 1 Hoả và sát thương gây ra tăng 40%."
+      }
+    ],
+    "image": "assets/images/souls/wispzoa.png"
+  },
+  {
+    "id": "oracle",
+    "name_vi": "",
+    "name_en": "Oracle",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Sau khi nhận sát thương, hồi 10% máu bằng lượng sát thương đã nhận. Nhận Vỏ Ốc (tối đa 1 tầng) khi bắt đầu trận và trước khi hành động. Khi sát thương nhận vào vượt 60% máu tối đa, sát thương giảm 60% và Vỏ Ốc bị gỡ."
+      }
+    ],
+    "image": "assets/images/souls/oracle.png"
+  },
+  {
+    "id": "tomb_robber",
+    "name_vi": "",
+    "name_en": "Tomb Robber",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 30% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Cuối lượt nhận 1 tầng Lửa Mộ. Khi đủ 4 tầng, tiêu hao tất cả để nhận 1 lượt mới. Chi phí Hoả của kỹ năng trong lượt mới giảm 1."
+      }
+    ],
+    "image": "assets/images/souls/hi_no_kuruma.png"
+  },
+  {
+    "id": "possesser",
+    "name_vi": "Ẩn Niệm",
+    "name_en": "Possesser",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% công (ATK)."
+      },
+      {
+        "pieces": 4,
+        "description": "Sát thương gây ra tăng 20%. Nếu đánh cùng mục tiêu, các đòn kế tiếp tăng sát thương lần lượt 40% và 60%. Vòng tăng sát thương lặp lại 20%, 40%, 60% cho các đòn tiếp theo."
+      }
+    ],
+    "image": "assets/images/souls/innen.png"
+  },
+  {
+    "id": "tapper",
+    "name_vi": "",
+    "name_en": "Tapper",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% máu tối đa (HP)."
+      },
+      {
+        "pieces": 4,
+        "description": "Hiệu quả duy nhất. Nếu chí mạng khởi điểm của người trang bị trên 120%, giảm 15% sát thương chí mạng nhận vào cho toàn đội (không tính vật triệu hồi)."
+      }
+    ],
+    "image": "assets/images/souls/tatamitataki.png"
+  },
+  {
+    "id": "echoer",
+    "name_vi": "",
+    "name_en": "Echoer",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% tỉ lệ chí mạng (Crit)."
+      },
+      {
+        "pieces": 4,
+        "description": "Người trang bị có 20% tỉ lệ Tiếp Ứng (hỗ trợ đánh theo)."
+      }
+    ],
+    "image": "assets/images/souls/ouseichuu.png"
+  },
+  {
+    "id": "bell_haunt",
+    "name_vi": "Nguyên Hưng Tự",
+    "name_en": "Bell Haunt",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% chính xác (HIT)."
+      },
+      {
+        "pieces": 4,
+        "description": "Hiệu quả duy nhất. Khi người trang bị gây hiệu ứng khống chế trong lượt của mình, mỗi mục tiêu trúng khiến toàn đội (không tính vật triệu hồi) tăng 5% sát thương gây ra, tối đa 40%, kéo dài 2 lượt. Nếu cùng 1 địch trúng nhiều lần trong cùng lượt, chỉ tính 1 lần."
+      }
+    ],
+    "image": "assets/images/souls/gagoze.png"
+  },
+  {
+    "id": "dangler",
+    "name_vi": "Câu Bình Hoả",
+    "name_en": "Dangler",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 15% kháng hiệu ứng (RES)."
+      },
+      {
+        "pieces": 4,
+        "description": "Cuối lượt, tăng 1 Hoả và hồi máu cho đồng đội (không tính vật triệu hồi) có máu thấp nhất bằng 700% thủ của người trang bị."
+      }
+    ],
+    "image": "assets/images/souls/tsurubebi.png"
+  },
+  {
+    "id": "mutoudori",
+    "name_vi": "",
+    "name_en": "Mutoudori",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 20% sát thương chí mạng (Crit DMG)."
+      },
+      {
+        "pieces": 4,
+        "description": "Cuối lượt, vĩnh viễn tăng 15% sát thương gây ra (tối đa 45%)."
+      }
+    ],
+    "image": "assets/images/souls/mutoudori.png"
+  },
+  {
+    "id": "houkaizu",
+    "name_vi": "",
+    "name_en": "Houkaizu",
+    "kind": "normal",
+    "effects": [
+      {
+        "pieces": 2,
+        "description": "Tăng 30% thủ (DEF)."
+      },
+      {
+        "pieces": 4,
+        "description": "Hiệu quả duy nhất. Khi đồng đội bị tấn công, cấp cho họ Bảo Hộ của Kaizu trong 1 lượt."
+      }
+    ],
+    "image": "assets/images/souls/houkaizu.png"
+  }
+]
