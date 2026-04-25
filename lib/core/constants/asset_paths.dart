@@ -17,4 +17,8 @@ class AssetPaths {
       'assets/images/shikigami/${rarity.toLowerCase()}/$id.webp';
   static String soulImage(String id) => 'assets/images/souls/$id.webp';
   static String effectImage(String id) => 'assets/images/effects/$id.webp';
+
+  /// Rarity badge PNG (SSR/SR/SP/R/N).
+  static String rarityIcon(String rarity) =>
+      'assets/images/rarity/${rarity.toLowerCase()}.png';
 }

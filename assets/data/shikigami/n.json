@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "id": "yuki_douji_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Yuki Douji Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 969,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 116,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 67,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Croak: Snow Chaser（呱·雪走/蛙・雪走）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4281.png"
+      },
+      {
+        "name": "Croak: December Snow (呱·胧月雪华斩/蛙・朧月雪連斬)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4282.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Yuki_Douji_Frog"
+  }
+]

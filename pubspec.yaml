@@ -42,6 +42,8 @@ flutter:
     - assets/images/shikigami/n/
     - assets/images/souls/
     - assets/images/effects/
+    - assets/images/rarity/
+    - assets/images/skills/
 
   fonts:
     - family: BeVietnamPro

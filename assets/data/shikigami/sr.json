@@ -3,7 +3,7 @@
     "id": "thoan_tan_co",
     "name_vi": "Thoan Tân Cơ",
     "name_jp": "Tagitsu-hime",
-    "name_en": "",
+    "name_en": "Tagitsuhime",
     "friendly_name": [],
     "rarity": "SR",
     "role": [
@@ -13,24 +13,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1088,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 94,
+        "tier": "D"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 71,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 99,
+        "tier": "C"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -71,7 +71,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5711.png"
       },
       {
         "name": "ÁM SA",
@@ -98,7 +98,7 @@
             "description": "Bắt đầu chiến đấu nhận 2 tầng Ám Sa"
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5712.png"
       },
       {
         "name": "MÃNH SA KHỞI LÃNG",
@@ -125,7 +125,7 @@
             "description": "Ám Sa đạt 5 tầng thì, kích hoạt chiêu sẽ xả hết số tầng, và buff thêm cho người được chọn 70% hành động."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5713.png",
         "cost": 3
       }
     ],
@@ -138,7 +138,7 @@
     "id": "dao_nhan_than",
     "name_vi": "Đạo Nhân Thần",
     "name_jp": "Nusubitogami",
-    "name_en": "",
+    "name_en": "Nusubitogami",
     "friendly_name": [],
     "rarity": "SR",
     "role": [
@@ -148,24 +148,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 971,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 105,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 72,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 110,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 5,
+        "tier": "B"
       },
       "crit_dmg": {
         "value": 150,
@@ -190,7 +190,7 @@
     "id": "tue_minh_dang",
     "name_vi": "Tuệ Minh Đăng",
     "name_jp": "Miakashi",
-    "name_en": "",
+    "name_en": "Miakashi",
     "friendly_name": [],
     "rarity": "SR",
     "role": [
@@ -200,24 +200,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1067,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 94,
+        "tier": "D"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 72,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 112,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 5,
+        "tier": "B"
       },
       "crit_dmg": {
         "value": 150,
@@ -258,7 +258,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5521.png"
       },
       {
         "name": "NGHIỆP HỒI",
@@ -269,7 +269,7 @@
             "description": "Chịu sát thương từ kẻ địch thì gắn trả kẻ đó 1 tầng Nghiệp Chướng . Trừ bản thân và vật triệu hồi, khi đồng minh nhận sát thương đơn thể, nếu chưa bị vô hiệu hóa động tác thì có 50% tỷ lệ (cố định) san sẻ 50% sát thương giùm người đó, đồng thời hồi máu cho bản thân và đồng đội có tỷ lệ máu thấp nhất (không tính vật triệu hồi) 6% máu tối đa của Tuệ Minh Đăng. Kỹ năng không thể nâng cấp!"
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5522.png"
       },
       {
         "name": "CHÍNH NIỆM",
@@ -296,7 +296,7 @@
             "description": "Triệu hồi Đèn Minh Thức thì xua tan 2 hiệu ứng xấu hoặc khống chế cho cả team mình."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5523.png"
       }
     ],
     "recommended_souls": [],
@@ -308,7 +308,7 @@
     "id": "nhap_noi_tuoc",
     "name_vi": "Nhập Nội Tước",
     "name_jp": "Nyuunai-Suzume",
-    "name_en": "",
+    "name_en": "Nyuunai-suzume",
     "friendly_name": [],
     "rarity": "SR",
     "role": [
@@ -318,24 +318,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 769,
+        "tier": "D"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 121,
+        "tier": "B"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 77,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 104,
+        "tier": "B"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 9,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -376,7 +376,7 @@
             "description": "Sát thương chuẩn = 90%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3651.png"
       },
       {
         "name": "PHỤ THÂN",
@@ -403,7 +403,7 @@
             "description": "Khi buff Phụ Thân biến mất, người bị mất buff sẽ được giải phóng toàn bộ khống chế nếu có và +100% hành động."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3652.png",
         "cost": 0
       },
       {
@@ -431,7 +431,7 @@
             "description": "Phe ta cứ có 1 đứa có Hủ Huyết thì Tước được giảm 10% sát thương nhận vào."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3653.png"
       }
     ],
     "recommended_souls": [],
@@ -845,5 +845,356 @@
     "lore": "",
     "image": "assets/images/shikigami/sr/hac_dong_tu.png",
     "source_url": "https://onmyojicltl.wordpress.com/2025/09/06/ky-nang-hac-dong-tu/"
+  },
+  {
+    "id": "amezaiku",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Amezaiku",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1227,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 108,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 75,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 103,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Hot Flame (融芯化火)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3681.png"
+      },
+      {
+        "name": "Bittersweet (苦中作甜)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3682.png"
+      },
+      {
+        "name": "Candy Mastery (一物一心)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3683.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Amezaiku"
+  },
+  {
+    "id": "kawazaru",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kawazaru",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1035,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 121,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 113,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 9,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Scattered Paper (花紙散)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3711.png"
+      },
+      {
+        "name": "Monkey Business (猿形華露)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3712.png"
+      },
+      {
+        "name": "Shapeshifting Mastery (変幻自在)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3713a.png"
+      },
+      {
+        "name": "Stop Chasing Me! (私を追いかけないで)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3713c.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kawazaru"
+  },
+  {
+    "id": "garuda",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Garuda",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 896,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 130,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 63,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 102,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 9,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Transformation Scythe (化生戟)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3781.png"
+      },
+      {
+        "name": "Heavenly Wings (天衣妙翅)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3782.png"
+      },
+      {
+        "name": "Burning Feathers (龍息燼羽)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3783.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Garuda"
+  },
+  {
+    "id": "oshiroi_baba",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Oshiroi Baba",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1067,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 107,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 66,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 111,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "White Rouge (頬の色・雪)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3841.png"
+      },
+      {
+        "name": "Colorful Mascara (眸の色・嫣)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3842.png"
+      },
+      {
+        "name": "Red Lipstick (唇の色・赤)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3843.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Oshiroi_Baba"
+  },
+  {
+    "id": "amanozako",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Amanozako",
+    "friendly_name": [],
+    "rarity": "SR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1184,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 79,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 74,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 108,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 3,
+        "tier": "C"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "One with Fear (惧中人)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3981.png"
+      },
+      {
+        "name": "Shadowdread (惧影随)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3982.png"
+      },
+      {
+        "name": "Dread Blade Wind (惧刃之风/惧刃の風)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3983a.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Amanozako"
   }
 ]

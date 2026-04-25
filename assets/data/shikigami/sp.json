@@ -3,7 +3,7 @@
     "id": "thuc_nguyet_hap_huyet_co",
     "name_vi": "Thực Nguyệt Hấp Huyết Cơ",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Shokugetsu Kyuuketsu Hime",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -13,24 +13,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1024,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 152,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 75,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -71,7 +71,7 @@
             "description": "Sát thương = 100%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5991.png"
       },
       {
         "name": "MỊ TỨC",
@@ -98,7 +98,7 @@
             "description": "Giảm 1 mana khi xài kỹ năng này."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5992.png",
         "cost": 2
       },
       {
@@ -126,7 +126,7 @@
             "description": "Kẻ địch tử vong thì gọi Phi Duyên Ma ra chiếm cứ vị trí của chúng (hiệu quả duy nhất)."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5993.png",
         "cost": 3
       }
     ],
@@ -139,7 +139,7 @@
     "id": "chuoc_hoa_dao_hoa_yeu",
     "name_vi": "Chước Hoa Đào Hoa Yêu",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Shakubana Momo no Sei",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -149,24 +149,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1174,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 102,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 83,
+        "tier": "S"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 110,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -207,7 +207,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5981.png"
       },
       {
         "name": "HUỀ PHƯƠNG Ý",
@@ -234,7 +234,7 @@
             "description": "Tiên cơ: vào trận lập tức buff Tân Nhụy cho đồng minh có máu thấp nhất"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5982.png",
         "cost": 2
       },
       {
@@ -262,7 +262,7 @@
             "description": "Sau khi kẻ địch kết thúc hành động, nếu có mục tiêu phe ta bị hạ gục thì kích hoạt kỹ năng này miễn phí (lập tức hồi sinh người chết) (kích hoạt tối đa 3 lần trước trong 1 lần chiến đấu)"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5983.png",
         "cost": 3
       }
     ],
@@ -575,7 +575,7 @@
     "id": "dieu_chu_cuu_menh_mieu",
     "name_vi": "Diệu Chủ Cửu Mệnh Miêu",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Myoushu Kyuumei Neko",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -585,24 +585,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1035,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 142,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -613,7 +613,7 @@
         "tier": ""
       },
       "resist": {
-        "value": 0,
+        "value": 75,
         "tier": ""
       }
     },
@@ -643,7 +643,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5901.png"
       },
       {
         "name": "QUỐC VƯƠNG GIÁ ĐÁO",
@@ -670,7 +670,7 @@
             "description": "Tiên cơ: Bật kỹ năng này ngay khi bắt đầu chiến đấu."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5902a.png",
         "cost": 1
       },
       {
@@ -698,7 +698,7 @@
             "description": "Dính sát thương kết liễu lần nữa mà có ít nhất 3 con Âm Dương Sư Mèo đang hộ giá thì lại nhận được cơ chế Báo Thù , sau khi quyết toán xong thì mất sạch tất cả các con Âm Dương Sư Mèo ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5903.png",
         "cost": 3
       }
     ],
@@ -711,7 +711,7 @@
     "id": "van_gian_bat_kien_nhac",
     "name_vi": "Vân Gian Bất Kiến Nhạc",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Unjou Fukengaku",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -721,24 +721,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 960,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 114,
+        "tier": "B"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 101,
+        "tier": "SS"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -779,7 +779,7 @@
             "description": "Sát thương = 480%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5861.png"
       },
       {
         "name": "VIÊM NHAI",
@@ -806,7 +806,7 @@
             "description": "Tiên cơ: Vào trận lập tức bật chiêu này"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5862.png",
         "cost": 3
       },
       {
@@ -834,7 +834,7 @@
             "description": "Hồi máu thì buff công (atk) cho đơn vị đó = 160% thủ ban đầu của Bất Kiến Nhạc trong 2 lượt (tối đa không vượt quá 25% atk ban đầu của mục tiêu)."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5863a.png",
         "cost": 2
       }
     ],
@@ -847,7 +847,7 @@
     "id": "thoi_dieu_lang_da_xoa_co",
     "name_vi": "Thời Diệu Lang Dạ Xoa Cơ",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Jiyou Takiyasha Hime",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -857,24 +857,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1067,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 166,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 74,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 116,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -915,7 +915,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5841.png"
       },
       {
         "name": "DIỆU THỜI CHI LỮ",
@@ -942,7 +942,7 @@
             "description": "Bắt đầu chiến đấu nhận 3 tầng Hồi Tố ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5842.png",
         "cost": 0
       },
       {
@@ -970,7 +970,7 @@
             "description": "Xài chiêu khi ở trong Kẽ Hở Thời Gian thì trừ bản thân Lang, mọi mục tiêu khác rơi vào Khoảnh Khắc Tĩnh Mịch"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5843.png",
         "cost": 3
       }
     ],
@@ -983,7 +983,7 @@
     "id": "dao_am_khan_na_la",
     "name_vi": "Dao Âm Khẩn Na La",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Youon Kinnara",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -993,27 +993,27 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1046,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 156,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 71,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 11,
+        "tier": "S"
       },
       "crit_dmg": {
-        "value": 150,
+        "value": 160,
         "tier": ""
       },
       "accuracy": {
@@ -1051,7 +1051,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5791.png"
       },
       {
         "name": "DỮ THẾ ĐỒNG TẤU",
@@ -1078,7 +1078,7 @@
             "description": "Sau mỗi lần Huyền Tượng tấn công, sẽ tăng 12% hệ số sát thương cho kỹ năng THẾ GIAN CHI KHÚC (tối đa 24%, qua màn (stage) không biến mất)."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5792.png"
       },
       {
         "name": "THẾ GIAN CHI KHÚC",
@@ -1105,7 +1105,7 @@
             "description": "Tấn công quái thì, trong 1 lần tấn công của Khẩn và Huyền Tượng , hệ số sát thương sẽ tăng dần đều 23%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5793.png",
         "cost": 3
       }
     ],
@@ -1118,7 +1118,7 @@
     "id": "tinh_tu_nhat_hoa_phuong",
     "name_vi": "Tình Tư Nhật Hòa Phường",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Seishi Hiyoribou",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -1128,24 +1128,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1067,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 140,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 114,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -1186,7 +1186,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5801.png"
       },
       {
         "name": "TRỪNG KHÔNG THẢI HỒNG",
@@ -1213,7 +1213,7 @@
             "description": "Khi Nắng hứng chịu sát thương, lượng Năng Lượng Cầu Vồng tiêu hao để ngăn chặn sát thương lên đến 90% atk ban đầu."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5802.png"
       },
       {
         "name": "TÌNH NHẬT HOA QUANG",
@@ -1240,7 +1240,7 @@
             "description": "Tiên cơ: Sử dụng kỹ năng này lên đồng đội có chỉ số atk ban đầu cao nhất"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5803.png",
         "cost": 2
       }
     ],
@@ -1253,7 +1253,7 @@
     "id": "than_nhuong_tinh_hung_dong_tu",
     "name_vi": "Thần Nhưỡng Tinh Hùng Đồng Tử",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Shinjou Hoshiguma Douji",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -1263,24 +1263,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1270,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 105,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 74,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 3,
+        "tier": "C"
       },
       "crit_dmg": {
         "value": 150,
@@ -1321,7 +1321,7 @@
             "description": "Sát thương = 120%. Có 40% tỷ lệ cơ bản gắn hiệu ứng Hỗn Loạn lên mục tiêu."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5781.png"
       },
       {
         "name": "TÂN CHỦ TẬN HOAN",
@@ -1348,7 +1348,7 @@
             "description": "Kích hoạt thì buff cả đội hiệu ứng Hào Đảm trong 2 lượt."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5782.png",
         "cost": 2
       },
       {
@@ -1376,7 +1376,7 @@
             "description": "Tiên cơ: Vào trận lập tức triển khai kỹ năng này!"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5783.png",
         "cost": 3
       }
     ],
@@ -1389,7 +1389,7 @@
     "id": "tam_huu_khuyen_than",
     "name_vi": "Tâm Hữu Khuyển Thần",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Shinyuu Inugami",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -1399,24 +1399,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1078,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 147,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 62,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 110,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -1427,7 +1427,7 @@
         "tier": ""
       },
       "resist": {
-        "value": 0,
+        "value": 30,
         "tier": ""
       }
     },
@@ -1473,7 +1473,7 @@
             "description": "Sát thương = 80%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5741a.png"
       },
       {
         "name": "TÀN TÂM – TƯỚC THỦ",
@@ -1500,7 +1500,7 @@
             "description": "Âm Dương Sư gây sát thương lên mục tiêu có Tước Ấn thì Khuyển Thần SP dùng đòn đánh thường trợ chiến."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5742.png"
       },
       {
         "name": "LÃNG KHÁCH QUY ĐAO",
@@ -1527,7 +1527,7 @@
             "description": "Tiên cơ: Vào trận lập tức mở kỹ năng LÃNG KHÁCH QUY ĐAO"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5743a.png",
         "cost": 3
       }
     ],
@@ -1540,7 +1540,7 @@
     "id": "dao_niem_yen_yen_la",
     "name_vi": "Dao Niệm Yên Yên La",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Younen Enenra",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -1551,24 +1551,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1142,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 114,
+        "tier": "B"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 77,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 114,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -1609,7 +1609,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5721.png"
       },
       {
         "name": "NHƯ ẢNH",
@@ -1636,7 +1636,7 @@
             "description": "Tiên cơ: Đi vào Sương Khói Vô Hình ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5722.png",
         "cost": 0
       },
       {
@@ -1664,7 +1664,7 @@
             "description": "Phát đánh cuối bỏ qua hiệu ứng ngự hồn và bị động."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5723.png",
         "cost": 3
       }
     ],
@@ -1677,7 +1677,7 @@
     "id": "long_ngam_linh_loc_ngu_tien",
     "name_vi": "Long Ngâm Linh Lộc Ngự Tiền",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Ryougin Suzuka Gozen",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -1687,27 +1687,27 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1270,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 155,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 82,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 117,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
-        "value": 150,
+        "value": 180,
         "tier": ""
       },
       "accuracy": {
@@ -1745,7 +1745,7 @@
             "description": "Sát thương = 120%. Kẻ địch bất kỳ có khiên thì Linh Lộc Ngự Tiền được giảm 50% sát thương gánh chịu."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5681.png"
       },
       {
         "name": "LỘC HỒN – CỘNG BỘC",
@@ -1772,7 +1772,7 @@
             "description": "Tiên cơ: Vào trận lập tức nhận Lộc Hồn ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5682.png"
       },
       {
         "name": "LỘC HỒN – VIỄN CHINH",
@@ -1799,7 +1799,7 @@
             "description": "Nếu xài chiêu khi có Lộc Hồn , chỉ số bạo thương (crit-dmg) của Linh Lộc Ngự Tiền được +100%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5683.png",
         "cost": 3
       }
     ],
@@ -1812,7 +1812,7 @@
     "id": "than_huy_hue_bi_tho",
     "name_vi": "Thần Huy Huệ Bỉ Thọ",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Gyoujitsu Ebisu",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -1822,24 +1822,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1216,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 76,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -1880,7 +1880,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5661.png"
       },
       {
         "name": "HỒNG PHÚC GIÁNG LÂM",
@@ -1907,7 +1907,7 @@
             "description": "Bắt đầu chiến đấu lần đầu tiên hứng chịu sát thương thì sẽ tiến hành Đả Độn ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5662.png"
       },
       {
         "name": "ỦY DĨ TRỌNG NHIỆM",
@@ -1934,7 +1934,7 @@
             "description": "Tỷ lệ di chuyển ngự hồn = 100%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5663.png",
         "cost": 2
       }
     ],
@@ -1947,7 +1947,7 @@
     "id": "kinh_tich_thien_co",
     "name_vi": "Kình Tịch Thiên Cơ",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Eikyo Senhime",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -1957,24 +1957,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1163,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 147,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 66,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 114,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -2015,7 +2015,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5621.png"
       },
       {
         "name": "GIAO NHÂN CA",
@@ -2042,7 +2042,7 @@
             "description": "Mục tiêu có chúc phúc Tịch Lưu máu <80% thì lập tức tiến vào trạng thái Băng Miên ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5622.png"
       },
       {
         "name": "KÌNH TỨC HỒI MỘNG",
@@ -2069,7 +2069,7 @@
             "description": "Tiên cơ: Vào trận bật huyễn cảnh."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5623.png"
       }
     ],
     "recommended_souls": [],
@@ -2081,7 +2081,7 @@
     "id": "phuc_duyet_toa_phu_dong_tu",
     "name_vi": "Phúc Duyệt Tọa Phu Đồng Tử",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Shoufuku Zashiki Warashi",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -2091,24 +2091,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1174,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 105,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 80,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 126,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -2149,7 +2149,7 @@
             "description": "Sát thương = 125%. Nhận 2 tầng May Mắn ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5651.png"
       },
       {
         "name": "PHÚC VẬN TÍCH TỒN",
@@ -2176,7 +2176,7 @@
             "description": "Tích đủ 75 tầng May Mắn kích ĐỒNG THÚ NỮU ĐẢN chắc chắn sẽ nhận Đạt Ma May Mắn (hiệu ứng biến hình đó)."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5652.png"
       },
       {
         "name": "HỒN HỎA TRỪ ÁCH",
@@ -2203,7 +2203,7 @@
             "description": "Kích hoạt thêm ĐỒNG THÚ NỮU ĐẢN thì nhận 3 mana."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5652b.png"
       }
     ],
     "recommended_souls": [],
@@ -2215,7 +2215,7 @@
     "id": "ban_chan_tam_vi_ho",
     "name_vi": "Bản Chân Tam Vĩ Hồ",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Honshin Sanbi no Kitsune",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -2225,24 +2225,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 907,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 159,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -2283,7 +2283,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5591.png"
       },
       {
         "name": "LINH HỢP",
@@ -2310,7 +2310,7 @@
             "description": "Tiên cơ: Vào trận lập tức nhận Khiên Linh Hồ và 3 tầng Tâm Diễm ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5592a.png"
       },
       {
         "name": "HỒ HOẶC MỊ ẢNH",
@@ -2337,7 +2337,7 @@
             "description": "Dùng kỹ năng trực tiếp kích nổ Hồ Ấn của mục tiêu được chọn (không cần chờ đến đầu lượt kẻ địch mới nổ)."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5593.png",
         "cost": 3
       }
     ],
@@ -2350,7 +2350,7 @@
     "id": "mieu_niem_huynh_thao",
     "name_vi": "Miểu Niệm Huỳnh Thảo",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Byounen Hotarugusa",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -2361,27 +2361,27 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1103,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 149,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 114,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
-        "value": 150,
+        "value": 160,
         "tier": ""
       },
       "accuracy": {
@@ -2419,7 +2419,7 @@
             "description": "Sát thương = 120% tiêu hao Năng Lượng Bồ Công Anh = 200%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5551.png"
       },
       {
         "name": "MIỂU MIỂU NHẤT LỮ",
@@ -2446,7 +2446,7 @@
             "description": "Tiên cơ: Buff 2 Hạt Giống cho cả đội (trừ vật triệu hồi)."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5552.png"
       },
       {
         "name": "HUỲNH QUANG LẠC THẾ",
@@ -2473,7 +2473,7 @@
             "description": "Sau mỗi lần sử dụng kỹ năng, lượng tiêu hao Năng Lượng Bồ Công Anh của kỹ năng này +120%, tối đa +360%. Nếu Thảo nhận sát thương gián tiếp, lượng tiêu hao Năng Lượng Bồ Công Anh của kỹ năng này +120%. Một lần tấn công chỉ kích hoạt 1 lần."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5553.png",
         "cost": 2
       }
     ],
@@ -2486,7 +2486,7 @@
     "id": "phuong_nguyen_duyen_ket_than",
     "name_vi": "Phưởng Nguyện Duyên Kết Thần",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Negai Tsumugi Enmusubi no Kami",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -2496,24 +2496,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1270,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 105,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 74,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -2554,7 +2554,7 @@
             "description": "Sát thương = 125% và nhận 1 tầng Thần Lực ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5541.png"
       },
       {
         "name": "THỦ DUYÊN NHẬN",
@@ -2565,7 +2565,7 @@
             "description": "Chọn 1 đồng minh khác bản thân để thi triển chiêu thức Duyên Đỏ hoặc Duyên Xanh , bản thân nhận 2 tầng Thần Lực . Lặp lại kỹ năng thì, xóa bỏ buff D uyên Xanh/Đỏ và xua tan tất cả các hiệu ứng xấu cho người đó. Bản thân Duyên SP và người đang có Duyên Xanh (hoặc Duyên Đỏ ) khi hết lượt đều được +30% hành động (trước khi bắt đầu lượt tiếp theo của kẻ địch tối đa kích hoạt 1 lần). Trên sân chỉ tồn tại tối đa 1 người mang buff Duyên Xanh/Đỏ. Kỹ năng không thể nâng cấp! 【DUYÊN ĐỎ】 (1 🔥): Buff Duyên Đỏ cho mục tiêu, người này chắc chắn sẽ nhận Trần Duyên Đỏ khi được thi triển [DỮ THẾ KẾT DUYÊN] 【DUYÊN XANH】 (1 🔥): Buff Duyên Xanh cho mục tiêu, người này chắc chắn sẽ nhận Trần Duyên Xanh khi được thi triển [DỮ THẾ KẾT DUYÊN]"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5542a.png",
         "cost": 1
       },
       {
@@ -2593,7 +2593,7 @@
             "description": "Nếu hồi máu crit thì, sẽ buff critdmg cho mục tiêu, số buff = 40% critdmg của bản thân, tối đa buff 110% critdmg trong 1 lượt."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5542c.png"
       }
     ],
     "recommended_souls": [],
@@ -2605,7 +2605,7 @@
     "id": "tam_sam_tieu_loc_nam",
     "name_vi": "Tầm Sâm Tiểu Lộc Nam",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Jinshin Shishio",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -2616,24 +2616,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1099,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 127,
+        "tier": "A"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 73,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 120,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -2644,7 +2644,7 @@
         "tier": ""
       },
       "resist": {
-        "value": 0,
+        "value": 30,
         "tier": ""
       }
     },
@@ -2674,7 +2674,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5511.png"
       },
       {
         "name": "TẦM LỘC TÍCH",
@@ -2701,7 +2701,7 @@
             "description": "Nếu chưa có Sâm Chi Linh , hết lượt của kẻ địch (không tính vật triệu hồi), Lộc +10% hành động."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5512.png"
       },
       {
         "name": "SÂM CHI KHẾ",
@@ -2728,7 +2728,7 @@
             "description": "Có 3 tầng Sâm Chi Tâm , Trói Buộc chắc chắn trúng (không bị ảnh hưởng bởi kháng/chính xác nữa)."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5513.png"
       }
     ],
     "recommended_souls": [],
@@ -2740,7 +2740,7 @@
     "id": "tu_la_quy_dong_hoan",
     "name_vi": "Tu La Quỷ Đồng Hoàn",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Shura Kidoumaru",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -2750,24 +2750,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1078,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 144,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 114,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -2808,7 +2808,7 @@
             "description": "Sát thương = 62%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3961.png"
       },
       {
         "name": "CỐT TỎA ỦNG HỒN",
@@ -2835,7 +2835,7 @@
             "description": "Kích hoạt chiêu thì nhận 3 tầng Hồn Võng ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3962.png",
         "cost": 2
       },
       {
@@ -2863,7 +2863,7 @@
             "description": "Mỗi khi bị giảm 2 tầng Hồn Võng và bản thân chưa bị khống chế động tác thì tấn công AOE 2 lần mỗi lần gây 49% sát thương theo atk (sát thương này không kích ngự hồn của mục tiêu)."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3963.png",
         "cost": 3
       }
     ],
@@ -2876,7 +2876,7 @@
     "id": "luu_quang_truy_nguyet_than",
     "name_vi": "Lưu Quang Truy Nguyệt Thần",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Ryuukou Oitsukigami",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -2886,24 +2886,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1206,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 105,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 78,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 111,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 5,
+        "tier": "B"
       },
       "crit_dmg": {
         "value": 150,
@@ -2944,7 +2944,7 @@
             "description": "Sát thương = 125% và có 50% tỷ lệ đẩy lùi 1 vạch thanh đếm lửa của mục tiêu (cơ chế này không có tác dụng với quái)."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3951.png"
       },
       {
         "name": "Ỷ LA VŨ",
@@ -2971,7 +2971,7 @@
             "description": "Trước khi bắt đầu lượt của phe ta, nếu mana ít hơn 3, thì tiêu hủy 1 tầng Lưu Quang để +1 vạch thanh đếm hồi mana (Nếu Lưu Quang không đủ thì không kích hoạt)."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3952.png"
       },
       {
         "name": "PHI THẢI NGƯNG HUY",
@@ -2998,7 +2998,7 @@
             "description": "Nếu Tập Lạc Quang chưa bị tiêu hủy, khi nó hết thời gian duy trì sẽ +30% công và +30 tốc độ cho mục tiêu trong 2 lượt."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3953.png"
       }
     ],
     "recommended_souls": [],
@@ -3146,7 +3146,7 @@
     "id": "than_khai_hoang",
     "name_vi": "Thần Khải Hoang",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Shinkei Susabi",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -3156,24 +3156,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1227,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 174,
+        "tier": "SS"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 74,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 116,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -3214,7 +3214,7 @@
             "description": "Đánh thường khi có huyễn cảnh sẽ +1 lần số lần kích hoạt của huyễn cảnh, số lần kích hoạt tối đa không vượt quá 6."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3901.png"
       },
       {
         "name": "TINH LA VÂN BỐ",
@@ -3241,7 +3241,7 @@
             "description": "Kích nổ sẽ không kích hoạt bị động của đối phương."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3902.png",
         "cost": 2
       },
       {
@@ -3269,7 +3269,7 @@
             "description": "Sát thương từ đòn đánh kèm thêm bỏ qua hiệu ứng ngự hồn."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3903.png",
         "cost": 3
       }
     ],
@@ -3282,7 +3282,7 @@
     "id": "tam_thu_quy_nu_hong_diep",
     "name_vi": "Tâm Thú Quỷ Nữ Hồng Diệp",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Kokorogari Kijo Momiji",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -3292,24 +3292,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1056,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 149,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 63,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 114,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -3350,7 +3350,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3881a.png"
       },
       {
         "name": "KINH SƯƠNG",
@@ -3377,7 +3377,7 @@
             "description": "Mỗi tầng Diệp Tẫn giảm 10% atk và def, nếu Hồng Diệp bị tấn công thì mỗi tầng giảm thêm 20% crit."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3882.png"
       },
       {
         "name": "PHONG KHỞI CHI VŨ",
@@ -3404,7 +3404,7 @@
             "description": "Tiên cơ: Vào trận đấu lập tức kích hoạt kỹ năng này."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3883.png",
         "cost": 3
       }
     ],
@@ -3417,7 +3417,7 @@
     "id": "dai_da_ma_thien_diem_ma",
     "name_vi": "Đại Dạ Ma Thiên Diêm Ma",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Daiyamaten Enma",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -3427,24 +3427,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1199,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 102,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 81,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 123,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 3,
+        "tier": "C"
       },
       "crit_dmg": {
         "value": 150,
@@ -3485,7 +3485,7 @@
             "description": "Sát thương = 125% và có 60% tỷ lệ cơ sở gắn debuff Con Mắt Diêm Ma lên mục tiêu."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3851.png"
       },
       {
         "name": "LUÂN HỒI CHI BẠ",
@@ -3512,7 +3512,7 @@
             "description": "Hết lượt mục tiêu mà phe địch chưa có debuff Ác Linh Hình Kỳ thì có 60% tỷ lệ cơ sở gắn 1 tầng Con Mắt Diêm Ma lên mục tiêu."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3852.png"
       },
       {
         "name": "AN HỒN QUỶ VỰC",
@@ -3539,7 +3539,7 @@
             "description": "Nếu chưa gây biến hình, thì có 100% tỷ lệ cơ sở gắn thêm 1 tầng Con Mắt Diêm Ma lên mục tiêu được chọn."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3853.png",
         "cost": 3
       }
     ],
@@ -3552,7 +3552,7 @@
     "id": "than_doa_bat_ky_dai_xa",
     "name_vi": "Thần Đọa Bát Kỳ Đại Xà",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Kamiochi Orochi",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -3562,24 +3562,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1238,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 197,
+        "tier": "SS"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 74,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -3620,7 +3620,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3831.png"
       },
       {
         "name": "THẦN ĐỌA CHI LỰC",
@@ -3647,7 +3647,7 @@
             "description": "Tiên cơ: Mở chiêu này ngay lập tức."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3832a.png",
         "cost": 0
       },
       {
@@ -3675,7 +3675,7 @@
             "description": "Kích hoạt thì rút đi lượng atk được niêm phong của đồng minh (cái mà rút đi của đồng đội nạp vào kiếm), tổng số không vượt quá 100% atk ban đầu của bản thân."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3833a.png",
         "cost": 3
       }
     ],
@@ -3688,7 +3688,7 @@
     "id": "nhan_phien_huy_da_co",
     "name_vi": "Nhân Phiên Huy Dạ Cơ",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Inaba Kaguya Hime",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -3698,27 +3698,27 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1067,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 140,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 113,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
-        "value": 150,
+        "value": 165,
         "tier": ""
       },
       "accuracy": {
@@ -3756,7 +3756,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3721.png"
       },
       {
         "name": "NGUYỆT MÃN DẠ",
@@ -3783,7 +3783,7 @@
             "description": "Tiên cơ: Vào trận lập tức kích hoạt kỹ năng này."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3722.png",
         "cost": 2
       },
       {
@@ -3811,7 +3811,7 @@
             "description": "Nếu xài chiêu mà đã cung cấp được 24 điểm Ước Nguyện , thì triệu hồi thỏ Nhân Phiên để phát động kỹ năng NGUYỆT CHI TẨY LỄ ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3723a.png",
         "cost": 3
       }
     ],
@@ -3824,7 +3824,7 @@
     "id": "hoi_the_hoa_dieu_quyen",
     "name_vi": "Hội Thế Hoa Điểu Quyển",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Kaisei Kachou Fuugetsu",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -3834,24 +3834,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1355,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 66,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 112,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -3892,7 +3892,7 @@
             "description": "Sát thương = 125% và Điểu nhận khiên chặn khống chế trong 1 lượt."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3671.png"
       },
       {
         "name": "MẶC KHÍ THƯỜNG OANH",
@@ -3919,7 +3919,7 @@
             "description": "Khi Phù Sinh Họa Ảnh biến mất ngoài lượt của Điểu, cô nàng được +30% hành động."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3672.png",
         "cost": 0
       },
       {
@@ -3963,7 +3963,7 @@
             "description": "Nảy mục tiêu hồi máu = 4 lần."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3673a.png",
         "cost": 2
       }
     ],
@@ -3976,7 +3976,7 @@
     "id": "khong_tuong_dien_linh_khi",
     "name_vi": "Không Tướng Diện Linh Khí",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Kuusou Menreiki",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -3986,24 +3986,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 982,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 150,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 119,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 5,
+        "tier": "B"
       },
       "crit_dmg": {
         "value": 150,
@@ -4044,7 +4044,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3661.png"
       },
       {
         "name": "BIỂU LÝ CHI TƯỚNG",
@@ -4071,7 +4071,7 @@
             "description": "Kích hoạt chiêu thì lập tức nhận lượt hành động mới."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3662.png",
         "cost": 0
       },
       {
@@ -4099,7 +4099,7 @@
             "description": "Khi chồng debuff Một Khóe Mắt lặp lại trên cùng 1 mục tiêu, sẽ vô hiệu hóa bị động của kẻ đó cho đến hết lượt kế tiếp của Diện SP, và debuff khóa bị động này không thể bị xóa bỏ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3663a.png",
         "cost": 3
       }
     ],
@@ -4248,7 +4248,7 @@
     "id": "da_minh_bi_ngan_hoa",
     "name_vi": "Dạ Minh Bỉ Ngạn Hoa",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Yomei Higanbana",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -4258,24 +4258,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1014,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 159,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 60,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -4316,7 +4316,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3581.png"
       },
       {
         "name": "XÍCH SẮC ĐIÊU LINH",
@@ -4343,7 +4343,7 @@
             "description": "Tiên cơ: Vào trận lập tức dùng kỹ năng này!"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3582a.png",
         "cost": 0
       },
       {
@@ -4371,7 +4371,7 @@
             "description": "Dùng kỹ năng xong được +50 tốc độ trong 1 lượt."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3582c.png",
         "cost": 3
       }
     ],
@@ -4384,7 +4384,7 @@
     "id": "so_linh_son_phong",
     "name_vi": "Sơ Linh Sơn Phong",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Hatsurei Yamakaze",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -4394,24 +4394,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1067,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 156,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 66,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 116,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 12,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -4452,7 +4452,7 @@
             "description": "Sát thương = 50%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3571.png"
       },
       {
         "name": "LỆNH",
@@ -4479,7 +4479,7 @@
             "description": "Bắt đầu chiến đấu thì con cú +20 điểm nộ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3572.png"
       },
       {
         "name": "LAM",
@@ -4506,7 +4506,7 @@
             "description": "Sát thương = 75%"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3572b.png",
         "cost": 3
       }
     ],
@@ -4519,7 +4519,7 @@
     "id": "loc_minh_dai_nhac_hoan",
     "name_vi": "Lộc Minh Đại Nhạc Hoàn",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Rokumei Ootakemaru",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -4529,24 +4529,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1067,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 159,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 75,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -4587,7 +4587,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3551.png"
       },
       {
         "name": "MINH HẢI CHI CHỦ",
@@ -4614,7 +4614,7 @@
             "description": "Tiên cơ: Bật kỹ năng này ngay lúc vào trận."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3552.png",
         "cost": 0
       },
       {
@@ -4642,7 +4642,7 @@
             "description": "Gây sát thương sẽ xóa 1 trạng thái tốt (buff) của kẻ địch."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3553a.png",
         "cost": 4
       }
     ],
@@ -4655,7 +4655,7 @@
     "id": "dai_tieu_co_hoach_dieu",
     "name_vi": "Đãi Tiêu Cô Hoạch Điểu",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Matsuyoi Ubume",
     "friendly_name": [],
     "rarity": "SP",
     "role": [
@@ -4665,24 +4665,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 982,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 155,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 65,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 12,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -4723,7 +4723,7 @@
             "description": "Sát thương = 125%. Sau mỗi 3 lần đánh thường sát thương không bị giảm nữa."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3541.png"
       },
       {
         "name": "MẶC ẢNH",
@@ -4734,7 +4734,7 @@
             "description": "Bắt đầu lượt, nhận 2 tầng Vũ Thụ . Kỹ năng không thể nâng cấp!"
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3542.png"
       },
       {
         "name": "MẶC ẢNH KIẾM QUANG",
@@ -4761,7 +4761,7 @@
             "description": "Cứ tấn công lên mục tiêu mà bạo kích (crit) 1 lần thì +10% sát thương; Cứ kết liễu 1 mục tiêu thì +15% sát thương."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3543.png",
         "cost": 3
       }
     ],
@@ -6395,5 +6395,74 @@
     "lore": "",
     "image": "assets/images/shikigami/sp/thieu_vu_dai_thien_cau.png",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/18/ky-nang-thieu-vu-dai-thien-cau/"
+  },
+  {
+    "id": "mujin_yama_usagi",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Mujin Yama Usagi",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 982,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 144,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 71,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 116,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Ninja Kick! (忍兔飞踢！/忍兎飛踢!)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3771.png"
+      },
+      {
+        "name": "Ninja Formation! (梦心迷兔阵！/夢心迷兎降!)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3772a.png"
+      },
+      {
+        "name": "Ninja Scurrying Steps! (狩梦之乱舞！/狩夢の乱舞!)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3773.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Mujin_Yama_Usagi"
   }
 ]

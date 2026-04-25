@@ -154,7 +154,7 @@
     "id": "thi_gia_my",
     "name_vi": "Thị Gia Mỹ",
     "name_jp": "Shinigami",
-    "name_en": "",
+    "name_en": "Shinigami",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -164,24 +164,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 971,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 140,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 59,
+        "tier": "D"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -222,7 +222,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/6001.png"
       },
       {
         "name": "ÁI KIẾN XÁ LY",
@@ -249,7 +249,7 @@
             "description": "Tiên cơ: Nhận 2 tầng Hoa Bát ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/6002.png",
         "cost": 0
       },
       {
@@ -277,7 +277,7 @@
             "description": "Tấn công kẻ địch ở trong Mê Chướng Hư Vọng thì bỏ qua 100 điểm phòng ngự."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/6003.png",
         "cost": 3
       }
     ],
@@ -290,7 +290,7 @@
     "id": "cat_diep",
     "name_vi": "Cát Diệp",
     "name_jp": "Kuzunoha",
-    "name_en": "",
+    "name_en": "Kuzunoha",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -301,24 +301,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1088,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 175,
+        "tier": "SS"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 75,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 107,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 12,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -359,7 +359,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5971.png"
       },
       {
         "name": "ĐỘ LINH",
@@ -402,7 +402,7 @@
             "description": "Cứ Huyễn Hóa 1 thức thần thì +10% bạo thương (crit-dmg) cho Trạng Thái Đại Yêu ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5972a.png",
         "cost": 0
       },
       {
@@ -430,7 +430,7 @@
             "description": "Sát thương = 240%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5973b.png",
         "cost": 3
       }
     ],
@@ -578,7 +578,7 @@
     "id": "binh_tuong_mon",
     "name_vi": "Bình Tướng Môn",
     "name_jp": "Taira no Masakado",
-    "name_en": "",
+    "name_en": "Taira no Masakado",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -647,7 +647,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5921.png"
       },
       {
         "name": "THỜI KHÍCH LUÂN CHUYỂN",
@@ -674,7 +674,7 @@
             "description": "Ở Thế Tấn Công , mỗi lần cường hóa Bố Đô Ngự Hồn , hệ số sát thương AOE từ kỹ năng KIÊU DƯƠNG TRƯỜNG MINH +5%, tối đa +15%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5922.png",
         "cost": 1
       },
       {
@@ -702,7 +702,7 @@
             "description": "Sát thương AOE = 80%. Cứ có 1 thức thần phe địch bị kết liễu, Bình Tướng Môn được giảm 7% sát thương nhận vào, và hệ số sát thương chuẩn +5% (tối đa kích hoạt 5 lần)."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5923.png",
         "cost": 3
       }
     ],
@@ -715,7 +715,7 @@
     "id": "tuyet_ngu_tien",
     "name_vi": "Tuyết Ngự Tiền",
     "name_jp": "Yukigozen",
-    "name_en": "",
+    "name_en": "Yuki Gozen",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -725,27 +725,27 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1103,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 173,
+        "tier": "SS"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 86,
+        "tier": "S"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 107,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 13,
+        "tier": "S"
       },
       "crit_dmg": {
-        "value": 150,
+        "value": 160,
         "tier": ""
       },
       "accuracy": {
@@ -783,7 +783,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5911.png"
       },
       {
         "name": "LONG ĐẢM – TRÁN",
@@ -810,7 +810,7 @@
             "description": "Tiên cơ: Triệu hồi Long Đảm Lam Ly ngay khi vào trận."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5912.png",
         "cost": 0
       },
       {
@@ -838,7 +838,7 @@
             "description": "Nếu hạ gục được mục tiêu, thì chỉ định sang mục tiêu máu thấp nhất để tấn công tiếp."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5913.png",
         "cost": 3
       }
     ],
@@ -851,7 +851,7 @@
     "id": "hoang_cot_lau",
     "name_vi": "Hoang Cốt Lâu",
     "name_jp": "Gashadokuro",
-    "name_en": "",
+    "name_en": "Gashadokuro",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -862,24 +862,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1291,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 75,
+        "tier": "D"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 3,
+        "tier": "C"
       },
       "crit_dmg": {
         "value": 150,
@@ -920,7 +920,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5851.png"
       },
       {
         "name": "HOA VẪN LIỆT HỒN",
@@ -947,7 +947,7 @@
             "description": "Hết lượt của người có Huyết Sắc Chi Hoa thì HCL tiến vào Kẽ Hở Thời Gian (trước mỗi lượt của HCL tối đa kích hoạt 1 lần)"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5852.png",
         "cost": 2
       },
       {
@@ -975,7 +975,7 @@
             "description": "Thức thần phe địch tử vong thì, giá trị máu tối đa của HCL tăng thêm 35% giá trị máu ban đầu và khôi phục lượng máu tương đương."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5853.png",
         "cost": 2
       }
     ],
@@ -988,7 +988,7 @@
     "id": "himiko",
     "name_vi": "Ti Di Hô",
     "name_jp": "Himiko",
-    "name_en": "",
+    "name_en": "Himiko",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -998,24 +998,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1046,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 141,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -1056,7 +1056,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5831.png"
       },
       {
         "name": "TỐ HỒI THỜI KHÍCH",
@@ -1083,7 +1083,7 @@
             "description": "Tiên cơ: Khiến đồng đội có chỉ số tấn công (atk) ban đầu cao nhất nhận được 1 tầng Thời Huy ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5832.png",
         "cost": 2
       },
       {
@@ -1111,7 +1111,7 @@
             "description": "Sát thương bỏ qua hiệu ứng ngự hồn"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5833.png",
         "cost": 2
       }
     ],
@@ -1124,7 +1124,7 @@
     "id": "ca_luu_da",
     "name_vi": "Ca Lưu Đa",
     "name_jp": "Karuta",
-    "name_en": "",
+    "name_en": "Karuta",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -1134,24 +1134,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 854,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 142,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 59,
+        "tier": "D"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 9,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -1192,7 +1192,7 @@
             "description": "Sát thương = 125%, gắn 1 tầng Hoa Ức lên mục tiêu."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5811.png"
       },
       {
         "name": "TRƯ LỘC ĐIỆP",
@@ -1219,7 +1219,7 @@
             "description": "Tấn công kẻ có 6 tầng Hoa Ức thì bỏ qua 180 điểm phòng ngự"
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5812.png"
       },
       {
         "name": "NGŨ QUANG TRẢM",
@@ -1246,7 +1246,7 @@
             "description": "Hệ số sát thương lên mục tiêu được chọn = 350%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5813a.png",
         "cost": 3
       }
     ],
@@ -1259,7 +1259,7 @@
     "id": "quy_kim_duong",
     "name_vi": "Quỷ Kim Dương",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Kikinyou",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -1269,24 +1269,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1078,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 83,
+        "tier": "D"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 79,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 3,
+        "tier": "C"
       },
       "crit_dmg": {
         "value": 150,
@@ -1327,7 +1327,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5771.png"
       },
       {
         "name": "TÚ ẢNH ÁM ĐỘ",
@@ -1354,7 +1354,7 @@
             "description": "Tú Ảnh Trận đạt tối đa thì nhận 1 khiên chặn khống chế (có thể ngăn chặn toàn bộ hiệu ứng khống chế xả vào trong 1 lần)."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5772.png",
         "cost": 0
       },
       {
@@ -1382,7 +1382,7 @@
             "description": "Xài chiêu xong, đồng đội kế tiếp không phải Quỷ Kim Dương (không tính vật triệu hồi) được giảm 3 mana trong lượt (khi sử dụng kỹ năng)."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5773.png",
         "cost": 3
       }
     ],
@@ -1395,7 +1395,7 @@
     "id": "phong_duong_quan",
     "name_vi": "Phong Dương Quân",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Fuuyoukun",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -1405,24 +1405,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 907,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 135,
+        "tier": "A"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 59,
+        "tier": "D"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 106,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -1463,7 +1463,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5751a.png"
       },
       {
         "name": "LONG THAO BÁO LƯỢC",
@@ -1490,7 +1490,7 @@
             "description": "Trong lượt mà chuyển đổi hệ kỹ năng thì +100% hành động (mỗi hiệp đấu chỉ kích hoạt 1 lần)"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5751c.png",
         "cost": 0
       },
       {
@@ -1518,7 +1518,7 @@
             "description": "Mana thi triển kỹ năng -1"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5752.png",
         "cost": 1
       }
     ],
@@ -1531,7 +1531,7 @@
     "id": "long_giac",
     "name_vi": "Long Giác",
     "name_jp": "RyuKaku",
-    "name_en": "",
+    "name_en": "Ryukaku",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -1541,27 +1541,27 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1078,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 167,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 58,
+        "tier": "D"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
-        "value": 150,
+        "value": 160,
         "tier": ""
       },
       "accuracy": {
@@ -1599,7 +1599,7 @@
             "description": "Tấn công quái thì hệ số Long Tức Chi Lực = 100%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5731.png",
         "cost": 3
       }
     ],
@@ -1612,7 +1612,7 @@
     "id": "hoa_tan_than",
     "name_vi": "Họa Tân Thần",
     "name_jp": "Magatsuhi",
-    "name_en": "",
+    "name_en": "Magatsugami",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -1622,24 +1622,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1206,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 114,
+        "tier": "B"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 71,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 106,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -1680,7 +1680,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5701.png"
       },
       {
         "name": "ĐẢO NGÔN",
@@ -1707,7 +1707,7 @@
             "description": "Bất kỳ đồng minh nào (trừ vật triệu hồi) dính sát thương vượt ngưỡng 10% máu tối đa, thì lập tức kích hoạt chiêu này miễn phí lên người đó (Mỗi lần hành động giới hạn 1 lần – tức là nếu đối thủ gõ AOE hoặc multi thì chỉ có 1 đứa được buff khiên trong lượt hành động đó mà thôi)."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5702.png",
         "cost": 2
       },
       {
@@ -1735,7 +1735,7 @@
             "description": "Sau khi bị kẻ địch tấn công, lập tức kích hoạt Họa Chú miễn phí lên kẻ tấn công gây sát thương = 1 nửa hệ số kỹ năng (sát thương không kích ngự hồn và bị động kẻ địch, trước khi bắt đầu lượt chỉ kích hoạt 1 lần)."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5703.png",
         "cost": 3
       }
     ],
@@ -1748,7 +1748,7 @@
     "id": "mieu_xuyen",
     "name_vi": "Miêu Xuyên",
     "name_jp": "Nekogawa",
-    "name_en": "",
+    "name_en": "Nekogawa",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -1758,24 +1758,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 864,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 147,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 55,
+        "tier": "D"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -1816,7 +1816,7 @@
             "description": "Sát thương = 62%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5691.png"
       },
       {
         "name": "TUYỀN DŨNG",
@@ -1843,7 +1843,7 @@
             "description": "Tỷ lệ xua tan debuff = 100%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5692.png"
       },
       {
         "name": "TẨY GÂN PHẠT TỦY",
@@ -1870,7 +1870,7 @@
             "description": "Tiên cơ: Vào trận lập tức mở kỹ năng này."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5693.png"
       }
     ],
     "recommended_souls": [],
@@ -1882,7 +1882,7 @@
     "id": "ssr_lung_taki",
     "name_vi": "Lung",
     "name_jp": "Taki",
-    "name_en": "",
+    "name_en": "Taki",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -1893,24 +1893,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 982,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 91,
+        "tier": "D"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 83,
+        "tier": "S"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -1951,7 +1951,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5611.png"
       },
       {
         "name": "ĐÀO LUNG CHI HỮU",
@@ -1978,7 +1978,7 @@
             "description": "Với mỗi tầng Giới Bị , hệ số sát thương khi kích Hộ Thuyền +100%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5612.png"
       },
       {
         "name": "LUNG CHI QUYẾT ĐÃNG",
@@ -2005,7 +2005,7 @@
             "description": "Người mang buff Hộ Thuyền được -2 mana khi xài kỹ năng"
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5613.png"
       }
     ],
     "recommended_souls": [],
@@ -2017,7 +2017,7 @@
     "id": "ssr_thien_chieu",
     "name_vi": "Thiên Chiếu",
     "name_jp": "Amaterasu",
-    "name_en": "",
+    "name_en": "Amaterasu",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -2027,27 +2027,27 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1014,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 171,
+        "tier": "SS"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 94,
+        "tier": "S"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
-        "value": 150,
+        "value": 160,
         "tier": ""
       },
       "accuracy": {
@@ -2069,7 +2069,7 @@
     "id": "khong_tuoc_minh_vuong",
     "name_vi": "Khổng Tước Minh Vương",
     "name_jp": "Kujaku-Myoo",
-    "name_en": "",
+    "name_en": "Kujaku-Myouou",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -2080,24 +2080,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 939,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 155,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -2138,7 +2138,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5501a.png"
       },
       {
         "name": "VŨ HÓA",
@@ -2165,7 +2165,7 @@
             "description": "Ở trạng thái Xòe Đuôi thì cứ có 1% chính xác, sẽ +1% atk. Hết thời gian Xòe Đuôi thì lập tức nhận 1 tầng Lông Khổng Tước ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5502.png"
       },
       {
         "name": "MÊ LY CHI CẢNH",
@@ -2192,7 +2192,7 @@
             "description": "Tiên cơ: Mở kết giới."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5503a.png",
         "cost": 2
       }
     ],
@@ -2205,7 +2205,7 @@
     "id": "ngon_linh",
     "name_vi": "Ngôn Linh",
     "name_jp": "Kotodama",
-    "name_en": "",
+    "name_en": "Kotodama",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -2215,24 +2215,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 928,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 135,
+        "tier": "A"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 74,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 99,
+        "tier": "C"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 5,
+        "tier": "B"
       },
       "crit_dmg": {
         "value": 150,
@@ -2273,7 +2273,7 @@
             "description": "Sát thương = 125%, có 20% tỷ lệ cơ bản làm Câm Lặng mục tiêu 1 lượt."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3991.png"
       },
       {
         "name": "NGỮ TỘI",
@@ -2300,7 +2300,7 @@
             "description": "Sát thương Ngôn Hiện = 115%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3992.png"
       },
       {
         "name": "CHÂN NGÔN ẢO BÍ",
@@ -2327,7 +2327,7 @@
             "description": "Mỗi 1 điểm Nghĩa Hỏa tiêu hao, sẽ khiến sát thương kỹ năng (của kẻ địch) bị giảm đi 30%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3993a.png",
         "cost": 3
       }
     ],
@@ -2340,7 +2340,7 @@
     "id": "nguyet_doc",
     "name_vi": "Nguyệt Độc",
     "name_jp": "Tsukuyomi",
-    "name_en": "",
+    "name_en": "Tsukuyomi",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -2350,24 +2350,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1335,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 148,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 59,
+        "tier": "D"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -2408,7 +2408,7 @@
             "description": "Sát thương = 125%. Nếu Mặt Trăng Dối Trá tồn tại, thì khôi phục 10% máu cho nó."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3941.png"
       },
       {
         "name": "HƯ ĐÁN NGUYỆT LẠC",
@@ -2435,7 +2435,7 @@
             "description": "Hiệu quả duy nhất: Hết lượt kẻ địch (không tính vật triệu hồi), Nguyệt Độc +10% hành động, cho tới khi triệu hồi ra Mặt Trăng Dối Trá lần đầu tiên."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3942.png",
         "cost": 2
       },
       {
@@ -2463,7 +2463,7 @@
             "description": "Sát thương = 56%. Gắn 2 tầng Hoặc Tinh lên mục tiêu được chọn."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3943.png",
         "cost": 3
       }
     ],
@@ -2476,7 +2476,7 @@
     "id": "quy",
     "name_vi": "Quý",
     "name_jp": "Shiki",
-    "name_en": "",
+    "name_en": "Shiki",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -2486,24 +2486,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 939,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 156,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
         "value": 0,
-        "tier": ""
+        "tier": "D"
       },
       "crit_dmg": {
         "value": 150,
@@ -2544,7 +2544,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3921.png"
       },
       {
         "name": "HOA LẠC TỨ THỜI SINH",
@@ -2571,7 +2571,7 @@
             "description": "Tiên cơ: Kích hoạt Tứ Thời Nhất Ngung – Xuân."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3922a.png"
       },
       {
         "name": "DI THIÊN DIỆP LỆ",
@@ -2614,7 +2614,7 @@
             "description": "Nếu trên sân đã có Quý Linh , kích hoạt chiêu thức sẽ khiến Quý Linh lập tức tấn công kẻ có ấn 1 lần và không tiêu hao số lần tấn công."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3922c.png"
       }
     ],
     "recommended_souls": [],
@@ -2626,7 +2626,7 @@
     "id": "tam_huong_hanh",
     "name_vi": "Tầm Hương Hành",
     "name_jp": "Jinkougyou",
-    "name_en": "",
+    "name_en": "Jinkougyou",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -2636,24 +2636,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 790,
+        "tier": "D"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 152,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 60,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 107,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -2694,7 +2694,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3911.png"
       },
       {
         "name": "PHƯỢC MỘNG MINH HƯƠNG",
@@ -2721,7 +2721,7 @@
             "description": "Tiên Cơ: Bắt đầu chiến đấu thì lập tức kích hoạt kỹ năng này."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3912.png",
         "cost": 3
       },
       {
@@ -2749,7 +2749,7 @@
             "description": "Sát thương = 100%, và tính từ lúc bắt đầu chiến đấu để đối chiếu: Cứ với mỗi 1 mục tiêu địch giảm thiểu, sát thương +12%, tối đa +60%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3913.png",
         "cost": 3
       }
     ],
@@ -2762,7 +2762,7 @@
     "id": "susanoo",
     "name_vi": "Tu Tá Chi Nam",
     "name_jp": "Susanoo",
-    "name_en": "",
+    "name_en": "Susanoo",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -2772,24 +2772,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 992,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 184,
+        "tier": "SS"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 77,
+        "tier": "A"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 102,
+        "tier": "B"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -2830,7 +2830,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3891.png"
       },
       {
         "name": "THẦN CHI LÃNH VỰC",
@@ -2857,7 +2857,7 @@
             "description": "Nếu chưa có khiên Lôi Thuẫn thì sát thương và giới hạn tăng sát thương của kỹ năng THIÊN LÔI VẠN TƯỢNG +20%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3892a.png"
       },
       {
         "name": "THIÊN LÔI VẠN TƯỢNG",
@@ -2884,7 +2884,7 @@
             "description": "Sát thương mỗi đòn đánh = 80%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3893.png"
       }
     ],
     "recommended_souls": [],
@@ -2896,7 +2896,7 @@
     "id": "bat_kien_nhac",
     "name_vi": "Bất Kiến Nhạc",
     "name_jp": "Fukengaku",
-    "name_en": "",
+    "name_en": "Fukengaku",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -2907,27 +2907,27 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1067,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 108,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 83,
+        "tier": "S"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 105,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
-        "value": 150,
+        "value": 130,
         "tier": ""
       },
       "accuracy": {
@@ -2965,7 +2965,7 @@
             "description": "Sát thương = 125% và chọi xong sẽ +50% kháng cho BKN trong 2 lượt."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3791.png"
       },
       {
         "name": "CỔ SƠN CHI THẦN",
@@ -2992,7 +2992,7 @@
             "description": "Buff sát thương phi bạo kích (không in đậm) có thời gian duy trì trong 2 lượt."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3792.png",
         "cost": 0
       },
       {
@@ -3020,7 +3020,7 @@
             "description": "Tiên Cơ: Mở kỹ năng này."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3793.png",
         "cost": 3
       }
     ],
@@ -3033,7 +3033,7 @@
     "id": "linh_ngan_co",
     "name_vi": "Linh Ngạn Cơ (Suzuhiko Hime)/Linda",
     "name_jp": "",
-    "name_en": "",
+    "name_en": "Suzuhiko Hime",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -3043,24 +3043,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 771,
+        "tier": "D"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 140,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 104,
+        "tier": "B"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -3101,7 +3101,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3761.png"
       },
       {
         "name": "LINH DIỄM CHƯỚC TÂM",
@@ -3128,7 +3128,7 @@
             "description": "Vào trạng thái TÂM HỎA VĨNH MINH thì nhận 1 khiên = 120% atk, không thể xua tan, tồn tại trong 2 lượt."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3762a.png",
         "cost": 0
       },
       {
@@ -3156,7 +3156,7 @@
             "description": "Kỹ năng này đạt đủ 5 phát tấn công thì đòn đánh bỏ qua 30 điểm phòng ngự của kẻ địch, tích lũy tối đa 5 tầng."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3763.png",
         "cost": 0
       }
     ],
@@ -3169,7 +3169,7 @@
     "id": "thuc_linh",
     "name_vi": "Thực Linh",
     "name_jp": "Shokurei",
-    "name_en": "",
+    "name_en": "Shokurei",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -3179,24 +3179,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 960,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 131,
+        "tier": "A"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 61,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -3237,7 +3237,7 @@
             "description": "Sát thương = 125%. Đánh thường khi ở ngoài lượt sẽ gắn debuff Trọng Thương 20% trong 2 lượt."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3691.png"
       },
       {
         "name": "NHIỆT LÃNG",
@@ -3264,7 +3264,7 @@
             "description": "Người có chỉ số bạo thương (crit-dmg) đầu trận cao nhất phe ta khi hành động nếu chọn 1 mục tiêu địch đơn lẻ thì sẽ kéo Thực Linh hiệp chiến."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3692.png",
         "cost": 0
       },
       {
@@ -3292,7 +3292,7 @@
             "description": "Phe địch cứ có 1 mục tiêu sẽ +66% sát thương chuẩn tính theo atk của Thực Linh khi phát động cơ chế Thưởng Thức ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3693.png",
         "cost": 3
       }
     ],
@@ -3305,7 +3305,7 @@
     "id": "de_thich_thien",
     "name_vi": "Đế Thích Thiên",
     "name_jp": "Taishakuten",
-    "name_en": "",
+    "name_en": "Taishakuten",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -3315,24 +3315,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1323,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 135,
+        "tier": "A"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 101,
+        "tier": "B"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 9,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -3373,7 +3373,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3631.png"
       },
       {
         "name": "VÔ CẤU LIÊN HOA",
@@ -3400,7 +3400,7 @@
             "description": "Thời gian duy trì của Kim Liên = 2 lượt; Gắn ấn lên quái thì, sát thương phụ thêm sẽ +70% chỉ số atk của Đế Thích Thiên."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3632a.png"
       },
       {
         "name": "SÁT NA LIÊN HOA TRÁN PHÓNG",
@@ -3427,7 +3427,7 @@
             "description": "Khi ấn Kim Liên biến mất, gỡ bỏ hiệu ứng khống chế trên người Đế Thích Thiên, xả chiêu thức này miễn phí 1 lần đồng thời sát thương không kích ngự hồn lẫn bị động của đối thủ, tuy nhiên sát thương bị -40%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3633.png"
       }
     ],
     "recommended_souls": [],
@@ -3439,7 +3439,7 @@
     "id": "thien_co",
     "name_vi": "Thiên Cơ",
     "name_jp": "Sen Hime",
-    "name_en": "",
+    "name_en": "Senhime",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -3449,24 +3449,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1067,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 127,
+        "tier": "A"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 64,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 111,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -3507,7 +3507,7 @@
             "description": "Sát thương = 125%. Nếu Hải Nguyên Bối Kích tồn tại thì +1 tầng Triều Thanh ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3561.png"
       },
       {
         "name": "TỊCH MỘNG",
@@ -3534,7 +3534,7 @@
             "description": "Nếu kẻ mang dấu ấn Tịch Mộng hết hành động mà thanh lửa = 0, thì lập tức Đóng Băng Trầm Trọng nó trong 1 lượt."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3562.png",
         "cost": 2
       },
       {
@@ -3562,7 +3562,7 @@
             "description": "Triệu hồi Hải Nguyên Bối Kích thì lập tức +3 tầng Triều Thanh ."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3563a.png",
         "cost": 0
       }
     ],
@@ -4617,7 +4617,7 @@
     "id": "ngu_soan_tan",
     "name_vi": "Ngự Soạn Tân",
     "name_jp": "Miketsu",
-    "name_en": "",
+    "name_en": "Miketsu Frog",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -4628,24 +4628,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 960,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 114,
+        "tier": "B"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 95,
+        "tier": "C"
       },
       "crit_rate": {
         "value": 0,
-        "tier": ""
+        "tier": "D"
       },
       "crit_dmg": {
         "value": 150,
@@ -4686,7 +4686,7 @@
             "description": "Sát thương = 100%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/4301.png"
       },
       {
         "name": "HỒ THÚ GIỚI",
@@ -4697,7 +4697,7 @@
             "description": "Tạo kết giới trong 1 lượt, khiến tỷ lệ bắn NHẤT THỈ – PHONG MA lên đến 40%, và kích hoạt NHẤT THỈ – PHONG MA thì nhận 4 tầng Linh Phù , tối đa nhận 12 tầng. Tiên cơ: Vào trận lập tức mở kỹ năng này. Kỹ năng không thể nâng cấp! Chú ý: Nếu Ngự Soạn Tân bị Khiêu Khích, cô chỉ có thể bắn kẻ đang Khiêu Khích mình. Còn nếu cô bị trúng hiệu ứng Hoảng Loạn (từ ngự hồn Mị Yêu, Tinh Hùng…) thì có thể sẽ bắn Phong Ma vào đồng đội."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/4302.png",
         "cost": 3
       },
       {
@@ -4738,7 +4738,7 @@
     "id": "ngoc_tao_tien",
     "name_vi": "Ngọc Tảo Tiền",
     "name_jp": "Tamamo No Mae",
-    "name_en": "",
+    "name_en": "Tamamo no Mae Frog",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -4748,24 +4748,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 950,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 142,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 68,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 97,
+        "tier": "C"
       },
       "crit_rate": {
         "value": 0,
-        "tier": ""
+        "tier": "D"
       },
       "crit_dmg": {
         "value": 150,
@@ -4806,7 +4806,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/4291.png"
       },
       {
         "name": "HỒ HỎA",
@@ -4833,7 +4833,7 @@
             "description": "Sát thương = 389%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/4292.png",
         "cost": 3
       },
       {
@@ -5810,5 +5810,1289 @@
     "lore": "",
     "image": "assets/images/shikigami/ssr/dai_thien_cau.png",
     "source_url": "https://onmyojicltl.wordpress.com/2025/05/23/ky-nang-dai-thien-cau/"
+  },
+  {
+    "id": "tanjiro_kamado",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Tanjiro Kamado",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 875,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 133,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "First Form: Water Surface Slash (壱ノ型・水面斬り)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3591a.png"
+      },
+      {
+        "name": "Fifth Form: Blessed Rain After the Drought (伍ノ型・干天の慈雨)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3591c.png"
+      },
+      {
+        "name": "Third Form: Flowing Dance (参ノ型・流流舞い)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3592a.png"
+      },
+      {
+        "name": "Sixth Form: Whirlpool (陸ノ型・ねじれ渦)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3592c.png"
+      },
+      {
+        "name": "Ninth Form: Splashing Water Flow - Turbulent (玖ノ型・水流飛沫・乱)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3591a.png"
+      },
+      {
+        "name": "Tenth Form: Constant Flux (拾ノ型・生生流転)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3593a.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Tanjiro_Kamado"
+  },
+  {
+    "id": "nezuko_kamado",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Nezuko Kamado",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 132,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 108,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 9,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Kick (腿踢)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3601a.png"
+      },
+      {
+        "name": "Blood Demon Art: Exploding Blood (血鬼術・爆血)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3602.png"
+      },
+      {
+        "name": "Demon Form (鬼化)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3603.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Nezuko_Kamado"
+  },
+  {
+    "id": "asura",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Asura",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 939,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 183,
+        "tier": "SS"
+      },
+      "defense": {
+        "value": 67,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 109,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Annihilation Flames (紅蓮誅灰)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3641.png"
+      },
+      {
+        "name": "Mighty Crush (天魔威圧)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3642a.png"
+      },
+      {
+        "name": "Inferno Slaughter (煉獄虐殺)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3643.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Asura"
+  },
+  {
+    "id": "mishige",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Mishige",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 907,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 137,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 102,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gourmet Charge（尋味飛撲）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3701.png"
+      },
+      {
+        "name": "Ready to Feast (蓄食待發)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3702.png"
+      },
+      {
+        "name": "Appetite Stimulated (胃口大開)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3703a.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Mishige"
+  },
+  {
+    "id": "yato_no_kami",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Yato no Kami",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 939,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 131,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 103,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 9,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Crimson Child (赤子)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3731.png"
+      },
+      {
+        "name": "Invite of the Night (夜の邀約)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3732.png"
+      },
+      {
+        "name": "Seven-Night Ritual (七夜秘儀)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3733.png"
+      },
+      {
+        "name": "Sigil 2: Blight Soul (二の楔・涸魂)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3733b.png"
+      },
+      {
+        "name": "Sigil 4: Corrosion (四の禊・腐髄)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3733d.png"
+      },
+      {
+        "name": "Sigil 6: Harm Heart (六の禊・禍心)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3733f.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Yato_no_Kami"
+  },
+  {
+    "id": "zenitsu_agatsuma",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Zenitsu Agatsuma",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 886,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 146,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 56,
+        "tier": "D"
+      },
+      "speed": {
+        "value": 107,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "First Form: Thunderclap and Flash (壱ノ型・霹靂一閃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3861.png"
+      },
+      {
+        "name": "Sleeping Zenitsu (善逸昏睡)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3862.png"
+      },
+      {
+        "name": "First Form: Thunderclap and Flash Sixfold (壱ノ型・霹靂一閃・六連)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3863.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Zenitsu_Agatsuma"
+  },
+  {
+    "id": "inosuke_hashibira",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Inosuke Hashibira",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1014,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 118,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "First Fang: Pierce (壱ノ牙・穿ち抜き)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3871.png"
+      },
+      {
+        "name": "Seventh Form: Spatial Awareness (漆ノ型・空間識覚)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3872.png"
+      },
+      {
+        "name": "Fifth Fang: Crazy Cutting (伍ノ牙・狂い裂き)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3873.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Inosuke_Hashibira"
+  },
+  {
+    "id": "gintoki_sakata",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Gintoki Sakata",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 961,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 134,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 56,
+        "tier": "D"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Toyako Slash (洞爺湖斬撃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3971.png"
+      },
+      {
+        "name": "Sugar Content (糖分)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3972.png"
+      },
+      {
+        "name": "Silver Soul (銀ノ魂)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3973.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Gintoki_Sakata"
+  },
+  {
+    "id": "kagura_sadaharu",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kagura & Sadaharu",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 928,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 132,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 59,
+        "tier": "D"
+      },
+      "speed": {
+        "value": 107,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 9,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Let's go, Sadaharu! (行くネ、定春！)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5001.png"
+      },
+      {
+        "name": "Gotta Protect (守護必達)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5002.png"
+      },
+      {
+        "name": "Go All Out (全力以赴)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5003.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kagura_&_Sadaharu"
+  },
+  {
+    "id": "wenren_yixuan",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Wenren Yixuan",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 971,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 158,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 66,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Fire Punch (火拳)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5531a.png"
+      },
+      {
+        "name": "Bathed in Fire (火浣重重)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5532.png"
+      },
+      {
+        "name": "Thousand Flaming Punches (焰力千钧/灼力千釣)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5533a.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Wenren_Yixuan"
+  },
+  {
+    "id": "izanami",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Izanami",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1024,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 159,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 69,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 106,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 15,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 20,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Annihilation! (湮滅)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5571.png"
+      },
+      {
+        "name": "Divine Kiss (神赐之吻/神賜の吻)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5572.png"
+      },
+      {
+        "name": "Annihilation Dance (灭世之舞/滅世の舞)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5573.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Izanami"
+  },
+  {
+    "id": "hatsune_miku",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Hatsune Miku",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1216,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 91,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 66,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 106,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 9,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Start the Beat (音弦動)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5631.png"
+      },
+      {
+        "name": "Music On (音律起)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5632.png"
+      },
+      {
+        "name": "Iconic Dance Song (音の舞曲)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5633.png"
+      },
+      {
+        "name": "Iconic Dance Song: Chorus (音の舞曲・中幕)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5633b.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Hatsune_Miku"
+  },
+  {
+    "id": "kagamine_rin_len",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kagamine Rin & Len",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 2308,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 216,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 192,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Flying Notes (音符紛飛/踊る音符)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5641.png"
+      },
+      {
+        "name": "Bonded Duet (絆の二重奏)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5642.png"
+      },
+      {
+        "name": "Protective Moment (守護定格/止まる瞬間)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5643.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kagamine_Rin_&_Len"
+  },
+  {
+    "id": "shentu_ziye",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Shentu Ziye",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 971,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 154,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 66,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 108,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "(寒氷乍破)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5671.png"
+      },
+      {
+        "name": "(渊氷三尺)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5672.png"
+      },
+      {
+        "name": "(画水镂冰/画水鏤氷)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5673.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Shentu_Ziye"
+  },
+  {
+    "id": "natsume_nyanko_sensei",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Natsume & Nyanko-sensei",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 127,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 107,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Healing (疗愈)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5761.png"
+      },
+      {
+        "name": "Nyanko-sensei's Protection (猫老师的守护)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5762.png"
+      },
+      {
+        "name": "Healing Medicinal Herbs (疗愈的草药)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5763.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Natsume_&_Nyanko-sensei"
+  },
+  {
+    "id": "megurine_luka",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Megurine Luka",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1174,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 91,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 66,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 2,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Orchestra (管弦奏)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5821.png"
+      },
+      {
+        "name": "Echoing Chords (和音回响)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5822.png"
+      },
+      {
+        "name": "Rhythm Parade (律动巡游)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5823.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Megurine_Luka"
+  },
+  {
+    "id": "sakura_kinomoto",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Sakura Kinomoto",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 896,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 132,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gale (疾风)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5871a.png"
+      },
+      {
+        "name": "Mirage (幻影)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5872a.png"
+      },
+      {
+        "name": "Blaze (火焰/火焔)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5873a.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Sakura_Kinomoto"
+  },
+  {
+    "id": "syaoran_li",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Syaoran Li",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 854,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 140,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Element: Fire (火神招来)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5881a.png"
+      },
+      {
+        "name": "Magic Trace (魔力追踪)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5882a.png"
+      },
+      {
+        "name": "Element: Lightning (雷帝招来)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5883a.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Syaoran_Li"
   }
 ]

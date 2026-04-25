@@ -238,5 +238,143 @@
     "lore": "",
     "image": "assets/images/shikigami/r/tieu_do.png",
     "source_url": "https://onmyojicltl.wordpress.com/2025/12/10/ky-nang-tieu-do/"
+  },
+  {
+    "id": "akaname",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Akaname",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1014,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 107,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 70,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Tidy Up (汚れ)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3611.png"
+      },
+      {
+        "name": "Take a Bath (垢擦り)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3612.png"
+      },
+      {
+        "name": "All Gone (一網打尽)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3613.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Akaname"
+  },
+  {
+    "id": "kagewani",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kagewani",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 854,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 128,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 67,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 106,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Shadowstrike (影襲)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3751.png"
+      },
+      {
+        "name": "Shadowshell (影殻)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3752.png"
+      },
+      {
+        "name": "Overshadow (幕影蓋地)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3753.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kagewani"
   }
 ]
