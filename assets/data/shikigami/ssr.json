@@ -147,7 +147,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/tu_kim_than.png",
+    "image": "assets/images/shikigami/ssr/tu_kim_than.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2026/04/22/ky-nang-tu-kim-than/"
   },
   {
@@ -222,7 +222,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/6001.png"
+        "image": "assets/images/skills/6001.webp"
       },
       {
         "name": "ÁI KIẾN XÁ LY",
@@ -249,7 +249,7 @@
             "description": "Tiên cơ: Nhận 2 tầng Hoa Bát ."
           }
         ],
-        "image": "assets/images/skills/6002.png",
+        "image": "assets/images/skills/6002.webp",
         "cost": 0
       },
       {
@@ -277,13 +277,13 @@
             "description": "Tấn công kẻ địch ở trong Mê Chướng Hư Vọng thì bỏ qua 100 điểm phòng ngự."
           }
         ],
-        "image": "assets/images/skills/6003.png",
+        "image": "assets/images/skills/6003.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/thi_gia_my.png",
+    "image": "assets/images/shikigami/ssr/thi_gia_my.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2026/03/25/ky-nang-thi-gia-my/"
   },
   {
@@ -359,7 +359,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/5971.png"
+        "image": "assets/images/skills/5971.webp"
       },
       {
         "name": "ĐỘ LINH",
@@ -402,7 +402,7 @@
             "description": "Cứ Huyễn Hóa 1 thức thần thì +10% bạo thương (crit-dmg) cho Trạng Thái Đại Yêu ."
           }
         ],
-        "image": "assets/images/skills/5972a.png",
+        "image": "assets/images/skills/5972a.webp",
         "cost": 0
       },
       {
@@ -430,13 +430,13 @@
             "description": "Sát thương = 240%."
           }
         ],
-        "image": "assets/images/skills/5973b.png",
+        "image": "assets/images/skills/5973b.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/cat_diep.png",
+    "image": "assets/images/shikigami/ssr/cat_diep.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2026/02/04/ky-nang-cat-diep/"
   },
   {
@@ -571,7 +571,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/than_vo_nguyet.png",
+    "image": "assets/images/shikigami/ssr/than_vo_nguyet.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2026/01/07/ky-nang-than-vo-nguyet/"
   },
   {
@@ -647,7 +647,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/5921.png"
+        "image": "assets/images/skills/5921.webp"
       },
       {
         "name": "THỜI KHÍCH LUÂN CHUYỂN",
@@ -674,7 +674,7 @@
             "description": "Ở Thế Tấn Công , mỗi lần cường hóa Bố Đô Ngự Hồn , hệ số sát thương AOE từ kỹ năng KIÊU DƯƠNG TRƯỜNG MINH +5%, tối đa +15%."
           }
         ],
-        "image": "assets/images/skills/5922.png",
+        "image": "assets/images/skills/5922.webp",
         "cost": 1
       },
       {
@@ -702,13 +702,13 @@
             "description": "Sát thương AOE = 80%. Cứ có 1 thức thần phe địch bị kết liễu, Bình Tướng Môn được giảm 7% sát thương nhận vào, và hệ số sát thương chuẩn +5% (tối đa kích hoạt 5 lần)."
           }
         ],
-        "image": "assets/images/skills/5923.png",
+        "image": "assets/images/skills/5923.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/binh_tuong_mon.png",
+    "image": "assets/images/shikigami/ssr/binh_tuong_mon.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/09/30/ky-nang-binh-tuong-mon/"
   },
   {
@@ -783,7 +783,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/5911.png"
+        "image": "assets/images/skills/5911.webp"
       },
       {
         "name": "LONG ĐẢM – TRÁN",
@@ -810,7 +810,7 @@
             "description": "Tiên cơ: Triệu hồi Long Đảm Lam Ly ngay khi vào trận."
           }
         ],
-        "image": "assets/images/skills/5912.png",
+        "image": "assets/images/skills/5912.webp",
         "cost": 0
       },
       {
@@ -838,13 +838,13 @@
             "description": "Nếu hạ gục được mục tiêu, thì chỉ định sang mục tiêu máu thấp nhất để tấn công tiếp."
           }
         ],
-        "image": "assets/images/skills/5913.png",
+        "image": "assets/images/skills/5913.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/tuyet_ngu_tien.png",
+    "image": "assets/images/shikigami/ssr/tuyet_ngu_tien.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/09/03/ky-nang-tuyet-ngu-tien/"
   },
   {
@@ -920,7 +920,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/5851.png"
+        "image": "assets/images/skills/5851.webp"
       },
       {
         "name": "HOA VẪN LIỆT HỒN",
@@ -947,7 +947,7 @@
             "description": "Hết lượt của người có Huyết Sắc Chi Hoa thì HCL tiến vào Kẽ Hở Thời Gian (trước mỗi lượt của HCL tối đa kích hoạt 1 lần)"
           }
         ],
-        "image": "assets/images/skills/5852.png",
+        "image": "assets/images/skills/5852.webp",
         "cost": 2
       },
       {
@@ -975,13 +975,13 @@
             "description": "Thức thần phe địch tử vong thì, giá trị máu tối đa của HCL tăng thêm 35% giá trị máu ban đầu và khôi phục lượng máu tương đương."
           }
         ],
-        "image": "assets/images/skills/5853.png",
+        "image": "assets/images/skills/5853.webp",
         "cost": 2
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/hoang_cot_lau.png",
+    "image": "assets/images/shikigami/ssr/hoang_cot_lau.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/06/11/ky-nang-hoang-cot-lau/"
   },
   {
@@ -1056,7 +1056,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/5831.png"
+        "image": "assets/images/skills/5831.webp"
       },
       {
         "name": "TỐ HỒI THỜI KHÍCH",
@@ -1083,7 +1083,7 @@
             "description": "Tiên cơ: Khiến đồng đội có chỉ số tấn công (atk) ban đầu cao nhất nhận được 1 tầng Thời Huy ."
           }
         ],
-        "image": "assets/images/skills/5832.png",
+        "image": "assets/images/skills/5832.webp",
         "cost": 2
       },
       {
@@ -1111,13 +1111,13 @@
             "description": "Sát thương bỏ qua hiệu ứng ngự hồn"
           }
         ],
-        "image": "assets/images/skills/5833.png",
+        "image": "assets/images/skills/5833.webp",
         "cost": 2
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/himiko.png",
+    "image": "assets/images/shikigami/ssr/himiko.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/04/16/ky-nang-himiko/"
   },
   {
@@ -1192,7 +1192,7 @@
             "description": "Sát thương = 125%, gắn 1 tầng Hoa Ức lên mục tiêu."
           }
         ],
-        "image": "assets/images/skills/5811.png"
+        "image": "assets/images/skills/5811.webp"
       },
       {
         "name": "TRƯ LỘC ĐIỆP",
@@ -1219,7 +1219,7 @@
             "description": "Tấn công kẻ có 6 tầng Hoa Ức thì bỏ qua 180 điểm phòng ngự"
           }
         ],
-        "image": "assets/images/skills/5812.png"
+        "image": "assets/images/skills/5812.webp"
       },
       {
         "name": "NGŨ QUANG TRẢM",
@@ -1246,13 +1246,13 @@
             "description": "Hệ số sát thương lên mục tiêu được chọn = 350%."
           }
         ],
-        "image": "assets/images/skills/5813a.png",
+        "image": "assets/images/skills/5813a.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/ca_luu_da.png",
+    "image": "assets/images/shikigami/ssr/ca_luu_da.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/02/19/ky-nang-ca-luu-da/"
   },
   {
@@ -1327,7 +1327,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/5771.png"
+        "image": "assets/images/skills/5771.webp"
       },
       {
         "name": "TÚ ẢNH ÁM ĐỘ",
@@ -1354,7 +1354,7 @@
             "description": "Tú Ảnh Trận đạt tối đa thì nhận 1 khiên chặn khống chế (có thể ngăn chặn toàn bộ hiệu ứng khống chế xả vào trong 1 lần)."
           }
         ],
-        "image": "assets/images/skills/5772.png",
+        "image": "assets/images/skills/5772.webp",
         "cost": 0
       },
       {
@@ -1382,13 +1382,13 @@
             "description": "Xài chiêu xong, đồng đội kế tiếp không phải Quỷ Kim Dương (không tính vật triệu hồi) được giảm 3 mana trong lượt (khi sử dụng kỹ năng)."
           }
         ],
-        "image": "assets/images/skills/5773.png",
+        "image": "assets/images/skills/5773.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/quy_kim_duong.png",
+    "image": "assets/images/shikigami/ssr/quy_kim_duong.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/10/30/ky-nang-quy-kim-duong/"
   },
   {
@@ -1463,7 +1463,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/5751a.png"
+        "image": "assets/images/skills/5751a.webp"
       },
       {
         "name": "LONG THAO BÁO LƯỢC",
@@ -1490,7 +1490,7 @@
             "description": "Trong lượt mà chuyển đổi hệ kỹ năng thì +100% hành động (mỗi hiệp đấu chỉ kích hoạt 1 lần)"
           }
         ],
-        "image": "assets/images/skills/5751c.png",
+        "image": "assets/images/skills/5751c.webp",
         "cost": 0
       },
       {
@@ -1518,13 +1518,13 @@
             "description": "Mana thi triển kỹ năng -1"
           }
         ],
-        "image": "assets/images/skills/5752.png",
+        "image": "assets/images/skills/5752.webp",
         "cost": 1
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/phong_duong_quan.png",
+    "image": "assets/images/shikigami/ssr/phong_duong_quan.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/09/30/ky-nang-phong-duong-quan/"
   },
   {
@@ -1599,13 +1599,13 @@
             "description": "Tấn công quái thì hệ số Long Tức Chi Lực = 100%."
           }
         ],
-        "image": "assets/images/skills/5731.png",
+        "image": "assets/images/skills/5731.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/long_giac.png",
+    "image": "assets/images/shikigami/ssr/long_giac.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/09/04/ky-nang-long-giac/"
   },
   {
@@ -1680,7 +1680,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/5701.png"
+        "image": "assets/images/skills/5701.webp"
       },
       {
         "name": "ĐẢO NGÔN",
@@ -1707,7 +1707,7 @@
             "description": "Bất kỳ đồng minh nào (trừ vật triệu hồi) dính sát thương vượt ngưỡng 10% máu tối đa, thì lập tức kích hoạt chiêu này miễn phí lên người đó (Mỗi lần hành động giới hạn 1 lần – tức là nếu đối thủ gõ AOE hoặc multi thì chỉ có 1 đứa được buff khiên trong lượt hành động đó mà thôi)."
           }
         ],
-        "image": "assets/images/skills/5702.png",
+        "image": "assets/images/skills/5702.webp",
         "cost": 2
       },
       {
@@ -1735,13 +1735,13 @@
             "description": "Sau khi bị kẻ địch tấn công, lập tức kích hoạt Họa Chú miễn phí lên kẻ tấn công gây sát thương = 1 nửa hệ số kỹ năng (sát thương không kích ngự hồn và bị động kẻ địch, trước khi bắt đầu lượt chỉ kích hoạt 1 lần)."
           }
         ],
-        "image": "assets/images/skills/5703.png",
+        "image": "assets/images/skills/5703.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/hoa_tan_than.png",
+    "image": "assets/images/shikigami/ssr/hoa_tan_than.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/07/10/ky-nang-hoa-tan-than/"
   },
   {
@@ -1816,7 +1816,7 @@
             "description": "Sát thương = 62%."
           }
         ],
-        "image": "assets/images/skills/5691.png"
+        "image": "assets/images/skills/5691.webp"
       },
       {
         "name": "TUYỀN DŨNG",
@@ -1843,7 +1843,7 @@
             "description": "Tỷ lệ xua tan debuff = 100%."
           }
         ],
-        "image": "assets/images/skills/5692.png"
+        "image": "assets/images/skills/5692.webp"
       },
       {
         "name": "TẨY GÂN PHẠT TỦY",
@@ -1870,12 +1870,12 @@
             "description": "Tiên cơ: Vào trận lập tức mở kỹ năng này."
           }
         ],
-        "image": "assets/images/skills/5693.png"
+        "image": "assets/images/skills/5693.webp"
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/mieu_xuyen.png",
+    "image": "assets/images/shikigami/ssr/mieu_xuyen.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/06/12/ky-nang-mieu-xuyen/"
   },
   {
@@ -1951,7 +1951,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/5611.png"
+        "image": "assets/images/skills/5611.webp"
       },
       {
         "name": "ĐÀO LUNG CHI HỮU",
@@ -1978,7 +1978,7 @@
             "description": "Với mỗi tầng Giới Bị , hệ số sát thương khi kích Hộ Thuyền +100%."
           }
         ],
-        "image": "assets/images/skills/5612.png"
+        "image": "assets/images/skills/5612.webp"
       },
       {
         "name": "LUNG CHI QUYẾT ĐÃNG",
@@ -2005,12 +2005,12 @@
             "description": "Người mang buff Hộ Thuyền được -2 mana khi xài kỹ năng"
           }
         ],
-        "image": "assets/images/skills/5613.png"
+        "image": "assets/images/skills/5613.webp"
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/ssr_lung_taki.png",
+    "image": "assets/images/shikigami/ssr/ssr_lung_taki.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/01/10/ky-nang-ssr-lung-taki/"
   },
   {
@@ -2138,7 +2138,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/5501a.png"
+        "image": "assets/images/skills/5501a.webp"
       },
       {
         "name": "VŨ HÓA",
@@ -2165,7 +2165,7 @@
             "description": "Ở trạng thái Xòe Đuôi thì cứ có 1% chính xác, sẽ +1% atk. Hết thời gian Xòe Đuôi thì lập tức nhận 1 tầng Lông Khổng Tước ."
           }
         ],
-        "image": "assets/images/skills/5502.png"
+        "image": "assets/images/skills/5502.webp"
       },
       {
         "name": "MÊ LY CHI CẢNH",
@@ -2192,13 +2192,13 @@
             "description": "Tiên cơ: Mở kết giới."
           }
         ],
-        "image": "assets/images/skills/5503a.png",
+        "image": "assets/images/skills/5503a.webp",
         "cost": 2
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/khong_tuoc_minh_vuong.png",
+    "image": "assets/images/shikigami/ssr/khong_tuoc_minh_vuong.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/09/ky-nang-khong-tuoc-minh-vuong/"
   },
   {
@@ -2273,7 +2273,7 @@
             "description": "Sát thương = 125%, có 20% tỷ lệ cơ bản làm Câm Lặng mục tiêu 1 lượt."
           }
         ],
-        "image": "assets/images/skills/3991.png"
+        "image": "assets/images/skills/3991.webp"
       },
       {
         "name": "NGỮ TỘI",
@@ -2300,7 +2300,7 @@
             "description": "Sát thương Ngôn Hiện = 115%."
           }
         ],
-        "image": "assets/images/skills/3992.png"
+        "image": "assets/images/skills/3992.webp"
       },
       {
         "name": "CHÂN NGÔN ẢO BÍ",
@@ -2327,13 +2327,13 @@
             "description": "Mỗi 1 điểm Nghĩa Hỏa tiêu hao, sẽ khiến sát thương kỹ năng (của kẻ địch) bị giảm đi 30%."
           }
         ],
-        "image": "assets/images/skills/3993a.png",
+        "image": "assets/images/skills/3993a.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/ngon_linh.png",
+    "image": "assets/images/shikigami/ssr/ngon_linh.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/20/ky-nang-ngon-linh/"
   },
   {
@@ -2408,7 +2408,7 @@
             "description": "Sát thương = 125%. Nếu Mặt Trăng Dối Trá tồn tại, thì khôi phục 10% máu cho nó."
           }
         ],
-        "image": "assets/images/skills/3941.png"
+        "image": "assets/images/skills/3941.webp"
       },
       {
         "name": "HƯ ĐÁN NGUYỆT LẠC",
@@ -2435,7 +2435,7 @@
             "description": "Hiệu quả duy nhất: Hết lượt kẻ địch (không tính vật triệu hồi), Nguyệt Độc +10% hành động, cho tới khi triệu hồi ra Mặt Trăng Dối Trá lần đầu tiên."
           }
         ],
-        "image": "assets/images/skills/3942.png",
+        "image": "assets/images/skills/3942.webp",
         "cost": 2
       },
       {
@@ -2463,13 +2463,13 @@
             "description": "Sát thương = 56%. Gắn 2 tầng Hoặc Tinh lên mục tiêu được chọn."
           }
         ],
-        "image": "assets/images/skills/3943.png",
+        "image": "assets/images/skills/3943.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/nguyet_doc.png",
+    "image": "assets/images/shikigami/ssr/nguyet_doc.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/07/27/ky-nang-nguyet-doc/"
   },
   {
@@ -2544,7 +2544,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/3921.png"
+        "image": "assets/images/skills/3921.webp"
       },
       {
         "name": "HOA LẠC TỨ THỜI SINH",
@@ -2571,7 +2571,7 @@
             "description": "Tiên cơ: Kích hoạt Tứ Thời Nhất Ngung – Xuân."
           }
         ],
-        "image": "assets/images/skills/3922a.png"
+        "image": "assets/images/skills/3922a.webp"
       },
       {
         "name": "DI THIÊN DIỆP LỆ",
@@ -2614,12 +2614,12 @@
             "description": "Nếu trên sân đã có Quý Linh , kích hoạt chiêu thức sẽ khiến Quý Linh lập tức tấn công kẻ có ấn 1 lần và không tiêu hao số lần tấn công."
           }
         ],
-        "image": "assets/images/skills/3922c.png"
+        "image": "assets/images/skills/3922c.webp"
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/quy.png",
+    "image": "assets/images/shikigami/ssr/quy.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/08/ky-nang-quy/"
   },
   {
@@ -2694,7 +2694,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/3911.png"
+        "image": "assets/images/skills/3911.webp"
       },
       {
         "name": "PHƯỢC MỘNG MINH HƯƠNG",
@@ -2721,7 +2721,7 @@
             "description": "Tiên Cơ: Bắt đầu chiến đấu thì lập tức kích hoạt kỹ năng này."
           }
         ],
-        "image": "assets/images/skills/3912.png",
+        "image": "assets/images/skills/3912.webp",
         "cost": 3
       },
       {
@@ -2749,13 +2749,13 @@
             "description": "Sát thương = 100%, và tính từ lúc bắt đầu chiến đấu để đối chiếu: Cứ với mỗi 1 mục tiêu địch giảm thiểu, sát thương +12%, tối đa +60%."
           }
         ],
-        "image": "assets/images/skills/3913.png",
+        "image": "assets/images/skills/3913.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/tam_huong_hanh.png",
+    "image": "assets/images/shikigami/ssr/tam_huong_hanh.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/09/01/ky-nang-tam-huong-hanh/"
   },
   {
@@ -2830,7 +2830,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/3891.png"
+        "image": "assets/images/skills/3891.webp"
       },
       {
         "name": "THẦN CHI LÃNH VỰC",
@@ -2857,7 +2857,7 @@
             "description": "Nếu chưa có khiên Lôi Thuẫn thì sát thương và giới hạn tăng sát thương của kỹ năng THIÊN LÔI VẠN TƯỢNG +20%."
           }
         ],
-        "image": "assets/images/skills/3892a.png"
+        "image": "assets/images/skills/3892a.webp"
       },
       {
         "name": "THIÊN LÔI VẠN TƯỢNG",
@@ -2884,12 +2884,12 @@
             "description": "Sát thương mỗi đòn đánh = 80%."
           }
         ],
-        "image": "assets/images/skills/3893.png"
+        "image": "assets/images/skills/3893.webp"
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/susanoo.png",
+    "image": "assets/images/shikigami/ssr/susanoo.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/09/ky-nang-susanoo/"
   },
   {
@@ -2965,7 +2965,7 @@
             "description": "Sát thương = 125% và chọi xong sẽ +50% kháng cho BKN trong 2 lượt."
           }
         ],
-        "image": "assets/images/skills/3791.png"
+        "image": "assets/images/skills/3791.webp"
       },
       {
         "name": "CỔ SƠN CHI THẦN",
@@ -2992,7 +2992,7 @@
             "description": "Buff sát thương phi bạo kích (không in đậm) có thời gian duy trì trong 2 lượt."
           }
         ],
-        "image": "assets/images/skills/3792.png",
+        "image": "assets/images/skills/3792.webp",
         "cost": 0
       },
       {
@@ -3020,13 +3020,13 @@
             "description": "Tiên Cơ: Mở kỹ năng này."
           }
         ],
-        "image": "assets/images/skills/3793.png",
+        "image": "assets/images/skills/3793.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/bat_kien_nhac.png",
+    "image": "assets/images/shikigami/ssr/bat_kien_nhac.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/07/ky-nang-bat-kien-nhac/"
   },
   {
@@ -3101,7 +3101,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/3761.png"
+        "image": "assets/images/skills/3761.webp"
       },
       {
         "name": "LINH DIỄM CHƯỚC TÂM",
@@ -3128,7 +3128,7 @@
             "description": "Vào trạng thái TÂM HỎA VĨNH MINH thì nhận 1 khiên = 120% atk, không thể xua tan, tồn tại trong 2 lượt."
           }
         ],
-        "image": "assets/images/skills/3762a.png",
+        "image": "assets/images/skills/3762a.webp",
         "cost": 0
       },
       {
@@ -3156,13 +3156,13 @@
             "description": "Kỹ năng này đạt đủ 5 phát tấn công thì đòn đánh bỏ qua 30 điểm phòng ngự của kẻ địch, tích lũy tối đa 5 tầng."
           }
         ],
-        "image": "assets/images/skills/3763.png",
+        "image": "assets/images/skills/3763.webp",
         "cost": 0
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/linh_ngan_co.png",
+    "image": "assets/images/shikigami/ssr/linh_ngan_co.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/12/ky-nang-linh-ngan-co/"
   },
   {
@@ -3237,7 +3237,7 @@
             "description": "Sát thương = 125%. Đánh thường khi ở ngoài lượt sẽ gắn debuff Trọng Thương 20% trong 2 lượt."
           }
         ],
-        "image": "assets/images/skills/3691.png"
+        "image": "assets/images/skills/3691.webp"
       },
       {
         "name": "NHIỆT LÃNG",
@@ -3264,7 +3264,7 @@
             "description": "Người có chỉ số bạo thương (crit-dmg) đầu trận cao nhất phe ta khi hành động nếu chọn 1 mục tiêu địch đơn lẻ thì sẽ kéo Thực Linh hiệp chiến."
           }
         ],
-        "image": "assets/images/skills/3692.png",
+        "image": "assets/images/skills/3692.webp",
         "cost": 0
       },
       {
@@ -3292,13 +3292,13 @@
             "description": "Phe địch cứ có 1 mục tiêu sẽ +66% sát thương chuẩn tính theo atk của Thực Linh khi phát động cơ chế Thưởng Thức ."
           }
         ],
-        "image": "assets/images/skills/3693.png",
+        "image": "assets/images/skills/3693.webp",
         "cost": 3
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/thuc_linh.png",
+    "image": "assets/images/shikigami/ssr/thuc_linh.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/07/ky-nang-thuc-linh/"
   },
   {
@@ -3373,7 +3373,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/3631.png"
+        "image": "assets/images/skills/3631.webp"
       },
       {
         "name": "VÔ CẤU LIÊN HOA",
@@ -3400,7 +3400,7 @@
             "description": "Thời gian duy trì của Kim Liên = 2 lượt; Gắn ấn lên quái thì, sát thương phụ thêm sẽ +70% chỉ số atk của Đế Thích Thiên."
           }
         ],
-        "image": "assets/images/skills/3632a.png"
+        "image": "assets/images/skills/3632a.webp"
       },
       {
         "name": "SÁT NA LIÊN HOA TRÁN PHÓNG",
@@ -3427,12 +3427,12 @@
             "description": "Khi ấn Kim Liên biến mất, gỡ bỏ hiệu ứng khống chế trên người Đế Thích Thiên, xả chiêu thức này miễn phí 1 lần đồng thời sát thương không kích ngự hồn lẫn bị động của đối thủ, tuy nhiên sát thương bị -40%."
           }
         ],
-        "image": "assets/images/skills/3633.png"
+        "image": "assets/images/skills/3633.webp"
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/de_thich_thien.png",
+    "image": "assets/images/shikigami/ssr/de_thich_thien.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/07/ky-nang-de-thich-thien/"
   },
   {
@@ -3507,7 +3507,7 @@
             "description": "Sát thương = 125%. Nếu Hải Nguyên Bối Kích tồn tại thì +1 tầng Triều Thanh ."
           }
         ],
-        "image": "assets/images/skills/3561.png"
+        "image": "assets/images/skills/3561.webp"
       },
       {
         "name": "TỊCH MỘNG",
@@ -3534,7 +3534,7 @@
             "description": "Nếu kẻ mang dấu ấn Tịch Mộng hết hành động mà thanh lửa = 0, thì lập tức Đóng Băng Trầm Trọng nó trong 1 lượt."
           }
         ],
-        "image": "assets/images/skills/3562.png",
+        "image": "assets/images/skills/3562.webp",
         "cost": 2
       },
       {
@@ -3562,13 +3562,13 @@
             "description": "Triệu hồi Hải Nguyên Bối Kích thì lập tức +3 tầng Triều Thanh ."
           }
         ],
-        "image": "assets/images/skills/3563a.png",
+        "image": "assets/images/skills/3563a.webp",
         "cost": 0
       }
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/thien_co.png",
+    "image": "assets/images/shikigami/ssr/thien_co.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/07/ky-nang-thien-co/"
   },
   {
@@ -3704,7 +3704,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/khan_na_la.png",
+    "image": "assets/images/shikigami/ssr/khan_na_la.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/20/ky-nang-khan-na-la/"
   },
   {
@@ -3841,7 +3841,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/linh_loc_ngu_tien.png",
+    "image": "assets/images/shikigami/ssr/linh_loc_ngu_tien.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/08/24/ky-nang-linh-loc-ngu-tien/"
   },
   {
@@ -3993,7 +3993,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/lang_da_xoa_co.jpg",
+    "image": "assets/images/shikigami/ssr/lang_da_xoa_co.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/05/19/ky-nang-lang-da-xoa-co/"
   },
   {
@@ -4155,7 +4155,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/dai_nhac_hoan.png",
+    "image": "assets/images/shikigami/ssr/dai_nhac_hoan.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/12/10/ky-nang-dai-nhac-hoan/"
   },
   {
@@ -4339,7 +4339,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/bat_tri_hoa.png",
+    "image": "assets/images/shikigami/ssr/bat_tri_hoa.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/08/24/ky-nang-bat-tri-hoa/"
   },
   {
@@ -4474,7 +4474,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/bach_tang_chu.png",
+    "image": "assets/images/shikigami/ssr/bach_tang_chu.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2026/04/17/ky-nang-bach-tang-chu/"
   },
   {
@@ -4610,7 +4610,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/dien_linh_khi.png",
+    "image": "assets/images/shikigami/ssr/dien_linh_khi.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2026/04/08/ky-nang-dien-linh-khi/"
   },
   {
@@ -4686,7 +4686,7 @@
             "description": "Sát thương = 100%."
           }
         ],
-        "image": "assets/images/skills/4301.png"
+        "image": "assets/images/skills/4301.webp"
       },
       {
         "name": "HỒ THÚ GIỚI",
@@ -4697,7 +4697,7 @@
             "description": "Tạo kết giới trong 1 lượt, khiến tỷ lệ bắn NHẤT THỈ – PHONG MA lên đến 40%, và kích hoạt NHẤT THỈ – PHONG MA thì nhận 4 tầng Linh Phù , tối đa nhận 12 tầng. Tiên cơ: Vào trận lập tức mở kỹ năng này. Kỹ năng không thể nâng cấp! Chú ý: Nếu Ngự Soạn Tân bị Khiêu Khích, cô chỉ có thể bắn kẻ đang Khiêu Khích mình. Còn nếu cô bị trúng hiệu ứng Hoảng Loạn (từ ngự hồn Mị Yêu, Tinh Hùng…) thì có thể sẽ bắn Phong Ma vào đồng đội."
           }
         ],
-        "image": "assets/images/skills/4302.png",
+        "image": "assets/images/skills/4302.webp",
         "cost": 3
       },
       {
@@ -4731,7 +4731,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/ngu_soan_tan.png",
+    "image": "assets/images/shikigami/ssr/ngu_soan_tan.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/08/31/ky-nang-ngu-soan-tan/"
   },
   {
@@ -4806,7 +4806,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": "assets/images/skills/4291.png"
+        "image": "assets/images/skills/4291.webp"
       },
       {
         "name": "HỒ HỎA",
@@ -4833,7 +4833,7 @@
             "description": "Sát thương = 389%."
           }
         ],
-        "image": "assets/images/skills/4292.png",
+        "image": "assets/images/skills/4292.webp",
         "cost": 3
       },
       {
@@ -4867,7 +4867,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/ngoc_tao_tien.png",
+    "image": "assets/images/shikigami/ssr/ngoc_tao_tien.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2026/04/08/ky-nang-ngoc-tao-tien/"
   },
   {
@@ -4994,7 +4994,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/huy_da_co.png",
+    "image": "assets/images/shikigami/ssr/huy_da_co.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/08/31/ky-nang-huy-da-co/"
   },
   {
@@ -5131,7 +5131,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/nhat_muc_lien.png",
+    "image": "assets/images/shikigami/ssr/nhat_muc_lien.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/08/24/ky-nang-nhat-muc-lien/"
   },
   {
@@ -5266,7 +5266,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/yeu_dao_co.png",
+    "image": "assets/images/shikigami/ssr/yeu_dao_co.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/03/15/ky-nang-yeu-dao-co/"
   },
   {
@@ -5402,7 +5402,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/thanh_hanh_dang.png",
+    "image": "assets/images/shikigami/ssr/thanh_hanh_dang.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/07/27/ky-nang-thanh-hanh-dang/"
   },
   {
@@ -5538,7 +5538,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/diem_ma.png",
+    "image": "assets/images/shikigami/ssr/diem_ma.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2024/08/31/ky-nang-diem-ma/"
   },
   {
@@ -5673,7 +5673,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/hoang_xuyen_chi_chu.png",
+    "image": "assets/images/shikigami/ssr/hoang_xuyen_chi_chu.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/04/09/ky-nang-hoang-xuyen-chi-chu/"
   },
   {
@@ -5808,7 +5808,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/ssr/dai_thien_cau.png",
+    "image": "assets/images/shikigami/ssr/dai_thien_cau.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/05/23/ky-nang-dai-thien-cau/"
   },
   {
@@ -5860,37 +5860,37 @@
         "name": "First Form: Water Surface Slash (壱ノ型・水面斬り)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3591a.png"
+        "image": "assets/images/skills/3591a.webp"
       },
       {
         "name": "Fifth Form: Blessed Rain After the Drought (伍ノ型・干天の慈雨)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3591c.png"
+        "image": "assets/images/skills/3591c.webp"
       },
       {
         "name": "Third Form: Flowing Dance (参ノ型・流流舞い)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3592a.png"
+        "image": "assets/images/skills/3592a.webp"
       },
       {
         "name": "Sixth Form: Whirlpool (陸ノ型・ねじれ渦)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3592c.png"
+        "image": "assets/images/skills/3592c.webp"
       },
       {
         "name": "Ninth Form: Splashing Water Flow - Turbulent (玖ノ型・水流飛沫・乱)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3591a.png"
+        "image": "assets/images/skills/3591a.webp"
       },
       {
         "name": "Tenth Form: Constant Flux (拾ノ型・生生流転)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3593a.png"
+        "image": "assets/images/skills/3593a.webp"
       }
     ],
     "recommended_souls": [],
@@ -5947,19 +5947,19 @@
         "name": "Kick (腿踢)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3601a.png"
+        "image": "assets/images/skills/3601a.webp"
       },
       {
         "name": "Blood Demon Art: Exploding Blood (血鬼術・爆血)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3602.png"
+        "image": "assets/images/skills/3602.webp"
       },
       {
         "name": "Demon Form (鬼化)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3603.png"
+        "image": "assets/images/skills/3603.webp"
       }
     ],
     "recommended_souls": [],
@@ -6016,19 +6016,19 @@
         "name": "Annihilation Flames (紅蓮誅灰)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3641.png"
+        "image": "assets/images/skills/3641.webp"
       },
       {
         "name": "Mighty Crush (天魔威圧)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3642a.png"
+        "image": "assets/images/skills/3642a.webp"
       },
       {
         "name": "Inferno Slaughter (煉獄虐殺)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3643.png"
+        "image": "assets/images/skills/3643.webp"
       }
     ],
     "recommended_souls": [],
@@ -6085,19 +6085,19 @@
         "name": "Gourmet Charge（尋味飛撲）",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3701.png"
+        "image": "assets/images/skills/3701.webp"
       },
       {
         "name": "Ready to Feast (蓄食待發)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3702.png"
+        "image": "assets/images/skills/3702.webp"
       },
       {
         "name": "Appetite Stimulated (胃口大開)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3703a.png"
+        "image": "assets/images/skills/3703a.webp"
       }
     ],
     "recommended_souls": [],
@@ -6154,37 +6154,37 @@
         "name": "Crimson Child (赤子)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3731.png"
+        "image": "assets/images/skills/3731.webp"
       },
       {
         "name": "Invite of the Night (夜の邀約)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3732.png"
+        "image": "assets/images/skills/3732.webp"
       },
       {
         "name": "Seven-Night Ritual (七夜秘儀)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3733.png"
+        "image": "assets/images/skills/3733.webp"
       },
       {
         "name": "Sigil 2: Blight Soul (二の楔・涸魂)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3733b.png"
+        "image": "assets/images/skills/3733b.webp"
       },
       {
         "name": "Sigil 4: Corrosion (四の禊・腐髄)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3733d.png"
+        "image": "assets/images/skills/3733d.webp"
       },
       {
         "name": "Sigil 6: Harm Heart (六の禊・禍心)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3733f.png"
+        "image": "assets/images/skills/3733f.webp"
       }
     ],
     "recommended_souls": [],
@@ -6241,19 +6241,19 @@
         "name": "First Form: Thunderclap and Flash (壱ノ型・霹靂一閃)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3861.png"
+        "image": "assets/images/skills/3861.webp"
       },
       {
         "name": "Sleeping Zenitsu (善逸昏睡)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3862.png"
+        "image": "assets/images/skills/3862.webp"
       },
       {
         "name": "First Form: Thunderclap and Flash Sixfold (壱ノ型・霹靂一閃・六連)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3863.png"
+        "image": "assets/images/skills/3863.webp"
       }
     ],
     "recommended_souls": [],
@@ -6310,19 +6310,19 @@
         "name": "First Fang: Pierce (壱ノ牙・穿ち抜き)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3871.png"
+        "image": "assets/images/skills/3871.webp"
       },
       {
         "name": "Seventh Form: Spatial Awareness (漆ノ型・空間識覚)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3872.png"
+        "image": "assets/images/skills/3872.webp"
       },
       {
         "name": "Fifth Fang: Crazy Cutting (伍ノ牙・狂い裂き)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3873.png"
+        "image": "assets/images/skills/3873.webp"
       }
     ],
     "recommended_souls": [],
@@ -6379,19 +6379,19 @@
         "name": "Toyako Slash (洞爺湖斬撃)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3971.png"
+        "image": "assets/images/skills/3971.webp"
       },
       {
         "name": "Sugar Content (糖分)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3972.png"
+        "image": "assets/images/skills/3972.webp"
       },
       {
         "name": "Silver Soul (銀ノ魂)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3973.png"
+        "image": "assets/images/skills/3973.webp"
       }
     ],
     "recommended_souls": [],
@@ -6448,19 +6448,19 @@
         "name": "Let's go, Sadaharu! (行くネ、定春！)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5001.png"
+        "image": "assets/images/skills/5001.webp"
       },
       {
         "name": "Gotta Protect (守護必達)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5002.png"
+        "image": "assets/images/skills/5002.webp"
       },
       {
         "name": "Go All Out (全力以赴)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5003.png"
+        "image": "assets/images/skills/5003.webp"
       }
     ],
     "recommended_souls": [],
@@ -6517,19 +6517,19 @@
         "name": "Fire Punch (火拳)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5531a.png"
+        "image": "assets/images/skills/5531a.webp"
       },
       {
         "name": "Bathed in Fire (火浣重重)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5532.png"
+        "image": "assets/images/skills/5532.webp"
       },
       {
         "name": "Thousand Flaming Punches (焰力千钧/灼力千釣)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5533a.png"
+        "image": "assets/images/skills/5533a.webp"
       }
     ],
     "recommended_souls": [],
@@ -6586,19 +6586,19 @@
         "name": "Annihilation! (湮滅)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5571.png"
+        "image": "assets/images/skills/5571.webp"
       },
       {
         "name": "Divine Kiss (神赐之吻/神賜の吻)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5572.png"
+        "image": "assets/images/skills/5572.webp"
       },
       {
         "name": "Annihilation Dance (灭世之舞/滅世の舞)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5573.png"
+        "image": "assets/images/skills/5573.webp"
       }
     ],
     "recommended_souls": [],
@@ -6655,25 +6655,25 @@
         "name": "Start the Beat (音弦動)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5631.png"
+        "image": "assets/images/skills/5631.webp"
       },
       {
         "name": "Music On (音律起)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5632.png"
+        "image": "assets/images/skills/5632.webp"
       },
       {
         "name": "Iconic Dance Song (音の舞曲)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5633.png"
+        "image": "assets/images/skills/5633.webp"
       },
       {
         "name": "Iconic Dance Song: Chorus (音の舞曲・中幕)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5633b.png"
+        "image": "assets/images/skills/5633b.webp"
       }
     ],
     "recommended_souls": [],
@@ -6730,19 +6730,19 @@
         "name": "Flying Notes (音符紛飛/踊る音符)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5641.png"
+        "image": "assets/images/skills/5641.webp"
       },
       {
         "name": "Bonded Duet (絆の二重奏)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5642.png"
+        "image": "assets/images/skills/5642.webp"
       },
       {
         "name": "Protective Moment (守護定格/止まる瞬間)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5643.png"
+        "image": "assets/images/skills/5643.webp"
       }
     ],
     "recommended_souls": [],
@@ -6799,19 +6799,19 @@
         "name": "(寒氷乍破)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5671.png"
+        "image": "assets/images/skills/5671.webp"
       },
       {
         "name": "(渊氷三尺)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5672.png"
+        "image": "assets/images/skills/5672.webp"
       },
       {
         "name": "(画水镂冰/画水鏤氷)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5673.png"
+        "image": "assets/images/skills/5673.webp"
       }
     ],
     "recommended_souls": [],
@@ -6868,19 +6868,19 @@
         "name": "Healing (疗愈)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5761.png"
+        "image": "assets/images/skills/5761.webp"
       },
       {
         "name": "Nyanko-sensei's Protection (猫老师的守护)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5762.png"
+        "image": "assets/images/skills/5762.webp"
       },
       {
         "name": "Healing Medicinal Herbs (疗愈的草药)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5763.png"
+        "image": "assets/images/skills/5763.webp"
       }
     ],
     "recommended_souls": [],
@@ -6937,19 +6937,19 @@
         "name": "Orchestra (管弦奏)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5821.png"
+        "image": "assets/images/skills/5821.webp"
       },
       {
         "name": "Echoing Chords (和音回响)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5822.png"
+        "image": "assets/images/skills/5822.webp"
       },
       {
         "name": "Rhythm Parade (律动巡游)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5823.png"
+        "image": "assets/images/skills/5823.webp"
       }
     ],
     "recommended_souls": [],
@@ -7006,19 +7006,19 @@
         "name": "Gale (疾风)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5871a.png"
+        "image": "assets/images/skills/5871a.webp"
       },
       {
         "name": "Mirage (幻影)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5872a.png"
+        "image": "assets/images/skills/5872a.webp"
       },
       {
         "name": "Blaze (火焰/火焔)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5873a.png"
+        "image": "assets/images/skills/5873a.webp"
       }
     ],
     "recommended_souls": [],
@@ -7075,19 +7075,19 @@
         "name": "Element: Fire (火神招来)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5881a.png"
+        "image": "assets/images/skills/5881a.webp"
       },
       {
         "name": "Magic Trace (魔力追踪)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5882a.png"
+        "image": "assets/images/skills/5882a.webp"
       },
       {
         "name": "Element: Lightning (雷帝招来)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/5883a.png"
+        "image": "assets/images/skills/5883a.webp"
       }
     ],
     "recommended_souls": [],

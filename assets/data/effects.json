@@ -308,7 +308,7 @@
     "name": "",
     "en_name": "Shield",
     "description": "Khiên — hấp thụ một lượng sát thương nhất định, có thể chí mạng, cộng dồn với các khiên từ nguồn khác. Nếu không ghi rõ, khiên có thể gỡ bỏ hoặc xoá. Không phải khiên nào cũng có icon — một số chỉ hiện hiệu ứng hình ảnh và thanh máu khiên.",
-    "image": "assets/images/effects/shield.png",
+    "image": "assets/images/effects/shield.webp",
     "kind": "buff"
   },
   {
@@ -316,7 +316,7 @@
     "name": "",
     "en_name": "Shelter",
     "description": "Bảo Hộ — chặn mọi hiệu ứng khống chế hoặc Trục Xuất từ 1 kỹ năng. Bao gồm cả hiệu ứng khống chế tự gây.",
-    "image": "assets/images/effects/shelter.png",
+    "image": "assets/images/effects/shelter.webp",
     "kind": "buff"
   },
   {
@@ -340,7 +340,7 @@
     "name": "",
     "en_name": "DEF Up",
     "description": "Tăng thủ (DEF).",
-    "image": "assets/images/effects/def_up.png",
+    "image": "assets/images/effects/def_up.webp",
     "kind": "buff"
   },
   {
@@ -348,7 +348,7 @@
     "name": "",
     "en_name": "Received Damage Down",
     "description": "Giảm sát thương nhận vào.",
-    "image": "assets/images/effects/received_damage_down.png",
+    "image": "assets/images/effects/received_damage_down.webp",
     "kind": "buff"
   },
   {
@@ -364,7 +364,7 @@
     "name": "",
     "en_name": "Crit Up",
     "description": "Tăng tỉ lệ chí mạng (Crit).",
-    "image": "assets/images/effects/crit_up.png",
+    "image": "assets/images/effects/crit_up.webp",
     "kind": "buff"
   },
   {
@@ -380,7 +380,7 @@
     "name": "",
     "en_name": "Double Crit",
     "description": "Sát thương chí mạng nhân đôi.",
-    "image": "assets/images/effects/double_crit.png",
+    "image": "assets/images/effects/double_crit.webp",
     "kind": "buff"
   },
   {
@@ -388,7 +388,7 @@
     "name": "",
     "en_name": "HIT Up",
     "description": "Tăng chính xác (HIT).",
-    "image": "assets/images/effects/hit_up.png",
+    "image": "assets/images/effects/hit_up.webp",
     "kind": "buff"
   },
   {
@@ -396,7 +396,7 @@
     "name": "",
     "en_name": "RES Up",
     "description": "Tăng kháng (RES).",
-    "image": "assets/images/effects/res_up.png",
+    "image": "assets/images/effects/res_up.webp",
     "kind": "buff"
   },
   {
@@ -404,7 +404,7 @@
     "name": "",
     "en_name": "Seal",
     "description": "Phong Ấn Ngự Hồn — hiệu ứng ngự hồn của Thức Thần mất tác dụng.",
-    "image": "assets/images/effects/seal.png",
+    "image": "assets/images/effects/seal.webp",
     "kind": "debuff"
   },
   {
@@ -412,7 +412,7 @@
     "name": "",
     "en_name": "Suppress",
     "description": "Áp Chế — kỹ năng bị động của Thức Thần mất tác dụng.",
-    "image": "assets/images/effects/suppress.png",
+    "image": "assets/images/effects/suppress.webp",
     "kind": "debuff"
   },
   {
@@ -420,7 +420,7 @@
     "name": "",
     "en_name": "(Suppressive) Seal",
     "description": "Áp Phong Ấn — cả hiệu ứng ngự hồn và kỹ năng bị động của Thức Thần đều mất tác dụng.",
-    "image": "assets/images/effects/suppressive_seal.png",
+    "image": "assets/images/effects/suppressive_seal.webp",
     "kind": "debuff"
   },
   {
@@ -428,7 +428,7 @@
     "name": "",
     "en_name": "Isolated / Isolation",
     "description": "Cô Lập — sát thương nhận vào không thể bị chia hoặc chuyển hướng bởi hiệu ứng ngự hồn hay kỹ năng / passive của Thức Thần.",
-    "image": "assets/images/effects/isolated_isolation.png",
+    "image": "assets/images/effects/isolated_isolation.webp",
     "kind": "debuff"
   },
   {
@@ -452,7 +452,7 @@
     "name": "",
     "en_name": "Grounded",
     "description": "Trói Chân — mọi hiệu ứng thay đổi thanh hành động bị vô hiệu.",
-    "image": "assets/images/effects/grounded.png",
+    "image": "assets/images/effects/grounded.webp",
     "kind": "debuff"
   },
   {
@@ -468,7 +468,7 @@
     "name": "",
     "en_name": "ATK Down",
     "description": "Giảm công (ATK) — sát thương gây ra giảm.",
-    "image": "assets/images/effects/atk_down.png",
+    "image": "assets/images/effects/atk_down.webp",
     "kind": "debuff"
   },
   {
@@ -492,7 +492,7 @@
     "name": "",
     "en_name": "Max HP Down",
     "description": "Giảm Máu Tối Đa (Max HP).",
-    "image": "assets/images/effects/max_hp_down.png",
+    "image": "assets/images/effects/max_hp_down.webp",
     "kind": "debuff"
   },
   {
@@ -516,7 +516,7 @@
     "name": "",
     "en_name": "Crit DMG Down",
     "description": "Giảm sát thương chí mạng (Crit DMG).",
-    "image": "assets/images/effects/crit_dmg_down.png",
+    "image": "assets/images/effects/crit_dmg_down.webp",
     "kind": "debuff"
   },
   {
@@ -524,7 +524,7 @@
     "name": "",
     "en_name": "HIT Down",
     "description": "Giảm chính xác (HIT).",
-    "image": "assets/images/effects/hit_down.png",
+    "image": "assets/images/effects/hit_down.webp",
     "kind": "debuff"
   },
   {
@@ -532,7 +532,7 @@
     "name": "",
     "en_name": "RES Down",
     "description": "Giảm kháng (RES).",
-    "image": "assets/images/effects/res_down.png",
+    "image": "assets/images/effects/res_down.webp",
     "kind": "debuff"
   },
   {
@@ -556,7 +556,7 @@
     "name": "",
     "en_name": "Confuse",
     "description": "Rối Loạn — mục tiêu sẽ đánh thường lên 1 địch hoặc đồng đội ngẫu nhiên khi đến lượt.",
-    "image": "assets/images/effects/confuse.png",
+    "image": "assets/images/effects/confuse.webp",
     "kind": "debuff"
   },
   {
@@ -580,7 +580,7 @@
     "name": "",
     "en_name": "Morph",
     "description": "Biến Hình — không thể hành động, kỹ năng bị động của Thức Thần mất tác dụng, không thể gỡ bỏ.",
-    "image": "assets/images/effects/morph.png",
+    "image": "assets/images/effects/morph.webp",
     "kind": "debuff"
   },
   {
@@ -588,7 +588,7 @@
     "name": "",
     "en_name": "Sleep",
     "description": "Ngủ — không thể hành động, hiệu ứng tự biến mất khi nhận sát thương.",
-    "image": "assets/images/effects/sleep.png",
+    "image": "assets/images/effects/sleep.webp",
     "kind": "debuff"
   },
   {
@@ -604,7 +604,7 @@
     "name": "",
     "en_name": "Deep Freeze",
     "description": "Đóng Băng Sâu — không thể hành động, tốc độ giảm 20.",
-    "image": "assets/images/effects/deep_freeze.png",
+    "image": "assets/images/effects/deep_freeze.webp",
     "kind": "debuff"
   },
   {
@@ -612,7 +612,7 @@
     "name": "",
     "en_name": "Frostbound",
     "description": "Sương Giá — không thể hành động, không thể bị phản, không thể gỡ bỏ hoặc xoá. Độc quyền của SP Yuki Onna. Khi Special 2 của cô được nâng cấp, hiệu ứng \"vị trí thanh hành động không thể thay đổi\" được thêm vào.",
-    "image": "assets/images/effects/frostbound.png",
+    "image": "assets/images/effects/frostbound.webp",
     "kind": "debuff"
   },
   {
@@ -620,7 +620,7 @@
     "name": "",
     "en_name": "Shadowbound",
     "description": "Bóng Đêm — không thể hành động, không thể gỡ bỏ. Độc quyền của Kagewani.",
-    "image": "assets/images/effects/shadowbound.png",
+    "image": "assets/images/effects/shadowbound.webp",
     "kind": "debuff"
   },
   {
@@ -628,7 +628,7 @@
     "name": "",
     "en_name": "Ruined",
     "description": "Tàn Phá — không thể hành động, không thể gỡ bỏ. Khi nhận đòn từ Izanami và trên mình có Destroyed trong lượt đó, sát thương của kẻ tấn công tăng 5% trong 1 lượt. Độc quyền của Izanami.",
-    "image": "assets/images/effects/ruined.png",
+    "image": "assets/images/effects/ruined.webp",
     "kind": "debuff"
   },
   {
@@ -636,7 +636,7 @@
     "name": "",
     "en_name": "Rest in Ice",
     "description": "Yên Nghỉ Trong Băng — không thể hành động, tự gỡ vào đầu lượt, không thể gỡ bỏ. Độc quyền của SP Senhime.",
-    "image": "assets/images/effects/rest_in_ice.png",
+    "image": "assets/images/effects/rest_in_ice.webp",
     "kind": "debuff"
   },
   {

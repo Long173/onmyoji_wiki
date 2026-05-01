@@ -112,7 +112,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/r/vu_nu.png",
+    "image": "assets/images/shikigami/r/vu_nu.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/12/10/ky-nang-vu-nu/"
   },
   {
@@ -236,7 +236,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "assets/images/shikigami/r/tieu_do.png",
+    "image": "assets/images/shikigami/r/tieu_do.webp",
     "source_url": "https://onmyojicltl.wordpress.com/2025/12/10/ky-nang-tieu-do/"
   },
   {
@@ -288,19 +288,19 @@
         "name": "Tidy Up (汚れ)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3611.png"
+        "image": "assets/images/skills/3611.webp"
       },
       {
         "name": "Take a Bath (垢擦り)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3612.png"
+        "image": "assets/images/skills/3612.webp"
       },
       {
         "name": "All Gone (一網打尽)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3613.png"
+        "image": "assets/images/skills/3613.webp"
       }
     ],
     "recommended_souls": [],
@@ -357,19 +357,19 @@
         "name": "Shadowstrike (影襲)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3751.png"
+        "image": "assets/images/skills/3751.webp"
       },
       {
         "name": "Shadowshell (影殻)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3752.png"
+        "image": "assets/images/skills/3752.webp"
       },
       {
         "name": "Overshadow (幕影蓋地)",
         "description": "",
         "levels": [],
-        "image": "assets/images/skills/3753.png"
+        "image": "assets/images/skills/3753.webp"
       }
     ],
     "recommended_souls": [],
