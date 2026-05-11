@@ -1,45 +1,46 @@
+import 'dart:async';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../core/utils/search_utils.dart';
+import '../../../core/data/remote_data_source.dart';
 import '../models/shikigami.dart';
-import '../repositories/shikigami_repository.dart';
 
-final shikigamiListProvider = FutureProvider<List<Shikigami>>((ref) async {
-  final repo = ref.watch(shikigamiRepositoryProvider);
-  final list = await repo.loadAll();
-  // Giữ nguyên thứ tự từ file JSON (scraper lưu theo ngày đăng, mới → cũ).
-  return List.unmodifiable(list);
-});
-
+/// Fetches one shikigami by id directly from Supabase. Used by the detail
+/// screen — no local cache.
 final shikigamiByIdProvider =
     FutureProvider.family<Shikigami?, String>((ref, id) async {
-  final list = await ref.watch(shikigamiListProvider.future);
-  for (final s in list) {
-    if (s.id == id) return s;
-  }
-  return null;
+  final remote = ref.read(remoteDataSourceProvider);
+  final raw = await remote.fetchShikigamiById(id);
+  return raw == null ? null : Shikigami.fromJson(raw);
 });
 
 class ShikigamiFilter {
   const ShikigamiFilter({
     this.query = '',
+    this.debouncedQuery = '',
     this.rarity,
-    this.role,
   });
 
+  /// Bound to the TextField — updates on every keystroke for immediate UI
+  /// feedback (clear button visibility, etc.).
   final String query;
+
+  /// Lagging copy of [query] that drives the server fetch. Updated 400ms
+  /// after the last keystroke so we don't hit Supabase on every character.
+  final String debouncedQuery;
+
+  /// Rarity is instant (chip toggle) — no debounce.
   final String? rarity;
-  final String? role;
 
   ShikigamiFilter copyWith({
     String? query,
+    String? debouncedQuery,
     Object? rarity = _sentinel,
-    Object? role = _sentinel,
   }) {
     return ShikigamiFilter(
       query: query ?? this.query,
+      debouncedQuery: debouncedQuery ?? this.debouncedQuery,
       rarity: identical(rarity, _sentinel) ? this.rarity : rarity as String?,
-      role: identical(role, _sentinel) ? this.role : role as String?,
     );
   }
 
@@ -49,27 +50,35 @@ class ShikigamiFilter {
 class ShikigamiFilterNotifier extends StateNotifier<ShikigamiFilter> {
   ShikigamiFilterNotifier() : super(const ShikigamiFilter());
 
-  void setQuery(String q) => state = state.copyWith(query: q);
-  void setRarity(String? rarity) => state = state.copyWith(rarity: rarity);
-  void setRole(String? role) => state = state.copyWith(role: role);
-  void reset() => state = const ShikigamiFilter();
+  Timer? _debounce;
+
+  void setQuery(String q) {
+    state = state.copyWith(query: q);
+    _debounce?.cancel();
+    _debounce = Timer(const Duration(milliseconds: 400), () {
+      if (mounted) {
+        state = state.copyWith(debouncedQuery: q);
+      }
+    });
+  }
+
+  void setRarity(String? rarity) {
+    state = state.copyWith(rarity: rarity);
+  }
+
+  void reset() {
+    _debounce?.cancel();
+    state = const ShikigamiFilter();
+  }
+
+  @override
+  void dispose() {
+    _debounce?.cancel();
+    super.dispose();
+  }
 }
 
 final shikigamiFilterProvider =
     StateNotifierProvider<ShikigamiFilterNotifier, ShikigamiFilter>(
   (ref) => ShikigamiFilterNotifier(),
 );
-
-final filteredShikigamiProvider = Provider<AsyncValue<List<Shikigami>>>((ref) {
-  final all = ref.watch(shikigamiListProvider);
-  final filter = ref.watch(shikigamiFilterProvider);
-
-  return all.whenData((list) {
-    return list.where((s) {
-      if (filter.rarity != null && s.rarity != filter.rarity) return false;
-      if (filter.role != null && !s.hasRole(filter.role!)) return false;
-      if (!matchesQuery(filter.query, s.searchableNames)) return false;
-      return true;
-    }).toList(growable: false);
-  });
-});

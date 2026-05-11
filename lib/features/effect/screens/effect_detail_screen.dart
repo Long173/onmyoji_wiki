@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../core/widgets/asset_image_placeholder.dart';
+import '../../../core/widgets/network_image_placeholder.dart';
 import '../../../core/widgets/empty_state.dart';
 import '../models/effect.dart';
 import '../providers/effect_list_provider.dart';
@@ -53,8 +53,8 @@ class _Body extends StatelessWidget {
           child: SizedBox(
             width: 120,
             height: 120,
-            child: AssetImagePlaceholder(
-              assetPath: effect.image,
+            child: NetworkImagePlaceholder(
+              imagePath: effect.image,
               fallbackLabel: effect.displayName,
               borderRadius: BorderRadius.circular(16),
             ),

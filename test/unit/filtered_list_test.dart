@@ -1,105 +1,175 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:diacritic/diacritic.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:onmyoji_wiki/core/data/json_loader.dart';
+import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
+import 'package:onmyoji_wiki/core/data/remote_data_source.dart';
 import 'package:onmyoji_wiki/features/shikigami/models/shikigami.dart';
-import 'package:onmyoji_wiki/features/shikigami/providers/shikigami_list_provider.dart';
-import 'package:onmyoji_wiki/features/shikigami/repositories/shikigami_repository.dart';
 
-class _FakeLoader implements JsonLoader {
-  _FakeLoader(this._byPath);
-  final Map<String, List<Map<String, dynamic>>> _byPath;
+/// In-process fake — implements the predicates Postgres would apply against
+/// an in-memory dataset, including `.range(offset, offset+limit-1)` slicing,
+/// so we can drive a real PagingController without standing up Supabase.
+class _FakeRemote implements RemoteDataSource {
+  _FakeRemote(this._rows);
+  final List<Map<String, dynamic>> _rows;
+  final calls = <({String? rarity, String? search, int offset, int? limit})>[];
 
   @override
-  Future<List<Map<String, dynamic>>> loadList(String assetPath) async {
-    final data = _byPath[assetPath];
-    if (data == null) {
-      throw Exception('No fixture for $assetPath');
+  Future<List<Map<String, dynamic>>> fetchShikigami({
+    String? rarity,
+    String? search,
+    int offset = 0,
+    int? limit,
+  }) async {
+    calls.add((rarity: rarity, search: search, offset: offset, limit: limit));
+    Iterable<Map<String, dynamic>> rows = _rows;
+    if (rarity != null && rarity.isNotEmpty) {
+      rows = rows.where((r) => r['rarity'] == rarity);
     }
-    return data;
+    if (search != null && search.isNotEmpty) {
+      final q = removeDiacritics(search).toLowerCase();
+      rows = rows.where((r) {
+        for (final k in ['name_vi', 'name_en', 'name_jp']) {
+          final raw = (r[k] ?? '').toString();
+          if (removeDiacritics(raw).toLowerCase().contains(q)) return true;
+        }
+        return false;
+      });
+    }
+    final all = rows.toList();
+    if (limit == null) return all;
+    final end = (offset + limit).clamp(0, all.length);
+    return all.sublist(offset.clamp(0, all.length), end);
   }
+
+  @override
+  Future<List<Map<String, dynamic>>> fetchSouls({
+    String? kind,
+    String? search,
+    int offset = 0,
+    int? limit,
+  }) =>
+      throw UnimplementedError();
+
+  @override
+  Future<List<Map<String, dynamic>>> fetchEffects({
+    String? kind,
+    String? search,
+    int offset = 0,
+    int? limit,
+  }) =>
+      throw UnimplementedError();
+
+  @override
+  Future<List<Map<String, dynamic>>> fetchManifest() =>
+      throw UnimplementedError();
+
+  @override
+  Future<Map<String, dynamic>?> fetchShikigamiById(String id) =>
+      throw UnimplementedError();
+
+  @override
+  Future<Map<String, dynamic>?> fetchSoulById(String id) =>
+      throw UnimplementedError();
+
+  @override
+  Future<Map<String, dynamic>?> fetchEffectById(String id) =>
+      throw UnimplementedError();
+
+  @override
+  Future<List<Map<String, dynamic>>> fetchSoulsByIds(List<String> ids) =>
+      throw UnimplementedError();
 }
 
-Shikigami _s(String id, String nameVi,
-    {String rarity = 'SSR', String role = 'attacker'}) {
-  return Shikigami.fromJson({
-    'id': id,
-    'name_vi': nameVi,
-    'rarity': rarity,
-    'role': role,
-  });
+PagingController<int, Shikigami> _buildController(
+  _FakeRemote remote, {
+  required int pageSize,
+  String? rarity,
+  String search = '',
+}) {
+  return PagingController<int, Shikigami>(
+    getNextPageKey: (state) {
+      if (state.pages == null) return 0;
+      final lastPage = state.pages!.lastOrNull;
+      if (lastPage == null || lastPage.length < pageSize) return null;
+      return (state.keys?.lastOrNull ?? 0) + pageSize;
+    },
+    fetchPage: (offset) async {
+      final raw = await remote.fetchShikigami(
+        rarity: rarity,
+        search: search,
+        offset: offset,
+        limit: pageSize,
+      );
+      return raw.map(Shikigami.fromJson).toList();
+    },
+  );
 }
 
 void main() {
-  late ProviderContainer container;
+  late _FakeRemote remote;
 
   setUp(() {
-    container = ProviderContainer(overrides: [
-      jsonLoaderProvider.overrideWithValue(_FakeLoader({
-        'assets/data/shikigami/ssr.json': [
-          {'id': 'ibaraki_doji', 'name_vi': 'Ibaraki Đồng Tử', 'rarity': 'SSR', 'role': 'attacker'},
-          {'id': 'mio', 'name_vi': 'Mio', 'rarity': 'SSR', 'role': 'defender'},
-        ],
-        'assets/data/shikigami/sr.json': [
-          {'id': 'momiji', 'name_vi': 'Momiji', 'rarity': 'SR', 'role': 'attacker'},
-        ],
-        'assets/data/shikigami/sp.json': [],
-        'assets/data/shikigami/r.json': [],
-        'assets/data/shikigami/n.json': [],
-      })),
+    // 5 records → 2 pages of 2, then a partial page of 1.
+    remote = _FakeRemote([
+      {'id': 'a', 'name_vi': 'Alpha', 'rarity': 'SSR'},
+      {'id': 'b', 'name_vi': 'Beta', 'rarity': 'SSR'},
+      {'id': 'c', 'name_vi': 'Gamma', 'rarity': 'SR'},
+      {'id': 'd', 'name_vi': 'Delta', 'rarity': 'SR'},
+      {'id': 'e', 'name_vi': 'Epsilon', 'rarity': 'R'},
     ]);
   });
 
-  tearDown(() => container.dispose());
+  test('first page loads with offset=0 and the configured page size',
+      () async {
+    final controller = _buildController(remote, pageSize: 2);
+    addTearDown(controller.dispose);
 
-  test('shikigamiListProvider preserves JSON file order', () async {
-    final list = await container.read(shikigamiListProvider.future);
-    // JSON file order = fixture insertion order: ibaraki_doji, mio, momiji
-    expect(list.map((e) => e.id).toList(),
-        ['ibaraki_doji', 'mio', 'momiji']);
+    controller.fetchNextPage();
+    await Future<void>.delayed(Duration.zero);
+    await Future<void>.delayed(Duration.zero);
+
+    expect(controller.items?.map((s) => s.id), ['a', 'b']);
+    expect(remote.calls.last, (rarity: null, search: '', offset: 0, limit: 2));
   });
 
-  test('shikigamiByIdProvider finds the right item', () async {
-    final s = await container.read(shikigamiByIdProvider('mio').future);
-    expect(s, isNotNull);
-    expect(s!.nameVi, 'Mio');
+  test('subsequent fetchNextPage advances the offset', () async {
+    final controller = _buildController(remote, pageSize: 2);
+    addTearDown(controller.dispose);
+
+    controller.fetchNextPage();
+    await Future<void>.delayed(Duration.zero);
+    await Future<void>.delayed(Duration.zero);
+    controller.fetchNextPage();
+    await Future<void>.delayed(Duration.zero);
+    await Future<void>.delayed(Duration.zero);
+
+    expect(controller.items?.map((s) => s.id), ['a', 'b', 'c', 'd']);
+    expect(remote.calls.last.offset, 2);
   });
 
-  test('filteredShikigamiProvider applies query, rarity, role', () async {
-    await container.read(shikigamiListProvider.future);
+  test('stops when last page is smaller than page size', () async {
+    final controller = _buildController(remote, pageSize: 2);
+    addTearDown(controller.dispose);
 
-    container
-        .read(shikigamiFilterProvider.notifier)
-        .setRarity('SSR');
-    final ssrOnly =
-        container.read(filteredShikigamiProvider).value!.map((e) => e.id);
-    expect(ssrOnly, containsAll(['ibaraki_doji', 'mio']));
-    expect(ssrOnly, isNot(contains('momiji')));
+    for (var i = 0; i < 5; i++) {
+      controller.fetchNextPage();
+      await Future<void>.delayed(Duration.zero);
+      await Future<void>.delayed(Duration.zero);
+    }
 
-    container
-        .read(shikigamiFilterProvider.notifier)
-        .setRole('defender');
-    final defOnly =
-        container.read(filteredShikigamiProvider).value!.map((e) => e.id);
-    expect(defOnly, ['mio']);
-
-    container.read(shikigamiFilterProvider.notifier).reset();
-    container
-        .read(shikigamiFilterProvider.notifier)
-        .setQuery('dong tu');
-    final searched =
-        container.read(filteredShikigamiProvider).value!.map((e) => e.id);
-    expect(searched, ['ibaraki_doji']);
+    expect(controller.items?.map((s) => s.id), ['a', 'b', 'c', 'd', 'e']);
+    // Final fetch returned 1 row (< page size 2) → no further fetch.
+    expect(controller.hasNextPage, isFalse);
   });
 
-  test('repository.loadAll returns mapped Shikigami list', () async {
-    final repo = container.read(shikigamiRepositoryProvider);
-    final list = await repo.loadAll();
-    expect(list, hasLength(3));
-    expect(list.first, isA<Shikigami>());
-  });
+  test('search predicate filters before pagination slices', () async {
+    final controller =
+        _buildController(remote, pageSize: 10, search: 'Alpha');
+    addTearDown(controller.dispose);
 
-  test('helper _s sanity check (mirrors test fixtures)', () {
-    final s = _s('x', 'X');
-    expect(s.id, 'x');
+    controller.fetchNextPage();
+    await Future<void>.delayed(Duration.zero);
+    await Future<void>.delayed(Duration.zero);
+
+    expect(controller.items?.map((s) => s.id), ['a']);
   });
 }

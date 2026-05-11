@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/router/app_router.dart';
 import '../../../core/theme/app_colors.dart';
-import '../../../core/widgets/asset_image_placeholder.dart';
+import '../../../core/widgets/network_image_placeholder.dart';
 import '../../../core/widgets/empty_state.dart';
 import '../../../core/widgets/rarity_badge.dart';
 import '../../soul/providers/soul_list_provider.dart';
@@ -69,7 +69,7 @@ class _DetailBody extends StatelessWidget {
             foregroundColor: scheme.onSurface,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
-                shikigami.nameVi,
+                shikigami.displayName,
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w700,
@@ -108,9 +108,9 @@ class _Header extends StatelessWidget {
     return Stack(
       fit: StackFit.expand,
       children: [
-        AssetImagePlaceholder(
-          assetPath: shikigami.image,
-          fallbackLabel: shikigami.nameVi,
+        NetworkImagePlaceholder(
+          imagePath: shikigami.image,
+          fallbackLabel: shikigami.displayName,
         ),
         DecoratedBox(
           decoration: BoxDecoration(
@@ -132,30 +132,7 @@ class _Header extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  RarityBadge(rarity: shikigami.rarity),
-                  const SizedBox(width: 8),
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 8,
-                      vertical: 3,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: 0.15),
-                      borderRadius: BorderRadius.circular(6),
-                    ),
-                    child: Text(
-                      shikigami.roleLabel,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 11,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              RarityBadge(rarity: shikigami.rarity),
               const SizedBox(height: 6),
               Text(
                 [
@@ -401,21 +378,22 @@ class _RecommendedSoulsTab extends ConsumerWidget {
         title: 'Chưa có ngự hồn đề xuất',
       );
     }
-    final allAsync = ref.watch(soulListProvider);
-    return allAsync.when(
+    final matchesAsync = ref.watch(soulsByIdsProvider(ids));
+    return matchesAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
       error: (e, _) => EmptyState(
         icon: Icons.error_outline,
         title: 'Không tải được ngự hồn',
         message: '$e',
       ),
-      data: (all) {
-        final byId = {for (final s in all) s.id: s};
-        final matches = [
+      data: (matches) {
+        // Server returns matches unordered; restore the order from `ids`.
+        final byId = {for (final s in matches) s.id: s};
+        final ordered = [
           for (final id in ids)
             if (byId[id] != null) byId[id]!,
         ];
-        if (matches.isEmpty) {
+        if (ordered.isEmpty) {
           return const EmptyState(
             icon: Icons.search_off,
             title: 'Chưa cập nhật dữ liệu ngự hồn đề xuất',
@@ -423,18 +401,18 @@ class _RecommendedSoulsTab extends ConsumerWidget {
         }
         return ListView.separated(
           padding: const EdgeInsets.all(16),
-          itemCount: matches.length,
+          itemCount: ordered.length,
           separatorBuilder: (_, _) => const SizedBox(height: 10),
           itemBuilder: (_, i) {
-            final soul = matches[i];
+            final soul = ordered[i];
             return Card(
               margin: EdgeInsets.zero,
               child: ListTile(
                 leading: SizedBox(
                   width: 48,
                   height: 48,
-                  child: AssetImagePlaceholder(
-                    assetPath: soul.image,
+                  child: NetworkImagePlaceholder(
+                    imagePath: soul.image,
                     fallbackLabel: soul.displayName,
                     borderRadius: BorderRadius.circular(10),
                   ),

@@ -83,21 +83,6 @@ class ShikigamiStats {
   }
 }
 
-String _labelForRole(String role) {
-  switch (role) {
-    case 'attacker':
-      return 'Công';
-    case 'defender':
-      return 'Thủ';
-    case 'support':
-      return 'Hỗ trợ';
-    case 'control':
-      return 'Khống chế';
-    default:
-      return role;
-  }
-}
-
 @immutable
 class Shikigami {
   const Shikigami({
@@ -107,7 +92,6 @@ class Shikigami {
     required this.nameEn,
     required this.friendlyNames,
     required this.rarity,
-    required this.roles,
     required this.description,
     required this.obtain,
     required this.stats,
@@ -127,10 +111,6 @@ class Shikigami {
   final List<String> friendlyNames;
 
   final String rarity;
-
-  /// 1 Thức Thần có thể đa vai trò (vừa công vừa thủ). Để rỗng nếu chưa phân loại.
-  final List<String> roles;
-
   final String description;
   final List<String> obtain;
   final ShikigamiStats stats;
@@ -139,20 +119,22 @@ class Shikigami {
   final String lore;
   final String image;
 
-  List<String> get roleLabels =>
-      [for (final r in roles) _labelForRole(r)];
-
-  String get roleLabel => roleLabels.isEmpty ? '' : roleLabels.join(' · ');
-
-  bool hasRole(String role) => roles.contains(role);
+  /// Display name: prefer Vietnamese, fall back to English, then Japanese,
+  /// then the id. Mirrors `Soul.displayName` / `Effect.displayName`.
+  String get displayName {
+    if (nameVi.isNotEmpty) return nameVi;
+    if (nameEn.isNotEmpty) return nameEn;
+    if (nameJp.isNotEmpty) return nameJp;
+    return id;
+  }
 
   Iterable<String> get searchableNames => [
-        nameVi,
-        nameEn,
-        nameJp,
-        id,
-        ...friendlyNames,
-      ];
+    nameVi,
+    nameEn,
+    nameJp,
+    id,
+    ...friendlyNames,
+  ];
 
   factory Shikigami.fromJson(Map<String, dynamic> json) {
     final stats = json['stats'];
@@ -164,19 +146,6 @@ class Shikigami {
         .where((s) => s.isNotEmpty)
         .toList(growable: false);
 
-    final rawRole = json['role'];
-    final List<String> roles;
-    if (rawRole is List) {
-      roles = rawRole
-          .map((e) => e.toString())
-          .where((s) => s.isNotEmpty)
-          .toList(growable: false);
-    } else if (rawRole is String && rawRole.isNotEmpty) {
-      roles = [rawRole];
-    } else {
-      roles = const [];
-    }
-
     return Shikigami(
       id: json['id'] as String,
       nameVi: json['name_vi'] as String,
@@ -184,15 +153,15 @@ class Shikigami {
       nameEn: json['name_en'] as String? ?? '',
       friendlyNames: friendly,
       rarity: json['rarity'] as String? ?? 'N',
-      roles: roles,
       description: json['description'] as String? ?? '',
       obtain: List<String>.from(json['obtain'] as List? ?? const []),
       stats: stats == null
           ? ShikigamiStats.empty
           : ShikigamiStats.fromJson(Map<String, dynamic>.from(stats as Map)),
       skills: skills,
-      recommendedSouls:
-          List<String>.from(json['recommended_souls'] as List? ?? const []),
+      recommendedSouls: List<String>.from(
+        json['recommended_souls'] as List? ?? const [],
+      ),
       lore: json['lore'] as String? ?? '',
       image: json['image'] as String? ?? '',
     );

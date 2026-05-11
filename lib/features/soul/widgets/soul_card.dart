@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/router/app_router.dart';
 import '../../../core/theme/app_colors.dart';
-import '../../../core/widgets/asset_image_placeholder.dart';
+import '../../../core/widgets/network_image_placeholder.dart';
 import '../models/soul.dart';
 
 class SoulCard extends StatelessWidget {
@@ -22,8 +22,8 @@ class SoulCard extends StatelessWidget {
           children: [
             AspectRatio(
               aspectRatio: 1,
-              child: AssetImagePlaceholder(
-                assetPath: soul.image,
+              child: NetworkImagePlaceholder(
+                imagePath: soul.image,
                 fallbackLabel: soul.displayName,
               ),
             ),

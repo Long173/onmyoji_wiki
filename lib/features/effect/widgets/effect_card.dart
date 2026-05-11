@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/router/app_router.dart';
-import '../../../core/widgets/asset_image_placeholder.dart';
+import '../../../core/widgets/network_image_placeholder.dart';
 import '../models/effect.dart';
 import 'effect_kind_badge.dart';
 
@@ -24,8 +24,8 @@ class EffectCard extends StatelessWidget {
               SizedBox(
                 width: 48,
                 height: 48,
-                child: AssetImagePlaceholder(
-                  assetPath: effect.image,
+                child: NetworkImagePlaceholder(
+                  imagePath: effect.image,
                   fallbackLabel: effect.displayName,
                   borderRadius: BorderRadius.circular(10),
                 ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/theme/app_colors.dart';
-import '../../../core/widgets/asset_image_placeholder.dart';
+import '../../../core/widgets/network_image_placeholder.dart';
 import '../../../core/widgets/empty_state.dart';
 import '../models/soul.dart';
 import '../providers/soul_list_provider.dart';
@@ -73,8 +73,8 @@ class _DetailBody extends StatelessWidget {
             background: Stack(
               fit: StackFit.expand,
               children: [
-                AssetImagePlaceholder(
-                  assetPath: soul.image,
+                NetworkImagePlaceholder(
+                  imagePath: soul.image,
                   fallbackLabel: soul.displayName,
                 ),
                 DecoratedBox(

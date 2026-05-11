@@ -1,35 +1,38 @@
+import 'dart:async';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../core/utils/search_utils.dart';
+import '../../../core/data/remote_data_source.dart';
 import '../models/effect.dart';
-import '../repositories/effect_repository.dart';
-
-final effectListProvider = FutureProvider<List<Effect>>((ref) async {
-  final repo = ref.watch(effectRepositoryProvider);
-  final list = await repo.loadAll();
-  return List.unmodifiable(list);
-});
 
 final effectByIdProvider =
     FutureProvider.family<Effect?, String>((ref, id) async {
-  final list = await ref.watch(effectListProvider.future);
-  for (final e in list) {
-    if (e.id == id) return e;
-  }
-  return null;
+  final remote = ref.read(remoteDataSourceProvider);
+  final raw = await remote.fetchEffectById(id);
+  return raw == null ? null : Effect.fromJson(raw);
 });
 
 class EffectFilter {
-  const EffectFilter({this.query = '', this.kind});
+  const EffectFilter({
+    this.query = '',
+    this.debouncedQuery = '',
+    this.kind,
+  });
 
   final String query;
+  final String debouncedQuery;
 
   /// `null` = tất cả.
   final EffectKind? kind;
 
-  EffectFilter copyWith({String? query, Object? kind = _sentinel}) {
+  EffectFilter copyWith({
+    String? query,
+    String? debouncedQuery,
+    Object? kind = _sentinel,
+  }) {
     return EffectFilter(
       query: query ?? this.query,
+      debouncedQuery: debouncedQuery ?? this.debouncedQuery,
       kind: identical(kind, _sentinel) ? this.kind : kind as EffectKind?,
     );
   }
@@ -40,25 +43,33 @@ class EffectFilter {
 class EffectFilterNotifier extends StateNotifier<EffectFilter> {
   EffectFilterNotifier() : super(const EffectFilter());
 
-  void setQuery(String q) => state = state.copyWith(query: q);
+  Timer? _debounce;
+
+  void setQuery(String q) {
+    state = state.copyWith(query: q);
+    _debounce?.cancel();
+    _debounce = Timer(const Duration(milliseconds: 400), () {
+      if (mounted) {
+        state = state.copyWith(debouncedQuery: q);
+      }
+    });
+  }
+
   void setKind(EffectKind? kind) => state = state.copyWith(kind: kind);
-  void reset() => state = const EffectFilter();
+
+  void reset() {
+    _debounce?.cancel();
+    state = const EffectFilter();
+  }
+
+  @override
+  void dispose() {
+    _debounce?.cancel();
+    super.dispose();
+  }
 }
 
 final effectFilterProvider =
     StateNotifierProvider<EffectFilterNotifier, EffectFilter>(
   (ref) => EffectFilterNotifier(),
 );
-
-final filteredEffectsProvider = Provider<AsyncValue<List<Effect>>>((ref) {
-  final all = ref.watch(effectListProvider);
-  final filter = ref.watch(effectFilterProvider);
-
-  return all.whenData((list) {
-    return list.where((e) {
-      if (filter.kind != null && e.kind != filter.kind) return false;
-      if (!matchesQuery(filter.query, e.searchableNames)) return false;
-      return true;
-    }).toList(growable: false);
-  });
-});

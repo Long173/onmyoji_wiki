@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/router/app_router.dart';
-import '../../../core/widgets/asset_image_placeholder.dart';
+import '../../../core/widgets/network_image_placeholder.dart';
 import '../../../core/widgets/rarity_badge.dart';
 import '../models/shikigami.dart';
 
@@ -23,9 +23,9 @@ class ShikigamiCard extends StatelessWidget {
           children: [
             AspectRatio(
               aspectRatio: 1,
-              child: AssetImagePlaceholder(
-                assetPath: shikigami.image,
-                fallbackLabel: shikigami.nameVi,
+              child: NetworkImagePlaceholder(
+                imagePath: shikigami.image,
+                fallbackLabel: shikigami.displayName,
               ),
             ),
             Padding(
@@ -34,17 +34,11 @@ class ShikigamiCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    shikigami.nameVi,
+                    shikigami.displayName,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: theme.textTheme.titleSmall
                         ?.copyWith(fontWeight: FontWeight.w700),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    shikigami.roleLabel,
-                    style: theme.textTheme.bodySmall
-                        ?.copyWith(color: theme.colorScheme.outline),
                   ),
                   const SizedBox(height: 6),
                   Align(

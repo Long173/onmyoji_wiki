@@ -10,7 +10,6 @@ void main() {
         'name_jp': '茨木童子',
         'name_en': 'Ibaraki Doji',
         'rarity': 'SSR',
-        'role': ['attacker', 'defender'],
         'description': 'desc',
         'obtain': ['A', 'B'],
         'stats': {
@@ -44,10 +43,6 @@ void main() {
       expect(s.id, 'ibaraki_doji');
       expect(s.nameVi, 'Ibaraki Đồng Tử');
       expect(s.rarity, 'SSR');
-      expect(s.roles, ['attacker', 'defender']);
-      expect(s.hasRole('defender'), isTrue);
-      expect(s.hasRole('support'), isFalse);
-      expect(s.roleLabel, 'Công · Thủ');
       expect(s.stats.hp.value, 10122);
       expect(s.stats.hp.tier, 'A');
       expect(s.stats.critDmg.value, 160);
@@ -73,16 +68,6 @@ void main() {
       expect(s.friendlyNames, isEmpty);
     });
 
-    test('legacy string role still parsed as single-entry list', () {
-      final s = Shikigami.fromJson({
-        'id': 'x',
-        'name_vi': 'Thử',
-        'role': 'support',
-      });
-      expect(s.roles, ['support']);
-      expect(s.roleLabel, 'Hỗ trợ');
-    });
-
     test('parses friendly_name and includes them in search tokens', () {
       final s = Shikigami.fromJson({
         'id': 'ibaraki_doji',
@@ -93,12 +78,39 @@ void main() {
       expect(s.searchableNames, containsAll(['Ibaraki', 'Cụ Oni']));
     });
 
+    test('displayName falls back nameVi → nameEn → nameJp → id', () {
+      expect(
+        Shikigami.fromJson({'id': 'x', 'name_vi': 'Việt'}).displayName,
+        'Việt',
+      );
+      expect(
+        Shikigami.fromJson({
+          'id': 'x',
+          'name_vi': '',
+          'name_en': 'English',
+        }).displayName,
+        'English',
+      );
+      expect(
+        Shikigami.fromJson({
+          'id': 'x',
+          'name_vi': '',
+          'name_en': '',
+          'name_jp': '日本',
+        }).displayName,
+        '日本',
+      );
+      expect(
+        Shikigami.fromJson({'id': 'fallback_id', 'name_vi': ''}).displayName,
+        'fallback_id',
+      );
+    });
+
     test('applies defaults for missing optional fields', () {
       final s = Shikigami.fromJson({'id': 'x', 'name_vi': 'Thử'});
       expect(s.nameJp, '');
       expect(s.nameEn, '');
       expect(s.friendlyNames, isEmpty);
-      expect(s.roles, isEmpty);
       expect(s.rarity, 'N');
       expect(s.obtain, isEmpty);
       expect(s.skills, isEmpty);

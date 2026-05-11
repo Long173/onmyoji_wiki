@@ -21,6 +21,14 @@ dependencies:
   flutter_screenutil: ^5.9.3
   diacritic: ^0.1.6
 
+  # Server backend (Supabase) + local cache + network images
+  supabase_flutter: ^2.8.0
+  cached_network_image: ^3.4.1
+  flutter_dotenv: ^5.2.1
+  path_provider: ^2.1.5
+  http: ^1.2.2
+  infinite_scroll_pagination: ^5.1.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -31,19 +39,10 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # Flutter không bundle assets đệ quy → phải liệt kê từng thư mục con.
+  # Data + images đều phục vụ từ Supabase Storage — không bundle nữa.
+  # File `.env` chứa SUPABASE_URL + SUPABASE_ANON_KEY (xem `.env.example`).
   assets:
-    - assets/data/
-    - assets/data/shikigami/
-    - assets/images/shikigami/ssr/
-    - assets/images/shikigami/sr/
-    - assets/images/shikigami/sp/
-    - assets/images/shikigami/r/
-    - assets/images/shikigami/n/
-    - assets/images/souls/
-    - assets/images/effects/
-    - assets/images/rarity/
-    - assets/images/skills/
+    - .env
 
   fonts:
     - family: BeVietnamPro

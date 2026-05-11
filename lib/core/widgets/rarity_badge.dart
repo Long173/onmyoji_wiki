@@ -1,18 +1,16 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/asset_paths.dart';
 import '../theme/app_colors.dart';
 
-/// Hiển thị nhãn rarity.
-///
-/// Ưu tiên dùng ảnh PNG trong `assets/images/rarity/<rarity>.png` (icon game-style).
-/// Nếu ảnh thiếu, fallback sang chip text có màu tương ứng.
+/// Rarity label. Prefers the game-style icon from the Supabase Storage
+/// bucket; falls back to a text chip with the rarity colour if the image is
+/// missing or fails to load.
 class RarityBadge extends StatelessWidget {
   const RarityBadge({super.key, required this.rarity, this.height = 22});
 
   final String rarity;
-
-  /// Chiều cao ảnh/chip (pixel).
   final double height;
 
   Color _textColor() {
@@ -34,10 +32,12 @@ class RarityBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: height,
-      child: Image.asset(
-        AssetPaths.rarityIcon(rarity),
+      child: CachedNetworkImage(
+        imageUrl: AssetPaths.rarityIcon(rarity),
         fit: BoxFit.contain,
-        errorBuilder: (_, _, _) => _TextBadge(
+        // No placeholder — the badge area is tiny and the brief blank frame
+        // is less distracting than a spinner.
+        errorWidget: (_, _, _) => _TextBadge(
           rarity: rarity.toUpperCase(),
           color: _textColor(),
           height: height,

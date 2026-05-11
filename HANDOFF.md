@@ -16,59 +16,73 @@ App wiki Tiếng Việt cho game **Onmyoji** (NetEase). Offline-first; Android +
 - Local: `shared_preferences` (override qua `sharedPreferencesProvider` ở `main.dart`)
 - Search: `diacritic` (bỏ dấu tiếng Việt)
 - Font: `BeVietnamPro` bundle local (không dùng `google_fonts` runtime fetch)
+- **Server**: Supabase (Postgres + Storage public bucket `assets`) — region SG.
+  Auth client SDK = `supabase_flutter` với `anon` key (RLS chặn write).
+  Migration uploader (Python) ở `tools/migrate/` dùng `service_role` key.
+- Image cache: `cached_network_image` (`AssetImagePlaceholder` đã đổi tên thành `NetworkImagePlaceholder`)
+- Config: `flutter_dotenv` đọc `.env` (asset, gitignored)
+- Local cache: file JSON trong `<applicationSupport>/data_cache/`, đồng bộ theo manifest version
 - KHÔNG dùng: bloc, freezed, json_serializable, dio, firebase
 
 ## Layout
 ```
 lib/
-├── main.dart, app.dart                # entry + MaterialApp.router
+├── main.dart                          # Env.load → Supabase.initialize → BootGate
+├── app.dart                           # MaterialApp.router (chạy sau khi sync xong)
 ├── core/
-│   ├── constants/asset_paths.dart     # path helpers (rarityIcon, shikigamiImage, ...)
-│   ├── data/json_loader.dart          # rootBundle JSON loader (testable)
+│   ├── config/env.dart                # typed .env access (SUPABASE_URL / ANON_KEY)
+│   ├── constants/asset_paths.dart     # builders trả URL của Storage bucket
+│   ├── data/
+│   │   ├── json_loader.dart           # cache file reader (applicationSupport/data_cache)
+│   │   ├── remote_data_source.dart    # Supabase REST wrapper
+│   │   └── data_sync_service.dart     # manifest diff + atomic cache write
 │   ├── router/app_router.dart         # 4 routes: shikigami / souls / effects / settings
 │   ├── storage/prefs_service.dart     # SharedPreferences provider
 │   ├── theme/{app_colors,app_theme}.dart
-│   ├── utils/search_utils.dart        # normalize + matchesQuery (diacritic-insensitive)
-│   └── widgets/{empty_state,rarity_badge,asset_image_placeholder}.dart
+│   ├── utils/search_utils.dart        # normalize + matchesQuery
+│   └── widgets/{empty_state,rarity_badge,network_image_placeholder}.dart
 └── features/
+    ├── boot/                          # BootGate + BootScreen (first-launch sync UI)
     ├── shell/                         # bottom nav shell
     ├── shikigami/                     # Thức Thần (chính)
-    │   ├── models/{shikigami,skill}.dart
-    │   ├── repositories/shikigami_repository.dart   # đọc 5 file rarity rồi gộp
-    │   ├── providers/shikigami_list_provider.dart   # list/byId/filter
-    │   ├── screens/{shikigami_list,shikigami_detail}.dart
-    │   └── widgets/{shikigami_card,rarity_filter_bar,skill_section}.dart
     ├── soul/                          # Ngự hồn — kind boss/normal
     ├── effect/                        # Hiệu ứng — kind buff/debuff/other
     └── settings/                      # tab "Khác"
 
-assets/
-├── data/
-│   ├── shikigami/{ssr,sr,sp,r,n}.json   # 126 record total (chia rarity)
-│   ├── souls.json                       # 64 record (57 normal + 7 boss)
-│   └── effects.json                     # 83 record (12 buff + 33 debuff + 38 other)
-├── images/
-│   ├── shikigami/{ssr,sr,sp,r,n}/*.png  # ảnh portrait
-│   ├── souls/*.png                      # 64 ảnh
-│   ├── effects/*.png                    # 42 icon (Common Terminology không có)
-│   ├── skills/{number}.png              # 284 skill icon
-│   └── rarity/{ssr,sr,sp,r,n}.png       # 5 rarity badge
-└── fonts/BeVietnamPro-{Regular,Medium,SemiBold,Bold}.ttf
+assets/                                # CHỈ còn fonts được bundle vào app
+├── fonts/BeVietnamPro-*.ttf
+├── data/                              # GIỮ trên disk làm nguồn cho uploader
+│   ├── shikigami/{ssr,sr,sp,r,n}.json
+│   ├── souls.json
+│   └── effects.json
+└── images/                            # GIỮ trên disk làm nguồn cho uploader
+    ├── shikigami/{ssr,sr,sp,r,n}/*.webp
+    ├── souls/*.webp, effects/*.webp, skills/*.webp, rarity/*
 
-tools/scraper/                         # Python scrapers
-├── scrape_shikigami.py                # nguồn onmyojicltl.wordpress.com
-├── scrape_souls.py                    # nguồn fandom MediaWiki API
-├── scrape_effects.py                  # nguồn fandom Skill_Effects
-├── enrich_shikigami_fandom.py         # merge fandom data vào shikigami (preserve)
-├── merge_unmapped.py                  # merge target_id sau khi user duyệt
-├── text_cleaner.py                    # clean glue chữ "sốsát" → "số sát"
-├── test_text_cleaner.py + test_preserve.py  # python unittest
-├── requirements.txt                   # requests, beautifulsoup4
+supabase/
+├── migrations/0001_init.sql           # 4 tables + indexes + triggers
+├── migrations/0002_rls.sql            # public read RLS
+└── migrations/0003_storage.sql        # bucket assets + policies
+
+tools/migrate/                         # Supabase uploader
+├── upload_to_supabase.py              # upsert tables + storage upload + bump manifest
+├── requirements.txt                   # supabase, python-dotenv
+├── .env.example                       # SUPABASE_URL + SERVICE_ROLE key
 └── README.md
 
-test/                                  # Dart tests (31 pass)
-├── unit/{search_utils,shikigami_model,soul_model,effect_model,filtered_list,favorites_notifier}_test.dart
-└── widget/{shikigami_list_screen,favorite_button}_test.dart
+tools/scraper/                         # Python scrapers (không đổi)
+├── scrape_*.py, enrich_*.py, merge_*.py, text_cleaner.py
+├── test_text_cleaner.py + test_preserve.py
+└── README.md
+
+docs/SUPABASE_SETUP.md                 # walkthrough setup 1 lần
+
+test/                                  # Dart tests (38 pass)
+├── unit/{search_utils,shikigami_model,soul_model,effect_model,
+│         filtered_list,data_sync}_test.dart
+└── widget/shikigami_list_screen_test.dart
+
+.env, .env.example                     # SUPABASE_URL + ANON_KEY (`.env` gitignored)
 ```
 
 ## Data schema (rút gọn — xem code Dart cho đầy đủ)
@@ -173,12 +187,31 @@ python -m unittest test_text_cleaner test_preserve
    ở scheme.surface — `AppBarTheme` global đặt transparent để FlexibleSpace ảnh
    hiển thị đầy đủ khi expand.
 
-## Trạng thái hiện tại (commit f5c856f trên main)
+## Trạng thái hiện tại
 - 126 shikigami (39 enriched + 27 mới từ fandom — collab Demon Slayer/Vocaloid/etc.)
 - 64 souls + 83 effects, mô tả đã dịch tiếng Việt
-- 31/31 Dart tests + 14 Python tests pass
+- **38/38 Dart tests** + 14 Python tests pass
 - `flutter analyze` no issues
-- App build OK trên Android (đã test trên TECNO KJ7)
+- Architecture: Supabase-backed (Postgres + Storage). Bundled assets đã bỏ khỏi
+  `pubspec.yaml` — chỉ giữ trên disk làm nguồn cho `tools/migrate/upload_to_supabase.py`.
+- App build OK trên Android (đã test trên TECNO KJ7) trước migration; cần verify lại
+  sau khi setup Supabase project và chạy uploader.
+
+## Server-backed data flow
+1. **Scraper** (`tools/scraper/`) → ghi vào `assets/data/*.json` trên disk (giữ
+   nguyên flow cũ, là canonical record có thể sửa tay).
+2. **Migration uploader** (`tools/migrate/upload_to_supabase.py`) → đẩy lên
+   Supabase: upsert 3 table + upload ảnh vào bucket `assets` + bump
+   `manifest.version` khi sha256 đổi.
+3. **App** → lần đầu: `BootGate` chạy `DataSyncService.sync()` (fetch manifest,
+   so version với local snapshot, re-download collection đổi version, ghi
+   atomic vào `<applicationSupport>/data_cache/<collection>.json`). Lần sau:
+   chỉ 1 GET manifest, no-op nếu version trùng.
+4. **Ảnh**: app gọi `AssetPaths.shikigamiImage(...)` trả URL Storage public CDN
+   `{SUPABASE_URL}/storage/v1/object/public/assets/...`. `NetworkImagePlaceholder`
+   bọc `cached_network_image` với fallback gradient + initials.
+
+Setup 1 lần: xem `docs/SUPABASE_SETUP.md`.
 
 ## Open items / có thể làm tiếp
 1. **Dịch `name_vi` cho ~27 record mới** từ fandom — đang để rỗng (vd
@@ -205,7 +238,13 @@ python -m unittest test_text_cleaner test_preserve
 1. Cài Flutter 3.41.5+ tại `~/development/flutter/`
 2. Clone repo: `git clone git@github.com:Long173/onmyoji_wiki.git`
 3. `flutter pub get`
-4. `flutter analyze && flutter test` để verify state
-5. Để chạy scraper: setup `tools/scraper/.venv` (xem mục "Cách chạy scraper")
-6. Git config user nếu chưa: dùng `-c user.email=... -c user.name=...` hoặc
-   `git config --local`. **KHÔNG** sửa global config.
+4. **Setup Supabase**: theo `docs/SUPABASE_SETUP.md` — tạo project, chạy 3
+   migration SQL, lấy 2 keys (anon + service_role).
+5. Tạo `.env` (cho app — anon key) và `tools/migrate/.env` (cho uploader —
+   service_role key). Cả 2 đều gitignored.
+6. Chạy uploader 1 lần: `cd tools/migrate && python upload_to_supabase.py`.
+7. `flutter analyze && flutter test` (offline-OK, dùng fake loader).
+8. `flutter run` — lần đầu vào sync screen, fetch data từ Supabase.
+9. Để chạy scraper: setup `tools/scraper/.venv` (xem `tools/scraper/README.md`).
+10. Git config user nếu chưa: dùng `-c user.email=... -c user.name=...` hoặc
+    `git config --local`. **KHÔNG** sửa global config.

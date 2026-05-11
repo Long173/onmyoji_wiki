@@ -1,17 +1,30 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
+import '../constants/asset_paths.dart';
+import '../logging/api_logger.dart';
 import '../theme/app_colors.dart';
 
-class AssetImagePlaceholder extends StatelessWidget {
-  const AssetImagePlaceholder({
+/// Displays a cached network image with a branded fallback (gradient +
+/// initials) when the image is missing or fails to load.
+///
+/// `imagePath` accepts any of:
+///   - a full https URL
+///   - a bucket-relative key (e.g. `shikigami/ssr/tu_kim_than.webp`)
+///   - a legacy `assets/images/...` path (resolved against the bucket root)
+///
+/// Resolution happens via [AssetPaths.resolveStored]; an empty path skips
+/// the network attempt entirely and renders the fallback directly.
+class NetworkImagePlaceholder extends StatelessWidget {
+  const NetworkImagePlaceholder({
     super.key,
-    required this.assetPath,
+    required this.imagePath,
     required this.fallbackLabel,
     this.fit = BoxFit.cover,
     this.borderRadius,
   });
 
-  final String assetPath;
+  final String imagePath;
   final String fallbackLabel;
   final BoxFit fit;
   final BorderRadius? borderRadius;
@@ -19,12 +32,28 @@ class AssetImagePlaceholder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final radius = borderRadius ?? BorderRadius.zero;
+    final resolved = AssetPaths.resolveStored(imagePath);
+    if (resolved.isEmpty) {
+      return ClipRRect(
+        borderRadius: radius,
+        child: _Fallback(label: fallbackLabel),
+      );
+    }
     return ClipRRect(
       borderRadius: radius,
-      child: Image.asset(
-        assetPath,
+      child: CachedNetworkImage(
+        imageUrl: resolved,
         fit: fit,
-        errorBuilder: (_, _, _) => _Fallback(label: fallbackLabel),
+        // Skeleton while loading — slightly darker than fallback so the user
+        // can tell "loading" from "missing".
+        placeholder: (_, _) => const ColoredBox(color: AppColors.inkBlack),
+        errorWidget: (_, url, error) {
+          ApiLogger.event(
+            'image.miss',
+            extra: {'url': url, 'error': error.toString()},
+          );
+          return _Fallback(label: fallbackLabel);
+        },
       ),
     );
   }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_colors.dart';
-import '../../../core/widgets/asset_image_placeholder.dart';
+import '../../../core/widgets/network_image_placeholder.dart';
 import '../models/skill.dart';
 
 class SkillSection extends StatelessWidget {
@@ -161,8 +161,8 @@ class _SkillLeading extends StatelessWidget {
       return SizedBox(
         width: 36,
         height: 36,
-        child: AssetImagePlaceholder(
-          assetPath: image,
+        child: NetworkImagePlaceholder(
+          imagePath: image,
           fallbackLabel: skillName,
           borderRadius: BorderRadius.circular(8),
         ),

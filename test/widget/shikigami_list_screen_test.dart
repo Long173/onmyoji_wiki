@@ -1,21 +1,82 @@
+import 'package:diacritic/diacritic.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:onmyoji_wiki/core/data/json_loader.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:onmyoji_wiki/core/data/remote_data_source.dart';
 import 'package:onmyoji_wiki/core/storage/prefs_service.dart';
-import 'package:onmyoji_wiki/features/shikigami/providers/shikigami_list_provider.dart';
 import 'package:onmyoji_wiki/features/shikigami/screens/shikigami_list_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class _FakeLoader implements JsonLoader {
-  _FakeLoader(this._byPath);
-  final Map<String, List<Map<String, dynamic>>> _byPath;
+class _FakeRemote implements RemoteDataSource {
+  _FakeRemote(this._rows);
+  final List<Map<String, dynamic>> _rows;
 
   @override
-  Future<List<Map<String, dynamic>>> loadList(String assetPath) async {
-    return _byPath[assetPath] ?? const [];
+  Future<List<Map<String, dynamic>>> fetchShikigami({
+    String? rarity,
+    String? search,
+    int offset = 0,
+    int? limit,
+  }) async {
+    Iterable<Map<String, dynamic>> rows = _rows;
+    if (rarity != null && rarity.isNotEmpty) {
+      rows = rows.where((r) => r['rarity'] == rarity);
+    }
+    if (search != null && search.isNotEmpty) {
+      final q = removeDiacritics(search).toLowerCase();
+      rows = rows.where((r) {
+        for (final k in ['name_vi', 'name_en', 'name_jp']) {
+          final raw = (r[k] ?? '').toString();
+          if (removeDiacritics(raw).toLowerCase().contains(q)) return true;
+        }
+        return false;
+      });
+    }
+    final all = rows.toList();
+    if (limit == null) return all;
+    final end = (offset + limit).clamp(0, all.length);
+    return all.sublist(offset.clamp(0, all.length), end);
   }
+
+  @override
+  Future<List<Map<String, dynamic>>> fetchSouls({
+    String? kind,
+    String? search,
+    int offset = 0,
+    int? limit,
+  }) =>
+      throw UnimplementedError();
+
+  @override
+  Future<List<Map<String, dynamic>>> fetchEffects({
+    String? kind,
+    String? search,
+    int offset = 0,
+    int? limit,
+  }) =>
+      throw UnimplementedError();
+
+  @override
+  Future<List<Map<String, dynamic>>> fetchManifest() =>
+      throw UnimplementedError();
+
+  @override
+  Future<Map<String, dynamic>?> fetchShikigamiById(String id) =>
+      throw UnimplementedError();
+
+  @override
+  Future<Map<String, dynamic>?> fetchSoulById(String id) =>
+      throw UnimplementedError();
+
+  @override
+  Future<Map<String, dynamic>?> fetchEffectById(String id) =>
+      throw UnimplementedError();
+
+  @override
+  Future<List<Map<String, dynamic>>> fetchSoulsByIds(List<String> ids) =>
+      throw UnimplementedError();
 }
 
 Future<Widget> _harness() async {
@@ -24,22 +85,20 @@ Future<Widget> _harness() async {
   return ProviderScope(
     overrides: [
       sharedPreferencesProvider.overrideWithValue(prefs),
-      jsonLoaderProvider.overrideWithValue(_FakeLoader({
-        'assets/data/shikigami/ssr.json': [
-          {
-            'id': 'ibaraki_doji',
-            'name_vi': 'Ibaraki Đồng Tử',
-            'rarity': 'SSR',
-            'role': 'attacker',
-          },
-          {
-            'id': 'mio',
-            'name_vi': 'Mio',
-            'rarity': 'SSR',
-            'role': 'defender',
-          },
-        ],
-      })),
+      remoteDataSourceProvider.overrideWithValue(_FakeRemote([
+        {
+          'id': 'ibaraki_doji',
+          'name_vi': 'Ibaraki Đồng Tử',
+          'rarity': 'SSR',
+          'role': 'attacker',
+        },
+        {
+          'id': 'mio',
+          'name_vi': 'Mio',
+          'rarity': 'SSR',
+          'role': 'defender',
+        },
+      ])),
     ],
     child: ScreenUtilInit(
       designSize: const Size(390, 844),
@@ -49,7 +108,12 @@ Future<Widget> _harness() async {
 }
 
 void main() {
-  testWidgets('renders loaded shikigami in grid', (tester) async {
+  setUpAll(() {
+    dotenv.testLoad(fileInput: 'SUPABASE_URL=https://stub.test\n'
+        'SUPABASE_ANON_KEY=stub-key\n');
+  });
+
+  testWidgets('renders first page of shikigami', (tester) async {
     await tester.pumpWidget(await _harness());
     await tester.pumpAndSettle();
 
@@ -57,12 +121,14 @@ void main() {
     expect(find.text('Mio'), findsOneWidget);
   });
 
-  testWidgets('search filters list diacritic-insensitively',
+  testWidgets('search refreshes paging diacritic-insensitively after debounce',
       (tester) async {
     await tester.pumpWidget(await _harness());
     await tester.pumpAndSettle();
 
     await tester.enterText(find.byType(TextField), 'dong tu');
+    // Wait past the 400ms debounce window so server fetch fires.
+    await tester.pump(const Duration(milliseconds: 450));
     await tester.pumpAndSettle();
 
     expect(find.text('Ibaraki Đồng Tử'), findsOneWidget);
@@ -74,24 +140,9 @@ void main() {
     await tester.pumpAndSettle();
 
     await tester.enterText(find.byType(TextField), 'nonexistent');
+    await tester.pump(const Duration(milliseconds: 450));
     await tester.pumpAndSettle();
 
     expect(find.textContaining('Không tìm thấy'), findsOneWidget);
-  });
-
-  testWidgets('provider layer exposes loaded list', (tester) async {
-    SharedPreferences.setMockInitialValues({});
-    final prefs = await SharedPreferences.getInstance();
-    final container = ProviderContainer(overrides: [
-      sharedPreferencesProvider.overrideWithValue(prefs),
-      jsonLoaderProvider.overrideWithValue(_FakeLoader({
-        'assets/data/shikigami/ssr.json': [
-          {'id': 'x', 'name_vi': 'X', 'rarity': 'SSR', 'role': 'attacker'},
-        ],
-      })),
-    ]);
-    addTearDown(container.dispose);
-    final list = await container.read(shikigamiListProvider.future);
-    expect(list, hasLength(1));
   });
 }

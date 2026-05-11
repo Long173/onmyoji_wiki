@@ -1,33 +1,46 @@
+import 'dart:async';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../core/utils/search_utils.dart';
+import '../../../core/data/remote_data_source.dart';
 import '../models/soul.dart';
-import '../repositories/soul_repository.dart';
-
-final soulListProvider = FutureProvider<List<Soul>>((ref) async {
-  final repo = ref.watch(soulRepositoryProvider);
-  final list = await repo.loadAll();
-  return List.unmodifiable(list);
-});
 
 final soulByIdProvider =
     FutureProvider.family<Soul?, String>((ref, id) async {
-  final list = await ref.watch(soulListProvider.future);
-  for (final s in list) {
-    if (s.id == id) return s;
-  }
-  return null;
+  final remote = ref.read(remoteDataSourceProvider);
+  final raw = await remote.fetchSoulById(id);
+  return raw == null ? null : Soul.fromJson(raw);
+});
+
+/// Bulk fetch by ids — used by the shikigami detail "Ngự hồn đề xuất" list
+/// to resolve N ids in a single server call.
+final soulsByIdsProvider =
+    FutureProvider.family<List<Soul>, List<String>>((ref, ids) async {
+  if (ids.isEmpty) return const [];
+  final remote = ref.read(remoteDataSourceProvider);
+  final raw = await remote.fetchSoulsByIds(ids);
+  return raw.map(Soul.fromJson).toList(growable: false);
 });
 
 class SoulFilter {
-  const SoulFilter({this.query = '', this.kind});
+  const SoulFilter({
+    this.query = '',
+    this.debouncedQuery = '',
+    this.kind,
+  });
 
   final String query;
+  final String debouncedQuery;
   final SoulKind? kind;
 
-  SoulFilter copyWith({String? query, Object? kind = _sentinel}) {
+  SoulFilter copyWith({
+    String? query,
+    String? debouncedQuery,
+    Object? kind = _sentinel,
+  }) {
     return SoulFilter(
       query: query ?? this.query,
+      debouncedQuery: debouncedQuery ?? this.debouncedQuery,
       kind: identical(kind, _sentinel) ? this.kind : kind as SoulKind?,
     );
   }
@@ -38,25 +51,33 @@ class SoulFilter {
 class SoulFilterNotifier extends StateNotifier<SoulFilter> {
   SoulFilterNotifier() : super(const SoulFilter());
 
-  void setQuery(String q) => state = state.copyWith(query: q);
+  Timer? _debounce;
+
+  void setQuery(String q) {
+    state = state.copyWith(query: q);
+    _debounce?.cancel();
+    _debounce = Timer(const Duration(milliseconds: 400), () {
+      if (mounted) {
+        state = state.copyWith(debouncedQuery: q);
+      }
+    });
+  }
+
   void setKind(SoulKind? kind) => state = state.copyWith(kind: kind);
-  void reset() => state = const SoulFilter();
+
+  void reset() {
+    _debounce?.cancel();
+    state = const SoulFilter();
+  }
+
+  @override
+  void dispose() {
+    _debounce?.cancel();
+    super.dispose();
+  }
 }
 
 final soulFilterProvider =
     StateNotifierProvider<SoulFilterNotifier, SoulFilter>(
   (ref) => SoulFilterNotifier(),
 );
-
-final filteredSoulsProvider = Provider<AsyncValue<List<Soul>>>((ref) {
-  final all = ref.watch(soulListProvider);
-  final filter = ref.watch(soulFilterProvider);
-
-  return all.whenData((list) {
-    return list.where((s) {
-      if (filter.kind != null && s.kind != filter.kind) return false;
-      if (!matchesQuery(filter.query, s.searchableNames)) return false;
-      return true;
-    }).toList(growable: false);
-  });
-});

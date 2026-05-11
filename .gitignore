@@ -46,3 +46,17 @@ app.*.map.json
 
 # Scraper artifacts
 tools/scraper/.venv/
+tools/migrate/.venv/
+
+# Supabase env (anon key for app + service_role key for uploader)
+.env
+tools/migrate/.env
+
+# Supabase CLI local state
+supabase/.branches/
+supabase/.temp/
+# Temporary combined SQL files (paste-once helpers)
+supabase/migrations/_*.sql
+
+# Claude Code local config
+.claude/
