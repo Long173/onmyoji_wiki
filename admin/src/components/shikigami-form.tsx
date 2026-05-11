@@ -1,0 +1,264 @@
+'use client';
+
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+import { FormProvider, useForm } from 'react-hook-form';
+
+import {
+  saveShikigami,
+  deleteShikigami,
+} from '@/app/(admin)/shikigami/[id]/actions';
+import {
+  shikigamiFormSchema,
+  type ShikigamiFormValues,
+} from '@/lib/schemas';
+import { RARITIES, type ShikigamiRow } from '@/lib/types';
+
+import { ImageUploadField } from './image-upload-field';
+import { SkillsEditor } from './skills-editor';
+import { StatsEditor } from './stats-editor';
+import { StringArrayField } from './string-array-field';
+
+export function ShikigamiForm({
+  initial,
+  isNew,
+}: {
+  initial: ShikigamiRow;
+  isNew: boolean;
+}) {
+  const router = useRouter();
+  const [error, setError] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
+
+  const methods = useForm<ShikigamiFormValues>({
+    resolver: zodResolver(shikigamiFormSchema),
+    defaultValues: initial as ShikigamiFormValues,
+    mode: 'onSubmit',
+  });
+
+  const onSubmit = methods.handleSubmit(async (values) => {
+    setError(null);
+    setBusy(true);
+    try {
+      const res = await saveShikigami(values);
+      if (!res.ok) {
+        setError(res.error);
+        return;
+      }
+      if (isNew) {
+        router.push(`/shikigami/${res.id}`);
+      } else {
+        router.refresh();
+      }
+    } finally {
+      setBusy(false);
+    }
+  });
+
+  const onDelete = async () => {
+    if (
+      !window.confirm(
+        `Xoá vĩnh viễn "${initial.name_vi || initial.id}"? Không thể hoàn tác.`,
+      )
+    ) {
+      return;
+    }
+    setBusy(true);
+    const res = await deleteShikigami(initial.id);
+    setBusy(false);
+    if (!res.ok) {
+      setError(res.error);
+      return;
+    }
+    router.push('/shikigami');
+  };
+
+  return (
+    <FormProvider {...methods}>
+      <form onSubmit={onSubmit} className="space-y-6">
+        {/* ─── Identity ─────────────────────────── */}
+        <Section title="Định danh">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <Field label="ID (slug)" required>
+              <input
+                {...methods.register('id')}
+                disabled={!isNew}
+                className="input-field font-mono"
+                placeholder="tu_kim_than"
+              />
+              <Hint>
+                Snake_case. Không sửa được sau khi tạo (là khoá chính).
+              </Hint>
+            </Field>
+            <Field label="Rarity" required>
+              <select
+                {...methods.register('rarity')}
+                className="input-field"
+              >
+                {RARITIES.map((r) => (
+                  <option key={r} value={r}>
+                    {r}
+                  </option>
+                ))}
+              </select>
+            </Field>
+            <Field label="Tên Việt">
+              <input
+                {...methods.register('name_vi')}
+                className="input-field"
+              />
+            </Field>
+            <Field label="Tên Anh">
+              <input
+                {...methods.register('name_en')}
+                className="input-field"
+              />
+            </Field>
+            <Field label="Tên Nhật">
+              <input
+                {...methods.register('name_jp')}
+                className="input-field"
+              />
+            </Field>
+            <Field label="Source URL">
+              <input
+                {...methods.register('source_url')}
+                className="input-field"
+                placeholder="https://..."
+              />
+            </Field>
+          </div>
+          <Field label="Biệt danh cộng đồng">
+            <StringArrayField name="friendly_name" placeholder="Vd: Ngưu Không" />
+          </Field>
+        </Section>
+
+        {/* ─── Image ─────────────────────────── */}
+        <Section title="Ảnh">
+          <ImageUploadField<ShikigamiFormValues>
+            name="image"
+            kind="shikigami"
+            idField="id"
+            rarityField="rarity"
+          />
+        </Section>
+
+        {/* ─── Description / Lore ───────────── */}
+        <Section title="Mô tả / Lore">
+          <Field label="Mô tả ngắn">
+            <textarea
+              {...methods.register('description')}
+              rows={3}
+              className="input-field"
+            />
+          </Field>
+          <Field label="Lore (câu chuyện)">
+            <textarea
+              {...methods.register('lore')}
+              rows={6}
+              className="input-field"
+            />
+          </Field>
+          <Field label="Cách lấy (obtain)">
+            <StringArrayField name="obtain" placeholder="Vd: Triệu hồi SSR" />
+          </Field>
+        </Section>
+
+        {/* ─── Stats ─────────────────────── */}
+        <Section title="Chỉ số">
+          <StatsEditor />
+        </Section>
+
+        {/* ─── Skills ──────────────────────── */}
+        <Section title="Kỹ năng">
+          <SkillsEditor />
+        </Section>
+
+        {/* ─── Recommended souls ────────────── */}
+        <Section title="Ngự hồn đề xuất">
+          <StringArrayField
+            name="recommended_souls"
+            placeholder="Vd: shiranui, ty_ba"
+          />
+          <Hint>
+            Nhập theo soul id (snake_case). Mỗi id một dòng / chip.
+          </Hint>
+        </Section>
+
+        {/* ─── Actions ────────────────────── */}
+        <div className="sticky bottom-4 z-10">
+          <div className="card flex items-center justify-between gap-4 p-4 shadow-lg">
+            {error ? (
+              <span className="text-sm text-red-300">{error}</span>
+            ) : (
+              <span className="text-sm text-white/40">
+                Lưu sẽ upsert thẳng vào Supabase.
+              </span>
+            )}
+            <div className="flex gap-3">
+              {!isNew && (
+                <button
+                  type="button"
+                  onClick={onDelete}
+                  disabled={busy}
+                  className="rounded border border-red-500/40 px-4 py-2 text-sm text-red-300 hover:bg-red-500/10 disabled:opacity-50"
+                >
+                  Xoá
+                </button>
+              )}
+              <button
+                type="submit"
+                disabled={busy}
+                className="btn-primary hover:btn-primary-hover disabled:opacity-50"
+              >
+                {busy ? 'Đang lưu...' : isNew ? 'Tạo mới' : 'Lưu'}
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </FormProvider>
+  );
+}
+
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="card p-6">
+      <h2 className="mb-4 text-lg font-semibold text-[var(--color-brand-gold)]">
+        {title}
+      </h2>
+      <div className="space-y-4">{children}</div>
+    </section>
+  );
+}
+
+function Field({
+  label,
+  required,
+  children,
+}: {
+  label: string;
+  required?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <label className="block">
+      <span className="mb-1 block text-sm text-white/70">
+        {label}
+        {required && <span className="ml-1 text-red-400">*</span>}
+      </span>
+      {children}
+    </label>
+  );
+}
+
+function Hint({ children }: { children: React.ReactNode }) {
+  return <p className="mt-1 text-xs text-white/40">{children}</p>;
+}
