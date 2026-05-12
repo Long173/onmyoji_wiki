@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import { useFieldArray, useFormContext } from 'react-hook-form';
 
 import type { ShikigamiFormValues } from '@/lib/schemas';
+import { slugify } from '@/lib/slugify';
 
 import {
   SkillEffectsPicker,
@@ -200,14 +201,22 @@ function SkillImageField({ skillIdx }: { skillIdx: number }) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const shikigamiId = watch('id');
+  // Same fallback pattern as ImageUploadField: when the form is in create mode
+  // and id is still empty, derive a slug from the names so users can upload
+  // skill icons before the first save. The bucket path stays stable even if
+  // the server later resolves the record id to `<slug>_2`.
+  const realId = watch('id');
+  const nameEn = watch('name_en');
+  const nameVi = watch('name_vi');
+  const fallbackId = slugify(nameEn || nameVi);
+  const shikigamiId = realId || fallbackId;
   const stored = watch(`skills.${skillIdx}.image`) ?? '';
   const previewUrl = resolveStored(stored);
 
   const handleFile = async (file: File) => {
     setError(null);
     if (!shikigamiId) {
-      setError('Điền ID Thức Thần trước.');
+      setError('Điền tên Thức Thần (Anh hoặc Việt) trước.');
       return;
     }
     setBusy(true);

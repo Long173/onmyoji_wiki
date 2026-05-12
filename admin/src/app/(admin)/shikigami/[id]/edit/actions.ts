@@ -2,11 +2,13 @@
 
 import { revalidatePath } from 'next/cache';
 
-import { createSupabaseAdmin } from '@/lib/supabase/admin';
 import {
   shikigamiFormSchema,
   type ShikigamiFormValues,
 } from '@/lib/schemas';
+import { slugify } from '@/lib/slugify';
+import { uniqueSlug } from '@/lib/slug-server';
+import { createSupabaseAdmin } from '@/lib/supabase/admin';
 
 export type SaveResult =
   | { ok: true; id: string }
@@ -23,6 +25,23 @@ export async function saveShikigami(
     };
   }
   const data: ShikigamiFormValues = parsed.data;
+
+  // Auto-fill id for new records: slugify name_en first (usually clean ASCII),
+  // fall back to name_vi. Then resolve unique variant against existing rows.
+  if (!data.id) {
+    const base = slugify(data.name_en || data.name_vi);
+    if (!base) {
+      return {
+        ok: false,
+        error: 'Cần tên (Anh hoặc Việt) để tự tạo ID.',
+      };
+    }
+    try {
+      data.id = await uniqueSlug('shikigami', base);
+    } catch (e) {
+      return { ok: false, error: (e as Error).message };
+    }
+  }
 
   const supabase = createSupabaseAdmin();
   const { error } = await supabase

@@ -11,6 +11,7 @@ import { soulFormSchema, type SoulFormValues } from '@/lib/schemas';
 import type { SoulRow } from '@/lib/types';
 
 import { ImageUploadField } from './image-upload-field';
+import { SlugPreview } from './slug-preview';
 
 const PIECE_SUGGESTIONS: Record<SoulFormValues['kind'], number[]> = {
   normal: [2, 4],
@@ -69,14 +70,19 @@ export function SoulForm({
       <form onSubmit={onSubmit} className="space-y-6">
         <Section title="Định danh">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <Field label="ID (slug)" required>
-              <input
-                {...methods.register('id')}
-                disabled={!isNew}
-                className="input-field font-mono"
-                placeholder="shiranui"
-              />
-            </Field>
+            {isNew ? (
+              <Field label="ID (slug)">
+                <SlugPreview source={['name_en', 'name_vi']} />
+              </Field>
+            ) : (
+              <Field label="ID (slug)" required>
+                <input
+                  {...methods.register('id')}
+                  disabled
+                  className="input-field font-mono"
+                />
+              </Field>
+            )}
             <Field label="Loại" required>
               <select {...methods.register('kind')} className="input-field">
                 <option value="normal">Ngự thường (2/4 mảnh)</option>
@@ -103,6 +109,7 @@ export function SoulForm({
             name="image"
             kind="souls"
             idField="id"
+            slugSource={['name_en', 'name_vi']}
           />
         </Section>
 

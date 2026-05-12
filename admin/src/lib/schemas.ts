@@ -2,10 +2,12 @@ import { z } from 'zod';
 
 import { RARITIES, STAT_TIERS } from './types';
 
+// Allows empty so create-form can submit with no id and the server-side
+// save action auto-fills it from name fields. When non-empty it must match
+// the SLUG pattern (used by both create-after-autofill and edit paths).
 const SLUG = z
   .string()
-  .min(1)
-  .regex(/^[a-z0-9_]+$/, 'Chỉ chữ thường, số, dấu gạch dưới');
+  .regex(/^[a-z0-9_]*$/, 'Chỉ chữ thường, số, dấu gạch dưới');
 
 const statValue = z.object({
   value: z.number().int().min(0),

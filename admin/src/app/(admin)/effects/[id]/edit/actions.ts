@@ -3,6 +3,8 @@
 import { revalidatePath } from 'next/cache';
 
 import { effectFormSchema, type EffectFormValues } from '@/lib/schemas';
+import { slugify } from '@/lib/slugify';
+import { uniqueSlug } from '@/lib/slug-server';
 import { createSupabaseAdmin } from '@/lib/supabase/admin';
 
 export type SaveResult =
@@ -18,6 +20,22 @@ export async function saveEffect(raw: unknown): Promise<SaveResult> {
     };
   }
   const data: EffectFormValues = parsed.data;
+
+  if (!data.id) {
+    // Effects use `name` (vi) and `en_name` — slugify English first.
+    const base = slugify(data.en_name || data.name);
+    if (!base) {
+      return {
+        ok: false,
+        error: 'Cần tên (Anh hoặc Việt) để tự tạo ID.',
+      };
+    }
+    try {
+      data.id = await uniqueSlug('effects', base);
+    } catch (e) {
+      return { ok: false, error: (e as Error).message };
+    }
+  }
 
   const supabase = createSupabaseAdmin();
   const { error } = await supabase.from('effects').upsert(data);

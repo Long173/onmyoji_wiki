@@ -25,6 +25,7 @@ import {
   type ShikigamiOption,
 } from './shikigami-picker-field';
 import { SkillsEditor } from './skills-editor';
+import { SlugPreview } from './slug-preview';
 import { SoulPickerField, type SoulOption } from './soul-picker-field';
 import { StatsEditor } from './stats-editor';
 import { StringArrayField } from './string-array-field';
@@ -99,17 +100,24 @@ export function ShikigamiForm({
         {/* ─── Identity ─────────────────────────── */}
         <Section title="Định danh">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <Field label="ID (slug)" required>
-              <input
-                {...methods.register('id')}
-                disabled={!isNew}
-                className="input-field font-mono"
-                placeholder="tu_kim_than"
-              />
-              <Hint>
-                Snake_case. Không sửa được sau khi tạo (là khoá chính).
-              </Hint>
-            </Field>
+            {isNew ? (
+              <Field label="ID (slug)">
+                <SlugPreview source={['name_en', 'name_vi']} />
+                <Hint>
+                  Tự sinh từ Tên Anh (ưu tiên) hoặc Tên Việt khi lưu. Trùng ID
+                  sẽ tự thêm hậu tố _2, _3...
+                </Hint>
+              </Field>
+            ) : (
+              <Field label="ID (slug)" required>
+                <input
+                  {...methods.register('id')}
+                  disabled
+                  className="input-field font-mono"
+                />
+                <Hint>Không sửa được sau khi tạo (là khoá chính).</Hint>
+              </Field>
+            )}
             <Field label="Rarity" required>
               <select
                 {...methods.register('rarity')}
@@ -160,6 +168,7 @@ export function ShikigamiForm({
             kind="shikigami"
             idField="id"
             rarityField="rarity"
+            slugSource={['name_en', 'name_vi']}
           />
         </Section>
 

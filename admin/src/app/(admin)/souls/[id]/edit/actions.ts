@@ -3,6 +3,8 @@
 import { revalidatePath } from 'next/cache';
 
 import { soulFormSchema, type SoulFormValues } from '@/lib/schemas';
+import { slugify } from '@/lib/slugify';
+import { uniqueSlug } from '@/lib/slug-server';
 import { createSupabaseAdmin } from '@/lib/supabase/admin';
 
 export type SaveResult =
@@ -18,6 +20,21 @@ export async function saveSoul(raw: unknown): Promise<SaveResult> {
     };
   }
   const data: SoulFormValues = parsed.data;
+
+  if (!data.id) {
+    const base = slugify(data.name_en || data.name_vi);
+    if (!base) {
+      return {
+        ok: false,
+        error: 'Cần tên (Anh hoặc Việt) để tự tạo ID.',
+      };
+    }
+    try {
+      data.id = await uniqueSlug('souls', base);
+    } catch (e) {
+      return { ok: false, error: (e as Error).message };
+    }
+  }
 
   const supabase = createSupabaseAdmin();
   const { error } = await supabase.from('souls').upsert(data);

@@ -11,6 +11,7 @@ import { effectFormSchema, type EffectFormValues } from '@/lib/schemas';
 import type { EffectRow } from '@/lib/types';
 
 import { ImageUploadField } from './image-upload-field';
+import { SlugPreview } from './slug-preview';
 
 export function EffectForm({
   initial,
@@ -64,14 +65,19 @@ export function EffectForm({
       <form onSubmit={onSubmit} className="space-y-6">
         <Section title="Định danh">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <Field label="ID (slug)" required>
-              <input
-                {...methods.register('id')}
-                disabled={!isNew}
-                className="input-field font-mono"
-                placeholder="atk_up"
-              />
-            </Field>
+            {isNew ? (
+              <Field label="ID (slug)">
+                <SlugPreview source={['en_name', 'name']} />
+              </Field>
+            ) : (
+              <Field label="ID (slug)" required>
+                <input
+                  {...methods.register('id')}
+                  disabled
+                  className="input-field font-mono"
+                />
+              </Field>
+            )}
             <Field label="Loại" required>
               <select {...methods.register('kind')} className="input-field">
                 <option value="buff">Buff (tăng)</option>
@@ -101,6 +107,7 @@ export function EffectForm({
             name="image"
             kind="effects"
             idField="id"
+            slugSource={['en_name', 'name']}
           />
         </Section>
 

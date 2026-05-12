@@ -8,22 +8,32 @@ import {
   type PathValue,
 } from 'react-hook-form';
 
+import { slugify } from '@/lib/slugify';
+
 type ImageKind = 'shikigami' | 'souls' | 'effects' | 'skills';
 
 /** Schema-agnostic image uploader. Generic over the surrounding RHF form so
  *  the same component works for shikigami, soul, and effect forms.
  *  `name`/`idField`/`rarityField` are typed `Path<T>` so renaming a column
- *  surfaces a compile error at the call site. */
+ *  surfaces a compile error at the call site.
+ *
+ *  `slugSource` lets create forms upload before the record has been saved:
+ *  if `idField` is empty, we fall back to slugifying the first non-empty
+ *  field in `slugSource` (mirrors what the save action will do server-side).
+ *  The bucket path stays stable even if the server appends `_2`/`_3` to
+ *  the final record id during conflict resolution. */
 export function ImageUploadField<T extends FieldValues>({
   name,
   kind,
   idField,
   rarityField,
+  slugSource,
 }: {
   name: Path<T>;
   kind: ImageKind;
   idField: Path<T>;
   rarityField?: Path<T>;
+  slugSource?: Path<T>[];
 }) {
   const { register, watch, setValue } = useFormContext<T>();
   const inputRef = useRef<HTMLInputElement>(null);
@@ -31,7 +41,17 @@ export function ImageUploadField<T extends FieldValues>({
   const [error, setError] = useState<string | null>(null);
 
   const stored = String(watch(name) ?? '');
-  const id = String(watch(idField) ?? '');
+  const realId = String(watch(idField) ?? '');
+  const fallbackId = slugSource
+    ? slugify(
+        slugSource
+          .map((p) => watch(p))
+          .find(
+            (v) => typeof v === 'string' && (v as string).trim().length > 0,
+          ) as string | undefined,
+      )
+    : '';
+  const id = realId || fallbackId;
   const rarity = rarityField
     ? String(watch(rarityField) ?? '').toLowerCase()
     : '';
@@ -41,7 +61,11 @@ export function ImageUploadField<T extends FieldValues>({
   const handleFile = async (file: File) => {
     setError(null);
     if (!id) {
-      setError('Điền ID trước khi upload.');
+      setError(
+        slugSource
+          ? 'Điền tên (Anh hoặc Việt) trước khi upload.'
+          : 'Điền ID trước khi upload.',
+      );
       return;
     }
     if (kind === 'shikigami' && !rarity) {
