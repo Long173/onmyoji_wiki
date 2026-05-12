@@ -16,7 +16,14 @@ import {
 } from '@/lib/schemas';
 import { RARITIES, type ShikigamiRow } from '@/lib/types';
 
+import {
+  type EffectOption,
+} from './effect-picker-field';
 import { ImageUploadField } from './image-upload-field';
+import {
+  ShikigamiReferencePicker,
+  type ShikigamiOption,
+} from './shikigami-picker-field';
 import { SkillsEditor } from './skills-editor';
 import { SoulPickerField, type SoulOption } from './soul-picker-field';
 import { StatsEditor } from './stats-editor';
@@ -26,10 +33,14 @@ export function ShikigamiForm({
   initial,
   isNew,
   soulOptions,
+  effectOptions,
+  shikigamiOptions,
 }: {
   initial: ShikigamiRow;
   isNew: boolean;
   soulOptions: SoulOption[];
+  effectOptions: EffectOption[];
+  shikigamiOptions: ShikigamiOption[];
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
@@ -175,12 +186,22 @@ export function ShikigamiForm({
 
         {/* ─── Skills ──────────────────────── */}
         <Section title="Kỹ năng">
-          <SkillsEditor />
+          <SkillsEditor effectOptions={effectOptions} />
         </Section>
 
         {/* ─── Recommended souls ────────────── */}
         <Section title="Ngự hồn đề xuất">
           <SoulPickerField options={soulOptions} />
+        </Section>
+
+        {/* ─── Khắc chế bởi (countered_by) ──── */}
+        <Section title="Khắc chế bởi (Countered by)">
+          <ShikigamiReferencePicker
+            options={shikigamiOptions}
+            excludeId={initial.id}
+            searchPlaceholder="Tìm Thức Thần khắc chế mình..."
+            emptyHint="Chưa chọn Thức Thần nào."
+          />
         </Section>
 
         {/* ─── Actions ────────────────────── */}

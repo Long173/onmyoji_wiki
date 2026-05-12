@@ -5,7 +5,16 @@ import { useFieldArray, useFormContext } from 'react-hook-form';
 
 import type { ShikigamiFormValues } from '@/lib/schemas';
 
-export function SkillsEditor() {
+import {
+  SkillEffectsPicker,
+  type EffectOption,
+} from './effect-picker-field';
+
+export function SkillsEditor({
+  effectOptions,
+}: {
+  effectOptions: EffectOption[];
+}) {
   const { control, register } = useFormContext<ShikigamiFormValues>();
   const { fields, append, remove, move } = useFieldArray({
     control,
@@ -85,6 +94,16 @@ export function SkillsEditor() {
           </div>
 
           <SkillLevelsEditor skillIdx={skillIdx} />
+
+          <div className="mt-4 border-t border-white/5 pt-4">
+            <span className="mb-2 block text-xs uppercase text-white/50">
+              Hiệu ứng tham chiếu
+            </span>
+            <SkillEffectsPicker
+              skillIdx={skillIdx}
+              options={effectOptions}
+            />
+          </div>
         </div>
       ))}
 
@@ -96,6 +115,7 @@ export function SkillsEditor() {
             description: '',
             levels: [{ level: 1, description: '' }],
             image: '',
+            effects: [],
           })
         }
         className="w-full rounded-lg border border-dashed border-white/20 py-3 text-sm text-white/60 hover:border-white/40 hover:text-white"

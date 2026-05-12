@@ -29,6 +29,9 @@ const skill = z.object({
     .nullable()
     .optional()
     .transform((v) => (v === null ? undefined : v)),
+  // Effect ids referenced by this skill's description (`effects` table FK).
+  // Stored inside the JSONB skills array; no SQL migration needed.
+  effects: z.array(z.string()).default([]),
 });
 
 export const shikigamiFormSchema = z.object({
@@ -52,6 +55,9 @@ export const shikigamiFormSchema = z.object({
   }),
   skills: z.array(skill).default([]),
   recommended_souls: z.array(z.string()).default([]),
+  // Shikigami counter this one — stored as text[] on the shikigami table
+  // (migration 0005). The inverse direction is queried, not stored.
+  countered_by: z.array(z.string()).default([]),
   lore: z.string().default(''),
   image: z.string().default(''),
   source_url: z.string().default(''),

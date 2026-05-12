@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 import { ShikigamiForm } from '@/components/shikigami-form';
+import type { EffectOption } from '@/components/effect-picker-field';
+import type { ShikigamiOption } from '@/components/shikigami-picker-field';
 import type { SoulOption } from '@/components/soul-picker-field';
 import { createSupabaseAdmin } from '@/lib/supabase/admin';
 import { emptyStats, type ShikigamiRow } from '@/lib/types';
@@ -18,12 +20,23 @@ export default async function ShikigamiEditPage({
 
   const supabase = createSupabaseAdmin();
 
-  // Souls list — drives the picker for `recommended_souls`. Fetched in
-  // parallel with the shikigami row to keep TTFB low.
+  // Reference lists — drive the 3 pickers. Fetched in parallel with the
+  // shikigami row to keep TTFB low. Total payload ≈ 70KB at current scale
+  // (64 souls + 83 effects + 126 shikigami).
   const soulsPromise = supabase
     .from('souls')
     .select('id,name_vi,name_en,kind,image')
     .order('kind')
+    .order('sort_index');
+  const effectsPromise = supabase
+    .from('effects')
+    .select('id,name,en_name,kind,image')
+    .order('kind')
+    .order('sort_index');
+  const shikigamiListPromise = supabase
+    .from('shikigami')
+    .select('id,name_vi,name_en,name_jp,rarity,image')
+    .order('rarity')
     .order('sort_index');
 
   let initial: ShikigamiRow;
@@ -41,6 +54,7 @@ export default async function ShikigamiEditPage({
       stats: emptyStats(),
       skills: [],
       recommended_souls: [],
+      countered_by: [],
       lore: '',
       image: '',
       source_url: '',
@@ -54,20 +68,26 @@ export default async function ShikigamiEditPage({
       .maybeSingle();
     if (error) {
       return (
-        <div className="card p-6 text-red-300">
-          Lỗi: {error.message}
-        </div>
+        <div className="card p-6 text-red-300">Lỗi: {error.message}</div>
       );
     }
     if (!data) notFound();
+    const row = data as ShikigamiRow;
     initial = {
-      ...(data as ShikigamiRow),
-      stats: { ...emptyStats(), ...(data as ShikigamiRow).stats },
+      ...row,
+      stats: { ...emptyStats(), ...row.stats },
+      countered_by: row.countered_by ?? [],
     };
   }
 
-  const soulsResult = await soulsPromise;
+  const [soulsResult, effectsResult, shikigamiListResult] = await Promise.all([
+    soulsPromise,
+    effectsPromise,
+    shikigamiListPromise,
+  ]);
   const soulOptions = (soulsResult.data ?? []) as SoulOption[];
+  const effectOptions = (effectsResult.data ?? []) as EffectOption[];
+  const shikigamiOptions = (shikigamiListResult.data ?? []) as ShikigamiOption[];
 
   return (
     <div className="space-y-6">
@@ -88,6 +108,8 @@ export default async function ShikigamiEditPage({
         initial={initial}
         isNew={isNew}
         soulOptions={soulOptions}
+        effectOptions={effectOptions}
+        shikigamiOptions={shikigamiOptions}
       />
     </div>
   );

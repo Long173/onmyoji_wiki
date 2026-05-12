@@ -53,6 +53,8 @@ export interface Skill {
   levels: SkillLevel[];
   image?: string;
   cost?: number;
+  /** Effect ids referenced by this skill's description. */
+  effects?: string[];
 }
 
 export interface ShikigamiRow {
@@ -67,6 +69,7 @@ export interface ShikigamiRow {
   stats: ShikigamiStats;
   skills: Skill[];
   recommended_souls: string[];
+  countered_by?: string[];
   lore: string;
   image: string;
   source_url: string;
