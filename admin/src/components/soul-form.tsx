@@ -44,8 +44,17 @@ export function SoulForm({
       toast.success(
         isNew ? `Đã tạo "${res.id}"` : `Đã lưu "${values.name_vi || res.id}"`,
       );
-      router.push(`/souls/${res.id}`);
-      router.refresh();
+      if (isNew) {
+        router.push(`/souls/${res.id}`);
+      } else {
+        // See shikigami-form for the rationale.
+        if (typeof window !== 'undefined' && window.history.length > 2) {
+          router.back();
+          router.refresh();
+        } else {
+          router.replace(`/souls/${res.id}`);
+        }
+      }
     } finally {
       setBusy(false);
     }

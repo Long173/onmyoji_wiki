@@ -39,8 +39,17 @@ export function EffectForm({
       toast.success(
         isNew ? `Đã tạo "${res.id}"` : `Đã lưu "${values.name || res.id}"`,
       );
-      router.push(`/effects/${res.id}`);
-      router.refresh();
+      if (isNew) {
+        router.push(`/effects/${res.id}`);
+      } else {
+        // See shikigami-form for the rationale.
+        if (typeof window !== 'undefined' && window.history.length > 2) {
+          router.back();
+          router.refresh();
+        } else {
+          router.replace(`/effects/${res.id}`);
+        }
+      }
     } finally {
       setBusy(false);
     }

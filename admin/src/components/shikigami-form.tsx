@@ -65,11 +65,21 @@ export function ShikigamiForm({
         isNew ? `Đã tạo "${res.id}"` : `Đã lưu "${values.name_vi || res.id}"`,
       );
       if (isNew) {
+        // Brand-new record — no prior history to unwind.
         router.push(`/shikigami/${res.id}`);
       } else {
-        // Edit → go back to detail so user sees the saved state cleanly.
-        router.push(`/shikigami/${res.id}`);
-        router.refresh();
+        // Edit flow: pop the /edit entry from history so the user lands back
+        // on the detail they came from, and pressing Back once more brings
+        // them to the list (their pre-detail page). revalidatePath in the
+        // server action ensures the detail rehydrates with fresh data.
+        // Falls back to replace() when the user opened /edit directly via
+        // URL and there's no detail underneath in the history stack.
+        if (typeof window !== 'undefined' && window.history.length > 2) {
+          router.back();
+          router.refresh();
+        } else {
+          router.replace(`/shikigami/${res.id}`);
+        }
       }
     } finally {
       setBusy(false);
