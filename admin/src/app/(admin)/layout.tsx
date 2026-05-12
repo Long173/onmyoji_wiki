@@ -36,6 +36,9 @@ export default async function AdminLayout({
               <Link href="/effects" className="hover:text-white">
                 Hiệu ứng
               </Link>
+              <Link href="/import-export" className="hover:text-white">
+                Import / Export
+              </Link>
             </nav>
           </div>
           <div className="flex items-center gap-4 text-sm">
