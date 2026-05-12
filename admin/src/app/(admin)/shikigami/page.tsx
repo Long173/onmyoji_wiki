@@ -38,7 +38,8 @@ export default async function ShikigamiListPage({
     query = query.or(
       `name_vi_unaccent.ilike.%${term}%,` +
         `name_en_unaccent.ilike.%${term}%,` +
-        `name_jp_unaccent.ilike.%${term}%`,
+        `name_jp_unaccent.ilike.%${term}%,` +
+        `friendly_name_unaccent.ilike.%${term}%`,
     );
   }
 
