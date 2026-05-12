@@ -55,6 +55,9 @@ export function ImageUploadField<T extends FieldValues>({
       fd.append('kind', kind);
       fd.append('id', id);
       if (rarity) fd.append('rarity', rarity);
+      // Server deletes the orphan when the new bucket path differs from
+      // this old one (e.g., extension change or rarity change).
+      if (stored) fd.append('oldPath', stored);
 
       const res = await fetch('/api/upload', { method: 'POST', body: fd });
       const json = (await res.json()) as { path?: string; error?: string };

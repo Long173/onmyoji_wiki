@@ -1,5 +1,6 @@
 'use client';
 
+import { useRef, useState } from 'react';
 import { useFieldArray, useFormContext } from 'react-hook-form';
 
 import type { ShikigamiFormValues } from '@/lib/schemas';
@@ -75,20 +76,12 @@ export function SkillsEditor() {
                 className="input-field"
               />
             </label>
-            <label className="block md:col-span-2">
+            <div className="block md:col-span-2">
               <span className="mb-1 block text-xs text-white/60">
-                Icon path (bucket key)
+                Icon kỹ năng
               </span>
-              <input
-                {...register(`skills.${skillIdx}.image` as const)}
-                className="input-field font-mono text-sm"
-                placeholder="skills/6001.webp"
-              />
-              <span className="mt-1 block text-xs text-white/40">
-                Tham chiếu đến file trong bucket. Có thể để trống — UI
-                fallback dùng STT.
-              </span>
-            </label>
+              <SkillImageField skillIdx={skillIdx} />
+            </div>
           </div>
 
           <SkillLevelsEditor skillIdx={skillIdx} />
@@ -176,4 +169,110 @@ function SkillLevelsEditor({ skillIdx }: { skillIdx: number }) {
       )}
     </div>
   );
+}
+
+/** Compact image picker for a single skill row. Each skill's image is named
+ *  `<shikigami_id>_<skillIdx+1>.webp` in the `skills/` bucket prefix so
+ *  re-uploading the same slot overwrites cleanly (no orphaned files). */
+function SkillImageField({ skillIdx }: { skillIdx: number }) {
+  const { register, watch, setValue } = useFormContext<ShikigamiFormValues>();
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const shikigamiId = watch('id');
+  const stored = watch(`skills.${skillIdx}.image`) ?? '';
+  const previewUrl = resolveStored(stored);
+
+  const handleFile = async (file: File) => {
+    setError(null);
+    if (!shikigamiId) {
+      setError('Điền ID Thức Thần trước.');
+      return;
+    }
+    setBusy(true);
+    try {
+      const fd = new FormData();
+      fd.append('file', file);
+      fd.append('kind', 'skills');
+      fd.append('id', `${shikigamiId}_${skillIdx + 1}`);
+      if (stored) fd.append('oldPath', stored);
+      const res = await fetch('/api/upload', { method: 'POST', body: fd });
+      const json = (await res.json()) as { path?: string; error?: string };
+      if (!res.ok || !json.path) {
+        setError(json.error ?? 'Upload thất bại');
+        return;
+      }
+      setValue(`skills.${skillIdx}.image`, json.path, { shouldDirty: true });
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  return (
+    <div className="space-y-2">
+      <div className="flex items-center gap-3">
+        <div className="h-12 w-12 shrink-0 overflow-hidden rounded-lg border border-white/10 bg-black/30">
+          {previewUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={previewUrl}
+              alt="preview"
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            <div className="flex h-full items-center justify-center text-[10px] text-white/30">
+              (none)
+            </div>
+          )}
+        </div>
+        <input
+          {...register(`skills.${skillIdx}.image` as const)}
+          className="input-field flex-1 font-mono text-xs"
+          placeholder="skills/<id>.webp"
+        />
+        <input
+          ref={inputRef}
+          type="file"
+          accept="image/*"
+          hidden
+          onChange={(e) => {
+            const f = e.target.files?.[0];
+            if (f) handleFile(f);
+            e.target.value = '';
+          }}
+        />
+        <button
+          type="button"
+          onClick={() => inputRef.current?.click()}
+          disabled={busy}
+          className="rounded border border-white/20 px-3 py-1 text-xs hover:bg-white/5 disabled:opacity-50"
+        >
+          {busy ? '...' : 'Chọn ảnh'}
+        </button>
+        {stored && (
+          <button
+            type="button"
+            onClick={() =>
+              setValue(`skills.${skillIdx}.image`, '', { shouldDirty: true })
+            }
+            className="rounded border border-white/20 px-2 py-1 text-xs hover:bg-white/5"
+            title="Xoá đường dẫn"
+          >
+            ✕
+          </button>
+        )}
+      </div>
+      {error && <p className="text-xs text-red-300">{error}</p>}
+    </div>
+  );
+}
+
+function resolveStored(stored: string): string {
+  if (!stored) return '';
+  if (/^https?:\/\//.test(stored)) return stored;
+  const base = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!base) return '';
+  const trimmed = stored.replace(/^(assets\/images\/|assets\/)/, '');
+  return `${base.replace(/\/+$/, '')}/storage/v1/object/public/assets/${trimmed}`;
 }

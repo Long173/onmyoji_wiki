@@ -4,6 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
+import { toast } from 'sonner';
 
 import { deleteEffect, saveEffect } from '@/app/(admin)/effects/[id]/actions';
 import { effectFormSchema, type EffectFormValues } from '@/lib/schemas';
@@ -19,7 +20,6 @@ export function EffectForm({
   isNew: boolean;
 }) {
   const router = useRouter();
-  const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
   const methods = useForm<EffectFormValues>({
@@ -28,14 +28,16 @@ export function EffectForm({
   });
 
   const onSubmit = methods.handleSubmit(async (values) => {
-    setError(null);
     setBusy(true);
     try {
       const res = await saveEffect(values);
       if (!res.ok) {
-        setError(res.error);
+        toast.error(`Không lưu được: ${res.error}`);
         return;
       }
+      toast.success(
+        isNew ? `Đã tạo "${res.id}"` : `Đã lưu "${values.name || res.id}"`,
+      );
       if (isNew) router.push(`/effects/${res.id}`);
       else router.refresh();
     } finally {
@@ -50,9 +52,10 @@ export function EffectForm({
     const res = await deleteEffect(initial.id);
     setBusy(false);
     if (!res.ok) {
-      setError(res.error);
+      toast.error(`Không xoá được: ${res.error}`);
       return;
     }
+    toast.success(`Đã xoá "${initial.name || initial.id}"`);
     router.push('/effects');
   };
 
@@ -114,13 +117,9 @@ export function EffectForm({
 
         <div className="sticky bottom-4 z-10">
           <div className="card flex items-center justify-between gap-4 p-4 shadow-lg">
-            {error ? (
-              <span className="text-sm text-red-300">{error}</span>
-            ) : (
-              <span className="text-sm text-white/40">
-                Lưu sẽ upsert thẳng vào Supabase.
-              </span>
-            )}
+            <span className="text-sm text-white/40">
+              Lưu sẽ upsert thẳng vào Supabase.
+            </span>
             <div className="flex gap-3">
               {!isNew && (
                 <button

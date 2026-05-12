@@ -4,6 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
+import { toast } from 'sonner';
 
 import {
   saveShikigami,
@@ -28,7 +29,6 @@ export function ShikigamiForm({
   isNew: boolean;
 }) {
   const router = useRouter();
-  const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
   const methods = useForm<ShikigamiFormValues>({
@@ -38,14 +38,16 @@ export function ShikigamiForm({
   });
 
   const onSubmit = methods.handleSubmit(async (values) => {
-    setError(null);
     setBusy(true);
     try {
       const res = await saveShikigami(values);
       if (!res.ok) {
-        setError(res.error);
+        toast.error(`Không lưu được: ${res.error}`);
         return;
       }
+      toast.success(
+        isNew ? `Đã tạo "${res.id}"` : `Đã lưu "${values.name_vi || res.id}"`,
+      );
       if (isNew) {
         router.push(`/shikigami/${res.id}`);
       } else {
@@ -68,9 +70,10 @@ export function ShikigamiForm({
     const res = await deleteShikigami(initial.id);
     setBusy(false);
     if (!res.ok) {
-      setError(res.error);
+      toast.error(`Không xoá được: ${res.error}`);
       return;
     }
+    toast.success(`Đã xoá "${initial.name_vi || initial.id}"`);
     router.push('/shikigami');
   };
 
@@ -160,9 +163,6 @@ export function ShikigamiForm({
               className="input-field"
             />
           </Field>
-          <Field label="Cách lấy (obtain)">
-            <StringArrayField name="obtain" placeholder="Vd: Triệu hồi SSR" />
-          </Field>
         </Section>
 
         {/* ─── Stats ─────────────────────── */}
@@ -189,13 +189,9 @@ export function ShikigamiForm({
         {/* ─── Actions ────────────────────── */}
         <div className="sticky bottom-4 z-10">
           <div className="card flex items-center justify-between gap-4 p-4 shadow-lg">
-            {error ? (
-              <span className="text-sm text-red-300">{error}</span>
-            ) : (
-              <span className="text-sm text-white/40">
-                Lưu sẽ upsert thẳng vào Supabase.
-              </span>
-            )}
+            <span className="text-sm text-white/40">
+              Lưu sẽ upsert thẳng vào Supabase.
+            </span>
             <div className="flex gap-3">
               {!isNew && (
                 <button

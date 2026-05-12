@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Toaster } from 'sonner';
 
 import { createSupabaseServer } from '@/lib/supabase/server';
 import { SignOutButton } from '@/components/sign-out-button';
@@ -43,6 +44,7 @@ export default async function AdminLayout({
         </div>
       </header>
       <main className="mx-auto max-w-6xl px-6 py-8">{children}</main>
+      <Toaster theme="dark" position="top-right" richColors closeButton />
     </div>
   );
 }
