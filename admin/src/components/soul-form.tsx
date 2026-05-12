@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { FormProvider, useFieldArray, useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 
-import { deleteSoul, saveSoul } from '@/app/(admin)/souls/[id]/actions';
+import { deleteSoul, saveSoul } from '@/app/(admin)/souls/[id]/edit/actions';
 import { soulFormSchema, type SoulFormValues } from '@/lib/schemas';
 import type { SoulRow } from '@/lib/types';
 
@@ -43,8 +43,8 @@ export function SoulForm({
       toast.success(
         isNew ? `Đã tạo "${res.id}"` : `Đã lưu "${values.name_vi || res.id}"`,
       );
-      if (isNew) router.push(`/souls/${res.id}`);
-      else router.refresh();
+      router.push(`/souls/${res.id}`);
+      router.refresh();
     } finally {
       setBusy(false);
     }

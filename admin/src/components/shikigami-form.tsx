@@ -9,7 +9,7 @@ import { toast } from 'sonner';
 import {
   saveShikigami,
   deleteShikigami,
-} from '@/app/(admin)/shikigami/[id]/actions';
+} from '@/app/(admin)/shikigami/[id]/edit/actions';
 import {
   shikigamiFormSchema,
   type ShikigamiFormValues,
@@ -65,6 +65,8 @@ export function ShikigamiForm({
       if (isNew) {
         router.push(`/shikigami/${res.id}`);
       } else {
+        // Edit → go back to detail so user sees the saved state cleanly.
+        router.push(`/shikigami/${res.id}`);
         router.refresh();
       }
     } finally {

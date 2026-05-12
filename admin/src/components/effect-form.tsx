@@ -1,28 +1,23 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 
-import { deleteEffect, saveEffect } from '@/app/(admin)/effects/[id]/actions';
-import { resolveStoredImage } from '@/lib/picker-utils';
+import { deleteEffect, saveEffect } from '@/app/(admin)/effects/[id]/edit/actions';
 import { effectFormSchema, type EffectFormValues } from '@/lib/schemas';
-import type { EffectRow, Rarity } from '@/lib/types';
+import type { EffectRow } from '@/lib/types';
 
 import { ImageUploadField } from './image-upload-field';
-import type { ShikigamiOption } from './shikigami-picker-field';
 
 export function EffectForm({
   initial,
   isNew,
-  referencedBy,
 }: {
   initial: EffectRow;
   isNew: boolean;
-  referencedBy: ShikigamiOption[];
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
@@ -43,8 +38,8 @@ export function EffectForm({
       toast.success(
         isNew ? `Đã tạo "${res.id}"` : `Đã lưu "${values.name || res.id}"`,
       );
-      if (isNew) router.push(`/effects/${res.id}`);
-      else router.refresh();
+      router.push(`/effects/${res.id}`);
+      router.refresh();
     } finally {
       setBusy(false);
     }
@@ -120,18 +115,6 @@ export function EffectForm({
           </Field>
         </Section>
 
-        {!isNew && (
-          <Section
-            title={`Thức Thần dùng hiệu ứng này (${referencedBy.length})`}
-          >
-            <ReferencedByList items={referencedBy} />
-            <p className="text-xs text-white/40">
-              Read-only — quan hệ tag ở phía Thức Thần (skill.effects). Sửa
-              tag bằng cách vào edit từng Thức Thần.
-            </p>
-          </Section>
-        )}
-
         <div className="sticky bottom-4 z-10">
           <div className="card flex items-center justify-between gap-4 p-4 shadow-lg">
             <span className="text-sm text-white/40">
@@ -160,66 +143,6 @@ export function EffectForm({
         </div>
       </form>
     </FormProvider>
-  );
-}
-
-const RARITY_STYLE: Record<Rarity, string> = {
-  SSR: 'bg-amber-500/20 text-amber-300',
-  SP: 'bg-fuchsia-500/20 text-fuchsia-300',
-  SR: 'bg-violet-500/20 text-violet-300',
-  R: 'bg-sky-500/20 text-sky-300',
-  N: 'bg-white/10 text-white/60',
-};
-
-function ReferencedByList({ items }: { items: ShikigamiOption[] }) {
-  if (items.length === 0) {
-    return (
-      <p className="text-sm text-white/40">
-        Chưa có Thức Thần nào tag hiệu ứng này trong skill.
-      </p>
-    );
-  }
-  return (
-    <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-      {items.map((s) => {
-        const url = resolveStoredImage(s.image);
-        const display = s.name_vi || s.name_en || s.id;
-        return (
-          <Link
-            key={s.id}
-            href={`/shikigami/${s.id}`}
-            className="group flex items-center gap-3 rounded-lg border border-white/10 bg-black/20 p-2 transition-colors hover:border-[var(--color-brand-gold)]/40 hover:bg-white/[0.04]"
-          >
-            <span className="block h-10 w-10 shrink-0 overflow-hidden rounded bg-black/40">
-              {url ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={url}
-                  alt={display}
-                  className="h-full w-full object-cover"
-                />
-              ) : null}
-            </span>
-            <div className="min-w-0 flex-1">
-              <div className="truncate text-sm">{display}</div>
-              {s.name_vi && s.name_en && (
-                <div className="truncate text-xs italic text-white/40">
-                  {s.name_en}
-                </div>
-              )}
-            </div>
-            <span
-              className={`shrink-0 rounded px-1.5 py-0.5 text-[10px] font-semibold ${RARITY_STYLE[s.rarity]}`}
-            >
-              {s.rarity}
-            </span>
-            <span className="text-xs text-white/30 transition-transform group-hover:translate-x-1">
-              →
-            </span>
-          </Link>
-        );
-      })}
-    </div>
   );
 }
 
