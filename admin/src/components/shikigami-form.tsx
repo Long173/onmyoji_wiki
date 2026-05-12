@@ -18,15 +18,18 @@ import { RARITIES, type ShikigamiRow } from '@/lib/types';
 
 import { ImageUploadField } from './image-upload-field';
 import { SkillsEditor } from './skills-editor';
+import { SoulPickerField, type SoulOption } from './soul-picker-field';
 import { StatsEditor } from './stats-editor';
 import { StringArrayField } from './string-array-field';
 
 export function ShikigamiForm({
   initial,
   isNew,
+  soulOptions,
 }: {
   initial: ShikigamiRow;
   isNew: boolean;
+  soulOptions: SoulOption[];
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
@@ -177,13 +180,7 @@ export function ShikigamiForm({
 
         {/* ─── Recommended souls ────────────── */}
         <Section title="Ngự hồn đề xuất">
-          <StringArrayField
-            name="recommended_souls"
-            placeholder="Vd: shiranui, ty_ba"
-          />
-          <Hint>
-            Nhập theo soul id (snake_case). Mỗi id một dòng / chip.
-          </Hint>
+          <SoulPickerField options={soulOptions} />
         </Section>
 
         {/* ─── Actions ────────────────────── */}

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 import { ShikigamiForm } from '@/components/shikigami-form';
+import type { SoulOption } from '@/components/soul-picker-field';
 import { createSupabaseAdmin } from '@/lib/supabase/admin';
 import { emptyStats, type ShikigamiRow } from '@/lib/types';
 
@@ -14,6 +15,16 @@ export default async function ShikigamiEditPage({
 }) {
   const { id } = await params;
   const isNew = id === 'new';
+
+  const supabase = createSupabaseAdmin();
+
+  // Souls list — drives the picker for `recommended_souls`. Fetched in
+  // parallel with the shikigami row to keep TTFB low.
+  const soulsPromise = supabase
+    .from('souls')
+    .select('id,name_vi,name_en,kind,image')
+    .order('kind')
+    .order('sort_index');
 
   let initial: ShikigamiRow;
 
@@ -36,7 +47,6 @@ export default async function ShikigamiEditPage({
       sort_index: 0,
     };
   } else {
-    const supabase = createSupabaseAdmin();
     const { data, error } = await supabase
       .from('shikigami')
       .select('*')
@@ -56,6 +66,9 @@ export default async function ShikigamiEditPage({
     };
   }
 
+  const soulsResult = await soulsPromise;
+  const soulOptions = (soulsResult.data ?? []) as SoulOption[];
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -71,7 +84,11 @@ export default async function ShikigamiEditPage({
           </h1>
         </div>
       </div>
-      <ShikigamiForm initial={initial} isNew={isNew} />
+      <ShikigamiForm
+        initial={initial}
+        isNew={isNew}
+        soulOptions={soulOptions}
+      />
     </div>
   );
 }
