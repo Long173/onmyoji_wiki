@@ -17,10 +17,11 @@ import type {
   ShikigamiRow,
   ShikigamiStats,
   Skill,
+  SlotMains,
   SoulEffect,
   SoulRow,
 } from '../types';
-import { emptyStats, STAT_TIERS } from '../types';
+import { emptySlotMains, emptyStats, STAT_TIERS } from '../types';
 
 const STAT_KEYS: (keyof ShikigamiStats)[] = [
   'hp',
@@ -100,6 +101,7 @@ export const SHIKIGAMI_COLUMNS: ShikigamiColumn[] = [
   { header: 'obtain', key: 'obtain', width: 24 },
   { header: 'lore', key: 'lore', width: 60 },
   { header: 'recommended_souls', key: 'recommended_souls', width: 30 },
+  { header: 'slot_mains_json', key: 'slot_mains_json', width: 40 },
   { header: 'countered_by', key: 'countered_by', width: 30 },
   { header: 'image', key: 'image', width: 36 },
   { header: 'source_url', key: 'source_url', width: 28 },
@@ -138,6 +140,7 @@ export function shikigamiToRow(s: ShikigamiRow): Record<string, unknown> {
     obtain: listToCell(s.obtain),
     lore: s.lore,
     recommended_souls: listToCell(s.recommended_souls),
+    slot_mains_json: jsonToCell(s.slot_mains ?? emptySlotMains()),
     countered_by: listToCell(s.countered_by),
     image: s.image,
     source_url: s.source_url,
@@ -168,6 +171,7 @@ export function rowToShikigami(
     obtain: cellToList(row.obtain),
     lore: cellToString(row.lore),
     recommended_souls: cellToList(row.recommended_souls),
+    slot_mains: cellToJson<SlotMains>(row.slot_mains_json, emptySlotMains()),
     countered_by: cellToList(row.countered_by),
     image: cellToString(row.image),
     source_url: cellToString(row.source_url),

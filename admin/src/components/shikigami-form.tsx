@@ -25,6 +25,7 @@ import {
   type ShikigamiOption,
 } from './shikigami-picker-field';
 import { SkillsEditor } from './skills-editor';
+import { SlotMainsPicker } from './slot-mains-picker';
 import { SlugPreview } from './slug-preview';
 import { SoulPickerField, type SoulOption } from './soul-picker-field';
 import { StatsEditor } from './stats-editor';
@@ -203,6 +204,12 @@ export function ShikigamiForm({
         {/* ─── Recommended souls ────────────── */}
         <Section title="Ngự hồn đề xuất">
           <SoulPickerField options={soulOptions} />
+          <div className="pt-2">
+            <span className="mb-2 block text-xs uppercase text-white/50">
+              Main stat đề xuất theo slot
+            </span>
+            <SlotMainsPicker />
+          </div>
         </Section>
 
         {/* ─── Khắc chế bởi (countered_by) ──── */}

@@ -3,14 +3,16 @@ import { notFound } from 'next/navigation';
 
 import { resolveStoredImage } from '@/lib/picker-utils';
 import { createSupabaseAdmin } from '@/lib/supabase/admin';
-import type {
-  EffectRow,
-  Rarity,
-  ShikigamiRow,
-  ShikigamiStats,
-  Skill,
-  SoulRow,
-  StatTier,
+import {
+  MAIN_STAT_LABELS,
+  SLOT_NUMBERS,
+  type EffectRow,
+  type Rarity,
+  type ShikigamiRow,
+  type ShikigamiStats,
+  type Skill,
+  type SoulRow,
+  type StatTier,
 } from '@/lib/types';
 
 import { SkillTabs } from './skill-tabs';
@@ -229,6 +231,7 @@ export default async function ShikigamiDetailPage({
             : ''
         })`}
       >
+        <SlotMainsPanel slotMains={s.slot_mains} />
         {recommendedSouls.length === 0 ? (
           <p className="text-sm text-white/40">Chưa có gợi ý ngự hồn.</p>
         ) : (
@@ -318,6 +321,48 @@ function indexById<T extends { id: string }>(
   rows: T[] | null,
 ): Map<string, T> {
   return new Map((rows ?? []).map((r) => [r.id, r]));
+}
+
+/** Read-only summary of the recommended main stats per soul slot.
+ *  Renders nothing when no slot has any recommendation. */
+function SlotMainsPanel({
+  slotMains,
+}: {
+  slotMains?: ShikigamiRow['slot_mains'];
+}) {
+  if (!slotMains) return null;
+  const hasAny = SLOT_NUMBERS.some(
+    (slot) => (slotMains[slot] ?? []).length > 0,
+  );
+  if (!hasAny) return null;
+  return (
+    <div className="rounded-lg border border-white/10 bg-black/20 p-3">
+      <span className="mb-2 block text-xs uppercase text-white/50">
+        Main stat đề xuất
+      </span>
+      <div className="space-y-2">
+        {SLOT_NUMBERS.map((slot) => {
+          const stats = slotMains[slot] ?? [];
+          if (stats.length === 0) return null;
+          return (
+            <div key={slot} className="flex flex-wrap items-center gap-2">
+              <span className="rounded bg-[var(--color-brand-gold)]/20 px-2 py-0.5 text-[10px] font-semibold uppercase text-[var(--color-brand-gold)]">
+                Slot {slot}
+              </span>
+              {stats.map((stat) => (
+                <span
+                  key={stat}
+                  className="rounded-full bg-white/10 px-2 py-0.5 text-xs text-white/80"
+                >
+                  {MAIN_STAT_LABELS[stat] ?? stat}
+                </span>
+              ))}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
 function Section({

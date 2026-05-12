@@ -83,6 +83,23 @@ class ShikigamiStats {
   }
 }
 
+/// Allowed soul-slot numbers that have a main-stat choice (the in-game
+/// "vị trí 2/4/6"; positions 1/3/5 are fixed at ATK/DEF/HP).
+const List<String> kSlotNumbers = ['2', '4', '6'];
+
+/// Short English labels for soul-slot main-stat keys — same set used by the
+/// admin web so the UI is consistent across surfaces.
+const Map<String, String> kMainStatLabels = {
+  'atk_pct': 'ATK%',
+  'spd': 'SPD',
+  'def_pct': 'DEF%',
+  'hp_pct': 'HP%',
+  'acc_pct': 'ACC%',
+  'res_pct': 'RES%',
+  'crit_pct': 'CRIT%',
+  'crit_dmg_pct': 'CRITDMG%',
+};
+
 @immutable
 class Shikigami {
   const Shikigami({
@@ -97,6 +114,7 @@ class Shikigami {
     required this.stats,
     required this.skills,
     required this.recommendedSouls,
+    required this.slotMains,
     required this.lore,
     required this.image,
   });
@@ -116,6 +134,12 @@ class Shikigami {
   final ShikigamiStats stats;
   final List<Skill> skills;
   final List<String> recommendedSouls;
+
+  /// Main-stat recommendations per choice slot. Keys are `'2'` / `'4'` / `'6'`;
+  /// each value is the list of stat-key strings the admin marked as desirable
+  /// for that slot. Empty list = "no recommendation" for that slot.
+  final Map<String, List<String>> slotMains;
+
   final String lore;
   final String image;
 
@@ -162,8 +186,30 @@ class Shikigami {
       recommendedSouls: List<String>.from(
         json['recommended_souls'] as List? ?? const [],
       ),
+      slotMains: _parseSlotMains(json['slot_mains']),
       lore: json['lore'] as String? ?? '',
       image: json['image'] as String? ?? '',
     );
   }
+}
+
+/// Parse the JSONB `slot_mains` shape from Supabase. Tolerates absent column,
+/// null, non-map, or partially-filled maps. Unknown slot keys are dropped;
+/// non-string entries inside the value array are stringified.
+Map<String, List<String>> _parseSlotMains(dynamic raw) {
+  final result = <String, List<String>>{
+    for (final s in kSlotNumbers) s: const <String>[],
+  };
+  if (raw is Map) {
+    for (final slot in kSlotNumbers) {
+      final v = raw[slot];
+      if (v is List) {
+        result[slot] = v
+            .map((e) => e.toString())
+            .where((s) => s.isNotEmpty)
+            .toList(growable: false);
+      }
+    }
+  }
+  return result;
 }

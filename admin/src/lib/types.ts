@@ -57,6 +57,38 @@ export interface Skill {
   effects?: string[];
 }
 
+// ─── Recommended main stats by soul slot ────────────────────────
+// Only slots 2/4/6 have a main-stat choice; 1/3/5 are fixed at ATK/DEF/HP
+// respectively. Values are stat keys; per slot the allowed set differs.
+export type SlotNumber = '2' | '4' | '6';
+export type SlotMains = Record<SlotNumber, string[]>;
+
+export const SLOT_NUMBERS: readonly SlotNumber[] = ['2', '4', '6'];
+
+/** Allowed main-stat keys per choice slot. Validated client-side; the DB
+ *  stores whatever JSONB it receives. */
+export const SLOT_MAIN_OPTIONS: Record<SlotNumber, readonly string[]> = {
+  '2': ['atk_pct', 'spd', 'def_pct', 'hp_pct'],
+  '4': ['atk_pct', 'def_pct', 'hp_pct', 'acc_pct', 'res_pct'],
+  '6': ['atk_pct', 'def_pct', 'hp_pct', 'crit_pct', 'crit_dmg_pct'],
+};
+
+/** Display labels for soul-slot main-stat keys — short English abbreviations
+ *  matching the in-game UI / tier-list community conventions. Distinct from
+ *  the character-stat labels in the detail page (HP / ATK / DEF / SPD / ...). */
+export const MAIN_STAT_LABELS: Record<string, string> = {
+  atk_pct: 'ATK%',
+  spd: 'SPD',
+  def_pct: 'DEF%',
+  hp_pct: 'HP%',
+  acc_pct: 'ACC%',
+  res_pct: 'RES%',
+  crit_pct: 'CRIT%',
+  crit_dmg_pct: 'CRITDMG%',
+};
+
+export const emptySlotMains = (): SlotMains => ({ '2': [], '4': [], '6': [] });
+
 export interface ShikigamiRow {
   id: string;
   name_vi: string;
@@ -69,6 +101,7 @@ export interface ShikigamiRow {
   stats: ShikigamiStats;
   skills: Skill[];
   recommended_souls: string[];
+  slot_mains: SlotMains;
   countered_by?: string[];
   lore: string;
   image: string;

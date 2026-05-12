@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { RARITIES, STAT_TIERS } from './types';
+import { RARITIES, SLOT_MAIN_OPTIONS, STAT_TIERS } from './types';
 
 // Allows empty so create-form can submit with no id and the server-side
 // save action auto-fills it from name fields. When non-empty it must match
@@ -57,6 +57,28 @@ export const shikigamiFormSchema = z.object({
   }),
   skills: z.array(skill).default([]),
   recommended_souls: z.array(z.string()).default([]),
+  // Recommended main stats per choice slot (2/4/6). Each entry is restricted
+  // to the per-slot allowed set defined in SLOT_MAIN_OPTIONS. Empty array
+  // means "no recommendation"; the whole object defaults to all-empty.
+  slot_mains: z
+    .object({
+      '2': z
+        .array(
+          z.enum(SLOT_MAIN_OPTIONS['2'] as readonly [string, ...string[]]),
+        )
+        .default([]),
+      '4': z
+        .array(
+          z.enum(SLOT_MAIN_OPTIONS['4'] as readonly [string, ...string[]]),
+        )
+        .default([]),
+      '6': z
+        .array(
+          z.enum(SLOT_MAIN_OPTIONS['6'] as readonly [string, ...string[]]),
+        )
+        .default([]),
+    })
+    .default({ '2': [], '4': [], '6': [] }),
   // Shikigami counter this one — stored as text[] on the shikigami table
   // (migration 0005). The inverse direction is queried, not stored.
   countered_by: z.array(z.string()).default([]),

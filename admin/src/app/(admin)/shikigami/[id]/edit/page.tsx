@@ -6,7 +6,7 @@ import type { EffectOption } from '@/components/effect-picker-field';
 import type { ShikigamiOption } from '@/components/shikigami-picker-field';
 import type { SoulOption } from '@/components/soul-picker-field';
 import { createSupabaseAdmin } from '@/lib/supabase/admin';
-import { emptyStats, type ShikigamiRow } from '@/lib/types';
+import { emptySlotMains, emptyStats, type ShikigamiRow } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
@@ -54,6 +54,7 @@ export default async function ShikigamiEditPage({
       stats: emptyStats(),
       skills: [],
       recommended_souls: [],
+      slot_mains: emptySlotMains(),
       countered_by: [],
       lore: '',
       image: '',
@@ -76,6 +77,7 @@ export default async function ShikigamiEditPage({
     initial = {
       ...row,
       stats: { ...emptyStats(), ...row.stats },
+      slot_mains: { ...emptySlotMains(), ...(row.slot_mains ?? {}) },
       countered_by: row.countered_by ?? [],
     };
   }

@@ -89,7 +89,10 @@ class _DetailBody extends StatelessWidget {
           children: [
             _InfoTab(shikigami: shikigami),
             SkillSection(skills: shikigami.skills),
-            _RecommendedSoulsTab(ids: shikigami.recommendedSouls),
+            _RecommendedSoulsTab(
+              ids: shikigami.recommendedSouls,
+              slotMains: shikigami.slotMains,
+            ),
             _LoreTab(lore: shikigami.lore),
           ],
         ),
@@ -366,18 +369,32 @@ class _StatTierBadge extends StatelessWidget {
 }
 
 class _RecommendedSoulsTab extends ConsumerWidget {
-  const _RecommendedSoulsTab({required this.ids});
+  const _RecommendedSoulsTab({required this.ids, required this.slotMains});
 
   final List<String> ids;
+  final Map<String, List<String>> slotMains;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    if (ids.isEmpty) {
+    final hasSlotMains = slotMains.values.any((v) => v.isNotEmpty);
+    if (ids.isEmpty && !hasSlotMains) {
       return const EmptyState(
         icon: Icons.auto_awesome_outlined,
         title: 'Chưa có ngự hồn đề xuất',
       );
     }
+
+    final slotMainsHeader = hasSlotMains
+        ? _SlotMainsPanel(slotMains: slotMains)
+        : null;
+
+    if (ids.isEmpty) {
+      return ListView(
+        padding: const EdgeInsets.all(16),
+        children: [slotMainsHeader!],
+      );
+    }
+
     final matchesAsync = ref.watch(soulsByIdsProvider(ids));
     return matchesAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
@@ -393,18 +410,22 @@ class _RecommendedSoulsTab extends ConsumerWidget {
           for (final id in ids)
             if (byId[id] != null) byId[id]!,
         ];
-        if (ordered.isEmpty) {
+        if (ordered.isEmpty && slotMainsHeader == null) {
           return const EmptyState(
             icon: Icons.search_off,
             title: 'Chưa cập nhật dữ liệu ngự hồn đề xuất',
           );
         }
+        // ListView.builder + optional header. Item 0 is the slot-mains panel
+        // (when present); subsequent indices are souls.
+        final headerCount = slotMainsHeader == null ? 0 : 1;
         return ListView.separated(
           padding: const EdgeInsets.all(16),
-          itemCount: ordered.length,
+          itemCount: ordered.length + headerCount,
           separatorBuilder: (_, _) => const SizedBox(height: 10),
           itemBuilder: (_, i) {
-            final soul = ordered[i];
+            if (headerCount == 1 && i == 0) return slotMainsHeader!;
+            final soul = ordered[i - headerCount];
             return Card(
               margin: EdgeInsets.zero,
               child: ListTile(
@@ -426,6 +447,89 @@ class _RecommendedSoulsTab extends ConsumerWidget {
           },
         );
       },
+    );
+  }
+}
+
+/// Read-only summary of recommended main stats per soul slot. Only renders
+/// rows for slots that have at least one stat selected — empty slots stay
+/// hidden so the panel doesn't look noisy when only one slot is filled.
+class _SlotMainsPanel extends StatelessWidget {
+  const _SlotMainsPanel({required this.slotMains});
+
+  final Map<String, List<String>> slotMains;
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    final rows = <Widget>[];
+    for (final slot in kSlotNumbers) {
+      final stats = slotMains[slot] ?? const <String>[];
+      if (stats.isEmpty) continue;
+      rows.add(
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 4),
+          child: Wrap(
+            spacing: 6,
+            runSpacing: 6,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 6,
+                  vertical: 2,
+                ),
+                decoration: BoxDecoration(
+                  color: scheme.primary.withValues(alpha: 0.20),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: Text(
+                  'Slot $slot',
+                  style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                    color: scheme.primary,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              for (final stat in stats)
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8,
+                    vertical: 2,
+                  ),
+                  decoration: BoxDecoration(
+                    color: scheme.surfaceContainerHighest,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Text(
+                    kMainStatLabels[stat] ?? stat,
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
+                ),
+            ],
+          ),
+        ),
+      );
+    }
+    return Card(
+      margin: const EdgeInsets.only(bottom: 4),
+      child: Padding(
+        padding: const EdgeInsets.all(12),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Main stat đề xuất',
+              style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                color: scheme.onSurfaceVariant,
+                letterSpacing: 0.5,
+              ),
+            ),
+            const SizedBox(height: 4),
+            ...rows,
+          ],
+        ),
+      ),
     );
   }
 }
