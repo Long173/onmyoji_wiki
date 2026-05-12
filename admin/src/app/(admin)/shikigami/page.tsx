@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { ClickableRow } from '@/components/clickable-row';
+import { normalize } from '@/lib/picker-utils';
 import { createSupabaseAdmin } from '@/lib/supabase/admin';
 import { RARITIES, type Rarity, type ShikigamiRow } from '@/lib/types';
 
@@ -34,7 +35,10 @@ export default async function ShikigamiListPage({
     query = query.eq('rarity', rarity);
   }
   if (q.trim()) {
-    const term = q.trim().toLowerCase();
+    // Strip diacritics + lowercase so the term matches the `*_unaccent`
+    // generated columns (which store already-unaccented values). Without
+    // this, typing "sò" would never match a stored "so".
+    const term = normalize(q.trim());
     query = query.or(
       `name_vi_unaccent.ilike.%${term}%,` +
         `name_en_unaccent.ilike.%${term}%,` +

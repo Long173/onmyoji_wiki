@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { ClickableRow } from '@/components/clickable-row';
+import { normalize } from '@/lib/picker-utils';
 import { createSupabaseAdmin } from '@/lib/supabase/admin';
 import type { SoulRow } from '@/lib/types';
 
@@ -33,7 +34,9 @@ export default async function SoulsListPage({
     query = query.eq('kind', kind);
   }
   if (q.trim()) {
-    const term = q.trim().toLowerCase();
+    // Strip diacritics so the term matches the *_unaccent stored values
+    // (see shikigami/page.tsx for the full rationale).
+    const term = normalize(q.trim());
     query = query.or(
       `name_vi_unaccent.ilike.%${term}%,name_en_unaccent.ilike.%${term}%`,
     );
