@@ -3,6 +3,7 @@ import { Toaster } from 'sonner';
 
 import { createSupabaseServer } from '@/lib/supabase/server';
 import { SignOutButton } from '@/components/sign-out-button';
+import { VersionBadge } from '@/components/version-badge';
 
 export default async function AdminLayout({
   children,
@@ -38,6 +39,7 @@ export default async function AdminLayout({
             </nav>
           </div>
           <div className="flex items-center gap-4 text-sm">
+            <VersionBadge />
             <span className="text-white/60">{user?.email}</span>
             <SignOutButton />
           </div>
