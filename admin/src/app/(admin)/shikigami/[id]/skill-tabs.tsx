@@ -12,6 +12,12 @@ const EFFECT_KIND_CHIP: Record<string, string> = {
   other: 'bg-white/10 text-white/60',
 };
 
+const EFFECT_KIND_LABEL: Record<string, string> = {
+  buff: 'BUFF',
+  debuff: 'DEBUFF',
+  other: 'KHÁC',
+};
+
 /** Renders one accordion-ish block per skill: icon + name + cost on top, the
  *  Lv1-Lv5 description as a tab strip below, and any tagged effects as
  *  clickable chips. State is per-skill to remember which level the user is
@@ -126,30 +132,112 @@ function SkillBlock({
                   </span>
                 );
               }
-              return (
-                <Link
-                  key={eid}
-                  href={`/effects/${eid}`}
-                  className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-xs hover:border-[var(--color-brand-gold)]/40"
-                >
-                  <span>{e.name || e.en_name || e.id}</span>
-                  <span
-                    className={`rounded px-1 py-0 text-[9px] font-semibold ${
-                      EFFECT_KIND_CHIP[e.kind] ?? EFFECT_KIND_CHIP.other
-                    }`}
-                  >
-                    {e.kind === 'buff'
-                      ? 'B'
-                      : e.kind === 'debuff'
-                        ? 'D'
-                        : '·'}
-                  </span>
-                </Link>
-              );
+              return <EffectChip key={eid} effect={e} />;
             })}
           </div>
         </div>
       ) : null}
     </div>
+  );
+}
+
+/** Chip for one referenced effect. Always shows the effect's image
+ *  (falls back to a kind-coloured dot if no image), and reveals a hover
+ *  card with the kind label + full description on pointer-hover. The chip
+ *  itself remains a Link to the effect detail page, so click still works
+ *  on touch devices where :hover doesn't apply. */
+function EffectChip({ effect }: { effect: EffectRow }) {
+  const iconUrl = resolveStoredImage(effect.image ?? '');
+  const kindClass =
+    EFFECT_KIND_CHIP[effect.kind] ?? EFFECT_KIND_CHIP.other;
+  const displayName = effect.name || effect.en_name || effect.id;
+
+  return (
+    <div className="group relative inline-block">
+      <Link
+        href={`/effects/${effect.id}`}
+        className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 py-1 pl-1 pr-3 text-xs transition-colors hover:border-[var(--color-brand-gold)]/40 hover:bg-white/[0.08]"
+      >
+        <EffectIcon effect={effect} url={iconUrl} size={20} />
+        <span>{displayName}</span>
+      </Link>
+
+      {/* Hover card. The outer wrapper has `pb-2` (visual 8px gap above the
+       *  chip) so the hit-area extends down to touch the chip's top edge —
+       *  this prevents losing :group-hover while the cursor traverses what
+       *  would otherwise be a dead-zone gap, killing flicker. Inner div
+       *  holds the actual styled card. z-50 keeps it above sibling cards. */}
+      <div
+        role="tooltip"
+        className="invisible absolute bottom-full left-0 z-50 pb-2 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100"
+      >
+        <div className="w-64 rounded-lg border border-white/10 bg-[var(--color-ink)] p-3 shadow-2xl">
+          <div className="mb-2 flex items-center gap-2">
+            <EffectIcon effect={effect} url={iconUrl} size={32} />
+            <div className="min-w-0 flex-1">
+              <div className="truncate text-sm font-semibold">
+                {displayName}
+              </div>
+              {effect.en_name &&
+                effect.name &&
+                effect.name !== effect.en_name && (
+                  <div className="truncate text-[10px] italic text-white/40">
+                    {effect.en_name}
+                  </div>
+                )}
+            </div>
+            <span
+              className={`shrink-0 rounded px-1.5 py-0.5 text-[10px] font-semibold ${kindClass}`}
+            >
+              {EFFECT_KIND_LABEL[effect.kind] ?? effect.kind.toUpperCase()}
+            </span>
+          </div>
+          {effect.description ? (
+            <p className="whitespace-pre-line text-xs leading-relaxed text-white/70">
+              {effect.description}
+            </p>
+          ) : (
+            <p className="text-xs italic text-white/30">(chưa có mô tả)</p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function EffectIcon({
+  effect,
+  url,
+  size,
+}: {
+  effect: EffectRow;
+  url: string;
+  size: number;
+}) {
+  if (url) {
+    return (
+      <span
+        className="block shrink-0 overflow-hidden rounded-full bg-black/40"
+        style={{ width: size, height: size }}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={url}
+          alt={effect.name || effect.en_name || effect.id}
+          className="h-full w-full object-cover"
+        />
+      </span>
+    );
+  }
+  // Fallback when the effect has no image: a kind-coloured dot. Keeps the
+  // layout consistent so chips don't jump width when icon is missing.
+  const dotClass =
+    EFFECT_KIND_CHIP[effect.kind] ?? EFFECT_KIND_CHIP.other;
+  return (
+    <span
+      className={`block shrink-0 rounded-full ${dotClass}`}
+      style={{ width: size, height: size }}
+      aria-hidden
+    />
   );
 }
