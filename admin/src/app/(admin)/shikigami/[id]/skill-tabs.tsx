@@ -61,6 +61,16 @@ function SkillBlock({
     .filter((l) => l.level > 1)
     .sort((a, b) => a.level - b.level);
 
+  // Names of effects this skill references — used to highlight occurrences
+  // inside the description text. Match both Vietnamese and English names so
+  // mixed-language descriptions still light up.
+  const effectNames = (skill.effects ?? [])
+    .flatMap((eid) => {
+      const e = effectsById[eid];
+      return e ? [e.name, e.en_name] : [];
+    })
+    .filter((s): s is string => Boolean(s && s.trim()));
+
   const iconUrl = resolveStoredImage(skill.image ?? '');
 
   return (
@@ -90,7 +100,7 @@ function SkillBlock({
 
       {baseDescription ? (
         <p className="whitespace-pre-line text-sm leading-relaxed text-white/80">
-          {baseDescription}
+          {highlightEffects(baseDescription, effectNames)}
         </p>
       ) : (
         <p className="text-sm italic text-white/40">Chưa có mô tả.</p>
@@ -107,7 +117,9 @@ function SkillBlock({
                 Lv{lv.level}
               </span>
               <p className="flex-1 whitespace-pre-line text-sm leading-relaxed text-white/80">
-                {lv.description || (
+                {lv.description ? (
+                  highlightEffects(lv.description, effectNames)
+                ) : (
                   <span className="italic text-white/30">
                     Chưa có mô tả cho cấp này.
                   </span>
@@ -244,5 +256,32 @@ function EffectIcon({
       style={{ width: size, height: size }}
       aria-hidden
     />
+  );
+}
+
+/** Wrap any occurrence of one of `names` inside `text` in a bold gold
+ *  `<strong>` so referenced effects pop out of the surrounding description.
+ *  Returns the text unchanged when there are no names to highlight. Match
+ *  is case-insensitive; longer names sort first so e.g. "Tăng công kích"
+ *  wins over a shorter "công" substring. Regex meta-chars in names are
+ *  escaped so unusual punctuation doesn't break the pattern. */
+function highlightEffects(text: string, names: string[]): React.ReactNode {
+  if (!text || names.length === 0) return text;
+  const unique = Array.from(new Set(names)).sort((a, b) => b.length - a.length);
+  if (unique.length === 0) return text;
+  const escaped = unique.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const pattern = new RegExp(`(${escaped.join('|')})`, 'gi');
+  const parts = text.split(pattern);
+  return parts.map((part, i) =>
+    i % 2 === 1 ? (
+      <strong
+        key={i}
+        className="font-semibold text-[var(--color-brand-gold)]"
+      >
+        {part}
+      </strong>
+    ) : (
+      part
+    ),
   );
 }
