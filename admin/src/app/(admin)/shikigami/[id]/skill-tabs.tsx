@@ -1,7 +1,4 @@
-'use client';
-
 import Link from 'next/link';
-import { useState } from 'react';
 
 import { resolveStoredImage } from '@/lib/picker-utils';
 import type { EffectRow, Skill } from '@/lib/types';
@@ -18,10 +15,10 @@ const EFFECT_KIND_LABEL: Record<string, string> = {
   other: 'KHÁC',
 };
 
-/** Renders one accordion-ish block per skill: icon + name + cost on top, the
- *  Lv1-Lv5 description as a tab strip below, and any tagged effects as
- *  clickable chips. State is per-skill to remember which level the user is
- *  currently viewing. */
+/** Renders one block per skill: icon + name + cost on top, the level-1
+ *  description as the base paragraph, level 2+ upgrades stacked beneath,
+ *  and any tagged effects as clickable chips. Server component — no JS
+ *  state needed since everything is shown at once. */
 export function SkillTabs({
   skills,
   effectsById,
@@ -52,14 +49,17 @@ function SkillBlock({
   index: number;
   effectsById: Record<string, EffectRow>;
 }) {
-  const levels = skill.levels?.length
-    ? skill.levels
-    : skill.description
-      ? [{ level: 1, description: skill.description }]
-      : [];
-
-  const [activeLv, setActiveLv] = useState(levels[0]?.level ?? 1);
-  const active = levels.find((l) => l.level === activeLv) ?? levels[0];
+  // Level 1 is the "base" description shown unlabelled at the top — that's
+  // the version the player starts with. Levels 2+ are upgrades, each shown
+  // with their "Lv2"/"Lv3"… badge. If the data lacks a level-1 entry we
+  // fall back to the plain `skill.description` field (legacy data).
+  const baseDescription =
+    skill.levels?.find((l) => l.level === 1)?.description ||
+    skill.description ||
+    '';
+  const upgrades = (skill.levels ?? [])
+    .filter((l) => l.level > 1)
+    .sort((a, b) => a.level - b.level);
 
   const iconUrl = resolveStoredImage(skill.image ?? '');
 
@@ -88,30 +88,35 @@ function SkillBlock({
         </div>
       </div>
 
-      {levels.length > 1 && (
-        <div className="mb-3 flex flex-wrap gap-1">
-          {levels.map((lv) => (
-            <button
+      {baseDescription ? (
+        <p className="whitespace-pre-line text-sm leading-relaxed text-white/80">
+          {baseDescription}
+        </p>
+      ) : (
+        <p className="text-sm italic text-white/40">Chưa có mô tả.</p>
+      )}
+
+      {upgrades.length > 0 && (
+        <div className="mt-3 space-y-2">
+          {upgrades.map((lv) => (
+            <div
               key={lv.level}
-              type="button"
-              onClick={() => setActiveLv(lv.level)}
-              className={`rounded px-2 py-1 text-xs font-semibold transition-colors ${
-                lv.level === activeLv
-                  ? 'bg-[var(--color-brand-gold)] text-[var(--color-ink)]'
-                  : 'bg-white/5 text-white/60 hover:bg-white/10'
-              }`}
+              className="flex gap-3 rounded-md border border-white/10 bg-black/15 p-2 pl-3"
             >
-              Lv{lv.level}
-            </button>
+              <span className="mt-0.5 shrink-0 self-start rounded bg-[var(--color-brand-gold)]/20 px-1.5 py-0.5 text-[10px] font-semibold text-[var(--color-brand-gold)]">
+                Lv{lv.level}
+              </span>
+              <p className="flex-1 whitespace-pre-line text-sm leading-relaxed text-white/80">
+                {lv.description || (
+                  <span className="italic text-white/30">
+                    Chưa có mô tả cho cấp này.
+                  </span>
+                )}
+              </p>
+            </div>
           ))}
         </div>
       )}
-
-      <p className="whitespace-pre-line text-sm leading-relaxed text-white/80">
-        {active?.description || (
-          <span className="text-white/40">Chưa có mô tả cho cấp này.</span>
-        )}
-      </p>
 
       {skill.effects?.length ? (
         <div className="mt-3 border-t border-white/5 pt-3">
