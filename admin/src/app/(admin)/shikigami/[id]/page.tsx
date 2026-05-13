@@ -90,7 +90,9 @@ export default async function ShikigamiDetailPage({
     allEffectIds.length
       ? supabase
           .from('effects')
-          .select('id,name,en_name,kind,image')
+          // `description` is needed for the hover-card preview rendered by
+          // SkillTabs' EffectChip.
+          .select('id,name,en_name,kind,image,description')
           .in('id', allEffectIds)
       : Promise.resolve({ data: [] }),
   ]);
