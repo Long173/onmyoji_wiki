@@ -12,6 +12,12 @@ const BUCKET = 'assets';
 const ALLOWED_KINDS = new Set(['shikigami', 'souls', 'effects', 'skills']);
 const ALLOWED_RARITIES = new Set(['ssr', 'sr', 'sp', 'r', 'n']);
 const WEBP_QUALITY = 80;
+// 1-hour CDN TTL. Long enough that the dominant "no changes" case still
+// benefits from caching, short enough that replacing a file in Supabase
+// Storage dashboard (which keeps the same URL) propagates within an hour
+// without manual purge. Previously 31536000 (1 year) which made stale
+// images effectively permanent until manual purge.
+const CACHE_CONTROL_SECONDS = '3600';
 
 /** POST /api/upload — multipart form-data:
  *    file:    Blob (required)
@@ -103,7 +109,7 @@ export async function POST(request: Request) {
     .upload(bucketPath, webpBuffer, {
       upsert: true,
       contentType: 'image/webp',
-      cacheControl: '31536000',
+      cacheControl: CACHE_CONTROL_SECONDS,
     });
   if (uploadError) {
     return NextResponse.json(
