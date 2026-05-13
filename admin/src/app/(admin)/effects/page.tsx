@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import { ClickableRow } from '@/components/clickable-row';
 import { FinishChip } from '@/components/finish-chip';
+import { RowEditButton } from '@/components/row-edit-button';
 import { RowThumb } from '@/components/row-thumb';
 import { normalize } from '@/lib/picker-utils';
 import { createSupabaseAdmin } from '@/lib/supabase/admin';
@@ -130,6 +131,7 @@ export default async function EffectsListPage({
               <th className="px-4 py-2">Tên Anh</th>
               <th className="px-4 py-2">Loại</th>
               <th className="px-4 py-2">Trạng thái</th>
+              <th className="w-20 px-4 py-2"></th>
             </tr>
           </thead>
           <tbody>
@@ -151,11 +153,14 @@ export default async function EffectsListPage({
                 <td className="px-4 py-2">
                   <FinishChip done={row.is_finish} />
                 </td>
+                <td className="px-4 py-2 text-right">
+                  <RowEditButton href={`/effects/${row.id}/edit`} />
+                </td>
               </ClickableRow>
             ))}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={5} className="px-4 py-8 text-center text-white/40">
+                <td colSpan={6} className="px-4 py-8 text-center text-white/40">
                   Không có record nào khớp bộ lọc.
                 </td>
               </tr>
