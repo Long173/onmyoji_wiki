@@ -29,6 +29,7 @@ export default async function SoulEditPage({
       ],
       image: '',
       sort_index: 0,
+      is_finish: false,
     };
   } else {
     const supabase = createSupabaseAdmin();
@@ -43,7 +44,8 @@ export default async function SoulEditPage({
       );
     }
     if (!data) notFound();
-    initial = data as SoulRow;
+    const row = data as SoulRow;
+    initial = { ...row, is_finish: row.is_finish ?? false };
   }
 
   return (

@@ -18,6 +18,7 @@ export default function SoulNewPage() {
     ],
     image: '',
     sort_index: 0,
+    is_finish: false,
   };
 
   return (

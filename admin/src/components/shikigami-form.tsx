@@ -20,6 +20,7 @@ import {
   type EffectOption,
 } from './effect-picker-field';
 import { ImageUploadField } from './image-upload-field';
+import { IsFinishToggle } from './is-finish-toggle';
 import {
   ShikigamiReferencePicker,
   type ShikigamiOption,
@@ -108,6 +109,9 @@ export function ShikigamiForm({
   return (
     <FormProvider {...methods}>
       <form onSubmit={onSubmit} className="space-y-6">
+        {/* ─── Editorial status ────────────────── */}
+        <IsFinishToggle<ShikigamiFormValues> name="is_finish" />
+
         {/* ─── Identity ─────────────────────────── */}
         <Section title="Định danh">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">

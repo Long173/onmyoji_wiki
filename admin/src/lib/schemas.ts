@@ -85,6 +85,7 @@ export const shikigamiFormSchema = z.object({
   lore: z.string().default(''),
   image: z.string().default(''),
   source_url: z.string().default(''),
+  is_finish: z.boolean().default(false),
 });
 
 export type ShikigamiFormValues = z.infer<typeof shikigamiFormSchema>;
@@ -102,6 +103,7 @@ export const soulFormSchema = z.object({
   kind: z.enum(['normal', 'boss']),
   effects: z.array(soulEffect).default([]),
   image: z.string().default(''),
+  is_finish: z.boolean().default(false),
 });
 
 export type SoulFormValues = z.infer<typeof soulFormSchema>;
@@ -114,6 +116,7 @@ export const effectFormSchema = z.object({
   kind: z.enum(['buff', 'debuff', 'other']),
   description: z.string().default(''),
   image: z.string().default(''),
+  is_finish: z.boolean().default(false),
 });
 
 export type EffectFormValues = z.infer<typeof effectFormSchema>;

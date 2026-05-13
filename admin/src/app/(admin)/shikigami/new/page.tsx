@@ -54,6 +54,7 @@ export default async function ShikigamiNewPage() {
     image: '',
     source_url: '',
     sort_index: 0,
+    is_finish: false,
   };
 
   return (

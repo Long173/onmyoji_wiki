@@ -83,6 +83,13 @@ function cellToTier(raw: unknown): string {
   return (STAT_TIERS as readonly string[]).includes(s) ? s : '';
 }
 
+function cellToBool(raw: unknown): boolean {
+  if (raw == null || raw === '') return false;
+  if (typeof raw === 'boolean') return raw;
+  const s = String(raw).trim().toLowerCase();
+  return s === 'true' || s === '1' || s === 'yes' || s === 'y';
+}
+
 // ─── SHIKIGAMI ────────────────────────────────────────────────────────
 export interface ShikigamiColumn {
   header: string;
@@ -106,6 +113,7 @@ export const SHIKIGAMI_COLUMNS: ShikigamiColumn[] = [
   { header: 'image', key: 'image', width: 36 },
   { header: 'source_url', key: 'source_url', width: 28 },
   { header: 'sort_index', key: 'sort_index', width: 10 },
+  { header: 'is_finish', key: 'is_finish', width: 10 },
   // 16 stat columns
   ...STAT_KEYS.flatMap((stat) => [
     {
@@ -145,6 +153,7 @@ export function shikigamiToRow(s: ShikigamiRow): Record<string, unknown> {
     image: s.image,
     source_url: s.source_url,
     sort_index: s.sort_index,
+    is_finish: Boolean(s.is_finish),
     ...flatStats,
     skills_json: jsonToCell(s.skills),
   };
@@ -176,6 +185,7 @@ export function rowToShikigami(
     image: cellToString(row.image),
     source_url: cellToString(row.source_url),
     sort_index: cellToInt(row.sort_index),
+    is_finish: cellToBool(row.is_finish),
     stats,
     skills: cellToJson<Skill[]>(row.skills_json, []),
   };
@@ -189,6 +199,7 @@ export const SOUL_COLUMNS: ShikigamiColumn[] = [
   { header: 'name_en', key: 'name_en', width: 24 },
   { header: 'image', key: 'image', width: 30 },
   { header: 'sort_index', key: 'sort_index', width: 10 },
+  { header: 'is_finish', key: 'is_finish', width: 10 },
   { header: 'effects_json', key: 'effects_json', width: 80 },
 ];
 
@@ -200,6 +211,7 @@ export function soulToRow(s: SoulRow): Record<string, unknown> {
     name_en: s.name_en,
     image: s.image,
     sort_index: s.sort_index,
+    is_finish: Boolean(s.is_finish),
     effects_json: jsonToCell(s.effects),
   };
 }
@@ -214,6 +226,7 @@ export function rowToSoul(row: Record<string, unknown>): Partial<SoulRow> {
     name_en: cellToString(row.name_en),
     image: cellToString(row.image),
     sort_index: cellToInt(row.sort_index),
+    is_finish: cellToBool(row.is_finish),
     effects: cellToJson<SoulEffect[]>(row.effects_json, []),
   };
 }
@@ -227,6 +240,7 @@ export const EFFECT_COLUMNS: ShikigamiColumn[] = [
   { header: 'description', key: 'description', width: 60 },
   { header: 'image', key: 'image', width: 30 },
   { header: 'sort_index', key: 'sort_index', width: 10 },
+  { header: 'is_finish', key: 'is_finish', width: 10 },
 ];
 
 export function effectToRow(e: EffectRow): Record<string, unknown> {
@@ -238,6 +252,7 @@ export function effectToRow(e: EffectRow): Record<string, unknown> {
     description: e.description,
     image: e.image,
     sort_index: e.sort_index,
+    is_finish: Boolean(e.is_finish),
   };
 }
 
@@ -255,5 +270,6 @@ export function rowToEffect(row: Record<string, unknown>): Partial<EffectRow> {
     description: cellToString(row.description),
     image: cellToString(row.image),
     sort_index: cellToInt(row.sort_index),
+    is_finish: cellToBool(row.is_finish),
   };
 }

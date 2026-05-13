@@ -17,6 +17,7 @@ export default function EffectNewPage() {
     description: '',
     image: '',
     sort_index: 0,
+    is_finish: false,
   };
 
   return (

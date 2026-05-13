@@ -26,6 +26,7 @@ export default async function EffectEditPage({
       description: '',
       image: '',
       sort_index: 0,
+      is_finish: false,
     };
   } else {
     const supabase = createSupabaseAdmin();
@@ -40,7 +41,8 @@ export default async function EffectEditPage({
       );
     }
     if (!data) notFound();
-    initial = data as EffectRow;
+    const row = data as EffectRow;
+    initial = { ...row, is_finish: row.is_finish ?? false };
   }
 
   return (

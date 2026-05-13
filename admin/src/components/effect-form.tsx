@@ -11,6 +11,7 @@ import { effectFormSchema, type EffectFormValues } from '@/lib/schemas';
 import type { EffectRow } from '@/lib/types';
 
 import { ImageUploadField } from './image-upload-field';
+import { IsFinishToggle } from './is-finish-toggle';
 import { SlugPreview } from './slug-preview';
 
 export function EffectForm({
@@ -72,6 +73,8 @@ export function EffectForm({
   return (
     <FormProvider {...methods}>
       <form onSubmit={onSubmit} className="space-y-6">
+        <IsFinishToggle<EffectFormValues> name="is_finish" />
+
         <Section title="Định danh">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {isNew ? (

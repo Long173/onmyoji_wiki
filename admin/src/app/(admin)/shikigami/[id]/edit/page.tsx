@@ -60,6 +60,7 @@ export default async function ShikigamiEditPage({
       image: '',
       source_url: '',
       sort_index: 0,
+      is_finish: false,
     };
   } else {
     const { data, error } = await supabase
@@ -79,6 +80,7 @@ export default async function ShikigamiEditPage({
       stats: { ...emptyStats(), ...row.stats },
       slot_mains: { ...emptySlotMains(), ...(row.slot_mains ?? {}) },
       countered_by: row.countered_by ?? [],
+      is_finish: row.is_finish ?? false,
     };
   }
 

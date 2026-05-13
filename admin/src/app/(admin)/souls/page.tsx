@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
 import { ClickableRow } from '@/components/clickable-row';
+import { FinishChip } from '@/components/finish-chip';
+import { RowThumb } from '@/components/row-thumb';
 import { normalize } from '@/lib/picker-utils';
 import { createSupabaseAdmin } from '@/lib/supabase/admin';
 import type { SoulRow } from '@/lib/types';
@@ -13,6 +15,7 @@ const KINDS = ['normal', 'boss'] as const;
 type SearchParams = {
   q?: string;
   kind?: string;
+  status?: string;
   page?: string;
 };
 
@@ -21,18 +24,27 @@ export default async function SoulsListPage({
 }: {
   searchParams: Promise<SearchParams>;
 }) {
-  const { q = '', kind, page: pageRaw = '1' } = await searchParams;
+  const {
+    q = '',
+    kind,
+    status,
+    page: pageRaw = '1',
+  } = await searchParams;
   const page = Math.max(1, Number(pageRaw) || 1);
   const offset = (page - 1) * PAGE_SIZE;
 
   const supabase = createSupabaseAdmin();
   let query = supabase
     .from('souls')
-    .select('id,name_vi,name_en,kind,image,updated_at', { count: 'exact' });
+    .select('id,name_vi,name_en,kind,image,is_finish,updated_at', {
+      count: 'exact',
+    });
 
   if (kind && (KINDS as readonly string[]).includes(kind)) {
     query = query.eq('kind', kind);
   }
+  if (status === 'done') query = query.eq('is_finish', true);
+  if (status === 'pending') query = query.eq('is_finish', false);
   if (q.trim()) {
     // Strip diacritics so the term matches the *_unaccent stored values
     // (see shikigami/page.tsx for the full rationale).
@@ -57,7 +69,7 @@ export default async function SoulsListPage({
 
   const rows = (data ?? []) as Pick<
     SoulRow,
-    'id' | 'name_vi' | 'name_en' | 'kind' | 'image'
+    'id' | 'name_vi' | 'name_en' | 'kind' | 'image' | 'is_finish'
   >[];
   const total = count ?? 0;
   const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
@@ -91,6 +103,15 @@ export default async function SoulsListPage({
           <option value="normal">Ngự thường</option>
           <option value="boss">Ngự boss</option>
         </select>
+        <select
+          name="status"
+          defaultValue={status ?? ''}
+          className="input-field max-w-[160px]"
+        >
+          <option value="">Mọi trạng thái</option>
+          <option value="pending">Chưa hoàn thành</option>
+          <option value="done">Đã hoàn thành</option>
+        </select>
         <button type="submit" className="btn-primary hover:btn-primary-hover">
           Lọc
         </button>
@@ -100,14 +121,22 @@ export default async function SoulsListPage({
         <table className="w-full text-sm">
           <thead className="bg-white/5 text-left text-xs uppercase text-white/60">
             <tr>
+              <th className="w-14 px-4 py-2"></th>
               <th className="px-4 py-2">Tên Việt</th>
               <th className="px-4 py-2">Tên Anh</th>
               <th className="px-4 py-2">Loại</th>
+              <th className="px-4 py-2">Trạng thái</th>
             </tr>
           </thead>
           <tbody>
             {rows.map((row) => (
               <ClickableRow key={row.id} href={`/souls/${row.id}`}>
+                <td className="py-2 pl-4 pr-0">
+                  <RowThumb
+                    path={row.image}
+                    alt={row.name_vi || row.name_en || row.id}
+                  />
+                </td>
                 <td className="px-4 py-2">
                   {row.name_vi || (
                     <span className="text-white/30">(trống)</span>
@@ -117,11 +146,14 @@ export default async function SoulsListPage({
                 <td className="px-4 py-2">
                   <KindChip kind={row.kind} />
                 </td>
+                <td className="px-4 py-2">
+                  <FinishChip done={row.is_finish} />
+                </td>
               </ClickableRow>
             ))}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={3} className="px-4 py-8 text-center text-white/40">
+                <td colSpan={5} className="px-4 py-8 text-center text-white/40">
                   Không có record nào khớp bộ lọc.
                 </td>
               </tr>
@@ -137,6 +169,7 @@ export default async function SoulsListPage({
           baseHref="/souls"
           q={q}
           kind={kind}
+          status={status}
         />
       )}
     </div>
@@ -161,17 +194,20 @@ function Pagination({
   baseHref,
   q,
   kind,
+  status,
 }: {
   page: number;
   totalPages: number;
   baseHref: string;
   q: string;
   kind?: string;
+  status?: string;
 }) {
   const link = (p: number) => {
     const params = new URLSearchParams();
     if (q) params.set('q', q);
     if (kind) params.set('kind', kind);
+    if (status) params.set('status', status);
     if (p > 1) params.set('page', String(p));
     const qs = params.toString();
     return qs ? `${baseHref}?${qs}` : baseHref;

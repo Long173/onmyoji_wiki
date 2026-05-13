@@ -107,6 +107,9 @@ export interface ShikigamiRow {
   image: string;
   source_url: string;
   sort_index: number;
+  /** Editorial flag: true once a human has reviewed/completed this record.
+   *  Bulk-imported scraped rows start at false. Surfaced only in the admin. */
+  is_finish: boolean;
   created_at?: string;
   updated_at?: string;
 }
@@ -126,6 +129,7 @@ export interface SoulRow {
   effects: SoulEffect[];
   image: string;
   sort_index: number;
+  is_finish: boolean;
 }
 
 export type EffectKind = 'buff' | 'debuff' | 'other';
@@ -138,4 +142,5 @@ export interface EffectRow {
   description: string;
   image: string;
   sort_index: number;
+  is_finish: boolean;
 }

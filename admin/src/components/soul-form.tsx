@@ -11,6 +11,7 @@ import { soulFormSchema, type SoulFormValues } from '@/lib/schemas';
 import type { SoulRow } from '@/lib/types';
 
 import { ImageUploadField } from './image-upload-field';
+import { IsFinishToggle } from './is-finish-toggle';
 import { SlugPreview } from './slug-preview';
 
 const PIECE_SUGGESTIONS: Record<SoulFormValues['kind'], number[]> = {
@@ -77,6 +78,8 @@ export function SoulForm({
   return (
     <FormProvider {...methods}>
       <form onSubmit={onSubmit} className="space-y-6">
+        <IsFinishToggle<SoulFormValues> name="is_finish" />
+
         <Section title="Định danh">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {isNew ? (
