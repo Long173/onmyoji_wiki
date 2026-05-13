@@ -127,7 +127,7 @@ export default async function SoulsListPage({
               <th className="px-4 py-2">Tên Anh</th>
               <th className="px-4 py-2">Loại</th>
               <th className="px-4 py-2">Trạng thái</th>
-              <th className="w-20 px-4 py-2"></th>
+              <th className="w-12 px-2 py-2"></th>
             </tr>
           </thead>
           <tbody>
@@ -151,7 +151,7 @@ export default async function SoulsListPage({
                 <td className="px-4 py-2">
                   <FinishChip done={row.is_finish} />
                 </td>
-                <td className="px-4 py-2 text-right">
+                <td className="px-2 py-2 text-right">
                   <RowEditButton href={`/souls/${row.id}/edit`} />
                 </td>
               </ClickableRow>

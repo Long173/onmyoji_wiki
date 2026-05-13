@@ -144,7 +144,7 @@ export default async function ShikigamiListPage({
               <th className="px-4 py-2">Rarity</th>
               <th className="px-4 py-2">Trạng thái</th>
               <th className="px-4 py-2">Cập nhật</th>
-              <th className="w-20 px-4 py-2"></th>
+              <th className="w-12 px-2 py-2"></th>
             </tr>
           </thead>
           <tbody>
@@ -171,7 +171,7 @@ export default async function ShikigamiListPage({
                 <td className="px-4 py-2 text-xs text-white/40">
                   {row.updated_at?.slice(0, 10)}
                 </td>
-                <td className="px-4 py-2 text-right">
+                <td className="px-2 py-2 text-right">
                   <RowEditButton href={`/shikigami/${row.id}/edit`} />
                 </td>
               </ClickableRow>

@@ -17,10 +17,11 @@ export function RowEditButton({ href }: { href: string }) {
       href={href}
       onClick={(e) => e.stopPropagation()}
       onKeyDown={(e) => e.stopPropagation()}
-      className="inline-flex items-center gap-1 rounded border border-white/10 bg-white/5 px-2 py-1 text-xs text-white/70 transition-colors hover:border-[var(--color-brand-gold)]/40 hover:bg-white/[0.08] hover:text-white"
+      className="inline-flex h-7 w-7 items-center justify-center rounded border border-white/10 bg-white/5 text-sm text-white/70 transition-colors hover:border-[var(--color-brand-gold)]/40 hover:bg-white/[0.08] hover:text-white"
       title="Sửa nhanh"
+      aria-label="Sửa"
     >
-      ✎ Sửa
+      ✎
     </Link>
   );
 }
