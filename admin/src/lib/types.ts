@@ -47,6 +47,16 @@ export interface SkillLevel {
   description: string;
 }
 
+/** Lightweight alternative form for skills that transform between modes
+ *  in the same slot (different image / effects). Has no levels or cost —
+ *  those belong to the primary form. */
+export interface AltSkillForm {
+  name: string;
+  description: string;
+  image: string;
+  effects: string[];
+}
+
 export interface Skill {
   name: string;
   description: string;
@@ -55,6 +65,10 @@ export interface Skill {
   cost?: number;
   /** Effect ids referenced by this skill's description. */
   effects?: string[];
+  /** Same-slot alternate forms (skill transformations). Empty when the
+   *  skill has a single form. Each form has its own image, name,
+   *  description, and effect refs. */
+  alt_forms?: AltSkillForm[];
 }
 
 // ─── Recommended main stats by soul slot ────────────────────────

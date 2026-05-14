@@ -19,6 +19,13 @@ const skillLevel = z.object({
   description: z.string().default(''),
 });
 
+const altSkillForm = z.object({
+  name: z.string().default(''),
+  description: z.string().default(''),
+  image: z.string().default(''),
+  effects: z.array(z.string()).default([]),
+});
+
 const skill = z.object({
   name: z.string().default(''),
   description: z.string().default(''),
@@ -34,6 +41,8 @@ const skill = z.object({
   // Effect ids referenced by this skill's description (`effects` table FK).
   // Stored inside the JSONB skills array; no SQL migration needed.
   effects: z.array(z.string()).default([]),
+  // Same-slot alternate forms (skill transformations). Default empty.
+  alt_forms: z.array(altSkillForm).default([]),
 });
 
 export const shikigamiFormSchema = z.object({

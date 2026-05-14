@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import { useFormContext } from 'react-hook-form';
+import { useFormContext, type Path } from 'react-hook-form';
 
 import { normalize } from '@/lib/picker-utils';
 import type { ShikigamiFormValues } from '@/lib/schemas';
@@ -36,17 +36,18 @@ function effectToItem(o: EffectOption): PickerItem {
   };
 }
 
-/** Per-skill effects picker. Lives inside the skills FieldArray and writes
- *  to `skills.<idx>.effects`. Compact list height since it's embedded. */
+/** Effects picker writing to any `string[]` field on the form. Used by
+ *  both primary skill rows and alt-form rows — caller passes the full
+ *  RHF path (e.g. `skills.0.effects` or `skills.0.alt_forms.1.effects`).
+ *  Compact list height since it lives embedded inside the skills editor. */
 export function SkillEffectsPicker({
-  skillIdx,
+  path,
   options,
 }: {
-  skillIdx: number;
+  path: Path<ShikigamiFormValues>;
   options: EffectOption[];
 }) {
   const { setValue, watch } = useFormContext<ShikigamiFormValues>();
-  const path = `skills.${skillIdx}.effects` as const;
   const selectedIds = (watch(path) ?? []) as string[];
 
   const items = useMemo(() => options.map(effectToItem), [options]);
@@ -55,7 +56,9 @@ export function SkillEffectsPicker({
     <ReferencePicker
       items={items}
       selectedIds={selectedIds}
-      onChange={(next) => setValue(path, next, { shouldDirty: true })}
+      onChange={(next) =>
+        setValue(path, next as never, { shouldDirty: true })
+      }
       searchPlaceholder="Tag hiệu ứng được dùng trong skill này..."
       emptyHint="Chưa tag hiệu ứng nào cho skill này."
       maxListHeight="max-h-48"

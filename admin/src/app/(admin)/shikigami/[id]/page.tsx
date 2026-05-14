@@ -71,7 +71,13 @@ export default async function ShikigamiDetailPage({
   const soulIds = s.recommended_souls ?? [];
   const counterIds = s.countered_by ?? [];
   const allEffectIds = Array.from(
-    new Set((s.skills ?? []).flatMap((sk: Skill) => sk.effects ?? [])),
+    new Set(
+      (s.skills ?? []).flatMap((sk: Skill) => [
+        ...(sk.effects ?? []),
+        // Include each alt form's effects so the bulk fetch covers them too.
+        ...(sk.alt_forms ?? []).flatMap((alt) => alt.effects ?? []),
+      ]),
+    ),
   );
 
   const [soulsRes, countersRes, effectsRes] = await Promise.all([

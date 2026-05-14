@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { resolveStoredImage } from '@/lib/picker-utils';
-import type { EffectRow, Skill } from '@/lib/types';
+import type { AltSkillForm, EffectRow, Skill } from '@/lib/types';
 
 const EFFECT_KIND_CHIP: Record<string, string> = {
   buff: 'bg-emerald-500/20 text-emerald-300',
@@ -130,30 +130,110 @@ function SkillBlock({
         </div>
       )}
 
-      {skill.effects?.length ? (
-        <div className="mt-3 border-t border-white/5 pt-3">
-          <span className="mb-2 block text-[10px] uppercase text-white/40">
-            Hiệu ứng tham chiếu
-          </span>
-          <div className="flex flex-wrap gap-2">
-            {skill.effects.map((eid) => {
-              const e = effectsById[eid];
-              if (!e) {
-                return (
-                  <span
-                    key={eid}
-                    className="rounded-full bg-red-500/10 px-2 py-0.5 text-xs text-red-300"
-                    title="Hiệu ứng id không tồn tại"
-                  >
-                    {eid} ⚠
-                  </span>
-                );
-              }
-              return <EffectChip key={eid} effect={e} />;
-            })}
-          </div>
+      <EffectsStrip effectIds={skill.effects} effectsById={effectsById} />
+
+      {skill.alt_forms?.length
+        ? skill.alt_forms.map((alt, altIdx) => (
+            <AltFormBlock
+              key={`${alt.name}-${altIdx}`}
+              alt={alt}
+              altIdx={altIdx}
+              effectsById={effectsById}
+            />
+          ))
+        : null}
+    </div>
+  );
+}
+
+/** Sub-block for one alt form. Indented + smaller than the primary skill
+ *  block so the visual hierarchy reads as "primary > variant". Each form
+ *  carries its own description, effect chips, and effect-name highlighting
+ *  derived from the form's own `effects` list. */
+function AltFormBlock({
+  alt,
+  altIdx,
+  effectsById,
+}: {
+  alt: AltSkillForm;
+  altIdx: number;
+  effectsById: Record<string, EffectRow>;
+}) {
+  const iconUrl = resolveStoredImage(alt.image ?? '');
+  const effectNames = (alt.effects ?? [])
+    .flatMap((eid) => {
+      const e = effectsById[eid];
+      return e ? [e.name, e.en_name] : [];
+    })
+    .filter((s): s is string => Boolean(s && s.trim()));
+
+  return (
+    <div className="mt-4 rounded-md border border-white/10 bg-black/15 p-3">
+      <div className="mb-2 flex items-center gap-3">
+        <span className="rounded bg-fuchsia-500/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-fuchsia-300">
+          Dạng {altIdx + 2}
+        </span>
+        <span className="block h-8 w-8 shrink-0 overflow-hidden rounded bg-black/40">
+          {iconUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={iconUrl}
+              alt={alt.name}
+              className="h-full w-full object-cover"
+            />
+          ) : null}
+        </span>
+        <div className="min-w-0 flex-1 text-sm font-semibold">
+          {alt.name || <span className="italic text-white/40">(chưa đặt tên)</span>}
         </div>
-      ) : null}
+      </div>
+
+      {alt.description ? (
+        <p className="whitespace-pre-line text-sm leading-relaxed text-white/80">
+          {highlightEffects(alt.description, effectNames)}
+        </p>
+      ) : (
+        <p className="text-sm italic text-white/40">Chưa có mô tả.</p>
+      )}
+
+      <EffectsStrip effectIds={alt.effects} effectsById={effectsById} />
+    </div>
+  );
+}
+
+/** Horizontal flex-wrap of effect chips with the dotted-label header. Used
+ *  by both the primary skill block and each alt-form block. Renders
+ *  nothing when there are no effect ids. */
+function EffectsStrip({
+  effectIds,
+  effectsById,
+}: {
+  effectIds: string[] | undefined;
+  effectsById: Record<string, EffectRow>;
+}) {
+  if (!effectIds?.length) return null;
+  return (
+    <div className="mt-3 border-t border-white/5 pt-3">
+      <span className="mb-2 block text-[10px] uppercase text-white/40">
+        Hiệu ứng tham chiếu
+      </span>
+      <div className="flex flex-wrap gap-2">
+        {effectIds.map((eid) => {
+          const e = effectsById[eid];
+          if (!e) {
+            return (
+              <span
+                key={eid}
+                className="rounded-full bg-red-500/10 px-2 py-0.5 text-xs text-red-300"
+                title="Hiệu ứng id không tồn tại"
+              >
+                {eid} ⚠
+              </span>
+            );
+          }
+          return <EffectChip key={eid} effect={e} />;
+        })}
+      </div>
     </div>
   );
 }

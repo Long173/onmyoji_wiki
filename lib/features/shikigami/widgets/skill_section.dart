@@ -135,8 +135,101 @@ class _SkillTileState extends State<_SkillTile> {
                     : currentUpgradeDesc!,
               ),
             ],
+            // Same-slot transformations (skill biến hình). Each form gets a
+            // smaller sub-block so the visual hierarchy reads primary > variant.
+            for (var i = 0; i < widget.skill.altForms.length; i++) ...[
+              const SizedBox(height: 12),
+              _AltFormBlock(form: widget.skill.altForms[i], index: i),
+            ],
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _AltFormBlock extends StatelessWidget {
+  const _AltFormBlock({required this.form, required this.index});
+
+  final AltSkillForm form;
+  final int index;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: scheme.surfaceContainerHighest.withValues(alpha: 0.35),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: scheme.outlineVariant.withValues(alpha: 0.4)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 8,
+                  vertical: 3,
+                ),
+                decoration: BoxDecoration(
+                  color: scheme.tertiaryContainer,
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: Text(
+                  'Dạng ${index + 2}',
+                  style: theme.textTheme.labelSmall?.copyWith(
+                    color: scheme.onTertiaryContainer,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 0.5,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 10),
+              if (form.image.isNotEmpty)
+                SizedBox(
+                  width: 28,
+                  height: 28,
+                  child: NetworkImagePlaceholder(
+                    imagePath: form.image,
+                    fallbackLabel: form.name,
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                ),
+              if (form.image.isNotEmpty) const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  form.name.isEmpty ? '(chưa đặt tên)' : form.name,
+                  style: theme.textTheme.titleSmall?.copyWith(
+                    fontWeight: FontWeight.w700,
+                    fontStyle:
+                        form.name.isEmpty ? FontStyle.italic : FontStyle.normal,
+                    color: form.name.isEmpty
+                        ? scheme.outline
+                        : scheme.onSurface,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Text(
+            form.description.isEmpty
+                ? 'Chưa có mô tả.'
+                : form.description,
+            style: theme.textTheme.bodyMedium?.copyWith(
+              height: 1.5,
+              fontStyle:
+                  form.description.isEmpty ? FontStyle.italic : FontStyle.normal,
+              color: form.description.isEmpty
+                  ? scheme.outline
+                  : scheme.onSurface,
+            ),
+          ),
+        ],
       ),
     );
   }

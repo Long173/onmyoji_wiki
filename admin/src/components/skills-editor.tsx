@@ -1,7 +1,11 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import { useFieldArray, useFormContext } from 'react-hook-form';
+import {
+  useFieldArray,
+  useFormContext,
+  type Path,
+} from 'react-hook-form';
 
 import type { ShikigamiFormValues } from '@/lib/schemas';
 import { slugify } from '@/lib/slugify';
@@ -90,7 +94,13 @@ export function SkillsEditor({
               <span className="mb-1 block text-xs text-white/60">
                 Icon kỹ năng
               </span>
-              <SkillImageField skillIdx={skillIdx} />
+              <FormImageField
+                pathPrefix={`skills.${skillIdx}`}
+                bucketKeyFn={(shikigamiId) =>
+                  `${shikigamiId}_${skillIdx + 1}`
+                }
+                missingNameMessage="Điền tên Thức Thần (Anh hoặc Việt) trước."
+              />
             </div>
           </div>
 
@@ -101,10 +111,15 @@ export function SkillsEditor({
               Hiệu ứng tham chiếu
             </span>
             <SkillEffectsPicker
-              skillIdx={skillIdx}
+              path={`skills.${skillIdx}.effects` as const}
               options={effectOptions}
             />
           </div>
+
+          <AltFormsEditor
+            skillIdx={skillIdx}
+            effectOptions={effectOptions}
+          />
         </div>
       ))}
 
@@ -117,6 +132,7 @@ export function SkillsEditor({
             levels: [{ level: 1, description: '' }],
             image: '',
             effects: [],
+            alt_forms: [],
           })
         }
         className="w-full rounded-lg border border-dashed border-white/20 py-3 text-sm text-white/60 hover:border-white/40 hover:text-white"
@@ -192,31 +208,181 @@ function SkillLevelsEditor({ skillIdx }: { skillIdx: number }) {
   );
 }
 
-/** Compact image picker for a single skill row. Each skill's image is named
- *  `<shikigami_id>_<skillIdx+1>.webp` in the `skills/` bucket prefix so
- *  re-uploading the same slot overwrites cleanly (no orphaned files). */
-function SkillImageField({ skillIdx }: { skillIdx: number }) {
+/** Editor for `skills.<i>.alt_forms` — same-slot transformations of the
+ *  primary skill. Renders below the primary skill content. Each entry has
+ *  its own name / image / description / effects picker (no levels, no
+ *  cost — those belong to the primary form). */
+function AltFormsEditor({
+  skillIdx,
+  effectOptions,
+}: {
+  skillIdx: number;
+  effectOptions: EffectOption[];
+}) {
+  const { control, register } = useFormContext<ShikigamiFormValues>();
+  const { fields, append, remove, move } = useFieldArray({
+    control,
+    name: `skills.${skillIdx}.alt_forms` as const,
+  });
+
+  return (
+    <div className="mt-4 border-t border-white/5 pt-4">
+      <div className="mb-2 flex items-center justify-between">
+        <span className="text-xs uppercase text-white/50">
+          Dạng phụ (cùng vị trí, đổi hình + hiệu ứng)
+        </span>
+        <button
+          type="button"
+          onClick={() =>
+            append({ name: '', description: '', image: '', effects: [] })
+          }
+          className="rounded border border-white/20 px-2 py-0.5 text-xs hover:bg-white/5"
+        >
+          + Thêm dạng
+        </button>
+      </div>
+
+      {fields.length === 0 && (
+        <p className="text-xs text-white/40">
+          Chưa có dạng phụ. Skill chỉ có 1 dạng duy nhất.
+        </p>
+      )}
+
+      <div className="space-y-3">
+        {fields.map((field, altIdx) => (
+          <div
+            key={field.id}
+            className="rounded-md border border-white/10 bg-black/15 p-3"
+          >
+            <div className="mb-2 flex items-center justify-between">
+              <span className="text-[10px] uppercase text-white/50">
+                Dạng {altIdx + 2}
+              </span>
+              <div className="flex gap-1 text-xs">
+                <button
+                  type="button"
+                  onClick={() => altIdx > 0 && move(altIdx, altIdx - 1)}
+                  disabled={altIdx === 0}
+                  className="rounded px-1.5 py-0.5 hover:bg-white/5 disabled:opacity-30"
+                >
+                  ↑
+                </button>
+                <button
+                  type="button"
+                  onClick={() =>
+                    altIdx < fields.length - 1 && move(altIdx, altIdx + 1)
+                  }
+                  disabled={altIdx === fields.length - 1}
+                  className="rounded px-1.5 py-0.5 hover:bg-white/5 disabled:opacity-30"
+                >
+                  ↓
+                </button>
+                <button
+                  type="button"
+                  onClick={() => remove(altIdx)}
+                  className="rounded px-1.5 py-0.5 text-red-300 hover:bg-red-500/10"
+                >
+                  Xoá
+                </button>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <label className="block">
+                <span className="mb-1 block text-[10px] uppercase text-white/50">
+                  Tên dạng phụ
+                </span>
+                <input
+                  {...register(
+                    `skills.${skillIdx}.alt_forms.${altIdx}.name` as const,
+                  )}
+                  className="input-field"
+                  placeholder="vd: Hồ Lư Phong (sau biến hình)"
+                />
+              </label>
+
+              <div>
+                <span className="mb-1 block text-[10px] uppercase text-white/50">
+                  Icon dạng phụ
+                </span>
+                <FormImageField
+                  pathPrefix={`skills.${skillIdx}.alt_forms.${altIdx}`}
+                  bucketKeyFn={(shikigamiId) =>
+                    `${shikigamiId}_${skillIdx + 1}_alt${altIdx + 1}`
+                  }
+                  missingNameMessage="Điền tên Thức Thần trước."
+                />
+              </div>
+
+              <label className="block">
+                <span className="mb-1 block text-[10px] uppercase text-white/50">
+                  Mô tả
+                </span>
+                <textarea
+                  {...register(
+                    `skills.${skillIdx}.alt_forms.${altIdx}.description` as const,
+                  )}
+                  rows={2}
+                  className="input-field"
+                  placeholder="Mô tả dạng phụ"
+                />
+              </label>
+
+              <div>
+                <span className="mb-1 block text-[10px] uppercase text-white/50">
+                  Hiệu ứng tham chiếu
+                </span>
+                <SkillEffectsPicker
+                  path={
+                    `skills.${skillIdx}.alt_forms.${altIdx}.effects` as Path<ShikigamiFormValues>
+                  }
+                  options={effectOptions}
+                />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/** Image upload field for skill icons — used by both primary skills and
+ *  alt forms. Reads/writes `<pathPrefix>.image`, uploads under
+ *  `skills/<bucketKey>.webp` where bucketKey is composed by the caller
+ *  to encode skill index (and alt index when relevant). */
+function FormImageField({
+  pathPrefix,
+  bucketKeyFn,
+  missingNameMessage,
+}: {
+  pathPrefix: string;
+  bucketKeyFn: (shikigamiId: string) => string;
+  missingNameMessage: string;
+}) {
   const { register, watch, setValue } = useFormContext<ShikigamiFormValues>();
   const inputRef = useRef<HTMLInputElement>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Same fallback pattern as ImageUploadField: when the form is in create mode
-  // and id is still empty, derive a slug from the names so users can upload
-  // skill icons before the first save. The bucket path stays stable even if
-  // the server later resolves the record id to `<slug>_2`.
+  const imagePath = `${pathPrefix}.image` as Path<ShikigamiFormValues>;
+
+  // Same id-fallback pattern as ImageUploadField — when the shikigami is
+  // brand new and has no slug yet, derive one from the name fields so the
+  // upload can proceed before the first save.
   const realId = watch('id');
   const nameEn = watch('name_en');
   const nameVi = watch('name_vi');
   const fallbackId = slugify(nameEn || nameVi);
   const shikigamiId = realId || fallbackId;
-  const stored = watch(`skills.${skillIdx}.image`) ?? '';
+
+  const stored = (watch(imagePath) as string | undefined) ?? '';
   const previewUrl = resolveStored(stored);
 
   const handleFile = async (file: File) => {
     setError(null);
     if (!shikigamiId) {
-      setError('Điền tên Thức Thần (Anh hoặc Việt) trước.');
+      setError(missingNameMessage);
       return;
     }
     setBusy(true);
@@ -224,7 +390,7 @@ function SkillImageField({ skillIdx }: { skillIdx: number }) {
       const fd = new FormData();
       fd.append('file', file);
       fd.append('kind', 'skills');
-      fd.append('id', `${shikigamiId}_${skillIdx + 1}`);
+      fd.append('id', bucketKeyFn(shikigamiId));
       if (stored) fd.append('oldPath', stored);
       const res = await fetch('/api/upload', { method: 'POST', body: fd });
       const json = (await res.json()) as { path?: string; error?: string };
@@ -232,7 +398,7 @@ function SkillImageField({ skillIdx }: { skillIdx: number }) {
         setError(json.error ?? 'Upload thất bại');
         return;
       }
-      setValue(`skills.${skillIdx}.image`, json.path, { shouldDirty: true });
+      setValue(imagePath, json.path as never, { shouldDirty: true });
     } finally {
       setBusy(false);
     }
@@ -256,7 +422,7 @@ function SkillImageField({ skillIdx }: { skillIdx: number }) {
           )}
         </div>
         <input
-          {...register(`skills.${skillIdx}.image` as const)}
+          {...register(imagePath)}
           className="input-field flex-1 font-mono text-xs"
           placeholder="skills/<id>.webp"
         />
@@ -283,7 +449,7 @@ function SkillImageField({ skillIdx }: { skillIdx: number }) {
           <button
             type="button"
             onClick={() =>
-              setValue(`skills.${skillIdx}.image`, '', { shouldDirty: true })
+              setValue(imagePath, '' as never, { shouldDirty: true })
             }
             className="rounded border border-white/20 px-2 py-1 text-xs hover:bg-white/5"
             title="Xoá đường dẫn"
