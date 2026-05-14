@@ -6462,7 +6462,1186 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/sp/mujin_yama_usagi.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Mujin_Yama_Usagi"
+  },
+  {
+    "id": "shouu_ootengu",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Shouu Ootengu",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 907,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 165,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 64,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 122,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Wind Coil (風纏)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3151.png"
+      },
+      {
+        "name": "Growing Feathers (若羽)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3152.png"
+      },
+      {
+        "name": "Feather Blade Wind (羽の刃の風)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3153.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/shouu_ootengu.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Shouu_Ootengu"
+  },
+  {
+    "id": "rengoku_ibaraki_douji",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Rengoku Ibaraki Douji",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 864,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 145,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 58,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 112,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 15,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Demonic Claw (鬼爪)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3221.png"
+      },
+      {
+        "name": "Enraged Will (狂意)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3222.png"
+      },
+      {
+        "name": "Inferno Gate (炼狱之门/煉獄の門)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3223.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/rengoku_ibaraki_douji.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Rengoku_Ibaraki_Douji"
+  },
+  {
+    "id": "inari_miketsu",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Inari Miketsu",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1064,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 146,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 83,
+        "tier": "S"
+      },
+      "speed": {
+        "value": 109,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Fox Bell (狐鈴)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3261.png"
+      },
+      {
+        "name": "Sunlit Fox Realm (狐狩り・日曜界)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3262.png"
+      },
+      {
+        "name": "Moonlit Fox Realm (狐狩り・月影界)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3263.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/inari_miketsu.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Inari_Miketsu"
+  },
+  {
+    "id": "soufuu_ichimokuren",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Soufuu Ichimokuren",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1067,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 156,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 58,
+        "tier": "D"
+      },
+      "speed": {
+        "value": 121,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Wind Amulet: Destroy (风符·灭/風符・滅)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3271.png"
+      },
+      {
+        "name": "Wind Amulet: Shield (风符·守/風符・守)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3272.png"
+      },
+      {
+        "name": "Wind Halted: Dragonfall (风止·苍龙坠/風止・蒼龍墜)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3273.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/soufuu_ichimokuren.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Soufuu_Ichimokuren"
+  },
+  {
+    "id": "akakage_youtou_hime",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Akakage Youtou Hime",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 854,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 146,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 101,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 12,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Flaming Blade (炎の刃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3281.png"
+      },
+      {
+        "name": "Relentless (穷追不舍/深追い)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3282.png"
+      },
+      {
+        "name": "Crimson Slash (赤影一瞬)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3283.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/akakage_youtou_hime.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Akakage_Youtou_Hime"
+  },
+  {
+    "id": "oura_hannya",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Oura Hannya",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 982,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 135,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 59,
+        "tier": "D"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Returning Hatred (恨返/恨み返し)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3311.png"
+      },
+      {
+        "name": "Deep-rooted Grudge (积重难返/怨根の誓い)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3312.png"
+      },
+      {
+        "name": "Promised Wish (予愿必还/念願必達)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3313.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/oura_hannya.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Oura_Hannya"
+  },
+  {
+    "id": "gyourou_arakawa_no_aruji",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Gyourou Arakawa no Aruji",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1056,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 161,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 110,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 20,
+        "tier": "SS"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "River's Breath (川息/川の息吹)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3341.png"
+      },
+      {
+        "name": "River's Fury (川怒/川の怒り)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3342.png"
+      },
+      {
+        "name": "Wavebreaker Slash (驍浪海作斬/海の驍浪を刃に)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3343.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/gyourou_arakawa_no_aruji.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Gyourou_Arakawa_no_Aruji"
+  },
+  {
+    "id": "jinten_tamamo_no_mae",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Jinten Tamamo no Mae",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1174,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 166,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 66,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 115,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 12,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 160,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Soul Rush (霊衝)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3391.png"
+      },
+      {
+        "name": "Soul Devourer (食魂)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3392.png"
+      },
+      {
+        "name": "Blazing Tails (焚天九尾)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3393.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/jinten_tamamo_no_mae.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Jinten_Tamamo_no_Mae"
+  },
+  {
+    "id": "oniou_shuten_douji",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Oniou Shuten Douji",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1120,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 151,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 76,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 109,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Blazing Fire (梵天)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3411a.png"
+      },
+      {
+        "name": "Inflamed (红莲/紅蓮)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3412.png"
+      },
+      {
+        "name": "Raging Blaze (天火怒焱/天火怒炎)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3413.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/oniou_shuten_douji.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Oniou_Shuten_Douji"
+  },
+  {
+    "id": "tenken_jinshin_onikiri",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Tenken Jinshin Onikiri",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1024,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 161,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 58,
+        "tier": "D"
+      },
+      "speed": {
+        "value": 119,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 12,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 160,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Intangible Blade (無剣)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3431.png"
+      },
+      {
+        "name": "Unshaken Will (真剣・刃心)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3432.png"
+      },
+      {
+        "name": "Heavenly Blade: Evilslayer (天剣・断悪斬)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3433.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/tenken_jinshin_onikiri.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Tenken_Jinshin_Onikiri"
+  },
+  {
+    "id": "reikai_kingyo_hime",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Reikai Kingyo Hime",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1035,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 142,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 111,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "River Water (清流)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3461.png"
+      },
+      {
+        "name": "Ride Wave (凌波)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3462.png"
+      },
+      {
+        "name": "Goldfish's Embrace  (霊魚の心)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3463.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/reikai_kingyo_hime.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Reikai_Kingyo_Hime"
+  },
+  {
+    "id": "ukiyo_aoandon",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ukiyo Aoandon",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1078,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 130,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 73,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 119,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Floating Flame (浮光)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3481.png"
+      },
+      {
+        "name": "Lights On (煢灯焕夜)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3482a.png"
+      },
+      {
+        "name": "Lantern of Death (告死瞑灯)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3483.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/ukiyo_aoandon.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ukiyo_Aoandon"
+  },
+  {
+    "id": "bakkotsu_kiyohime",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Bakkotsu Kiyohime",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1128,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 144,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 118,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 3,
+        "tier": "C"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Bind Heart (纏心)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3521.png"
+      },
+      {
+        "name": "Bone Corrosion (蝕骨)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3522.png"
+      },
+      {
+        "name": "Bewitching Eyes (降蠱の瞳)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3523a.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/bakkotsu_kiyohime.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Bakkotsu_Kiyohime"
+  },
+  {
+    "id": "semigoori_yuki_onna",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Semigoori Yuki Onna",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 939,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 142,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 75,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 109,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Jade Echoing (玉响/玉響)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3621.png"
+      },
+      {
+        "name": "Frost Breath (息吹)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3622a.png"
+      },
+      {
+        "name": "Eternal Winter (永冬)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3623.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/semigoori_yuki_onna.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Semigoori_Yuki_Onna"
+  },
+  {
+    "id": "zenshin_ungaikyou",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Zenshin Ungaikyou",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1202,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 99,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 82,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 113,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 3,
+        "tier": "C"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 75,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Boundless Water (水无垠/水無垠)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3931.png"
+      },
+      {
+        "name": "Clear Mind (心净明/心浄明)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3932.png"
+      },
+      {
+        "name": "All is Void (万法皆空/万方皆空)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3933.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/zenshin_ungaikyou.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Zenshin_Ungaikyou"
+  },
+  {
+    "id": "yumebiki_kochou_no_sei",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Yumebiki Kochou no Sei",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1291,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 89,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 82,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 113,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Swaying Bell (摇铃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5941.png"
+      },
+      {
+        "name": "Spiritual Dream (灵梦)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5942.png"
+      },
+      {
+        "name": "Sound of Dreams (梦引之声)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5943.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/yumebiki_kochou_no_sei.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Yumebiki_Kochou_no_Sei"
+  },
+  {
+    "id": "yumeyama_hakuzousu",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Yumeyama Hakuzousu",
+    "friendly_name": [],
+    "rarity": "SP",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1419,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 64,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 88,
+        "tier": "S"
+      },
+      "speed": {
+        "value": 111,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "My Name Drives Me (驭我之名)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5951.png"
+      },
+      {
+        "name": "White Fox Seal (白狐咒)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5952.png"
+      },
+      {
+        "name": "Dream Slash (斩梦刀)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/5953.png"
+      },
+      {
+        "name": "Amulet:Life (符咒·生)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/o1skill6.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/sp/yumeyama_hakuzousu.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Yumeyama_Hakuzousu"
   }
 ]

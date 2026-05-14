@@ -162,12 +162,20 @@ def parse_template_fields(block: str) -> dict[str, str]:
 # ----------------------------------------------------------------------
 
 
+# Lenient match for the Shikigami/List/All table rows. Format quirks the
+# wiki has accumulated over the years that we need to tolerate:
+#   - The "No." cell may be a digit, "?", or "-" (cosmetic Daruma skins).
+#   - The name cell may be a piped link `[[Page|Display]]` — we keep the
+#     left side (real page slug) since that drives the detail-page lookup.
+#   - The trailing `<br>` may be `<br>`, `<br />`, `<br/>`, or have a
+#     leading space before it.
+#   - Some rows use Unicode curly quotes (`“UR”`) instead of `"UR"`.
 _LIST_ROW_RE = re.compile(
-    r"\|\s*(?P<no>\d+|\?)\s*\n"
+    r"\|\s*(?P<no>\d+|\?|-)\s*\n"
     r"\|\s*\[\[File:(?P<img>[^|\]]+?)(?:\|[^\]]*)?\]\]\s*\n"
-    r"\|\s*\[\[(?P<name>[^|\]]+?)\]\]"
-    r"(?:<br>[^\n]*)?\n"
-    r"\|\s*data-sort-value=\"(?P<rar>[A-Z]+)\"",
+    r"\|\s*\[\[(?P<name>[^|\]]+?)(?:\|[^\]]+)?\]\]"
+    r"(?:\s*<br\s*/?>[^\n]*)?\n"
+    r'\|\s*data-sort-value=["“](?P<rar>[A-Z]+)["”]',
     re.MULTILINE,
 )
 
@@ -183,14 +191,25 @@ class FandomEntry:
 
 def parse_list_all(wikitext: str) -> list[FandomEntry]:
     entries: list[FandomEntry] = []
+    seen_names: set[str] = set()
     for m in _LIST_ROW_RE.finditer(wikitext):
         name = m.group("name").strip()
+        rarity = m.group("rar")
         if not name or name.startswith("File:"):
             continue
+        # Skip rarities outside our 5 canonical tiers (e.g. UR is a newer
+        # awakening tier the DB doesn't model yet).
+        if rarity not in RARITIES:
+            continue
+        # Dedupe by wiki page slug — cosmetic skin variants of the same
+        # shikigami (e.g. Daruma colours) all link back to one page.
+        if name in seen_names:
+            continue
+        seen_names.add(name)
         entries.append(FandomEntry(
             no=m.group("no"),
             name_en=name,
-            rarity=m.group("rar"),
+            rarity=rarity,
             list_image_file=m.group("img").strip(),
             detail_page=name.replace(" ", "_"),
         ))

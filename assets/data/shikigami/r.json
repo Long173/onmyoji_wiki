@@ -3,7 +3,7 @@
     "id": "vu_nu",
     "name_vi": "Vũ Nữ",
     "name_jp": "Ame Onna",
-    "name_en": "",
+    "name_en": "Ame Onna",
     "friendly_name": [],
     "rarity": "R",
     "role": [
@@ -13,24 +13,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1035,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 97,
+        "tier": "D"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 73,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 104,
+        "tier": "B"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 5,
+        "tier": "B"
       },
       "crit_dmg": {
         "value": 150,
@@ -71,7 +71,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2241.png"
       },
       {
         "name": "TỊNH HÓA CHI VŨ",
@@ -82,7 +82,7 @@
             "description": "Bắt đầu lượt thì hóa giải toàn bộ hiệu ứng khống chế, và xua tan tất cả các debuff trạng thái xấu cho bản thân. Dính hiệu ứng xấu hoặc khống chế thì +40 điểm tốc độ trong 1 lượt (trước lượt tối đa kích hoạt 1 lần). Kỹ năng không thể nâng cấp!"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2242.png",
         "cost": 0
       },
       {
@@ -106,7 +106,7 @@
             "description": "Debuff Thiên Chi Bán giảm 20 điểm tốc độ"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2243.png",
         "cost": 2
       }
     ],
@@ -119,7 +119,7 @@
     "id": "tieu_do",
     "name_vi": "Tiêu Đồ",
     "name_jp": "Shouzu",
-    "name_en": "",
+    "name_en": "Shouzu",
     "friendly_name": [],
     "rarity": "R",
     "role": [
@@ -129,24 +129,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1035,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 98,
+        "tier": "D"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 72,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 107,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 5,
+        "tier": "B"
       },
       "crit_dmg": {
         "value": 150,
@@ -187,7 +187,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2341.png"
       },
       {
         "name": "NHUẬN VẬT VÔ THANH",
@@ -210,7 +210,7 @@
             "description": "Tư Dưỡng + 20% crit-dmg."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2342.png",
         "cost": 0
       },
       {
@@ -230,7 +230,7 @@
             "description": "Liên Kết Sinh Mệnh giảm 5% sát thương nhận vào"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2343.png",
         "cost": 3
       }
     ],
@@ -305,7 +305,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/r/akaname.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Akaname"
   },
   {
@@ -374,7 +374,2422 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/r/kagewani.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Kagewani"
+  },
+  {
+    "id": "sanbi_no_kitsune",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Sanbi no Kitsune",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 875,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 124,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 92,
+        "tier": "D"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Tail Slash (狐袭/尻尾攻撃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2021.png"
+      },
+      {
+        "name": "Seduction (诱惑/誘惑)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2022.png"
+      },
+      {
+        "name": "Woman Scorned (红颜怒发/紅顔怒髪)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2023.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/sanbi_no_kitsune.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Sanbi_no_Kitsune"
+  },
+  {
+    "id": "zashiki_warashi",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Zashiki Warashi",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1046,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 99,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 71,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 92,
+        "tier": "D"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Soul Fire (魂之火/魂の炎)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2051.png"
+      },
+      {
+        "name": "Serendipity (福运昌隆/福運繁栄)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2052.png"
+      },
+      {
+        "name": "Trade-Off (祸福相生/転禍為福)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2053.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/zashiki_warashi.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Zashiki_Warashi"
+  },
+  {
+    "id": "koi_no_sei",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Koi no Sei",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 982,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 117,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 107,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Tail Whip (尾鞭/魚尾鞭)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2061.png"
+      },
+      {
+        "name": "Bubble Shield (泡泡之盾/泡の盾)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2062.png"
+      },
+      {
+        "name": "Bubble Cage (泡泡之牢/泡の牢獄)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2063.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/koi_no_sei.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Koi_no_Sei"
+  },
+  {
+    "id": "kyuumei_neko",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kyuumei Neko",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 822,
+        "tier": "D"
+      },
+      "attack": {
+        "value": 127,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 70,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 98,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Razor Claws (猫爪/猫の爪)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2071.png"
+      },
+      {
+        "name": "Nine Lives (九命)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2072.png"
+      },
+      {
+        "name": "Revenge (报复/報復)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2073.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kyuumei_neko.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kyuumei_Neko"
+  },
+  {
+    "id": "baketanuki",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Baketanuki",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1088,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 100,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 67,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Bottle Bash (妖酒壶/妖しの徳利)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2081.png"
+      },
+      {
+        "name": "Drunken Stupor (醉倒/酔っぱらい)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2082.png"
+      },
+      {
+        "name": "Fiery Moonshine (烈焰之酒/炎の酒)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2083.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/baketanuki.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Baketanuki"
+  },
+  {
+    "id": "kappa",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kappa",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 854,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 130,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 66,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 103,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Water Grenade (水流弹/水流弾)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2091.png"
+      },
+      {
+        "name": "Pure Water (清流/清流)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2092.png"
+      },
+      {
+        "name": "River Song (大河之歌/大河の歌)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2093.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kappa.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kappa"
+  },
+  {
+    "id": "oguna",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Oguna",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1078,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 104,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 93,
+        "tier": "D"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Feather Blade (羽刃/羽の刃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2121.png"
+      },
+      {
+        "name": "Feather Cloak (羽衣/羽の衣)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2122.png"
+      },
+      {
+        "name": "Soul Offering (魂之祭献/魂の犠牲)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2123.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/oguna.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Oguna"
+  },
+  {
+    "id": "doujo",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Doujo",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1099,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 103,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Feather Pierce (羽刺/羽刺)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2131.png"
+      },
+      {
+        "name": "Feather Cloak (羽衣/羽の衣)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2132.png"
+      },
+      {
+        "name": "Sacrifice (命之祭献/命のきらめき)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2133.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/doujo.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Doujo"
+  },
+  {
+    "id": "gaki",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Gaki",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 121,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 64,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 95,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Rotten Bun (臭馒头/腐った饅頭)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2141.png"
+      },
+      {
+        "name": "Steal (盗窃/窃盗)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2142.png"
+      },
+      {
+        "name": "Voracious (饥不择食/鯨飲馬食)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2143.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/gaki.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Gaki"
+  },
+  {
+    "id": "kodokushi",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kodokushi",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 907,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 131,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 95,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Bug Toss (施蛊/毒虫を放つ)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2161.png"
+      },
+      {
+        "name": "Death Puppetry (迷魂蛊/迷魂毒虫)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2162.png"
+      },
+      {
+        "name": "Venom Burst (魔蛊毒爆/魔毒虫爆発)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2163.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kodokushi.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kodokushi"
+  },
+  {
+    "id": "karasu_tengu",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Karasu Tengu",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 886,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 127,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 101,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Blade of Justice (正义之刺/正義の薙刀)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2181.png"
+      },
+      {
+        "name": "Purification Wings (羽清/羽清)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2182.png"
+      },
+      {
+        "name": "Deadly Flock (群鸦乱舞/群烏の乱舞)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2183.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/karasu_tengu.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Karasu_Tengu"
+  },
+  {
+    "id": "kamikui",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kamikui",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 907,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 123,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 66,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 108,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Hair Whip (发鞭/髪鞭)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2211.png"
+      },
+      {
+        "name": "Sleep Smoke (迷烟/迷煙)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2212.png"
+      },
+      {
+        "name": "True Face (真实之颜/真実の顔)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2213.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kamikui.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kamikui"
+  },
+  {
+    "id": "samurai_no_rei",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Samurai no Rei",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 886,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 130,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 64,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Warrior's Heart (武士之心/侍の心)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2221.png"
+      },
+      {
+        "name": "Soul Slash (灭魂/魂滅)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2222.png"
+      },
+      {
+        "name": "Restless Rage (不甘之怒/亡魂の憤り)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2223.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/samurai_no_rei.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Samurai_no_Rei"
+  },
+  {
+    "id": "kyonshii_otouto",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kyonshii Otouto",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 907,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 130,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 92,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 94,
+        "tier": "D"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Mighty Punch (直拳/正拳突き)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2251.png"
+      },
+      {
+        "name": "Inversion (驱逐/駆逐)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2252.png"
+      },
+      {
+        "name": "Noxious Spray (毒气喷泉/毒気噴水)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2253.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kyonshii_otouto.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kyonshii_Otouto"
+  },
+  {
+    "id": "kyonshii_imouto",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kyonshii Imouto",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 918,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 131,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 98,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Baddies Begone (坏人走开/悪者め！)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2261.png"
+      },
+      {
+        "name": "Temper Tantrum (不玩了啦/もうやらないよ)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2262.png"
+      },
+      {
+        "name": "Dog Attack (汪汪出击/ワンちゃん出撃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2263.png"
+      },
+      {
+        "name": "Rage (愤怒)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4021.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kyonshii_imouto.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kyonshii_Imouto"
+  },
+  {
+    "id": "heiyou",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Heiyou",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1120,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 102,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 75,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 106,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Swinging Slice (挥斩/振り斬り)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2271.png"
+      },
+      {
+        "name": "Sturdy Armor (坚甲/堅甲)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2272.png"
+      },
+      {
+        "name": "Unbreakable (坚不可破/堅くて破れまい)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2273.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/heiyou.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Heiyou"
+  },
+  {
+    "id": "ushi_no_toki",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ushi no Toki",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 939,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 123,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 64,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 107,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Curse Dart (咒锥/呪錐)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2281.png"
+      },
+      {
+        "name": "Cursed Fire (咒火/呪火)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2282.png"
+      },
+      {
+        "name": "Decoy Doll (草人替身/案山子の身代わり)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2283.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/ushi_no_toki.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ushi_no_Toki"
+  },
+  {
+    "id": "hitotsume_kozou",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Hitotsume Kozou",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 992,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 108,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 69,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 108,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Stone Throw (投石/石投げ)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2301.png"
+      },
+      {
+        "name": "Diamond Sutra (金刚经/金剛経)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2302.png"
+      },
+      {
+        "name": "Statue Smash (石像冲击/菩薩攻撃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2303.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/hitotsume_kozou.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Hitotsume_Kozou"
+  },
+  {
+    "id": "tesso",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Tesso",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 907,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 124,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Jingle Jingle (钱响叮当/チャリンチャリン)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2321.png"
+      },
+      {
+        "name": "Insurance Policy (横财护身/あぶく銭護身)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2322.png"
+      },
+      {
+        "name": "Gold Barrage (钱即正义/銭こそ、正義だ)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2323.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/tesso.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Tesso"
+  },
+  {
+    "id": "kudagitsune",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kudagitsune",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 896,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 128,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 64,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 98,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Pipe Throw (竹管投掷/竹管投げ)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2361.png"
+      },
+      {
+        "name": "Bamboo Shelter (竹之护/竹の守り)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2362.png"
+      },
+      {
+        "name": "Bomb Blast (爆轰炮/爆撃砲)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2363.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kudagitsune.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kudagitsune"
+  },
+  {
+    "id": "yama_usagi",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Yama Usagi",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 907,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 123,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 66,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Be Nice (谁还不听话/悪い子ど～こだ)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2371.png"
+      },
+      {
+        "name": "Bunny Dance (兔子舞/兎の舞)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2372.png"
+      },
+      {
+        "name": "Ring Toss (幸运套环/輪投げ遊び)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2373.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/yama_usagi.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Yama_Usagi"
+  },
+  {
+    "id": "hotarugusa",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Hotarugusa",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 93,
+        "tier": "D"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Absorption (吸取/吸収)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2381.png"
+      },
+      {
+        "name": "Flower Power (生花/薬草)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2382.png"
+      },
+      {
+        "name": "Healing Light (治愈之光/癒しの光)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2383.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/hotarugusa.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Hotarugusa"
+  },
+  {
+    "id": "kochou_no_sei",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kochou no Sei",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1014,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 104,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 70,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Butterfly Strike (香气袭人/香りに包まれる)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2411.png"
+      },
+      {
+        "name": "Graceful Agility (轻盈/窈窕)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2412.png"
+      },
+      {
+        "name": "Dance of Hope (祈愿之舞/祈念の舞)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2413.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kochou_no_sei.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kochou_no_Sei"
+  },
+  {
+    "id": "yamawaro",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Yamawaro",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 854,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 128,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 67,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 106,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Hammer Smash (碎岩)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2431.png"
+      },
+      {
+        "name": "Tenacity (怪力)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2432.png"
+      },
+      {
+        "name": "Bludgeoning (崩山)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2433.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/yamawaro.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Yamawaro"
+  },
+  {
+    "id": "kubinashi",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kubinashi",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 918,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 124,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Heavy Attack (重击/重撃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2441.png"
+      },
+      {
+        "name": "Hellfire (冥火)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2442.png"
+      },
+      {
+        "name": "Emptiness (虚无/虚無)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2443.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kubinashi.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kubinashi"
+  },
+  {
+    "id": "satori",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Satori",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 982,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 110,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 98,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Club Smash (棒打/棒打ち)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2491.png"
+      },
+      {
+        "name": "Grudge (记仇/根に持つ)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2492.png"
+      },
+      {
+        "name": "Club Bomb (棒球炸弹/野球爆弾)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2493.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/satori.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Satori"
+  },
+  {
+    "id": "jikikaeru",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Jikikaeru",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 896,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 127,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 97,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Mahjong Cheat (出千/いかさま)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2501.png"
+      },
+      {
+        "name": "Change of Luck (转运/転運)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2502.png"
+      },
+      {
+        "name": "Tile Fling (岭上开花/嶺上開花)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2503.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/jikikaeru.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Jikikaeru"
+  },
+  {
+    "id": "korouka",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Korouka",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1142,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 109,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 107,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Fire Pinwheel (火風車)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2741.png"
+      },
+      {
+        "name": "Heavenly Fate (霊運)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2742.png"
+      },
+      {
+        "name": "Silence Prank (悪戯の火)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2743.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/korouka.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Korouka"
+  },
+  {
+    "id": "usagimaru",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Usagimaru",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1142,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 104,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 106,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 3,
+        "tier": "C"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Adorable Strike (萌动/ニンジン)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2891.png"
+      },
+      {
+        "name": "Healing (治愈/ニンジン集め)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2892.png"
+      },
+      {
+        "name": "Heart of Protection (守护之心/守護の心)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2893.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/usagimaru.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Usagimaru"
+  },
+  {
+    "id": "juzu",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Juzu",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 939,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 97,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 74,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 101,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 3,
+        "tier": "C"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Holy Staff (降魔杖/降魔の杖)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3011.png"
+      },
+      {
+        "name": "Karma (轮回/輪回)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3012.png"
+      },
+      {
+        "name": "Zen (禅意)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3013.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/juzu.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Juzu"
+  },
+  {
+    "id": "kosode_no_te",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kosode no Te",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 939,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 127,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 106,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Hidden Sting（绵里藏针/綿里蔵針）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3021.png"
+      },
+      {
+        "name": "Threads Connection（丝缕相连/絲路相連）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3022.png"
+      },
+      {
+        "name": "Needle and Threads（穿针引线/貫針引線）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3023.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kosode_no_te.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kosode_no_Te"
+  },
+  {
+    "id": "mushishi",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Mushishi",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1206,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 104,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 3,
+        "tier": "C"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Dance of Mushi（虫之舞/虫の舞）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3061.png"
+      },
+      {
+        "name": "Mark of Mushi（虫之痕/虫の痕）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3062.png"
+      },
+      {
+        "name": "Protection of Mushi（虫之护/蟲の護り）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3063.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/mushishi.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Mushishi"
+  },
+  {
+    "id": "peach_maki_karashi",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Peach Maki & Karashi",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1067,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 89,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 75,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Rabbit Jailer: Scold (兔狱卒·叱责/うさぎ獄卒・叱る)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3101.png"
+      },
+      {
+        "name": "Rabbit Jailer: Resolve (兔狱卒·坚毅/うさぎ獄卒・逞しさ)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3102.png"
+      },
+      {
+        "name": "Peach: Hell Idol (蜜桃·地狱偶像/マキ・地獄アイドル)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3103.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/peach_maki_karashi.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Peach_Maki_&_Karashi"
+  },
+  {
+    "id": "tenjo_kudari",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Tenjo Kudari",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1014,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 95,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 76,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Stone Strike (石を投げる)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3231.png"
+      },
+      {
+        "name": "Shelter for Rain (遮雨)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3232.png"
+      },
+      {
+        "name": "Song of Reunion (再会の音)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3233.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/tenjo_kudari.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Tenjo_Kudari"
+  },
+  {
+    "id": "kyonshii_inu",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kyonshii Inu",
+    "friendly_name": [],
+    "rarity": "R",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Rage (愤怒)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4021.png"
+      },
+      {
+        "name": "Brutal (蛮横)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4022.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/r/kyonshii_inu.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kyonshii_Inu"
   }
 ]

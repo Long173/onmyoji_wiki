@@ -59,7 +59,1752 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/n/yuki_douji_frog.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Yuki_Douji_Frog"
+  },
+  {
+    "id": "lantern_soul",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Lantern Soul",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Lick (舔/舐める)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2031.png"
+      },
+      {
+        "name": "Lantern of Fire (笼中火/籠の炎)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2032.png"
+      },
+      {
+        "name": "Great Demon Lantern (大鬼笼/大鬼籠)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2033.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/lantern_soul.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Lantern_Soul"
+  },
+  {
+    "id": "lantern_boy",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Lantern Boy",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Head Hammer (头槌/頭槌)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2451.png"
+      },
+      {
+        "name": "Will-o-Wisp (/鬼火の玉)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2453.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/lantern_boy.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Lantern_Boy"
+  },
+  {
+    "id": "akashita",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Akashita",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Hit (海扁/ぶっ飛ばす)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2461.png"
+      },
+      {
+        "name": "Morale Boost (鼓舞/鼓舞)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2462.png"
+      },
+      {
+        "name": "Winds and Thunders (风鼓雷/風鼓雷)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2463.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/akashita.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Akashita"
+  },
+  {
+    "id": "grave_digger",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Grave Digger",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Black Flames of Darkness (/闇の黒炎)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4001.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/grave_digger.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Grave_Digger"
+  },
+  {
+    "id": "parasite",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Parasite",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Flamethrower (/火投げ)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4011.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/parasite.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Parasite"
+  },
+  {
+    "id": "umbrella",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Umbrella",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Pierce (我顶!/刺突)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4031.png"
+      },
+      {
+        "name": "Dizzy Spin (天旋地转/天変地異)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4032.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/umbrella.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Umbrella"
+  },
+  {
+    "id": "green_imp",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Green Imp",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Hit (我打/ぶん殴る)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4041.png"
+      },
+      {
+        "name": "Hit Hit Hit (我打打打/オラ!オラ!オラ!)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4042.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/green_imp.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Green_Imp"
+  },
+  {
+    "id": "red_imp",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Red Imp",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Meatball Tackle (肉弹战车/肉弾戦車)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4051.png"
+      },
+      {
+        "name": "Taunt (挑衅/挑発)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4052.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/red_imp.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Red_Imp"
+  },
+  {
+    "id": "yellow_imp",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Yellow Imp",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Boom Boom (咚咚/ドンドン)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4061.png"
+      },
+      {
+        "name": "Boom Boom Boom (锵锵锵/ドンドンドン)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4062.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/yellow_imp.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Yellow_Imp"
+  },
+  {
+    "id": "blue_imp",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Blue Imp",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Wild Scratches (乱打/乱れ打ち)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4071.png"
+      },
+      {
+        "name": "Humming (低吟/鼻歌)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4072.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/blue_imp.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Blue_Imp"
+  },
+  {
+    "id": "hahakigami",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Hahakigami",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Mighty Blow (蓄力一击/渾身の一撃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4081.png"
+      },
+      {
+        "name": "Big Cleaning (大扫除/大掃除)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4082.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/hahakigami.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Hahakigami"
+  },
+  {
+    "id": "nurikabe",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Nurikabe",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Earthquake (地震/地震)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4091.png"
+      },
+      {
+        "name": "Hard Wall (坚壁/堅壁)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4092.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/nurikabe.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Nurikabe"
+  },
+  {
+    "id": "ootengu_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ootengu Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 939,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 117,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Wind Blast (呱·风袭)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4141.png"
+      },
+      {
+        "name": "Gero: Featherblade Cyclone (呱·羽刃暴风)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4142.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/ootengu_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ootengu_Frog"
+  },
+  {
+    "id": "shuten_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Shuten Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 950,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 116,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Demon Gourd (呱·鬼葫芦)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4151.png"
+      },
+      {
+        "name": "Gero: Scream of Insanity (呱·狂啸)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4152.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/shuten_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Shuten_Frog"
+  },
+  {
+    "id": "arakawa_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Arakawa Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 118,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 66,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Swimming Fish (呱·游鱼)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4161.png"
+      },
+      {
+        "name": "Gero: Engulfment (呱·吞噬)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4162.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/arakawa_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Arakawa_Frog"
+  },
+  {
+    "id": "enma_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Enma Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 982,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 108,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 102,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Demonic Semblance (呱·鬼面)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4171.png"
+      },
+      {
+        "name": "Gero: Oppression of the Vengeful Spirit (呱·怨魂重压)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4172.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/enma_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Enma_Frog"
+  },
+  {
+    "id": "ryoumenbotoke_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ryoumenbotoke Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 116,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Croak: Duel Element",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4181.png"
+      },
+      {
+        "name": "Croak: Divine Combo",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4182.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/ryoumenbotoke_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ryoumenbotoke_Frog"
+  },
+  {
+    "id": "shishio_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Shishio Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 992,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 110,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 101,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Strength of the Forest (呱·森之力)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4191.png"
+      },
+      {
+        "name": "Gero: Antler Charge (呱·鹿角冲撞)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4192.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/shishio_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Shishio_Frog"
+  },
+  {
+    "id": "ibaraki_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ibaraki Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 1,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Black Inferno (呱·黑焰)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4201.png"
+      },
+      {
+        "name": "Gero: Hell's Grasp (呱·地狱之手)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4202.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/ibaraki_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ibaraki_Frog"
+  },
+  {
+    "id": "aoandon_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Aoandon Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 113,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 101,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Dim Light (呱·幽光)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4211.png"
+      },
+      {
+        "name": "Gero: Soul-Consuming Lantern (呱·吸魂灯)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4212.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/aoandon_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Aoandon_Frog"
+  },
+  {
+    "id": "youtou_hime_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Youtou Hime Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 117,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Ominous Blade (呱·不祥之刃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4221.png"
+      },
+      {
+        "name": "Gero: Oppression of the Vengeful Spirit (呱·怨魂重压)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4222.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/youtou_hime_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Youtou_Hime_Frog"
+  },
+  {
+    "id": "ichimokuren_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ichimokuren Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 971,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 112,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Wind Seal, Shattered (呱·风符·破)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4231.png"
+      },
+      {
+        "name": "Gero: Wind God's Blessing (呱·风神之佑)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4232.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/ichimokuren_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ichimokuren_Frog"
+  },
+  {
+    "id": "kachou_fuugetsu_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kachou Fuugetsu Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 982,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 110,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Homecoming Fowl (呱·归鸟)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4241.png"
+      },
+      {
+        "name": "Gero: Birdsong (呱·花鸟相闻)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4242.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/kachou_fuugetsu_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kachou_Fuugetsu_Frog"
+  },
+  {
+    "id": "kaguya_hime_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kaguya Hime Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 109,
+        "tier": "C"
+      },
+      "defense": {
+        "value": 69,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 98,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Jeweled Staff of Mount Hourai (呱·蓬莱玉枝)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4251.png"
+      },
+      {
+        "name": "Gero: Dragon's Jewel (呱·龙首之玉)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4252.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/kaguya_hime_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kaguya_Hime_Frog"
+  },
+  {
+    "id": "susabi_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Susabi Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 116,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 67,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Heavenly Orbit (呱·星轨)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4261.png"
+      },
+      {
+        "name": "Gero: Divine Retribution - Star (呱·天罚·星)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4262.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/susabi_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Susabi_Frog"
+  },
+  {
+    "id": "higanbana_frog",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Higanbana Frog",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 950,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Gero: Flower of Death (呱·死亡之花)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4271.png"
+      },
+      {
+        "name": "Gero: Flower Sea of Blood (呱·血之花海)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4272.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/higanbana_frog.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Higanbana_Frog"
+  },
+  {
+    "id": "namahage_oni",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Namahage Oni",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 114,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Sweeping Bucket（扫堂桶）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/4331.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/namahage_oni.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Namahage_Oni"
+  },
+  {
+    "id": "daruma",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Daruma",
+    "friendly_name": [],
+    "rarity": "N",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 0,
+        "tier": ""
+      },
+      "attack": {
+        "value": 0,
+        "tier": ""
+      },
+      "defense": {
+        "value": 0,
+        "tier": ""
+      },
+      "speed": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_rate": {
+        "value": 0,
+        "tier": ""
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/n/daruma.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Daruma"
   }
 ]

@@ -84,6 +84,11 @@ def load_json_array(path: Path) -> list[dict[str, Any]]:
 # Row builders — map JSON shape → Postgres column shape
 # ──────────────────────────────────────────────────────────────────────────
 def build_shikigami_rows() -> list[dict[str, Any]]:
+    """Build payload rows for the shikigami table. Mirrors the current DB
+    schema after migrations 0005 (countered_by), 0007 (slot_mains), 0008
+    (is_finish), and 0009 (drop name_jp). Local JSON files may still carry
+    legacy fields (name_jp, role) — silently ignored.
+    """
     rows: list[dict[str, Any]] = []
     for rarity in RARITIES:
         items = load_json_array(DATA_DIR / "shikigami" / f"{rarity}.json")
@@ -93,28 +98,27 @@ def build_shikigami_rows() -> list[dict[str, Any]]:
             for s in skills:
                 if isinstance(s, dict) and "image" in s:
                     s["image"] = normalize_image_path(s["image"])
-            role = item.get("role")
-            if isinstance(role, str):
-                role = [role] if role else []
-            elif not isinstance(role, list):
-                role = []
+            slot_mains = item.get("slot_mains")
+            if not isinstance(slot_mains, dict):
+                slot_mains = {}
             rows.append({
                 "id": item["id"],
                 "name_vi": item.get("name_vi", "") or "",
-                "name_jp": item.get("name_jp", "") or "",
                 "name_en": item.get("name_en", "") or "",
                 "friendly_name": item.get("friendly_name") or [],
                 "rarity": (item.get("rarity") or rarity).upper(),
-                "role": role,
                 "description": item.get("description", "") or "",
                 "obtain": item.get("obtain") or [],
                 "stats": item.get("stats") or {},
                 "skills": skills,
                 "recommended_souls": item.get("recommended_souls") or [],
+                "countered_by": item.get("countered_by") or [],
+                "slot_mains": slot_mains,
                 "lore": item.get("lore", "") or "",
                 "image": normalize_image_path(item.get("image", "") or ""),
                 "source_url": item.get("source_url", "") or "",
                 "sort_index": idx,
+                "is_finish": bool(item.get("is_finish", False)),
             })
     return rows
 
@@ -134,6 +138,7 @@ def build_souls_rows() -> list[dict[str, Any]]:
             "effects": item.get("effects") or [],
             "image": normalize_image_path(item.get("image", "") or ""),
             "sort_index": idx,
+            "is_finish": bool(item.get("is_finish", False)),
         })
     return rows
 
@@ -153,6 +158,7 @@ def build_effects_rows() -> list[dict[str, Any]]:
             "description": item.get("description", "") or "",
             "image": normalize_image_path(item.get("image", "") or ""),
             "sort_index": idx,
+            "is_finish": bool(item.get("is_finish", False)),
         })
     return rows
 

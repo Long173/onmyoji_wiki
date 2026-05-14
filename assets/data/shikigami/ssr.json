@@ -443,7 +443,7 @@
     "id": "than_vo_nguyet",
     "name_vi": "Thần Vô Nguyệt",
     "name_jp": "Kannazuki",
-    "name_en": "",
+    "name_en": "Kannazuki",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -453,27 +453,27 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1227,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 95,
+        "tier": "D"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 60,
+        "tier": "D"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 100,
+        "tier": "B"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
-        "value": 150,
+        "value": 157,
         "tier": ""
       },
       "accuracy": {
@@ -511,7 +511,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5961.png"
       },
       {
         "name": "CHỨC MỘNG KHÚC",
@@ -538,7 +538,7 @@
             "description": "Tiên cơ: vào trận lập tức nhận 1 tầng buff Mộng Thần ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/5963.png"
       },
       {
         "name": "MỸ MỘNG TỨ DỮ",
@@ -565,7 +565,7 @@
             "description": "Giúp đồng minh được chọn TRONG LƯỢT KẾ TIẾP nhận được buff Mỹ Mộng Tất Thành"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/5962.png",
         "cost": 2
       }
     ],
@@ -2062,7 +2062,7 @@
     "skills": [],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/amaterasu.png",
     "source_url": "https://onmyojicltl.wordpress.com/2023/11/08/ky-nang-ssr-thien-chieu/"
   },
   {
@@ -3575,7 +3575,7 @@
     "id": "khan_na_la",
     "name_vi": "Khẩn Na La",
     "name_jp": "Kinnara",
-    "name_en": "",
+    "name_en": "Kinnara",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -3585,27 +3585,27 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 918,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 135,
+        "tier": "A"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 61,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 105,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 15,
+        "tier": "S"
       },
       "crit_dmg": {
-        "value": 150,
+        "value": 160,
         "tier": ""
       },
       "accuracy": {
@@ -3643,7 +3643,7 @@
             "description": "Tấn công sẽ kèm thêm hiệu ứng của lần tấu nhạc trước đó."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3531.png"
       },
       {
         "name": "PHÁ",
@@ -3670,7 +3670,7 @@
             "description": "Giảm -1 mana tiêu hao khi tấu nhạc."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3532a.png",
         "cost": 1
       },
       {
@@ -3698,7 +3698,7 @@
             "description": "Tấn công sẽ kèm theo tất cả các hiệu ứng nhạc đã tấu trước đó."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3532c.png",
         "cost": 3
       }
     ],
@@ -3711,7 +3711,7 @@
     "id": "linh_loc_ngu_tien",
     "name_vi": "Linh Lộc Ngự Tiền",
     "name_jp": "Suzuka Gozen",
-    "name_en": "",
+    "name_en": "Suzuka Gozen",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -3722,24 +3722,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1131,
+        "tier": "A"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 141,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 60,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 100,
+        "tier": "B"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -3780,7 +3780,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3511.png"
       },
       {
         "name": "PHONG PHÙ-HỘ",
@@ -3807,7 +3807,7 @@
             "description": "Khi tiến vào trạng thái Nghĩa Lý Chi Tâm , Linh Lộc Ngự Tiền sẽ cưỡng chế mục tiêu lập tức đến lượt, nếu chưa bị khống chế động tác thì buộc phải đánh thường vào ả rồi mất lượt (cơ chế này không có tác dụng lên quái và vật triệu hồi)."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3512.png",
         "cost": 2
       },
       {
@@ -3835,7 +3835,7 @@
             "description": "Phe ta cứ tiêu hao 1 điểm mana, Linh Lộc Ngự Tiền +2% atk và def (phòng ngự), tích lũy tối đa 50 tầng."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3513.png",
         "cost": 4
       }
     ],
@@ -3848,7 +3848,7 @@
     "id": "lang_da_xoa_co",
     "name_vi": "Lang Dạ Xoa Cơ",
     "name_jp": "Takiyasha Hime",
-    "name_en": "",
+    "name_en": "Takiyasha Hime",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -3858,24 +3858,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 854,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 152,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 56,
+        "tier": "D"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 110,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -3916,7 +3916,7 @@
             "description": "Sát thương = 125%. Bắt đầu chiến đấu thì nhận 5 tầng Tân Nguyệt Chúc Phúc ."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3381.png"
       },
       {
         "name": "NGUYỆT CHI ÁO NGHĨA",
@@ -3943,7 +3943,7 @@
             "description": "Thời gian hồi chiêu -1 lượt."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3382a.png",
         "cost": 0
       },
       {
@@ -3987,7 +3987,7 @@
             "description": "Sát thương = 63%"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3382c.png",
         "cost": 3
       }
     ],
@@ -4162,7 +4162,7 @@
     "id": "bat_tri_hoa",
     "name_vi": "Bất Tri Hỏa",
     "name_jp": "Shiranui",
-    "name_en": "",
+    "name_en": "Shiranui",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -4172,24 +4172,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 790,
+        "tier": "D"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 149,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 61,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 107,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -4246,7 +4246,7 @@
             "description": "Sát thương = 72%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3301a.png"
       },
       {
         "name": "LY ẢNH",
@@ -4289,7 +4289,7 @@
             "description": "Sau khi chủ động kích hoạt chiêu TẪN NHIỄM BẤT DẠ , tương ứng với mỗi mana còn lại, thì sẽ tấn công 1 mục tiêu địch ngẫu nhiên gây 46% sát thương theo atk."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3302a.png",
         "cost": 0
       },
       {
@@ -4333,7 +4333,7 @@
             "description": "Với mỗi 1 đồng minh đã chết đi, sẽ giảm -1 mana xài chiêu."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3303a.png",
         "cost": 2
       }
     ],
@@ -4481,7 +4481,7 @@
     "id": "dien_linh_khi",
     "name_vi": "Diện Linh Khí",
     "name_jp": "Menreiki",
-    "name_en": "",
+    "name_en": "Menreiki",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -4491,24 +4491,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 864,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 140,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 61,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -4549,7 +4549,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/3111.png"
       },
       {
         "name": "LUÂN HỒI CHI DIỆN",
@@ -4576,7 +4576,7 @@
             "description": "Thiện Diện +10% hành động"
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3112.png",
         "cost": 0
       },
       {
@@ -4604,7 +4604,7 @@
             "description": "Buff hành động từ Thiện Diện = 30%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3113.png",
         "cost": 3
       }
     ],
@@ -4725,7 +4725,7 @@
             "description": "Sát thương bổ sung từ mỗi tầng Linh Phù = 25%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3043.png",
         "cost": 3
       }
     ],
@@ -4861,7 +4861,7 @@
             "description": "Nếu kỹ năng HỒ HỎA hoặc ĐỌA THIÊN kết liễu được mục tiêu địch, thì lập tức kích hoạt kỹ năng còn lại miễn phí, sát thương giảm dần 20%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/3003.png",
         "cost": 3
       }
     ],
@@ -4874,7 +4874,7 @@
     "id": "huy_da_co",
     "name_vi": "Huy Dạ Cơ",
     "name_jp": "Kaguya Hime",
-    "name_en": "",
+    "name_en": "Kaguya Hime",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -4884,24 +4884,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1184,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 102,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 63,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 98,
+        "tier": "C"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 5,
+        "tier": "B"
       },
       "crit_dmg": {
         "value": 150,
@@ -4942,7 +4942,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2801.png"
       },
       {
         "name": "HỎA THỬ CỪU",
@@ -4961,7 +4961,7 @@
             "description": "Tỷ lệ nhận mana = 40%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2802.png"
       },
       {
         "name": "LONG THỦ CHI NGỌC",
@@ -4988,7 +4988,7 @@
             "description": "Huyễn cảnh +20% kháng hiệu ứng."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2803.png",
         "cost": 2
       }
     ],
@@ -5001,7 +5001,7 @@
     "id": "nhat_muc_lien",
     "name_vi": "Nhất Mục Liên",
     "name_jp": "Ichimokuren",
-    "name_en": "",
+    "name_en": "Ichimokuren",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -5012,24 +5012,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1206,
+        "tier": "S"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 103,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 61,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 107,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 5,
+        "tier": "B"
       },
       "crit_dmg": {
         "value": 150,
@@ -5070,7 +5070,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2721.png"
       },
       {
         "name": "PHONG PHÙ-HỘ",
@@ -5097,7 +5097,7 @@
             "description": "Khiên Gió tồn tại thì, mỗi khi người ôm khiên dính hiệu ứng xấu (debuff) hoặc khống chế, sẽ đẩy lùi 5% hành động của phe đối thủ, mỗi lượt tối đa đẩy lùi 3 lần."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2722.png",
         "cost": 2
       },
       {
@@ -5125,7 +5125,7 @@
             "description": "Buff lại khiên cho đồng đội đã có khiên thì khôi phục máu = 80% giá trị còn lại của khiên cho người đó."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2723.png",
         "cost": 3
       }
     ],
@@ -5138,7 +5138,7 @@
     "id": "yeu_dao_co",
     "name_vi": "Yêu Đao Cơ",
     "name_jp": "Youtou Hime",
-    "name_en": "",
+    "name_en": "Youtou Hime",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -5148,24 +5148,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 854,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 141,
+        "tier": "S"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 61,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 101,
+        "tier": "B"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 12,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -5206,7 +5206,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2691.png"
       },
       {
         "name": "U PHONG",
@@ -5233,7 +5233,7 @@
             "description": "Gây sát thương bạo kích thì +10% crit-dmg, tối đa +200%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2692.png"
       },
       {
         "name": "SÁT LỤC",
@@ -5260,7 +5260,7 @@
             "description": "Sát thương = 58%. Mỗi lần chuyển mục tiêu tấn công sẽ +2 lần tấn công nữa."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2693.png",
         "cost": 3
       }
     ],
@@ -5273,7 +5273,7 @@
     "id": "thanh_hanh_dang",
     "name_vi": "Thanh Hành Đăng",
     "name_jp": "Aoandon",
-    "name_en": "",
+    "name_en": "Aoandon",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -5284,24 +5284,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 982,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 103,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 73,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -5342,7 +5342,7 @@
             "description": "Sát thương = 120%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2661.png"
       },
       {
         "name": "MINH ĐĂNG",
@@ -5369,7 +5369,7 @@
             "description": "Tỷ lệ kích hoạt = 40%. Nhưng cứ có 1 điểm mana, thì tỷ lệ giảm 3%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2662.png"
       },
       {
         "name": "HẤP HỒN ĐĂNG",
@@ -5396,7 +5396,7 @@
             "description": "Sát thương = 190%. Buff ấn Minh Đăng cho đồng đội có chỉ số atk cao nhất."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2663.png",
         "cost": 3
       }
     ],
@@ -5409,7 +5409,7 @@
     "id": "diem_ma",
     "name_vi": "Diêm Ma",
     "name_jp": "Enma",
-    "name_en": "",
+    "name_en": "Enma",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -5420,24 +5420,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 1014,
+        "tier": "B"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 104,
+        "tier": "C"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 70,
+        "tier": "B"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 107,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 5,
+        "tier": "B"
       },
       "crit_dmg": {
         "value": 150,
@@ -5478,7 +5478,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2551.png"
       },
       {
         "name": "ĐOẠT HỒN",
@@ -5505,7 +5505,7 @@
             "description": "Tỷ lệ biến hình = 70%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2552.png"
       },
       {
         "name": "OÁN HỒN TRỌNG ÁP",
@@ -5532,7 +5532,7 @@
             "description": "Sát thương = 255%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2553.png",
         "cost": 3
       }
     ],
@@ -5545,7 +5545,7 @@
     "id": "hoang_xuyen_chi_chu",
     "name_vi": "Hoang Xuyên Chi Chủ",
     "name_jp": "Arakawa No Aruji",
-    "name_en": "",
+    "name_en": "Arakawa no Aruji",
     "friendly_name": [],
     "rarity": "SSR",
     "role": [
@@ -5555,24 +5555,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 0,
-        "tier": ""
+        "value": 928,
+        "tier": "C"
       },
       "attack": {
-        "value": 0,
-        "tier": ""
+        "value": 128,
+        "tier": "A"
       },
       "defense": {
-        "value": 0,
-        "tier": ""
+        "value": 61,
+        "tier": "C"
       },
       "speed": {
-        "value": 0,
-        "tier": ""
+        "value": 101,
+        "tier": "B"
       },
       "crit_rate": {
-        "value": 0,
-        "tier": ""
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -5613,7 +5613,7 @@
             "description": "Sát thương = 125%."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2481.png"
       },
       {
         "name": "TRỤC LƯU",
@@ -5640,7 +5640,7 @@
             "description": "Trục Lưu có thêm hiệu ứng: Bị đẩy lùi hành động thì chuyển thành tăng/nhảy hành động 30% (trước khi bắt đầu lượt tối đa kích hoạt 2 lần)."
           }
         ],
-        "image": ""
+        "image": "assets/images/skills/2482.png"
       },
       {
         "name": "THÔN PHỆ",
@@ -5667,7 +5667,7 @@
             "description": "Sát thương đòn đánh thứ 2 = 270%."
           }
         ],
-        "image": "",
+        "image": "assets/images/skills/2483.png",
         "cost": 3
       }
     ],
@@ -5895,7 +5895,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/tanjiro_kamado.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Tanjiro_Kamado"
   },
   {
@@ -5964,7 +5964,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/nezuko_kamado.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Nezuko_Kamado"
   },
   {
@@ -6033,7 +6033,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/asura.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Asura"
   },
   {
@@ -6102,7 +6102,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/mishige.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Mishige"
   },
   {
@@ -6189,7 +6189,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/yato_no_kami.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Yato_no_Kami"
   },
   {
@@ -6258,7 +6258,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/zenitsu_agatsuma.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Zenitsu_Agatsuma"
   },
   {
@@ -6327,7 +6327,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/inosuke_hashibira.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Inosuke_Hashibira"
   },
   {
@@ -6396,7 +6396,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/gintoki_sakata.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Gintoki_Sakata"
   },
   {
@@ -6465,7 +6465,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/kagura_sadaharu.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Kagura_&_Sadaharu"
   },
   {
@@ -6534,7 +6534,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/wenren_yixuan.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Wenren_Yixuan"
   },
   {
@@ -6603,7 +6603,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/izanami.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Izanami"
   },
   {
@@ -6678,7 +6678,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/hatsune_miku.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Hatsune_Miku"
   },
   {
@@ -6747,7 +6747,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/kagamine_rin_len.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Kagamine_Rin_&_Len"
   },
   {
@@ -6816,7 +6816,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/shentu_ziye.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Shentu_Ziye"
   },
   {
@@ -6885,7 +6885,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/natsume_nyanko_sensei.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Natsume_&_Nyanko-sensei"
   },
   {
@@ -6954,7 +6954,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/megurine_luka.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Megurine_Luka"
   },
   {
@@ -7023,7 +7023,7 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/sakura_kinomoto.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Sakura_Kinomoto"
   },
   {
@@ -7092,7 +7092,1756 @@
     ],
     "recommended_souls": [],
     "lore": "",
-    "image": "",
+    "image": "assets/images/shikigami/ssr/syaoran_li.png",
     "source_url": "https://onmyoji.fandom.com/wiki/Syaoran_Li"
+  },
+  {
+    "id": "ootengu",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ootengu",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 843,
+        "tier": "D"
+      },
+      "attack": {
+        "value": 133,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 104,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Vortex Assault (风袭/風の襲撃)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2171.png"
+      },
+      {
+        "name": "Wings of Steel (钢铁之羽/鋼鉄の羽)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2172.png"
+      },
+      {
+        "name": "Blade Storm (羽刃暴风/刃羽の嵐)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2173.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/ootengu.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ootengu"
+  },
+  {
+    "id": "shuten_douji",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Shuten Douji",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 939,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 133,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 58,
+        "tier": "D"
+      },
+      "speed": {
+        "value": 103,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Calabash Spray (鬼葫芦/鬼瓢箪)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2191.png"
+      },
+      {
+        "name": "Madness (狂气/狂気)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2192.png"
+      },
+      {
+        "name": "Healing Rage (狂啸/狂い吠え)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2193.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/shuten_douji.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Shuten_Douji"
+  },
+  {
+    "id": "ryoumenbotoke",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ryoumenbotoke",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 875,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 136,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Random Element (风雷两生/風雷)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2581.png"
+      },
+      {
+        "name": "Eyes of Wrath (怒目/睨み)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2582.png"
+      },
+      {
+        "name": "Divine Combo (神罪连击/雷鳴)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2583.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/ryoumenbotoke.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ryoumenbotoke"
+  },
+  {
+    "id": "shishio",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Shishio",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 939,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 121,
+        "tier": "B"
+      },
+      "defense": {
+        "value": 65,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 110,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Forest Vines (森之力/森の力)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2591.png"
+      },
+      {
+        "name": "Circle of Life (复仇怒火/復讐の炎)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2592.png"
+      },
+      {
+        "name": "Gore (鹿角冲撞/角で突進)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2593.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/shishio.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Shishio"
+  },
+  {
+    "id": "ibaraki_douji",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ibaraki Douji",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 854,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 140,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 69,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 102,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Black Flame (黑焰/黒炎)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2651.png"
+      },
+      {
+        "name": "Rage Outlet (迁怒/八つ当たり)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2652.png"
+      },
+      {
+        "name": "Infernal Hand (地狱之手/地獄の腕)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2653.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/ibaraki_douji.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ibaraki_Douji"
+  },
+  {
+    "id": "kachou_fuugetsu",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kachou Fuugetsu",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1216,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 100,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 102,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Loyal Flock (归鸟/帰鳥)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2791.png"
+      },
+      {
+        "name": "Painting Realm (画境/絵巻の世界)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2792.png"
+      },
+      {
+        "name": "Fragrant Flowers (花鸟相闻/花鳥共鳴)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2793.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/kachou_fuugetsu.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kachou_Fuugetsu"
+  },
+  {
+    "id": "susabi",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Susabi",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 864,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 142,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 75,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "D"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Star Beam (星轨/星の軌跡)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2831.png"
+      },
+      {
+        "name": "Stellar Field (星辰之境/日月星辰)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2832.png"
+      },
+      {
+        "name": "Scourge: Star (天罚·星/天罰·星)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2833.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/susabi.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Susabi"
+  },
+  {
+    "id": "higanbana",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Higanbana",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 971,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 132,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 97,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Deadly Blooms (死亡之花/死の花)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2881.png"
+      },
+      {
+        "name": "Crimson Flowers (赤团华/曼珠沙華)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2882.png"
+      },
+      {
+        "name": "Blood-soaked Flowers (血之花海/血花の海)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2883.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/higanbana.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Higanbana"
+  },
+  {
+    "id": "yuki_douji",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Yuki Douji",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 854,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 144,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 111,
+        "tier": "S"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Snow Chaser (雪走)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2921.png"
+      },
+      {
+        "name": "Snow Weaver (霜天之织/霜降る衣)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2922.png"
+      },
+      {
+        "name": "December Snow (胧月雪华斩/朧月雪連斬)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2923.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/yuki_douji.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Yuki_Douji"
+  },
+  {
+    "id": "nura_rikuo",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Nura Rikuo",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 130,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 59,
+        "tier": "D"
+      },
+      "speed": {
+        "value": 103,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Nenekirimaru (弥弥切丸/弥々切丸)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2941.png"
+      },
+      {
+        "name": "Kyouka Suigetsu (鏡花水月)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2942.png"
+      },
+      {
+        "name": "Hyakki Yakou (百鬼夜行)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2943.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/nura_rikuo.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Nura_Rikuo"
+  },
+  {
+    "id": "yamakaze",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Yamakaze",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 146,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 1,
+        "tier": "D"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Wind (风/風)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2961.png"
+      },
+      {
+        "name": "Violent (烈)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2962.png"
+      },
+      {
+        "name": "Slash (斩/斬)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/2963.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/yamakaze.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Yamakaze"
+  },
+  {
+    "id": "kusuriuri",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kusuriuri",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 854,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 145,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 102,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Shape Revealer（释物之形/釈物の形）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3051.png"
+      },
+      {
+        "name": "Truth and Reasoning（道物之真理/物事の真理）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3052.png"
+      },
+      {
+        "name": "Defense（退魔）",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3053.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/kusuriuri.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kusuriuri"
+  },
+  {
+    "id": "hozuki",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Hozuki",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 790,
+        "tier": "D"
+      },
+      "attack": {
+        "value": 137,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 160,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Club Strike (锤击)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3081.png"
+      },
+      {
+        "name": "Control (掌控)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3082.png"
+      },
+      {
+        "name": "Oni from Hell (地狱之鬼)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3083.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/hozuki.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Hozuki"
+  },
+  {
+    "id": "onikiri",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Onikiri",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 907,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 146,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 53,
+        "tier": "D"
+      },
+      "speed": {
+        "value": 107,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 11,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 160,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Demonic Slash (鬼斩/鬼斬り)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3121.png"
+      },
+      {
+        "name": "Demonic Blade: Rajomon (鬼刃·罗城门/鬼の刃・羅城門)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3122.png"
+      },
+      {
+        "name": "Shadow Slash (鬼影闪/鬼瞬影)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3123.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/onikiri.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Onikiri"
+  },
+  {
+    "id": "inuyasha",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Inuyasha",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 960,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 127,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 104,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Wind Scar (風の傷)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3131.png"
+      },
+      {
+        "name": "Backlash Wave (爆流破)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3132.png"
+      },
+      {
+        "name": "Diamond Tessaiga (金剛鉄砕牙)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3132b.png"
+      },
+      {
+        "name": "Black Tessaiga (漆黒鉄砕牙)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3132d.png"
+      },
+      {
+        "name": "Tessaiga (鉄砕牙)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3133.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/inuyasha.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Inuyasha"
+  },
+  {
+    "id": "sesshoumaru",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Sesshoumaru",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 854,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 142,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 60,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 108,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 12,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Dokkasou (毒華爪)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3141.png"
+      },
+      {
+        "name": "Barrier: Tenseiga! (天生牙結界)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3142.png"
+      },
+      {
+        "name": "Meido Zangetsuha (冥道残月破)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3143a.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/sesshoumaru.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Sesshoumaru"
+  },
+  {
+    "id": "hakuzousu",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Hakuzousu",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1227,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 79,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 73,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 101,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Flamed Shadow (炎影)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3161.png"
+      },
+      {
+        "name": "Sheltering Pact (約束を守る)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3162.png"
+      },
+      {
+        "name": "Shadowing Shelter (夢山狐影)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3163.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/hakuzousu.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Hakuzousu"
+  },
+  {
+    "id": "kikyou",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kikyou",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 896,
+        "tier": "C"
+      },
+      "attack": {
+        "value": 135,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 105,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Spiritual Burst (灵力进发)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3191.png"
+      },
+      {
+        "name": "Soul Barrier (灵魂结界/霊魂結界)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3192.png"
+      },
+      {
+        "name": "Arrow of Exorcism (破魔之箭/破魔の矢)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3193.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/kikyou.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kikyou"
+  },
+  {
+    "id": "orochi",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Orochi",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1056,
+        "tier": "B"
+      },
+      "attack": {
+        "value": 175,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 74,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 108,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Soul Crusher (魂魄碎裂/魂魄砕裂)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3251.png"
+      },
+      {
+        "name": "Unholy Force (不洁之力/不浄の力)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3252.png"
+      },
+      {
+        "name": "Shadow of Orochi (八岐の影)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3252.png"
+      },
+      {
+        "name": "Shadow of Divine Will (神念之影/神念の影)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3253.png"
+      },
+      {
+        "name": "Flame of Divine Wrath (神の怒火)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3253.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/orochi.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Orochi"
+  },
+  {
+    "id": "ootakemaru",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ootakemaru",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1078,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 144,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 61,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 98,
+        "tier": "D"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Hillcry: Blast (麓鸣·轰/麓鳴・轟)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3331a.png"
+      },
+      {
+        "name": "Earth Magic (覆土之术/覆土の術)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3332.png"
+      },
+      {
+        "name": "Unlimited Blade Prison (无尽剑狱/無尽剣獄)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3333.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/ootakemaru.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ootakemaru"
+  },
+  {
+    "id": "ichigo_kurosaki",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ichigo Kurosaki",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 842,
+        "tier": "D"
+      },
+      "attack": {
+        "value": 138,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 62,
+        "tier": "C"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Zangetsu (斬月)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3371a.png"
+      },
+      {
+        "name": "Hollowfication (虚化)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3372a.png"
+      },
+      {
+        "name": "Getsuga Tensho (月牙天衝)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3373a.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/ichigo_kurosaki.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ichigo_Kurosaki"
+  },
+  {
+    "id": "ungaikyou",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Ungaikyou",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 705,
+        "tier": "D"
+      },
+      "attack": {
+        "value": 131,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 77,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 99,
+        "tier": "C"
+      },
+      "crit_rate": {
+        "value": 10,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Falling Shadow (落影)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3441a.png"
+      },
+      {
+        "name": "Shifting of the Sky (闘転)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3442a.png"
+      },
+      {
+        "name": "World Purge (雲岸清空)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3443a.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/ungaikyou.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Ungaikyou"
+  },
+  {
+    "id": "kidoumaru",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Kidoumaru",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 843,
+        "tier": "D"
+      },
+      "attack": {
+        "value": 148,
+        "tier": "A"
+      },
+      "defense": {
+        "value": 59,
+        "tier": "D"
+      },
+      "speed": {
+        "value": 108,
+        "tier": "A"
+      },
+      "crit_rate": {
+        "value": 11,
+        "tier": "S"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Arrival of Death (天誅)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3451.png"
+      },
+      {
+        "name": "Demon Outfit (残月鬼衣)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3452a.png"
+      },
+      {
+        "name": "Asura Chains (修羅骸鎖)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3453.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/kidoumaru.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Kidoumaru"
+  },
+  {
+    "id": "enmusubi_no_kami",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Enmusubi no Kami",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1142,
+        "tier": "A"
+      },
+      "attack": {
+        "value": 95,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 68,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 5,
+        "tier": "B"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "Moonlit Flower (月下花)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3471.png"
+      },
+      {
+        "name": "Flower Moon (緋色花月)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3472.png"
+      },
+      {
+        "name": "Blessed Bond (神賜良縁)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/3473.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/enmusubi_no_kami.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Enmusubi_no_Kami"
+  },
+  {
+    "id": "omoikane_no_kami",
+    "name_vi": "",
+    "name_jp": "",
+    "name_en": "Omoikane no Kami",
+    "friendly_name": [],
+    "rarity": "SSR",
+    "role": [],
+    "description": "",
+    "obtain": [],
+    "stats": {
+      "hp": {
+        "value": 1270,
+        "tier": "S"
+      },
+      "attack": {
+        "value": 89,
+        "tier": "D"
+      },
+      "defense": {
+        "value": 83,
+        "tier": "S"
+      },
+      "speed": {
+        "value": 100,
+        "tier": "B"
+      },
+      "crit_rate": {
+        "value": 8,
+        "tier": "A"
+      },
+      "crit_dmg": {
+        "value": 150,
+        "tier": ""
+      },
+      "accuracy": {
+        "value": 0,
+        "tier": ""
+      },
+      "resist": {
+        "value": 0,
+        "tier": ""
+      }
+    },
+    "skills": [
+      {
+        "name": "(焰途)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/6011.png"
+      },
+      {
+        "name": "(警醒)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/6012.png"
+      },
+      {
+        "name": "(智火长明)",
+        "description": "",
+        "levels": [],
+        "image": "assets/images/skills/6013.png"
+      }
+    ],
+    "recommended_souls": [],
+    "lore": "",
+    "image": "assets/images/shikigami/ssr/omoikane_no_kami.png",
+    "source_url": "https://onmyoji.fandom.com/wiki/Omoikane_no_Kami"
   }
 ]
