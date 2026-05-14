@@ -43,7 +43,7 @@ export default async function SoulDetailPage({
     .order('sort_index');
   const recommendedBy = (recRows ?? []) as ShikigamiRow[];
 
-  const imageUrl = resolveStoredImage(s.image);
+  const imageUrl = resolveStoredImage(s.image, true);
 
   return (
     <div className="space-y-6">
@@ -180,7 +180,7 @@ function Section({
 }
 
 function Thumb({ path, alt }: { path: string; alt: string }) {
-  const url = resolveStoredImage(path);
+  const url = resolveStoredImage(path, true);
   return (
     <span className="block h-10 w-10 shrink-0 overflow-hidden rounded bg-black/40">
       {url ? (

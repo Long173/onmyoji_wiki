@@ -71,7 +71,7 @@ function SkillBlock({
     })
     .filter((s): s is string => Boolean(s && s.trim()));
 
-  const iconUrl = resolveStoredImage(skill.image ?? '');
+  const iconUrl = resolveStoredImage(skill.image ?? '', true);
 
   return (
     <div className="rounded-lg border border-white/10 bg-black/20 p-4">
@@ -159,7 +159,7 @@ function AltFormBlock({
   altIdx: number;
   effectsById: Record<string, EffectRow>;
 }) {
-  const iconUrl = resolveStoredImage(alt.image ?? '');
+  const iconUrl = resolveStoredImage(alt.image ?? '', true);
   const effectNames = (alt.effects ?? [])
     .flatMap((eid) => {
       const e = effectsById[eid];
@@ -244,7 +244,7 @@ function EffectsStrip({
  *  itself remains a Link to the effect detail page, so click still works
  *  on touch devices where :hover doesn't apply. */
 function EffectChip({ effect }: { effect: EffectRow }) {
-  const iconUrl = resolveStoredImage(effect.image ?? '');
+  const iconUrl = resolveStoredImage(effect.image ?? '', true);
   const kindClass =
     EFFECT_KIND_CHIP[effect.kind] ?? EFFECT_KIND_CHIP.other;
   const displayName = effect.name || effect.en_name || effect.id;

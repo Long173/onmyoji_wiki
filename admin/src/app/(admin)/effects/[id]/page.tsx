@@ -50,7 +50,7 @@ export default async function EffectDetailPage({
     .order('sort_index');
   const referencedBy = (refData ?? []) as ShikigamiRow[];
 
-  const imageUrl = resolveStoredImage(e.image);
+  const imageUrl = resolveStoredImage(e.image, true);
   const kind = KIND_CHIP[e.kind] ?? KIND_CHIP.other;
 
   return (
@@ -164,7 +164,7 @@ function Section({
 }
 
 function Thumb({ path, alt }: { path: string; alt: string }) {
-  const url = resolveStoredImage(path);
+  const url = resolveStoredImage(path, true);
   return (
     <span className="block h-10 w-10 shrink-0 overflow-hidden rounded bg-black/40">
       {url ? (

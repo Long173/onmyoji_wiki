@@ -19,7 +19,9 @@ export function RowThumb({
   /** Optional explicit fallback string; defaults to first 2 chars of `alt`. */
   fallback?: string;
 }) {
-  const url = resolveStoredImage(path);
+  // Server-rendered in the list pages — pass cacheBust so a storage-side
+  // file replace is reflected on the next page load (no 1h CDN wait).
+  const url = resolveStoredImage(path, true);
   const initials = (fallback ?? alt.slice(0, 2)).toUpperCase().trim() || '?';
 
   return (
