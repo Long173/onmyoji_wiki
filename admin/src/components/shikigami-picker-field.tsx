@@ -13,7 +13,6 @@ export interface ShikigamiOption {
   id: string;
   name_vi: string;
   name_en: string;
-  name_jp?: string;
   rarity: Rarity;
   image: string;
 }
@@ -34,9 +33,7 @@ function shikigamiToItem(o: ShikigamiOption): PickerItem {
     secondary: o.name_vi && o.name_en ? o.name_en : undefined,
     badgeLabel: o.rarity,
     badgeClass: RARITY_STYLE[o.rarity],
-    searchHaystack: normalize(
-      `${o.name_vi} ${o.name_en} ${o.name_jp ?? ''} ${o.id}`,
-    ),
+    searchHaystack: normalize(`${o.name_vi} ${o.name_en} ${o.id}`),
   };
 }
 

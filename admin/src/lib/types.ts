@@ -106,7 +106,6 @@ export const emptySlotMains = (): SlotMains => ({ '2': [], '4': [], '6': [] });
 export interface ShikigamiRow {
   id: string;
   name_vi: string;
-  name_jp: string;
   name_en: string;
   friendly_name: string[];
   rarity: Rarity;

@@ -35,7 +35,6 @@ class RemoteDataSource {
       searchColumns: const [
         'name_vi_unaccent',
         'name_en_unaccent',
-        'name_jp_unaccent',
         'friendly_name_unaccent',
       ],
       search: search,

@@ -7,7 +7,6 @@ void main() {
       final json = {
         'id': 'ibaraki_doji',
         'name_vi': 'Ibaraki Đồng Tử',
-        'name_jp': '茨木童子',
         'name_en': 'Ibaraki Doji',
         'rarity': 'SSR',
         'description': 'desc',
@@ -78,7 +77,7 @@ void main() {
       expect(s.searchableNames, containsAll(['Ibaraki', 'Cụ Oni']));
     });
 
-    test('displayName falls back nameVi → nameEn → nameJp → id', () {
+    test('displayName falls back nameVi → nameEn → id', () {
       expect(
         Shikigami.fromJson({'id': 'x', 'name_vi': 'Việt'}).displayName,
         'Việt',
@@ -92,15 +91,6 @@ void main() {
         'English',
       );
       expect(
-        Shikigami.fromJson({
-          'id': 'x',
-          'name_vi': '',
-          'name_en': '',
-          'name_jp': '日本',
-        }).displayName,
-        '日本',
-      );
-      expect(
         Shikigami.fromJson({'id': 'fallback_id', 'name_vi': ''}).displayName,
         'fallback_id',
       );
@@ -108,7 +98,6 @@ void main() {
 
     test('applies defaults for missing optional fields', () {
       final s = Shikigami.fromJson({'id': 'x', 'name_vi': 'Thử'});
-      expect(s.nameJp, '');
       expect(s.nameEn, '');
       expect(s.friendlyNames, isEmpty);
       expect(s.rarity, 'N');

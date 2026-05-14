@@ -163,9 +163,9 @@ export default async function ShikigamiDetailPage({
             <h1 className="text-3xl font-bold">
               {s.name_vi || s.name_en || s.id}
             </h1>
-            <div className="text-sm italic text-white/60">
-              {[s.name_en, s.name_jp].filter(Boolean).join(' · ')}
-            </div>
+            {s.name_en && (
+              <div className="text-sm italic text-white/60">{s.name_en}</div>
+            )}
             {s.friendly_name?.length ? (
               <div className="flex flex-wrap gap-2">
                 {s.friendly_name.map((fn) => (

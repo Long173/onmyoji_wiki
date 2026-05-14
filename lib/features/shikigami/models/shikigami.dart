@@ -105,7 +105,6 @@ class Shikigami {
   const Shikigami({
     required this.id,
     required this.nameVi,
-    required this.nameJp,
     required this.nameEn,
     required this.friendlyNames,
     required this.rarity,
@@ -121,7 +120,6 @@ class Shikigami {
 
   final String id;
   final String nameVi;
-  final String nameJp;
   final String nameEn;
 
   /// Biệt danh do cộng đồng VN đặt (ví dụ "Ngưu Không", "Ba Tháng"...).
@@ -143,19 +141,17 @@ class Shikigami {
   final String lore;
   final String image;
 
-  /// Display name: prefer Vietnamese, fall back to English, then Japanese,
-  /// then the id. Mirrors `Soul.displayName` / `Effect.displayName`.
+  /// Display name: prefer Vietnamese, fall back to English, then the id.
+  /// Mirrors `Soul.displayName` / `Effect.displayName`.
   String get displayName {
     if (nameVi.isNotEmpty) return nameVi;
     if (nameEn.isNotEmpty) return nameEn;
-    if (nameJp.isNotEmpty) return nameJp;
     return id;
   }
 
   Iterable<String> get searchableNames => [
     nameVi,
     nameEn,
-    nameJp,
     id,
     ...friendlyNames,
   ];
@@ -173,7 +169,6 @@ class Shikigami {
     return Shikigami(
       id: json['id'] as String,
       nameVi: json['name_vi'] as String,
-      nameJp: json['name_jp'] as String? ?? '',
       nameEn: json['name_en'] as String? ?? '',
       friendlyNames: friendly,
       rarity: json['rarity'] as String? ?? 'N',

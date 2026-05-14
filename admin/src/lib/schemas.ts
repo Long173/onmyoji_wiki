@@ -48,7 +48,6 @@ const skill = z.object({
 export const shikigamiFormSchema = z.object({
   id: SLUG,
   name_vi: z.string().default(''),
-  name_jp: z.string().default(''),
   name_en: z.string().default(''),
   friendly_name: z.array(z.string()).default([]),
   rarity: z.enum(RARITIES as readonly [string, ...string[]]),

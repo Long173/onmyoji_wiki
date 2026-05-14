@@ -157,12 +157,6 @@ export function ShikigamiForm({
                 className="input-field"
               />
             </Field>
-            <Field label="Tên Nhật">
-              <input
-                {...methods.register('name_jp')}
-                className="input-field"
-              />
-            </Field>
             <Field label="Source URL">
               <input
                 {...methods.register('source_url')}

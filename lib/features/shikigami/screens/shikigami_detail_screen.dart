@@ -137,13 +137,11 @@ class _Header extends StatelessWidget {
             children: [
               RarityBadge(rarity: shikigami.rarity),
               const SizedBox(height: 6),
-              Text(
-                [
-                  shikigami.nameJp,
+              if (shikigami.nameEn.isNotEmpty)
+                Text(
                   shikigami.nameEn,
-                ].where((e) => e.isNotEmpty).join(' · '),
-                style: const TextStyle(color: Colors.white70, fontSize: 13),
-              ),
+                  style: const TextStyle(color: Colors.white70, fontSize: 13),
+                ),
               if (shikigami.friendlyNames.isNotEmpty) ...[
                 const SizedBox(height: 8),
                 Wrap(

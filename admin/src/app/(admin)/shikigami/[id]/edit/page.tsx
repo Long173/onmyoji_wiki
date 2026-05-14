@@ -35,7 +35,7 @@ export default async function ShikigamiEditPage({
     .order('sort_index');
   const shikigamiListPromise = supabase
     .from('shikigami')
-    .select('id,name_vi,name_en,name_jp,rarity,image')
+    .select('id,name_vi,name_en,rarity,image')
     .order('rarity')
     .order('sort_index');
 
@@ -45,7 +45,6 @@ export default async function ShikigamiEditPage({
     initial = {
       id: '',
       name_vi: '',
-      name_jp: '',
       name_en: '',
       friendly_name: [],
       rarity: 'SSR',

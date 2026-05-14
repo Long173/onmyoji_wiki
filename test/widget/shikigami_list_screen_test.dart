@@ -27,7 +27,7 @@ class _FakeRemote implements RemoteDataSource {
     if (search != null && search.isNotEmpty) {
       final q = removeDiacritics(search).toLowerCase();
       rows = rows.where((r) {
-        for (final k in ['name_vi', 'name_en', 'name_jp']) {
+        for (final k in ['name_vi', 'name_en']) {
           final raw = (r[k] ?? '').toString();
           if (removeDiacritics(raw).toLowerCase().contains(q)) return true;
         }

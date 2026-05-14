@@ -54,7 +54,6 @@ export default async function ShikigamiListPage({
     query = query.or(
       `name_vi_unaccent.ilike.%${term}%,` +
         `name_en_unaccent.ilike.%${term}%,` +
-        `name_jp_unaccent.ilike.%${term}%,` +
         `friendly_name_unaccent.ilike.%${term}%`,
     );
   }
@@ -105,7 +104,7 @@ export default async function ShikigamiListPage({
           type="search"
           name="q"
           defaultValue={q}
-          placeholder="Tìm tên Việt / Anh / Nhật (không dấu OK)"
+          placeholder="Tìm tên Việt / Anh / biệt danh (không dấu OK)"
           className="input-field flex-1"
         />
         <select
