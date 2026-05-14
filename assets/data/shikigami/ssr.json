@@ -164,20 +164,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 971,
-        "tier": "B"
+        "value": 11507,
+        "tier": "A"
       },
       "attack": {
-        "value": 140,
+        "value": 3216,
         "tier": "S"
       },
       "defense": {
-        "value": 59,
-        "tier": "D"
+        "value": 392,
+        "tier": "C"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 8,
@@ -301,19 +301,19 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1088,
-        "tier": "A"
+        "value": 12532,
+        "tier": "S"
       },
       "attack": {
-        "value": 175,
+        "value": 3966,
         "tier": "SS"
       },
       "defense": {
-        "value": 75,
-        "tier": "A"
+        "value": 494,
+        "tier": "S"
       },
       "speed": {
-        "value": 107,
+        "value": 117,
         "tier": "A"
       },
       "crit_rate": {
@@ -453,20 +453,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1227,
+        "value": 13899,
         "tier": "S"
       },
       "attack": {
-        "value": 95,
+        "value": 2010,
         "tier": "D"
       },
       "defense": {
-        "value": 60,
-        "tier": "D"
+        "value": 454,
+        "tier": "A"
       },
       "speed": {
-        "value": 100,
-        "tier": "B"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 8,
@@ -481,7 +481,7 @@
         "tier": ""
       },
       "resist": {
-        "value": 0,
+        "value": 103,
         "tier": ""
       }
     },
@@ -725,20 +725,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1103,
-        "tier": "A"
+        "value": 12920,
+        "tier": "S"
       },
       "attack": {
-        "value": 173,
+        "value": 3913,
         "tier": "SS"
       },
       "defense": {
-        "value": 86,
+        "value": 549,
         "tier": "S"
       },
       "speed": {
-        "value": 107,
-        "tier": "A"
+        "value": 117,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 13,
@@ -862,20 +862,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1291,
+        "value": 14925,
         "tier": "S"
       },
       "attack": {
-        "value": 75,
+        "value": 1849,
         "tier": "D"
       },
       "defense": {
-        "value": 68,
-        "tier": "B"
+        "value": 441,
+        "tier": "A"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 3,
@@ -998,24 +998,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1046,
-        "tier": "B"
+        "value": 12304,
+        "tier": "A"
       },
       "attack": {
-        "value": 141,
+        "value": 3243,
         "tier": "S"
       },
       "defense": {
-        "value": 68,
-        "tier": "B"
+        "value": 445,
+        "tier": "A"
       },
       "speed": {
-        "value": 109,
-        "tier": "A"
+        "value": 119,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 8,
-        "tier": "A"
+        "value": 10,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -1134,24 +1134,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 854,
+        "value": 11137,
         "tier": "C"
       },
       "attack": {
-        "value": 142,
+        "value": 3296,
         "tier": "S"
       },
       "defense": {
-        "value": 59,
-        "tier": "D"
+        "value": 406,
+        "tier": "B"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 9,
-        "tier": "A"
+        "value": 11,
+        "tier": "S"
       },
       "crit_dmg": {
         "value": 150,
@@ -1269,20 +1269,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1078,
-        "tier": "A"
+        "value": 12646,
+        "tier": "S"
       },
       "attack": {
-        "value": 83,
+        "value": 2010,
         "tier": "D"
       },
       "defense": {
-        "value": 79,
-        "tier": "A"
+        "value": 507,
+        "tier": "S"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 3,
@@ -1293,7 +1293,7 @@
         "tier": ""
       },
       "accuracy": {
-        "value": 0,
+        "value": 30,
         "tier": ""
       },
       "resist": {
@@ -1405,20 +1405,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 907,
-        "tier": "C"
+        "value": 10823,
+        "tier": "B"
       },
       "attack": {
-        "value": 135,
-        "tier": "A"
+        "value": 3109,
+        "tier": "S"
       },
       "defense": {
-        "value": 59,
-        "tier": "D"
+        "value": 392,
+        "tier": "C"
       },
       "speed": {
-        "value": 106,
-        "tier": "A"
+        "value": 116,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -1429,7 +1429,7 @@
         "tier": ""
       },
       "accuracy": {
-        "value": 0,
+        "value": 30,
         "tier": ""
       },
       "resist": {
@@ -1541,24 +1541,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1078,
-        "tier": "A"
+        "value": 12646,
+        "tier": "S"
       },
       "attack": {
-        "value": 167,
-        "tier": "S"
+        "value": 3786,
+        "tier": "SS"
       },
       "defense": {
-        "value": 58,
-        "tier": "D"
+        "value": 387,
+        "tier": "C"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 10,
-        "tier": "S"
+        "value": 20,
+        "tier": "SS"
       },
       "crit_dmg": {
         "value": 160,
@@ -1622,20 +1622,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1206,
+        "value": 15540,
         "tier": "S"
       },
       "attack": {
-        "value": 114,
+        "value": 2626,
         "tier": "B"
       },
       "defense": {
-        "value": 71,
-        "tier": "B"
+        "value": 454,
+        "tier": "A"
       },
       "speed": {
-        "value": 106,
-        "tier": "A"
+        "value": 116,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -1758,20 +1758,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 864,
-        "tier": "C"
+        "value": 10368,
+        "tier": "B"
       },
       "attack": {
-        "value": 147,
+        "value": 3377,
         "tier": "S"
       },
       "defense": {
-        "value": 55,
-        "tier": "D"
+        "value": 366,
+        "tier": "C"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -1893,20 +1893,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 982,
-        "tier": "B"
+        "value": 11507,
+        "tier": "A"
       },
       "attack": {
-        "value": 91,
-        "tier": "D"
+        "value": 2171,
+        "tier": "C"
       },
       "defense": {
-        "value": 83,
+        "value": 520,
         "tier": "S"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 8,
@@ -2027,23 +2027,23 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1014,
-        "tier": "B"
+        "value": 11963,
+        "tier": "A"
       },
       "attack": {
-        "value": 171,
+        "value": 3886,
         "tier": "SS"
       },
       "defense": {
-        "value": 94,
-        "tier": "S"
+        "value": 595,
+        "tier": "SS"
       },
       "speed": {
-        "value": 109,
-        "tier": "A"
+        "value": 119,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 10,
+        "value": 12,
         "tier": "S"
       },
       "crit_dmg": {
@@ -2080,20 +2080,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 939,
-        "tier": "C"
+        "value": 11165,
+        "tier": "B"
       },
       "attack": {
-        "value": 155,
+        "value": 3538,
         "tier": "S"
       },
       "defense": {
-        "value": 68,
-        "tier": "B"
+        "value": 441,
+        "tier": "A"
       },
       "speed": {
-        "value": 109,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -2104,7 +2104,7 @@
         "tier": ""
       },
       "accuracy": {
-        "value": 0,
+        "value": 30,
         "tier": ""
       },
       "resist": {
@@ -2215,24 +2215,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 928,
-        "tier": "C"
-      },
-      "attack": {
-        "value": 135,
+        "value": 11735,
         "tier": "A"
       },
+      "attack": {
+        "value": 3123,
+        "tier": "S"
+      },
       "defense": {
-        "value": 74,
-        "tier": "B"
+        "value": 472,
+        "tier": "A"
       },
       "speed": {
-        "value": 99,
-        "tier": "C"
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
-        "value": 5,
-        "tier": "B"
+        "value": 8,
+        "tier": "A"
       },
       "crit_dmg": {
         "value": 150,
@@ -2350,20 +2350,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1335,
-        "tier": "S"
+        "value": 15392,
+        "tier": "SS"
       },
       "attack": {
-        "value": 148,
+        "value": 3401,
         "tier": "S"
       },
       "defense": {
-        "value": 59,
-        "tier": "D"
+        "value": 388,
+        "tier": "C"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -2486,20 +2486,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 939,
-        "tier": "C"
+        "value": 11165,
+        "tier": "B"
       },
       "attack": {
-        "value": 156,
+        "value": 3564,
         "tier": "S"
       },
       "defense": {
-        "value": 68,
+        "value": 437,
         "tier": "B"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 0,
@@ -2636,20 +2636,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 790,
-        "tier": "D"
+        "value": 9228,
+        "tier": "C"
       },
       "attack": {
-        "value": 152,
+        "value": 3511,
         "tier": "S"
       },
       "defense": {
-        "value": 60,
+        "value": 388,
         "tier": "C"
       },
       "speed": {
-        "value": 107,
-        "tier": "A"
+        "value": 117,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -2772,23 +2772,23 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 992,
-        "tier": "B"
+        "value": 11735,
+        "tier": "A"
       },
       "attack": {
-        "value": 184,
+        "value": 4154,
         "tier": "SS"
       },
       "defense": {
-        "value": 77,
-        "tier": "A"
+        "value": 494,
+        "tier": "S"
       },
       "speed": {
-        "value": 102,
-        "tier": "B"
+        "value": 112,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 10,
+        "value": 12,
         "tier": "S"
       },
       "crit_dmg": {
@@ -2907,20 +2907,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1067,
-        "tier": "A"
+        "value": 12532,
+        "tier": "S"
       },
       "attack": {
-        "value": 108,
-        "tier": "C"
+        "value": 2492,
+        "tier": "B"
       },
       "defense": {
-        "value": 83,
+        "value": 538,
         "tier": "S"
       },
       "speed": {
-        "value": 105,
-        "tier": "A"
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 8,
@@ -3043,20 +3043,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 771,
-        "tier": "D"
+        "value": 9251,
+        "tier": "C"
       },
       "attack": {
-        "value": 140,
+        "value": 3195,
         "tier": "S"
       },
       "defense": {
-        "value": 68,
-        "tier": "B"
+        "value": 441,
+        "tier": "A"
       },
       "speed": {
-        "value": 104,
-        "tier": "B"
+        "value": 114,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -3179,20 +3179,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 960,
-        "tier": "B"
+        "value": 11393,
+        "tier": "A"
       },
       "attack": {
-        "value": 131,
-        "tier": "A"
+        "value": 3028,
+        "tier": "S"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 397,
+        "tier": "B"
       },
       "speed": {
-        "value": 109,
-        "tier": "A"
+        "value": 119,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 8,
@@ -3315,20 +3315,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1323,
-        "tier": "S"
+        "value": 15380,
+        "tier": "SS"
       },
       "attack": {
-        "value": 135,
-        "tier": "A"
+        "value": 3109,
+        "tier": "S"
       },
       "defense": {
-        "value": 68,
+        "value": 437,
         "tier": "B"
       },
       "speed": {
-        "value": 101,
-        "tier": "B"
+        "value": 111,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 9,
@@ -3449,19 +3449,19 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1067,
-        "tier": "A"
+        "value": 12532,
+        "tier": "S"
       },
       "attack": {
-        "value": 127,
-        "tier": "A"
+        "value": 2948,
+        "tier": "S"
       },
       "defense": {
-        "value": 64,
-        "tier": "C"
+        "value": 410,
+        "tier": "B"
       },
       "speed": {
-        "value": 111,
+        "value": 121,
         "tier": "S"
       },
       "crit_rate": {
@@ -3585,20 +3585,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 918,
-        "tier": "C"
+        "value": 10709,
+        "tier": "B"
       },
       "attack": {
-        "value": 135,
-        "tier": "A"
+        "value": 3109,
+        "tier": "S"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 397,
+        "tier": "B"
       },
       "speed": {
-        "value": 105,
-        "tier": "A"
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 15,
@@ -3722,20 +3722,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1131,
-        "tier": "A"
+        "value": 13216,
+        "tier": "S"
       },
       "attack": {
-        "value": 141,
+        "value": 3270,
         "tier": "S"
       },
       "defense": {
-        "value": 60,
+        "value": 384,
         "tier": "C"
       },
       "speed": {
-        "value": 100,
-        "tier": "B"
+        "value": 110,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -3858,19 +3858,19 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 854,
+        "value": 10026,
         "tier": "C"
       },
       "attack": {
-        "value": 152,
+        "value": 3511,
         "tier": "S"
       },
       "defense": {
-        "value": 56,
-        "tier": "D"
+        "value": 357,
+        "tier": "C"
       },
       "speed": {
-        "value": 110,
+        "value": 120,
         "tier": "S"
       },
       "crit_rate": {
@@ -4172,20 +4172,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 790,
-        "tier": "D"
+        "value": 9229,
+        "tier": "C"
       },
       "attack": {
-        "value": 149,
+        "value": 3457,
         "tier": "S"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 397,
+        "tier": "B"
       },
       "speed": {
-        "value": 107,
-        "tier": "A"
+        "value": 117,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -4491,20 +4491,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 864,
+        "value": 10140,
         "tier": "C"
       },
       "attack": {
-        "value": 140,
+        "value": 3243,
         "tier": "S"
       },
       "defense": {
-        "value": 61,
+        "value": 397,
         "tier": "C"
       },
       "speed": {
-        "value": 109,
-        "tier": "A"
+        "value": 119,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 8,
@@ -4628,15 +4628,15 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 960,
+        "value": 10254,
         "tier": "B"
       },
       "attack": {
-        "value": 114,
+        "value": 2412,
         "tier": "B"
       },
       "defense": {
-        "value": 68,
+        "value": 397,
         "tier": "B"
       },
       "speed": {
@@ -4748,15 +4748,15 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 950,
+        "value": 10140,
         "tier": "C"
       },
       "attack": {
-        "value": 142,
+        "value": 3002,
         "tier": "S"
       },
       "defense": {
-        "value": 68,
+        "value": 401,
         "tier": "B"
       },
       "speed": {
@@ -4884,20 +4884,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1184,
+        "value": 13785,
         "tier": "S"
       },
       "attack": {
-        "value": 102,
-        "tier": "C"
+        "value": 2332,
+        "tier": "B"
       },
       "defense": {
-        "value": 63,
-        "tier": "C"
+        "value": 406,
+        "tier": "B"
       },
       "speed": {
-        "value": 98,
-        "tier": "C"
+        "value": 108,
+        "tier": "A"
       },
       "crit_rate": {
         "value": 5,
@@ -5012,20 +5012,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1206,
+        "value": 13899,
         "tier": "S"
       },
       "attack": {
-        "value": 103,
-        "tier": "C"
+        "value": 2385,
+        "tier": "B"
       },
       "defense": {
-        "value": 61,
+        "value": 392,
         "tier": "C"
       },
       "speed": {
-        "value": 107,
-        "tier": "A"
+        "value": 117,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 5,
@@ -5148,20 +5148,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 854,
+        "value": 10026,
         "tier": "C"
       },
       "attack": {
-        "value": 141,
+        "value": 3270,
         "tier": "S"
       },
       "defense": {
-        "value": 61,
+        "value": 397,
         "tier": "C"
       },
       "speed": {
-        "value": 101,
-        "tier": "B"
+        "value": 111,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 12,
@@ -5284,20 +5284,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 982,
-        "tier": "B"
+        "value": 11621,
+        "tier": "A"
       },
       "attack": {
-        "value": 103,
-        "tier": "C"
-      },
-      "defense": {
-        "value": 73,
+        "value": 2439,
         "tier": "B"
       },
-      "speed": {
-        "value": 109,
+      "defense": {
+        "value": 472,
         "tier": "A"
+      },
+      "speed": {
+        "value": 119,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 8,
@@ -5420,20 +5420,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1014,
-        "tier": "B"
+        "value": 11963,
+        "tier": "A"
       },
       "attack": {
-        "value": 104,
-        "tier": "C"
-      },
-      "defense": {
-        "value": 70,
+        "value": 2466,
         "tier": "B"
       },
-      "speed": {
-        "value": 107,
+      "defense": {
+        "value": 454,
         "tier": "A"
+      },
+      "speed": {
+        "value": 127,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 5,
@@ -5555,23 +5555,23 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 928,
-        "tier": "C"
-      },
-      "attack": {
-        "value": 128,
-        "tier": "A"
-      },
-      "defense": {
-        "value": 61,
-        "tier": "C"
-      },
-      "speed": {
-        "value": 101,
+        "value": 11051,
         "tier": "B"
       },
+      "attack": {
+        "value": 3002,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 401,
+        "tier": "B"
+      },
+      "speed": {
+        "value": 111,
+        "tier": "S"
+      },
       "crit_rate": {
-        "value": 10,
+        "value": 20,
         "tier": "S"
       },
       "crit_dmg": {
@@ -5823,20 +5823,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 875,
-        "tier": "C"
+        "value": 10482,
+        "tier": "B"
       },
       "attack": {
-        "value": 133,
-        "tier": "A"
+        "value": 3136,
+        "tier": "S"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 401,
+        "tier": "B"
       },
       "speed": {
-        "value": 100,
-        "tier": "B"
+        "value": 110,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -5910,20 +5910,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 960,
-        "tier": "B"
-      },
-      "attack": {
-        "value": 132,
+        "value": 11393,
         "tier": "A"
       },
+      "attack": {
+        "value": 3002,
+        "tier": "S"
+      },
       "defense": {
-        "value": 60,
+        "value": 388,
         "tier": "C"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 9,
@@ -5979,20 +5979,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 939,
-        "tier": "C"
+        "value": 11279,
+        "tier": "B"
       },
       "attack": {
-        "value": 183,
+        "value": 4127,
         "tier": "SS"
       },
       "defense": {
-        "value": 67,
-        "tier": "C"
+        "value": 428,
+        "tier": "B"
       },
       "speed": {
-        "value": 109,
-        "tier": "A"
+        "value": 119,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -6048,20 +6048,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 907,
-        "tier": "C"
+        "value": 10823,
+        "tier": "B"
       },
       "attack": {
-        "value": 137,
-        "tier": "A"
+        "value": 3162,
+        "tier": "S"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 397,
+        "tier": "B"
       },
       "speed": {
-        "value": 102,
-        "tier": "B"
+        "value": 112,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -6117,20 +6117,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 939,
-        "tier": "C"
+        "value": 11051,
+        "tier": "B"
       },
       "attack": {
-        "value": 131,
-        "tier": "A"
+        "value": 3028,
+        "tier": "S"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 397,
+        "tier": "B"
       },
       "speed": {
-        "value": 103,
-        "tier": "B"
+        "value": 113,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 9,
@@ -6204,20 +6204,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 886,
-        "tier": "C"
+        "value": 10368,
+        "tier": "B"
       },
       "attack": {
-        "value": 146,
+        "value": 3404,
         "tier": "S"
       },
       "defense": {
-        "value": 56,
-        "tier": "D"
+        "value": 362,
+        "tier": "C"
       },
       "speed": {
-        "value": 107,
-        "tier": "A"
+        "value": 117,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -6273,20 +6273,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1014,
-        "tier": "B"
+        "value": 11963,
+        "tier": "A"
       },
       "attack": {
-        "value": 118,
-        "tier": "B"
+        "value": 2760,
+        "tier": "A"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 406,
+        "tier": "B"
       },
       "speed": {
-        "value": 99,
-        "tier": "C"
+        "value": 119,
+        "tier": "A"
       },
       "crit_rate": {
         "value": 10,
@@ -6342,20 +6342,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 961,
-        "tier": "B"
+        "value": 11404,
+        "tier": "A"
       },
       "attack": {
-        "value": 134,
-        "tier": "A"
+        "value": 3101,
+        "tier": "S"
       },
       "defense": {
-        "value": 56,
-        "tier": "D"
+        "value": 371,
+        "tier": "C"
       },
       "speed": {
-        "value": 105,
-        "tier": "A"
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -6411,20 +6411,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 928,
-        "tier": "C"
+        "value": 11063,
+        "tier": "B"
       },
       "attack": {
-        "value": 132,
-        "tier": "A"
+        "value": 3047,
+        "tier": "S"
       },
       "defense": {
-        "value": 59,
-        "tier": "D"
+        "value": 393,
+        "tier": "C"
       },
       "speed": {
-        "value": 107,
-        "tier": "A"
+        "value": 117,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 9,
@@ -6439,7 +6439,7 @@
         "tier": ""
       },
       "resist": {
-        "value": 0,
+        "value": 40,
         "tier": ""
       }
     },
@@ -6480,23 +6480,23 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 971,
-        "tier": "B"
+        "value": 11507,
+        "tier": "A"
       },
       "attack": {
-        "value": 158,
+        "value": 3605,
         "tier": "S"
       },
       "defense": {
-        "value": 66,
-        "tier": "C"
+        "value": 431,
+        "tier": "B"
       },
       "speed": {
-        "value": 105,
-        "tier": "A"
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
-        "value": 10,
+        "value": 20,
         "tier": "S"
       },
       "crit_dmg": {
@@ -6549,24 +6549,24 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1024,
-        "tier": "B"
-      },
-      "attack": {
-        "value": 159,
-        "tier": "S"
-      },
-      "defense": {
-        "value": 69,
-        "tier": "B"
-      },
-      "speed": {
-        "value": 106,
+        "value": 12077,
         "tier": "A"
       },
-      "crit_rate": {
-        "value": 15,
+      "attack": {
+        "value": 3618,
+        "tier": "SS"
+      },
+      "defense": {
+        "value": 450,
+        "tier": "A"
+      },
+      "speed": {
+        "value": 116,
         "tier": "S"
+      },
+      "crit_rate": {
+        "value": 20,
+        "tier": "SS"
       },
       "crit_dmg": {
         "value": 150,
@@ -6618,20 +6618,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1216,
+        "value": 14013,
         "tier": "S"
       },
       "attack": {
-        "value": 91,
-        "tier": "D"
-      },
-      "defense": {
-        "value": 66,
+        "value": 2171,
         "tier": "C"
       },
+      "defense": {
+        "value": 423,
+        "tier": "B"
+      },
       "speed": {
-        "value": 106,
-        "tier": "A"
+        "value": 116,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 9,
@@ -6693,20 +6693,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 2308,
+        "value": 16405,
         "tier": "S"
       },
       "attack": {
-        "value": 216,
+        "value": 1983,
         "tier": "D"
       },
       "defense": {
-        "value": 192,
-        "tier": "B"
+        "value": 467,
+        "tier": "A"
       },
       "speed": {
-        "value": 105,
-        "tier": "A"
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 8,
@@ -6762,16 +6762,16 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 971,
-        "tier": "B"
+        "value": 11507,
+        "tier": "A"
       },
       "attack": {
-        "value": 154,
+        "value": 3516,
         "tier": "S"
       },
       "defense": {
-        "value": 66,
-        "tier": "C"
+        "value": 431,
+        "tier": "B"
       },
       "speed": {
         "value": 108,
@@ -6831,20 +6831,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 960,
-        "tier": "B"
+        "value": 11393,
+        "tier": "A"
       },
       "attack": {
-        "value": 127,
-        "tier": "A"
+        "value": 2948,
+        "tier": "S"
       },
       "defense": {
-        "value": 60,
-        "tier": "C"
+        "value": 397,
+        "tier": "B"
       },
       "speed": {
-        "value": 107,
-        "tier": "A"
+        "value": 117,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -6859,7 +6859,7 @@
         "tier": ""
       },
       "resist": {
-        "value": 0,
+        "value": 30,
         "tier": ""
       }
     },
@@ -6900,20 +6900,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1174,
+        "value": 13671,
         "tier": "S"
       },
       "attack": {
-        "value": 91,
-        "tier": "D"
-      },
-      "defense": {
-        "value": 66,
+        "value": 2198,
         "tier": "C"
       },
+      "defense": {
+        "value": 432,
+        "tier": "B"
+      },
       "speed": {
-        "value": 105,
-        "tier": "A"
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 2,
@@ -6928,7 +6928,7 @@
         "tier": ""
       },
       "resist": {
-        "value": 0,
+        "value": 25,
         "tier": ""
       }
     },
@@ -6969,20 +6969,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 896,
-        "tier": "C"
+        "value": 10709,
+        "tier": "B"
       },
       "attack": {
-        "value": 132,
-        "tier": "A"
+        "value": 3055,
+        "tier": "S"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 406,
+        "tier": "B"
       },
       "speed": {
-        "value": 105,
-        "tier": "A"
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -6993,7 +6993,7 @@
         "tier": ""
       },
       "accuracy": {
-        "value": 0,
+        "value": 30,
         "tier": ""
       },
       "resist": {
@@ -7038,20 +7038,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 854,
-        "tier": "C"
+        "value": 10254,
+        "tier": "B"
       },
       "attack": {
-        "value": 140,
+        "value": 3216,
         "tier": "S"
       },
       "defense": {
-        "value": 60,
-        "tier": "C"
+        "value": 397,
+        "tier": "B"
       },
       "speed": {
-        "value": 105,
-        "tier": "A"
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -7107,20 +7107,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 843,
-        "tier": "D"
-      },
-      "attack": {
-        "value": 133,
-        "tier": "A"
-      },
-      "defense": {
-        "value": 65,
+        "value": 10026,
         "tier": "C"
       },
-      "speed": {
-        "value": 104,
+      "attack": {
+        "value": 3450,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 419,
         "tier": "B"
+      },
+      "speed": {
+        "value": 114,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -7176,20 +7176,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 939,
-        "tier": "C"
+        "value": 11165,
+        "tier": "B"
       },
       "attack": {
-        "value": 133,
-        "tier": "A"
+        "value": 3136,
+        "tier": "S"
       },
       "defense": {
-        "value": 58,
-        "tier": "D"
+        "value": 375,
+        "tier": "C"
       },
       "speed": {
-        "value": 103,
-        "tier": "B"
+        "value": 113,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -7245,20 +7245,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 875,
-        "tier": "C"
+        "value": 10482,
+        "tier": "B"
       },
       "attack": {
-        "value": 136,
-        "tier": "A"
+        "value": 3136,
+        "tier": "S"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 401,
+        "tier": "B"
       },
       "speed": {
-        "value": 99,
-        "tier": "C"
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
         "value": 10,
@@ -7314,19 +7314,19 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 939,
-        "tier": "C"
-      },
-      "attack": {
-        "value": 121,
+        "value": 11165,
         "tier": "B"
       },
+      "attack": {
+        "value": 2814,
+        "tier": "A"
+      },
       "defense": {
-        "value": 65,
-        "tier": "C"
+        "value": 428,
+        "tier": "B"
       },
       "speed": {
-        "value": 110,
+        "value": 120,
         "tier": "S"
       },
       "crit_rate": {
@@ -7383,20 +7383,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 854,
-        "tier": "C"
+        "value": 10254,
+        "tier": "B"
       },
       "attack": {
-        "value": 140,
+        "value": 3216,
         "tier": "S"
       },
       "defense": {
-        "value": 69,
-        "tier": "C"
+        "value": 397,
+        "tier": "B"
       },
       "speed": {
-        "value": 102,
-        "tier": "B"
+        "value": 112,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -7452,20 +7452,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1216,
+        "value": 14127,
         "tier": "S"
       },
       "attack": {
-        "value": 100,
-        "tier": "D"
+        "value": 2305,
+        "tier": "C"
       },
       "defense": {
-        "value": 61,
+        "value": 397,
         "tier": "C"
       },
       "speed": {
-        "value": 102,
-        "tier": "B"
+        "value": 112,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 5,
@@ -7521,20 +7521,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 864,
-        "tier": "C"
+        "value": 10254,
+        "tier": "B"
       },
       "attack": {
-        "value": 142,
+        "value": 3323,
         "tier": "S"
       },
       "defense": {
-        "value": 75,
-        "tier": "A"
+        "value": 490,
+        "tier": "S"
       },
       "speed": {
-        "value": 99,
-        "tier": "D"
+        "value": 109,
+        "tier": "B"
       },
       "crit_rate": {
         "value": 10,
@@ -7590,20 +7590,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 971,
-        "tier": "B"
-      },
-      "attack": {
-        "value": 132,
+        "value": 11393,
         "tier": "A"
       },
+      "attack": {
+        "value": 3002,
+        "tier": "S"
+      },
       "defense": {
-        "value": 60,
+        "value": 388,
         "tier": "C"
       },
       "speed": {
-        "value": 97,
-        "tier": "C"
+        "value": 107,
+        "tier": "A"
       },
       "crit_rate": {
         "value": 8,
@@ -7659,19 +7659,19 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 854,
+        "value": 10026,
         "tier": "C"
       },
       "attack": {
-        "value": 144,
+        "value": 3323,
         "tier": "S"
       },
       "defense": {
-        "value": 60,
+        "value": 388,
         "tier": "C"
       },
       "speed": {
-        "value": 111,
+        "value": 121,
         "tier": "S"
       },
       "crit_rate": {
@@ -7728,20 +7728,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 960,
-        "tier": "B"
-      },
-      "attack": {
-        "value": 130,
+        "value": 11393,
         "tier": "A"
       },
+      "attack": {
+        "value": 3028,
+        "tier": "S"
+      },
       "defense": {
-        "value": 59,
-        "tier": "D"
+        "value": 384,
+        "tier": "C"
       },
       "speed": {
-        "value": 103,
-        "tier": "B"
+        "value": 113,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -7756,7 +7756,7 @@
         "tier": ""
       },
       "resist": {
-        "value": 0,
+        "value": 50,
         "tier": ""
       }
     },
@@ -7797,20 +7797,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 960,
-        "tier": "B"
+        "value": 11393,
+        "tier": "A"
       },
       "attack": {
-        "value": 146,
+        "value": 3404,
         "tier": "S"
       },
       "defense": {
-        "value": 60,
+        "value": 397,
         "tier": "C"
       },
       "speed": {
-        "value": 105,
-        "tier": "A"
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 1,
@@ -7866,20 +7866,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 854,
-        "tier": "C"
+        "value": 12304,
+        "tier": "B"
       },
       "attack": {
-        "value": 145,
+        "value": 3350,
         "tier": "S"
       },
       "defense": {
-        "value": 60,
+        "value": 432,
         "tier": "C"
       },
       "speed": {
-        "value": 102,
-        "tier": "B"
+        "value": 112,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -7935,20 +7935,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 790,
-        "tier": "D"
+        "value": 9229,
+        "tier": "C"
       },
       "attack": {
-        "value": 137,
-        "tier": "A"
+        "value": 3189,
+        "tier": "S"
       },
       "defense": {
-        "value": 68,
-        "tier": "B"
+        "value": 441,
+        "tier": "A"
       },
       "speed": {
-        "value": 100,
-        "tier": "B"
+        "value": 110,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -8004,20 +8004,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 907,
-        "tier": "C"
+        "value": 10823,
+        "tier": "B"
       },
       "attack": {
-        "value": 146,
+        "value": 3350,
         "tier": "S"
       },
       "defense": {
-        "value": 53,
-        "tier": "D"
+        "value": 353,
+        "tier": "C"
       },
       "speed": {
-        "value": 107,
-        "tier": "A"
+        "value": 117,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 11,
@@ -8073,20 +8073,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 960,
-        "tier": "B"
-      },
-      "attack": {
-        "value": 127,
+        "value": 11393,
         "tier": "A"
       },
+      "attack": {
+        "value": 2975,
+        "tier": "S"
+      },
       "defense": {
-        "value": 60,
+        "value": 392,
         "tier": "C"
       },
       "speed": {
-        "value": 104,
-        "tier": "B"
+        "value": 114,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -8154,20 +8154,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 854,
+        "value": 10026,
         "tier": "C"
       },
       "attack": {
-        "value": 142,
+        "value": 3323,
         "tier": "S"
       },
       "defense": {
-        "value": 60,
+        "value": 388,
         "tier": "C"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 12,
@@ -8223,20 +8223,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1227,
+        "value": 14241,
         "tier": "S"
       },
       "attack": {
-        "value": 79,
+        "value": 1822,
         "tier": "D"
       },
       "defense": {
-        "value": 73,
-        "tier": "B"
+        "value": 472,
+        "tier": "A"
       },
       "speed": {
-        "value": 101,
-        "tier": "B"
+        "value": 111,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 5,
@@ -8292,20 +8292,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 896,
-        "tier": "C"
+        "value": 10596,
+        "tier": "B"
       },
       "attack": {
-        "value": 135,
-        "tier": "A"
+        "value": 3109,
+        "tier": "S"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 401,
+        "tier": "B"
       },
       "speed": {
-        "value": 105,
-        "tier": "A"
+        "value": 115,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -8361,20 +8361,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1056,
-        "tier": "B"
+        "value": 12418,
+        "tier": "A"
       },
       "attack": {
-        "value": 175,
-        "tier": "S"
+        "value": 4074,
+        "tier": "SS"
       },
       "defense": {
-        "value": 74,
-        "tier": "B"
+        "value": 481,
+        "tier": "A"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -8442,20 +8442,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1078,
-        "tier": "A"
+        "value": 12646,
+        "tier": "S"
       },
       "attack": {
-        "value": 144,
+        "value": 3323,
         "tier": "S"
       },
       "defense": {
-        "value": 61,
-        "tier": "C"
+        "value": 397,
+        "tier": "B"
       },
       "speed": {
-        "value": 98,
-        "tier": "D"
+        "value": 100,
+        "tier": "B"
       },
       "crit_rate": {
         "value": 10,
@@ -8511,20 +8511,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 842,
-        "tier": "D"
-      },
-      "attack": {
-        "value": 138,
-        "tier": "A"
-      },
-      "defense": {
-        "value": 62,
+        "value": 9898,
         "tier": "C"
       },
-      "speed": {
-        "value": 100,
+      "attack": {
+        "value": 3198,
+        "tier": "S"
+      },
+      "defense": {
+        "value": 398,
         "tier": "B"
+      },
+      "speed": {
+        "value": 110,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 10,
@@ -8580,20 +8580,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 705,
+        "value": 8317,
         "tier": "D"
       },
       "attack": {
-        "value": 131,
-        "tier": "A"
+        "value": 3028,
+        "tier": "S"
       },
       "defense": {
-        "value": 77,
-        "tier": "A"
+        "value": 498,
+        "tier": "S"
       },
       "speed": {
-        "value": 99,
-        "tier": "C"
+        "value": 109,
+        "tier": "A"
       },
       "crit_rate": {
         "value": 10,
@@ -8649,20 +8649,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 843,
-        "tier": "D"
+        "value": 10140,
+        "tier": "C"
       },
       "attack": {
-        "value": 148,
-        "tier": "A"
+        "value": 3396,
+        "tier": "S"
       },
       "defense": {
-        "value": 59,
-        "tier": "D"
+        "value": 392,
+        "tier": "C"
       },
       "speed": {
-        "value": 108,
-        "tier": "A"
+        "value": 118,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 11,
@@ -8718,20 +8718,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1142,
-        "tier": "A"
+        "value": 13444,
+        "tier": "S"
       },
       "attack": {
-        "value": 95,
-        "tier": "D"
+        "value": 2198,
+        "tier": "C"
       },
       "defense": {
-        "value": 68,
-        "tier": "B"
+        "value": 441,
+        "tier": "A"
       },
       "speed": {
-        "value": 100,
-        "tier": "B"
+        "value": 110,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 5,
@@ -8787,20 +8787,20 @@
     "obtain": [],
     "stats": {
       "hp": {
-        "value": 1270,
+        "value": 14697,
         "tier": "S"
       },
       "attack": {
-        "value": 89,
-        "tier": "D"
+        "value": 2144,
+        "tier": "C"
       },
       "defense": {
-        "value": 83,
+        "value": 534,
         "tier": "S"
       },
       "speed": {
-        "value": 100,
-        "tier": "B"
+        "value": 110,
+        "tier": "S"
       },
       "crit_rate": {
         "value": 8,
@@ -8815,7 +8815,7 @@
         "tier": ""
       },
       "resist": {
-        "value": 0,
+        "value": 30,
         "tier": ""
       }
     },

@@ -55,16 +55,19 @@ RARITY_FILES = {r: f"{r.lower()}.json" for r in RARITIES}
 STAT_KEYS = ("hp", "attack", "defense", "speed", "crit_rate", "crit_dmg",
              "accuracy", "resist")
 
-# Fandom StatBox field name → key internal
+# Fandom StatBox field name → (tier-field, value-field) for each internal stat.
+# The wiki exposes both level-1 (`Atk1`/`AtkGr1`) and max-level / awakened
+# (`AtkMax2`/`AtkGr2`) values. We take the max-level set because that's what
+# tier lists, build guides, and players actually compare against.
 _STATBOX_MAP = {
-    "hp": ("HpGr1", "Hp1"),
-    "attack": ("AtkGr1", "Atk1"),
-    "defense": ("DefGr1", "Def1"),
-    "speed": ("SpdGr1", "Spd1"),
-    "crit_rate": ("CritGr1", "Crit1"),
-    "crit_dmg": (None, "Cdmg1"),
-    "accuracy": (None, "Acc1"),
-    "resist": (None, "Res1"),
+    "hp":        ("HpGr2",   "HpMax2"),
+    "attack":    ("AtkGr2",  "AtkMax2"),
+    "defense":   ("DefGr2",  "DefMax2"),
+    "speed":     ("SpdGr2",  "SpdMax2"),
+    "crit_rate": ("CritGr2", "CritMax2"),
+    "crit_dmg":  (None,      "CdmgMax2"),
+    "accuracy":  (None,      "AccMax2"),
+    "resist":    (None,      "ResMax2"),
 }
 
 
@@ -373,6 +376,8 @@ def enrich_record(
     fandom: FandomEntry,
     detail: Optional[FandomDetail],
     portrait_rel: Optional[str],
+    *,
+    force_stats: bool = False,
 ) -> list[str]:
     """Merge fandom data vào rec TẠI CHỖ. Trả về list các field đã thay đổi."""
     changed: list[str] = []
@@ -408,8 +413,9 @@ def enrich_record(
             s["image"] = f"assets/images/skills/{img_name}"
             changed.append(f"skills[{i}].image")
 
-    # 4) Stats — chỉ fill khi toàn bộ stats mặc định
-    if detail.stats and _is_empty_stats(rec.get("stats") or {}):
+    # 4) Stats — fill khi rec đang để mặc định, hoặc khi user yêu cầu --force-stats
+    #    (đẩy đè stat cũ — dùng khi switch sang max-level mapping mới).
+    if detail.stats and (force_stats or _is_empty_stats(rec.get("stats") or {})):
         stats = rec.setdefault("stats", {})
         for key in STAT_KEYS:
             tier, value = detail.stats.get(key, ("", 0))
@@ -436,6 +442,10 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--no-create-new", action="store_true",
                    help="Không thêm record mới; ghi fandom-only vào "
                         "tools/scraper/unmapped_fandom.json để review tay.")
+    p.add_argument("--force-stats", action="store_true",
+                   help="Đẩy đè stats hiện tại bằng giá trị max-level từ "
+                        "Fandom — kể cả khi user đã điền tay. Dùng khi cần "
+                        "đồng bộ lại sau đổi mapping (vd level-1 → max).")
     p.add_argument("--delay", type=float, default=DELAY_SEC)
     return p.parse_args()
 
@@ -620,7 +630,10 @@ def main() -> int:
             print(f"  [{ei:>2}/{len(entries)}] + NEW  {entry.rarity:3s}  "
                   f"{entry.name_en}", flush=True)
         else:
-            changes = enrich_record(match, entry, detail, portrait_rel)
+            changes = enrich_record(
+                match, entry, detail, portrait_rel,
+                force_stats=args.force_stats,
+            )
             stats_counter["matched"] += 1
             if changes:
                 stats_counter["changed"] += 1
